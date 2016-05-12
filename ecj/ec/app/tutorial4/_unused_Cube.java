@@ -8,7 +8,7 @@ import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import ec.util.Parameter;
 
-public class Cube extends GPNode{
+public class _unused_Cube extends GPNode{
 
 	@Override
 	public void eval(final EvolutionState state,

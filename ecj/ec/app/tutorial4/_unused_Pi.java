@@ -7,7 +7,7 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 
-public class Pi extends GPNode{
+public class _unused_Pi extends GPNode{
 
 	@Override
 	public void eval(final EvolutionState state,

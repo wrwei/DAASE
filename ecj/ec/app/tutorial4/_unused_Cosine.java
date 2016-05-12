@@ -7,7 +7,7 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 
-public class Sine extends GPNode{
+public class _unused_Cosine extends GPNode{
 
 	@Override
 	public void eval(final EvolutionState state,
@@ -20,7 +20,7 @@ public class Sine extends GPNode{
         DoubleData rd = ((DoubleData)(input));
 
         children[0].eval(state,thread,input,stack,individual,problem);
-        result = Math.sin(rd.x);
+        result = Math.cos(rd.x);
         rd.x = result;
         }
 	
@@ -28,7 +28,7 @@ public class Sine extends GPNode{
 
 	@Override
 	public String toString() {
-		return "sin";
+		return "cos";
 	}
 
 }

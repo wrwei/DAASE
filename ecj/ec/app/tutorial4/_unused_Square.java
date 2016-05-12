@@ -6,8 +6,9 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
+import ec.util.Parameter;
 
-public class Cosine extends GPNode{
+public class _unused_Square extends GPNode{
 
 	@Override
 	public void eval(final EvolutionState state,
@@ -20,15 +21,24 @@ public class Cosine extends GPNode{
         DoubleData rd = ((DoubleData)(input));
 
         children[0].eval(state,thread,input,stack,individual,problem);
-        result = Math.cos(rd.x);
+        result = rd.x * rd.x;
         rd.x = result;
         }
+	
+	@Override
+	public void checkConstraints(EvolutionState state, int tree, GPIndividual typicalIndividual,
+			Parameter individualBase) {
+		super.checkConstraints(state, tree, typicalIndividual, individualBase);
+		if (children.length != 1) {
+			state.output.error("Square operator should have one operand");
+		}
+	}
 	
     public int expectedChildren() { return 1; }
 
 	@Override
 	public String toString() {
-		return "cos";
+		return "^2";
 	}
 
 }
