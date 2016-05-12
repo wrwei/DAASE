@@ -10,7 +10,7 @@ import ec.util.Parameter;
 
 public class StochasticOPNode extends GPNode {
 
-	private static float BIAS = 0.0001f;
+	private static float BIAS = 1/Float.MAX_VALUE;
 	private OperatorGenerator.OPERATORS op = null;
 	
 	public static void main(String[] args) {
