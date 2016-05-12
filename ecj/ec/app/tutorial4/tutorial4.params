@@ -23,12 +23,12 @@ gp.fs.0.func.2 = ec.app.tutorial4.StochasticOPNode
 gp.fs.0.func.2.nc = nc2
 
 
-gp.fs.0.func.3 = ec.app.tutorial4.Sub
-gp.fs.0.func.3.nc = nc2
-gp.fs.0.func.4 = ec.app.tutorial4.Mul
-gp.fs.0.func.4.nc = nc2
-gp.fs.0.func.5 = ec.app.tutorial4.SafeDiv
-gp.fs.0.func.5.nc = nc2
+#gp.fs.0.func.3 = ec.app.tutorial4.Sub
+#gp.fs.0.func.3.nc = nc2
+#gp.fs.0.func.4 = ec.app.tutorial4.Mul
+#gp.fs.0.func.4.nc = nc2
+#gp.fs.0.func.5 = ec.app.tutorial4.SafeDiv
+#gp.fs.0.func.5.nc = nc2
 
 #added defined 
 #gp.fs.0.func.5 = ec.app.tutorial4.Square
