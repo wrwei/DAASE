@@ -44,17 +44,24 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
             double expectedResult;
             double result;
             for (int y=0;y<10;y++)
-                {
+            {
                 currentX = state.random[threadnum].nextDouble();
                 currentY = state.random[threadnum].nextDouble();
                 expectedResult = currentX*currentX*currentY + currentX*currentY + currentY;
+                
+                // reset flag for illegal division
+                IllegalDivision.getInstance().reset();
+                
                 ((GPIndividual)ind).trees[0].child.eval(
                     state,threadnum,input,stack,((GPIndividual)ind),this);
-
-                result = Math.abs(expectedResult - input.x);
-                if (result <= 0.01) hits++;
-                sum += result;                  
-                }
+                
+                //check for existence of illegal divisions
+                if (!IllegalDivision.getInstance().illegalDivision()) {
+                	result = Math.abs(expectedResult - input.x);
+                    if (result <= 0.01) hits++;
+                    sum += result; 
+				}
+            }
 
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);

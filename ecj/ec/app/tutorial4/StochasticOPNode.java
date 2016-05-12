@@ -90,6 +90,7 @@ public class StochasticOPNode extends GPNode {
 			if (rd.x == 0.0) {
 				rd.x = result / BIAS; // create a bias large enough to give low
 										// fitness score
+				IllegalDivision.getInstance().illegal();
 			} else {
 				rd.x = result / rd.x;
 			}
