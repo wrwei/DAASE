@@ -28,8 +28,7 @@ public class SafeDiv extends GPNode {
 
 		children[1].eval(state, thread, input, stack, individual, problem);
 		if (rd.x == 0.0) {
-			System.out.println("operand is 0");
-			rd.x = Float.MIN_VALUE; // create a bias large enough to give low
+			rd.x = result/BIAS; // create a bias large enough to give low
 									// fitness score
 			IllegalDivision.getInstance().illegal();
 		} else {

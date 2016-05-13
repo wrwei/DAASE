@@ -73,7 +73,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
             f.hits = hits;
             ind.evaluated = true;
             
-            //OperatorCounter.print();
+            OperatorCounter.print();
             }
         }
     }
