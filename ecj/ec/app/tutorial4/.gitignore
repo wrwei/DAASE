@@ -22,3 +22,5 @@
 /OperatorGenerator$OPERATORS.class
 /OperatorGenerator$OPERATOR.class
 /IllegalDivision.class
+/CSVFileWriter.class
+/OperatorCounter.class
