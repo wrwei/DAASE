@@ -61,6 +61,10 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
                     if (result <= 0.01) hits++;
                     sum += result; 
 				}
+                else
+                {
+                	sum = Float.MAX_VALUE;
+                }
             }
 
             // the fitness better be KozaFitness!
@@ -68,6 +72,8 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
             ind.evaluated = true;
+            
+            //OperatorCounter.print();
             }
         }
     }

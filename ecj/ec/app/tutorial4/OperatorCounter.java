@@ -81,6 +81,7 @@ public class OperatorCounter {
 		s += "SUB: " + SUB + "\n";
 		s += "MUL: " + MUL + "\n";
 		s += "DIV: " + DIV + "\n";
+		System.out.println(s);
 	}
 	
 }
