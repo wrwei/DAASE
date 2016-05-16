@@ -22,6 +22,12 @@ gp.fs.0.func.1.nc = nc0
 gp.fs.0.func.2 = ec.app.tutorial4.StochasticOPNode
 gp.fs.0.func.2.nc = nc2
 
+#gp.fs.0.func.3 = ec.app.tutorial4.StochasticOPNode
+#gp.fs.0.func.3.nc = nc2
+#gp.fs.0.func.4 = ec.app.tutorial4.StochasticOPNode
+#gp.fs.0.func.4.nc = nc2
+#gp.fs.0.func.5 = ec.app.tutorial4.StochasticOPNode
+#gp.fs.0.func.5.nc = nc2
 
 eval.problem = ec.app.tutorial4.MultiValuedRegression
 eval.problem.data = ec.app.tutorial4.DoubleData

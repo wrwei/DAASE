@@ -6,10 +6,10 @@ public class OperatorGenerator {
 
 	private static OperatorGenerator instance = null;
 	
-	private static int WEIGHT_ADD = 2;
-	private static int WEIGHT_SUB = 7;
-	private static int WEIGHT_MUL = 7;
-	private static int WEIGHT_DIV = 9;
+	private static int WEIGHT_ADD = 10;
+	private static int WEIGHT_SUB = 6;
+	private static int WEIGHT_MUL = 9;
+	private static int WEIGHT_DIV = 6;
 	
 	public static enum OPERATORS {ADD, SUB, MUL, DIV}
 	

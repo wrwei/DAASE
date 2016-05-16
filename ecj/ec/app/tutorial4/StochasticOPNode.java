@@ -2,6 +2,7 @@ package ec.app.tutorial4;
 
 import ec.EvolutionState;
 import ec.Problem;
+import ec.breed.GenerationSwitchPipeline;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
@@ -11,7 +12,7 @@ import ec.util.Parameter;
 public class StochasticOPNode extends GPNode {
 
 	private static float BIAS = 1/Float.MAX_VALUE;
-	private OperatorGenerator.OPERATORS op = null;
+	private OperatorGenerator.OPERATORS op;
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
@@ -54,9 +55,7 @@ public class StochasticOPNode extends GPNode {
 			final GPIndividual individual, final Problem problem) {
 		double result;
 		DoubleData rd = ((DoubleData) (input));
-		
 		op = OperatorGenerator.getOperator();
-//		System.out.println("op is " + op);
 		switch (op) {
 		case ADD:
 			children[0].eval(state,thread,input,stack,individual,problem);
@@ -64,6 +63,8 @@ public class StochasticOPNode extends GPNode {
 
 	        children[1].eval(state,thread,input,stack,individual,problem);
 	        rd.x = result + rd.x;
+	        OperatorCounter.getInstance().incrementADD();
+
 			break;
 		
 		case SUB:
@@ -72,6 +73,7 @@ public class StochasticOPNode extends GPNode {
 
 	        children[1].eval(state,thread,input,stack,individual,problem);
 	        rd.x = result - rd.x;
+	        OperatorCounter.getInstance().incrementSUB();
 	        break;
 	        
 		case MUL:
@@ -80,6 +82,8 @@ public class StochasticOPNode extends GPNode {
 
 			children[1].eval(state, thread, input, stack, individual, problem);
 			rd.x = result * rd.x;
+	        OperatorCounter.getInstance().incrementMUL();
+
 			break;
 			
 		default:
@@ -94,8 +98,31 @@ public class StochasticOPNode extends GPNode {
 			} else {
 				rd.x = result / rd.x;
 			}
+	        OperatorCounter.getInstance().incrementDIV();
 			break;
 		}
 	}
-
+	
+	public void generateOP()
+	{
+		op = OperatorGenerator.getOperator();
+	}
+	
+	@Override
+	public GPNode lightClone() {
+		generateOP();
+		return super.lightClone();
+	}
+	
+	@Override
+	public Object clone() {
+		op = OperatorGenerator.getOperator();
+		for(GPNode node: children)
+		{
+			if (node instanceof StochasticOPNode) {
+				((StochasticOPNode)node).generateOP();
+			}
+		}
+		return super.clone();
+	}
 }

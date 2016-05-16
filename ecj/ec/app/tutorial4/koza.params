@@ -153,6 +153,10 @@ gp.fs.0.name = f0
 gp.type.a.size = 1
 gp.type.a.0.name = nil
 gp.type.s.size = 0
+#gp.type.s.0.name = st0
+#gp.type.s.0.size = 1
+#gp.type.s.0.member.0 = nil
+
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,

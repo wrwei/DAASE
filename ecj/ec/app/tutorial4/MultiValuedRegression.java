@@ -63,7 +63,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 				}
                 else
                 {
-                	sum = Float.MAX_VALUE;
+                	sum = Double.MAX_VALUE;
                 }
             }
 
@@ -73,7 +73,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
             f.hits = hits;
             ind.evaluated = true;
             
-            OperatorCounter.print();
+            //OperatorCounter.print();
             }
         }
     }
