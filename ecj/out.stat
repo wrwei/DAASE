@@ -3,15 +3,15 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.189201844216463 Adjusted=0.2387089563088449 Hits=1
+Fitness: Standardized=3.2602175785548235 Adjusted=0.23472979526534557 Hits=0
 Tree 0:
-y + y
+(y + (y * y)) * y
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5706570386538135 Adjusted=0.38900560633466463 Hits=1
+Fitness: Standardized=1.6974469791517606 Adjusted=0.37072091044935385 Hits=1
 Tree 0:
 y
 
@@ -19,7 +19,7 @@ Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.427580011980495 Adjusted=0.41193286938631907 Hits=0
+Fitness: Standardized=1.1280217316805075 Adjusted=0.4699200130866595 Hits=1
 Tree 0:
 y
 
@@ -27,23 +27,23 @@ Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.752568124760129 Adjusted=0.5705912288784029 Hits=1
+Fitness: Standardized=1.1280217316805075 Adjusted=0.4699200130866595 Hits=1
 Tree 0:
-y * y
+y
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0873847175347562 Adjusted=0.4790683727822921 Hits=2
+Fitness: Standardized=0.8729047041605985 Adjusted=0.5339299953588305 Hits=2
 Tree 0:
-y
+y + y
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8415933609717434 Adjusted=0.5430080392298632 Hits=1
+Fitness: Standardized=0.8294414990962622 Adjusted=0.5466149097929596 Hits=2
 Tree 0:
 y
 
@@ -51,7 +51,7 @@ Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0873847175347562 Adjusted=0.4790683727822921 Hits=2
+Fitness: Standardized=0.9435190305545166 Adjusted=0.5145305933612002 Hits=2
 Tree 0:
 y
 
@@ -59,7 +59,7 @@ Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0282362892090466 Adjusted=0.49303920126089995 Hits=1
+Fitness: Standardized=1.2004127069759343 Adjusted=0.45446020050225827 Hits=2
 Tree 0:
 y
 
@@ -67,7 +67,7 @@ Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1704208226461725 Adjusted=0.46074014290961424 Hits=1
+Fitness: Standardized=0.7282199051017404 Adjusted=0.5786300673010302 Hits=2
 Tree 0:
 y
 
@@ -75,7 +75,7 @@ Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9025043394995325 Adjusted=0.5256229797946518 Hits=1
+Fitness: Standardized=0.7282199051017404 Adjusted=0.5786300673010302 Hits=2
 Tree 0:
 y
 
@@ -83,7 +83,7 @@ Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0749359830048195 Adjusted=0.48194257952568226 Hits=0
+Fitness: Standardized=1.0448483134779925 Adjusted=0.4890338287729245 Hits=1
 Tree 0:
 y
 
@@ -91,7 +91,7 @@ Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9110446556764676 Adjusted=0.5232740098613876 Hits=1
+Fitness: Standardized=0.8874117297249802 Adjusted=0.5298261021964257 Hits=3
 Tree 0:
 y
 
@@ -99,7 +99,7 @@ Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8452707404727532 Adjusted=0.5419258963287972 Hits=1
+Fitness: Standardized=0.8874117297249802 Adjusted=0.5298261021964257 Hits=3
 Tree 0:
 y
 
@@ -107,7 +107,7 @@ Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7395717109944178 Adjusted=0.5748541400620701 Hits=1
+Fitness: Standardized=0.8737535681367916 Adjusted=0.5336881097947006 Hits=1
 Tree 0:
 y
 
@@ -115,7 +115,7 @@ Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7218869135032253 Adjusted=0.5807582322380702 Hits=2
+Fitness: Standardized=1.0247881995546488 Adjusted=0.4938788166683061 Hits=1
 Tree 0:
 y
 
@@ -123,7 +123,7 @@ Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8890334183177101 Adjusted=0.529371259556941 Hits=1
+Fitness: Standardized=1.071911087350525 Adjusted=0.482646193702626 Hits=1
 Tree 0:
 y
 
@@ -131,7 +131,7 @@ Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8890334183177101 Adjusted=0.529371259556941 Hits=1
+Fitness: Standardized=0.9089023815926618 Adjusted=0.5238612564177673 Hits=3
 Tree 0:
 y
 
@@ -139,7 +139,7 @@ Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2153607691494934 Adjusted=0.4513937476575941 Hits=1
+Fitness: Standardized=1.0305141555326935 Adjusted=0.49248610125431797 Hits=2
 Tree 0:
 y
 
@@ -147,7 +147,7 @@ Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9401392230171719 Adjusted=0.515426928199961 Hits=2
+Fitness: Standardized=1.0305141555326935 Adjusted=0.49248610125431797 Hits=2
 Tree 0:
 y
 
@@ -155,7 +155,7 @@ Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2648479043876268 Adjusted=0.4415307527109118 Hits=0
+Fitness: Standardized=1.0305141555326935 Adjusted=0.49248610125431797 Hits=2
 Tree 0:
 y
 
@@ -163,7 +163,7 @@ Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9893695745998605 Adjusted=0.5026718075755928 Hits=1
+Fitness: Standardized=0.8330079853195971 Adjusted=0.5455513603917244 Hits=2
 Tree 0:
 y
 
@@ -171,7 +171,7 @@ Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9893695745998605 Adjusted=0.5026718075755928 Hits=1
+Fitness: Standardized=0.6619626863676665 Adjusted=0.6016982259605169 Hits=4
 Tree 0:
 y
 
@@ -179,7 +179,7 @@ Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1025637611581174 Adjusted=0.4756098333251915 Hits=1
+Fitness: Standardized=0.6619626863676665 Adjusted=0.6016982259605169 Hits=4
 Tree 0:
 y
 
@@ -187,7 +187,7 @@ Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8918230215546993 Adjusted=0.5285906708008027 Hits=1
+Fitness: Standardized=0.6619626863676665 Adjusted=0.6016982259605169 Hits=4
 Tree 0:
 y
 
@@ -195,7 +195,7 @@ Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7722442691334636 Adjusted=0.5642563033869753 Hits=1
+Fitness: Standardized=0.8995980794394725 Adjusted=0.5264271483655516 Hits=1
 Tree 0:
 y
 
@@ -203,7 +203,7 @@ Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7722442691334636 Adjusted=0.5642563033869753 Hits=1
+Fitness: Standardized=0.8490797897929172 Adjusted=0.540809545115407 Hits=4
 Tree 0:
 y
 
@@ -211,7 +211,7 @@ Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8389425235056476 Adjusted=0.5437907858553737 Hits=2
+Fitness: Standardized=0.8490797897929172 Adjusted=0.540809545115407 Hits=4
 Tree 0:
 y
 
@@ -219,7 +219,7 @@ Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8389425235056476 Adjusted=0.5437907858553737 Hits=2
+Fitness: Standardized=0.965039998807153 Adjusted=0.5088954935304292 Hits=2
 Tree 0:
 y
 
@@ -227,7 +227,7 @@ Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.99821718325117 Adjusted=0.5004461018461289 Hits=3
+Fitness: Standardized=0.7896852393979171 Adjusted=0.5587574719767027 Hits=2
 Tree 0:
 y
 
@@ -235,7 +235,7 @@ Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8232311325184936 Adjusted=0.5484768124920425 Hits=2
+Fitness: Standardized=0.8550907226003635 Adjusted=0.5390571942477591 Hits=0
 Tree 0:
 y
 
@@ -243,7 +243,7 @@ Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.956778453628019 Adjusted=0.5110440572083786 Hits=1
+Fitness: Standardized=1.128362937240102 Adjusted=0.46984467850991773 Hits=1
 Tree 0:
 y
 
@@ -251,7 +251,7 @@ Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.956778453628019 Adjusted=0.5110440572083786 Hits=1
+Fitness: Standardized=0.6349975902674929 Adjusted=0.6116216965410912 Hits=2
 Tree 0:
 y
 
@@ -259,7 +259,7 @@ Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0334684014261912 Adjusted=0.49177061187606413 Hits=1
+Fitness: Standardized=0.8116686445868122 Adjusted=0.5519773182518541 Hits=1
 Tree 0:
 y
 
@@ -267,7 +267,7 @@ Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9462242065508334 Adjusted=0.5138154158365109 Hits=1
+Fitness: Standardized=0.5947495898199104 Adjusted=0.6270576938119335 Hits=2
 Tree 0:
 y
 
@@ -275,7 +275,7 @@ Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9462242065508334 Adjusted=0.5138154158365109 Hits=1
+Fitness: Standardized=1.1747999631521888 Adjusted=0.4598124043328493 Hits=2
 Tree 0:
 y
 
@@ -283,7 +283,7 @@ Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9629001781400064 Adjusted=0.5094502568885465 Hits=0
+Fitness: Standardized=0.9391242002641971 Adjusted=0.5156967252864744 Hits=1
 Tree 0:
 y
 
@@ -291,7 +291,7 @@ Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0986939260189714 Adjusted=0.47648682240049534 Hits=1
+Fitness: Standardized=1.0959679947619718 Adjusted=0.4771065219025755 Hits=1
 Tree 0:
 y
 
@@ -299,7 +299,7 @@ Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1158472356089644 Adjusted=0.47262391309275636 Hits=0
+Fitness: Standardized=0.980966197897995 Adjusted=0.5048041713488605 Hits=1
 Tree 0:
 y
 
@@ -307,7 +307,7 @@ Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2170232120457787 Adjusted=0.45105526841879157 Hits=1
+Fitness: Standardized=0.980966197897995 Adjusted=0.5048041713488605 Hits=1
 Tree 0:
 y
 
@@ -315,7 +315,7 @@ Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9257056013702752 Adjusted=0.5192901756573952 Hits=2
+Fitness: Standardized=0.7411687838712302 Adjusted=0.5743268597870498 Hits=1
 Tree 0:
 y
 
@@ -323,7 +323,7 @@ Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0791879078856734 Adjusted=0.4809570102862421 Hits=1
+Fitness: Standardized=1.2535913908560294 Adjusted=0.4437361644429023 Hits=1
 Tree 0:
 y
 
@@ -331,7 +331,7 @@ Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0463255779579232 Adjusted=0.48868078998353903 Hits=3
+Fitness: Standardized=0.8993396835585202 Adjusted=0.5264987662061814 Hits=1
 Tree 0:
 y
 
@@ -339,7 +339,7 @@ Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7168730571662502 Adjusted=0.5824542448412171 Hits=0
+Fitness: Standardized=0.8993396835585202 Adjusted=0.5264987662061814 Hits=1
 Tree 0:
 y
 
@@ -347,7 +347,7 @@ Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.6534475772846098 Adjusted=0.6047969187158988 Hits=2
+Fitness: Standardized=1.0648068145821021 Adjusted=0.48430680920742253 Hits=3
 Tree 0:
 y
 
@@ -355,7 +355,7 @@ Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8959001293700359 Adjusted=0.5274539436485386 Hits=0
+Fitness: Standardized=1.0222592486043114 Adjusted=0.4944964403995991 Hits=0
 Tree 0:
 y
 
@@ -363,7 +363,7 @@ Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.5213945802177815 Adjusted=0.6572916802798483 Hits=2
+Fitness: Standardized=1.0583091888350635 Adjusted=0.48583565842504334 Hits=2
 Tree 0:
 y
 
@@ -371,7 +371,7 @@ Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1210247877545396 Adjusted=0.4714702090109318 Hits=2
+Fitness: Standardized=1.2569436022876594 Adjusted=0.44307708840681287 Hits=1
 Tree 0:
 y
 
@@ -379,7 +379,7 @@ Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.8131355081518521 Adjusted=0.5515307573559741 Hits=2
+Fitness: Standardized=1.0546995116550026 Adjusted=0.48668917003563605 Hits=2
 Tree 0:
 y
 
@@ -387,7 +387,7 @@ Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0463789244875796 Adjusted=0.4886680506888056 Hits=2
+Fitness: Standardized=0.8821756561944526 Adjusted=0.5313000392438862 Hits=2
 Tree 0:
 y
 
@@ -395,7 +395,7 @@ Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9303983828924364 Adjusted=0.5180277857991352 Hits=0
+Fitness: Standardized=1.1963042270152004 Adjusted=0.4553103289151385 Hits=2
 Tree 0:
 y
 
@@ -403,13 +403,13 @@ Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9303983828924364 Adjusted=0.5180277857991352 Hits=0
+Fitness: Standardized=0.8769389196686661 Adjusted=0.5327823881325499 Hits=4
 Tree 0:
 y
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.5213945802177815 Adjusted=0.6572916802798483 Hits=2
+Fitness: Standardized=0.5947495898199104 Adjusted=0.6270576938119335 Hits=2
 Tree 0:
 y

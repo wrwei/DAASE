@@ -108,21 +108,27 @@ public class StochasticOPNode extends GPNode {
 		op = OperatorGenerator.getOperator();
 	}
 	
-	@Override
-	public GPNode lightClone() {
-		generateOP();
-		return super.lightClone();
-	}
+//	@Override
+//	public GPNode lightClone() {
+//		generateOP();
+//		return super.lightClone();
+//	}
+//	
+//	@Override
+//	public Object clone() {
+//		op = OperatorGenerator.getOperator();
+//		for(GPNode node: children)
+//		{
+//			if (node instanceof StochasticOPNode) {
+//				((StochasticOPNode)node).generateOP();
+//			}
+//		}
+//		return super.clone();
+//	}
 	
-	@Override
-	public Object clone() {
-		op = OperatorGenerator.getOperator();
-		for(GPNode node: children)
-		{
-			if (node instanceof StochasticOPNode) {
-				((StochasticOPNode)node).generateOP();
-			}
-		}
-		return super.clone();
-	}
+//	@Override
+//	public void resetNode(EvolutionState state, int thread) {
+//		generateOP();
+//		super.resetNode(state, thread);
+//	}
 }
