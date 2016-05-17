@@ -19,6 +19,13 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
     public double currentX;
     public double currentY;
     
+    public int p0 = 0;
+    public int p1 = 1;
+    public int p2 = 2;
+    public int p3 = 3;
+    public int p4 = 4;
+    public int p5 = 5;
+    
     public void setup(final EvolutionState state,
         final Parameter base)
         {

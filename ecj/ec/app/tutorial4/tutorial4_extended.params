@@ -14,34 +14,16 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 3
+gp.fs.0.size = 4
 gp.fs.0.func.0 = ec.app.tutorial4.X
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = ec.app.tutorial4.Y
 gp.fs.0.func.1.nc = nc0
-gp.fs.0.func.2 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.2 = ec.app.tutorial4.OPNode
+gp.fs.0.func.2.nc = nc7
 
-gp.fs.0.func.3 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.3.nc = nc2
-gp.fs.0.func.4 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.4.nc = nc2
-gp.fs.0.func.5 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.5.nc = nc2
-gp.fs.0.func.6 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.6.nc = nc2
-gp.fs.0.func.7 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.7.nc = nc2
-gp.fs.0.func.8 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.8.nc = nc2
-gp.fs.0.func.9 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.9.nc = nc2
-gp.fs.0.func.10 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.10.nc = nc2
-gp.fs.0.func.11 = ec.app.tutorial4.StochasticOPNode
-gp.fs.0.func.11.nc = nc2
-
-
+gp.fs.0.func.3 = ec.app.tutorial4.WeightNode
+gp.fs.0.func.3.nc = nc8
 
 eval.problem = ec.app.tutorial4.MultiValuedRegression
 eval.problem.data = ec.app.tutorial4.DoubleData

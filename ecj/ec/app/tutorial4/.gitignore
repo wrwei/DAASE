@@ -25,3 +25,6 @@
 /CSVFileWriter.class
 /OperatorCounter.class
 /StochasticOPNodeType.class
+/IntegerData.class
+/WeightNode.class
+/OPNode.class
