@@ -12,6 +12,7 @@ public class OPNode extends GPNode {
 
 	private static float BIAS = 1/Float.MAX_VALUE;
 	private Operator opCode = Operator.INVALID;
+	private boolean visited = false;
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
@@ -56,29 +57,33 @@ public class OPNode extends GPNode {
 		int div;
 		
 		DoubleData rd = ((DoubleData) (input));
-		synchronized (this) {
-			
-			IntegerData id = new IntegerData();
-			
-			children[2].eval(state,thread,id,stack,individual,problem);
-			add = (int) id.x;
-			
-			children[3].eval(state,thread,id,stack,individual,problem);
-			sub = (int) id.x;
-			
-			children[4].eval(state,thread,id,stack,individual,problem);
-			mul = (int) id.x;
-			
-			children[5].eval(state,thread,id,stack,individual,problem);
-			div = (int) id.x;
-			
-			opCode = StochasticUtil.getInstance().getOperator(add, sub, mul, div);
-			
-			if (opCode == Operator.INVALID) {
-				state.output.error("INVALID OP CODE " + toStringForError());
+		
+		if (!visited) {
+			visited = true;
+			synchronized (this) {
+				
+				IntegerData id = new IntegerData();
+				
+				children[2].eval(state,thread,id,stack,individual,problem);
+				add = (int) id.x;
+				
+				children[3].eval(state,thread,id,stack,individual,problem);
+				sub = (int) id.x;
+				
+				children[4].eval(state,thread,id,stack,individual,problem);
+				mul = (int) id.x;
+				
+				children[5].eval(state,thread,id,stack,individual,problem);
+				div = (int) id.x;
+				
+				opCode = StochasticUtil.getInstance().getOperator(add, sub, mul, div);
+				
+				if (opCode == Operator.INVALID) {
+					state.output.error("INVALID OP CODE " + toStringForError());
+				}
 			}
-			
 		}
+		
 		switch (opCode) {
 		case ADD:
 			children[0].eval(state,thread,input,stack,individual,problem);
@@ -146,7 +151,6 @@ public class OPNode extends GPNode {
 	
 //	@Override
 //	public void resetNode(EvolutionState state, int thread) {
-//		generateOP();
 //		super.resetNode(state, thread);
 //	}
 }
