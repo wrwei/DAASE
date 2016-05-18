@@ -6,29 +6,28 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
-import ec.util.MersenneTwister;
 import ec.util.Parameter;
 
 public class OPNode extends GPNode {
 
 	private static float BIAS = 1/Float.MAX_VALUE;
-	private int opCode = -1;
+	private Operator opCode = Operator.INVALID;
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
-			System.out.println(OperatorGenerator.getOperator());
+			System.out.println(StochasticUtil.getOperator(10, 6, 9, 9));
 		}
 	}
 
 	public String toString() {
 		switch (opCode) {
-		case 0:
+		case ADD:
 			return "+";
-		case 1:
+		case SUB:
 			return "-";
-		case 2:
+		case MUL:
 			return "*";
-		case 3:
+		case DIV:
 			return "/";
 		default:
 			return "invalid";
@@ -73,18 +72,15 @@ public class OPNode extends GPNode {
 			children[5].eval(state,thread,id,stack,individual,problem);
 			div = (int) id.x;
 			
-			opCode = getOperator(add, sub, mul, div);
+			opCode = StochasticUtil.getInstance().getOperator(add, sub, mul, div);
 			
-			if (opCode >=0 && opCode <=3) {
-				
-			}
-			else {
+			if (opCode == Operator.INVALID) {
 				state.output.error("INVALID OP CODE " + toStringForError());
 			}
 			
 		}
 		switch (opCode) {
-		case 0:
+		case ADD:
 			children[0].eval(state,thread,input,stack,individual,problem);
 	        result = rd.x;
 
@@ -94,7 +90,7 @@ public class OPNode extends GPNode {
 
 			break;
 		
-		case 1:
+		case SUB:
 			children[0].eval(state,thread,input,stack,individual,problem);
 	        result = rd.x;
 
@@ -103,7 +99,7 @@ public class OPNode extends GPNode {
 	        OperatorCounter.getInstance().incrementSUB();
 	        break;
 	        
-		case 2:
+		case MUL:
 			children[0].eval(state, thread, input, stack, individual, problem);
 			result = rd.x;
 
@@ -113,7 +109,7 @@ public class OPNode extends GPNode {
 
 			break;
 			
-		case 3:
+		case DIV:
 			children[0].eval(state, thread, input, stack, individual, problem);
 			result = rd.x;
 
@@ -127,34 +123,6 @@ public class OPNode extends GPNode {
 			}
 	        OperatorCounter.getInstance().incrementDIV();
 			break;
-		}
-	}
-	
-	public int getOperator(int WEIGHT_ADD, int WEIGHT_SUB, int WEIGHT_MUL, int WEIGHT_DIV)
-	{
-		MersenneTwister rand = new MersenneTwister(4357);
-		int total_weight = WEIGHT_ADD + WEIGHT_SUB + WEIGHT_MUL + WEIGHT_DIV;
-		int median = WEIGHT_ADD + WEIGHT_SUB;
-		int q3 = WEIGHT_ADD + WEIGHT_SUB + WEIGHT_MUL;
-		
-		int num = rand.nextInt(total_weight);
-		if (num < median) {
-			num = rand.nextInt(median);
-			if (num < WEIGHT_ADD) {
-				return 0;
-			}
-			else
-			{
-				return 1;
-			}
-		}
-		else {
-			if (num < q3) {
-				return 2;
-			}
-			else {
-				return 3;
-			}
 		}
 	}
 	

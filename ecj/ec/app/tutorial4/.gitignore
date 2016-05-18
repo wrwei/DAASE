@@ -28,3 +28,10 @@
 /IntegerData.class
 /WeightNode.class
 /OPNode.class
+/NodeRegister.class
+/unused_StochasticOPNode.class
+/_unused_StochasticOPNode.class
+/StochasticUtil$OPERATORS.class
+/StochasticUtil.class
+/StochasticUtil$OPERATOR.class
+/Operator.class

@@ -18,8 +18,9 @@ public class WeightNode extends GPNode {
 		IntegerData rd = ((IntegerData) (input));
 
 		// right now we just randomise
-		MersenneTwister rand = new MersenneTwister(4357);
-		x = rand.nextInt(5);
+		//MersenneTwister rand = new MersenneTwister(4357);
+		x = state.random[0].nextInt(3);
+		//x = rand.nextInt(5);
 		rd.x = x;
 	}
 

@@ -9,14 +9,14 @@ import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import ec.util.Parameter;
 
-public class StochasticOPNode extends GPNode {
+public class _unused_StochasticOPNode extends GPNode {
 
 	private static float BIAS = 1/Float.MAX_VALUE;
-	private OperatorGenerator.OPERATORS op;
+	private Operator op;
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
-			System.out.println(OperatorGenerator.getOperator());
+			System.out.println(StochasticUtil.getOperator(10,6,9,9));
 		}
 	}
 
@@ -55,7 +55,7 @@ public class StochasticOPNode extends GPNode {
 			final GPIndividual individual, final Problem problem) {
 		double result;
 		DoubleData rd = ((DoubleData) (input));
-		op = OperatorGenerator.getOperator();
+		op = StochasticUtil.getOperator(10,6,9,9);
 		switch (op) {
 		case ADD:
 			children[0].eval(state,thread,input,stack,individual,problem);
@@ -105,7 +105,7 @@ public class StochasticOPNode extends GPNode {
 	
 	public void generateOP()
 	{
-		op = OperatorGenerator.getOperator();
+		op = StochasticUtil.getOperator(10,6,9,9);
 	}
 	
 //	@Override
