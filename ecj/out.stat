@@ -3,45 +3,77 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.9638992962558155 Adjusted=0.3373933794792769 Hits=0
+Fitness: Standardized=1.6420668253191437 Adjusted=0.37849156214253094 Hits=1
 Tree 0:
-*(y, +(+(x, y, 2, 2, 0, 0), y, 2, 0, 2, 1), 2, 2, 1, 0)
+((x + y) / (y / x)) * ((y / x) + (x - x))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.709116292321191 Adjusted=0.5850976931721108 Hits=1
+Fitness: Standardized=0.5098263162232961 Adjusted=0.662327838145924 Hits=1
 Tree 0:
-+(y, *(+(x, x, 2, 2, 0, 0), y, 2, 2, 2, 0), 2, 2, 2, 1)
+y + ((x + x) * y)
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.3592239273284576E-16 Adjusted=0.9999999999999998 Hits=10
+Fitness: Standardized=0.5098263162232961 Adjusted=0.662327838145924 Hits=1
 Tree 0:
-+(*(+(*(y, x, 2, 0, 2, 1), y, 2, 0, 2, 2), x, 1, 0, 2, 0), y, 2, 0, 1, 0)
+y + ((x + x) * y)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.220446049250313E-16 Adjusted=0.9999999999999998 Hits=10
+Fitness: Standardized=0.5051641179546617 Adjusted=0.664379377684661 Hits=4
 Tree 0:
-+(*(+(*(y, x, 2, 1, 2, 1), y, 2, 0, 2, 2), x, 1, 0, 2, 0), y, 2, 0, 1, 0)
+y + ((x + (y + x)) * (y * x))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+Fitness: Standardized=0.38652187648522957 Adjusted=0.7212291540144717 Hits=4
+Tree 0:
+(x + y) + ((((y + ((((y + x) + y) * x) - x)) * y) - y) / (y / x))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2.7755575615628914E-17 Adjusted=1.0 Hits=10
+Tree 0:
+y + (((x / x) * (x * (((y * x) + y) / y))) * y)
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2.7755575615628914E-17 Adjusted=1.0 Hits=10
+Tree 0:
+y + (((x / x) * (x * (((y * x) + y) / y))) * y)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2.7755575615628914E-17 Adjusted=1.0 Hits=10
+Tree 0:
+y + (((x / x) * (x * (((y * x) + y) / y))) * y)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=10
 Tree 0:
-+(*(+(*(x, y, 0, 0, 1, 0), y, 2, 0, 2, 2), x, 1, 0, 2, 0), y, 2, 2, 2, 2)
+y + (((x / x) * (x * (((y * x) + y) / y))) * y)
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=10
 Tree 0:
-+(*(+(*(x, y, 0, 0, 1, 0), y, 2, 0, 2, 2), x, 1, 0, 2, 0), y, 2, 2, 2, 2)
+y + (((x / x) * (x * (((y * x) + y) / y))) * y)

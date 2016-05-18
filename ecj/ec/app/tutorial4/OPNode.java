@@ -1,5 +1,7 @@
 package ec.app.tutorial4;
 
+import java.io.PrintWriter;
+
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -130,6 +132,26 @@ public class OPNode extends GPNode {
 			break;
 		}
 	}
+
+	public String makeCTree(boolean parentMadeParens, boolean printTerminalsAsVariables, boolean useOperatorForm)
+    {
+    if (children.length==0)
+        return (printTerminalsAsVariables ? toStringForHumans() : toStringForHumans() + "()");
+    else if (children.length==1)
+        return toStringForHumans() + "(" + children[0].makeCTree(true, printTerminalsAsVariables, useOperatorForm) + ")";
+    else if (children.length==2 && useOperatorForm)
+        return (parentMadeParens ? "" : "(") + 
+            children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + " " + 
+            toStringForHumans() + " " + children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + 
+            (parentMadeParens ? "" : ")");
+    else
+        {
+    	return (parentMadeParens ? "" : "(") + 
+                children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + " " + 
+                toStringForHumans() + " " + children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + 
+                (parentMadeParens ? "" : ")");
+        }
+    }
 	
 //	@Override
 //	public GPNode lightClone() {
