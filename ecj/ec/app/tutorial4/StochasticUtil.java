@@ -29,6 +29,7 @@ public class StochasticUtil {
 		int median = WEIGHT_ADD + WEIGHT_SUB;
 		int q3 = WEIGHT_ADD + WEIGHT_SUB + WEIGHT_MUL;
 		
+		//if total weight is 0, then all 4 OPs have equal chance of spawning
 		if (total_weight == 0) {
 			int op = rand.nextInt(4);
 			if (op < 2) {

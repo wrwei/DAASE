@@ -14,7 +14,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 4
+gp.fs.0.size = 7
 gp.fs.0.func.0 = ec.app.tutorial4.X
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = ec.app.tutorial4.Y
@@ -22,8 +22,14 @@ gp.fs.0.func.1.nc = nc0
 gp.fs.0.func.2 = ec.app.tutorial4.OPNode
 gp.fs.0.func.2.nc = nc7
 
-gp.fs.0.func.3 = ec.app.tutorial4.WeightNode
+gp.fs.0.func.3 = ec.app.tutorial4.One
 gp.fs.0.func.3.nc = nc8
+gp.fs.0.func.4 = ec.app.tutorial4.Two
+gp.fs.0.func.4.nc = nc8
+gp.fs.0.func.5 = ec.app.tutorial4.Four
+gp.fs.0.func.5.nc = nc8
+gp.fs.0.func.6 = ec.app.tutorial4.Eight
+gp.fs.0.func.6.nc = nc8
 
 eval.problem = ec.app.tutorial4.MultiValuedRegression
 eval.problem.data = ec.app.tutorial4.DoubleData
