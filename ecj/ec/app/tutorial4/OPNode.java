@@ -12,6 +12,8 @@ public class OPNode extends GPNode {
 
 	private static float BIAS = 1/Float.MAX_VALUE;
 	private Operator opCode = Operator.INVALID;
+	private double stochasticity = 0.0;
+	private Operator stocasticityIndex = Operator.INVALID;
 	private boolean visited = false;
 	
 	public static void main(String[] args) {
@@ -78,6 +80,9 @@ public class OPNode extends GPNode {
 				
 				opCode = StochasticUtil.getInstance().getOperator(add, sub, mul, div);
 				
+				stochasticity = calculateStochasticity(add, sub, mul, div);
+				
+				System.out.println(opCode + " - " + stocasticityIndex);
 				if (opCode == Operator.INVALID) {
 					state.output.error("INVALID OP CODE " + toStringForError());
 				}
@@ -141,5 +146,47 @@ public class OPNode extends GPNode {
                 toStringForHumans() + " " + children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + 
                 (parentMadeParens ? "" : ")");
     }
+	
+	public synchronized double calculateStochasticity(int w1, int w2, int w3, int w4)
+	{
+		double p1 = 0.0;
+		double p2 = 0.0;
+		double p3 = 0.0;
+		double p4 = 0.0;
+		
+		int weight_sum = w1 + w2 + w3 + w4;
+		if (weight_sum == 0.0) {
+			stocasticityIndex = StochasticUtil.getInstance().getOperator(w1, w2, w3, w4);
+			return 0.25;
+		}
+		
+		p1 = w1/weight_sum;
+		p2 = w2/weight_sum;
+		p3 = w3/weight_sum;
+		p4 = w4/weight_sum;
+		
+		double min = Double.MAX_VALUE;
+		double temp1 = Math.abs(p1-1) + p2 + p3 + p4;
+		double temp2 = Math.abs(p2-1) + p1 + p3 + p4;
+		double temp3 = Math.abs(p3-1) + p2 + p1 + p4;
+		double temp4 = Math.abs(p4-1) + p2 + p3 + p1;
+		if (min > temp1) {
+			min = temp1;
+			stocasticityIndex = Operator.ADD;
+		}
+		if (min > temp2) {
+			min = temp2;
+			stocasticityIndex = Operator.SUB;
+		}
+		if (min > temp3) {
+			min = temp3;
+			stocasticityIndex = Operator.MUL;
+		}
+		if (min > temp4) {
+			min = temp4;
+			stocasticityIndex = Operator.DIV;
+		}
+		return min;
+	}
 	
 }
