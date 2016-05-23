@@ -1,5 +1,7 @@
 package ec.app.tutorial4;
 
+import java.text.DecimalFormat;
+
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -18,6 +20,7 @@ public class OPNode extends GPNode {
 	
 	//stochasticity of the selected op
 	private double stochasticity = 0.0;
+	
 	//selected op based on stochastic costs
 	private Operator stochasticityIndex = Operator.INVALID;
 	
@@ -29,12 +32,6 @@ public class OPNode extends GPNode {
 	private double mul_stochastic_cost = 0.0;
 	private double div_stochastic_cost = 0.0;
 	
-	public static void main(String[] args) {
-		for (int i = 0; i < 10; i++) {
-			System.out.println(StochasticUtil.getOperator(10, 6, 9, 9));
-		}
-	}
-
 	public String toString() {
 		switch (opCode) {
 		case ADD:
@@ -66,10 +63,6 @@ public class OPNode extends GPNode {
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
 		double result;
-		int add;
-		int sub;
-		int mul;
-		int div;
 		
 		DoubleData rd = ((DoubleData) (input));
 		
@@ -77,7 +70,6 @@ public class OPNode extends GPNode {
 		calculateStochasticCosts(state, thread, input, stack, individual, problem);
 		opCode = stochasticityIndex;
 		
-//		System.out.println(stochasticityIndex + " - " + stochasticity);
 		if (opCode == Operator.INVALID) {
 			state.output.error("INVALID OP CODE " + toStringForError());
 		}
@@ -134,10 +126,11 @@ public class OPNode extends GPNode {
 
 	public String makeCTree(boolean parentMadeParens, boolean printTerminalsAsVariables, boolean useOperatorForm)
     {
+		DecimalFormat df = new DecimalFormat("###.##");
 		return (parentMadeParens ? "" : "(") + 
                 children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + " " + 
                 toStringForHumans() + " " + children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm) + 
-                (parentMadeParens ? "" : ")");
+                (parentMadeParens ? "" : ")") + "(" + df.format(add_stochastic_cost) + ", " + df.format(sub_stochastic_cost) + ", " + df.format(mul_stochastic_cost) + ", " + df.format(div_stochastic_cost) + ")";
     }
 	
 	public synchronized double[] calculateStochasticCosts(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
@@ -227,7 +220,8 @@ public class OPNode extends GPNode {
 			
 			double weight_sum = w1 + w2 + w3 + w4;
 			if (weight_sum == 0.0) {
-				double[] result = {add_stochastic_cost, sub_stochastic_cost, mul_stochastic_cost, div_stochastic_cost};
+				stochasticityIndex = StochasticUtil.getInstance().getOperator(w1, w2, w3, w4);
+				double[] result = {(add_stochastic_cost+0.25)/2, (sub_stochastic_cost+0.25)/2, (mul_stochastic_cost+0.25)/2, (div_stochastic_cost+0.25)/2};
 				return result;
 			}
 			
@@ -244,7 +238,7 @@ public class OPNode extends GPNode {
 			
 			if (children[0] instanceof OPNode) {
 				OPNode temp = (OPNode) children[0];
-				double[] res = temp.calculateStochasticCosts(state, thread, input, stack, individual, problem);
+				double[] res = temp.calculateStochasticCosts(state, thread, null, stack, individual, problem);
 				add_stochastic_cost = ((res[0]) + add_stochastic_cost)/2;
 				sub_stochastic_cost = ((res[1]) + sub_stochastic_cost)/2;
 				mul_stochastic_cost = ((res[2]) + mul_stochastic_cost)/2;
@@ -253,7 +247,7 @@ public class OPNode extends GPNode {
 			
 			if (children[1] instanceof OPNode) {
 				OPNode temp = (OPNode) children[1];
-				double[] res = temp.calculateStochasticCosts(state, thread, input, stack, individual, problem);
+				double[] res = temp.calculateStochasticCosts(state, thread, null, stack, individual, problem);
 				add_stochastic_cost = ((res[0]) + add_stochastic_cost)/2;
 				sub_stochastic_cost = ((res[1]) + sub_stochastic_cost)/2;
 				mul_stochastic_cost = ((res[2]) + mul_stochastic_cost)/2;
@@ -282,5 +276,4 @@ public class OPNode extends GPNode {
 		}
 		
 	}
-	
 }
