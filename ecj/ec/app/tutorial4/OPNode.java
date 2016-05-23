@@ -10,11 +10,24 @@ import ec.util.Parameter;
 
 public class OPNode extends GPNode {
 
+	//bias for illegal division
 	private static float BIAS = 1/Float.MAX_VALUE;
+	
+	//op code of this node, default is INVALID
 	private Operator opCode = Operator.INVALID;
+	
+	//stochasticity of the selected op
 	private double stochasticity = 0.0;
-	private Operator stocasticityIndex = Operator.INVALID;
+	//selected op based on stochastic costs
+	private Operator stochasticityIndex = Operator.INVALID;
+	
+	//flag determining if this node has been visited
 	private boolean visited = false;
+	
+	private double add_stochastic_cost = 0.0;
+	private double sub_stochastic_cost = 0.0;
+	private double mul_stochastic_cost = 0.0;
+	private double div_stochastic_cost = 0.0;
 	
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
@@ -60,34 +73,15 @@ public class OPNode extends GPNode {
 		
 		DoubleData rd = ((DoubleData) (input));
 		
-		if (!visited) {
-			visited = true;
-			synchronized (this) {
-				
-				IntegerData id = new IntegerData();
-				
-				children[2].eval(state,thread,id,stack,individual,problem);
-				add = (int) id.x;
-				
-				children[3].eval(state,thread,id,stack,individual,problem);
-				sub = (int) id.x;
-				
-				children[4].eval(state,thread,id,stack,individual,problem);
-				mul = (int) id.x;
-				
-				children[5].eval(state,thread,id,stack,individual,problem);
-				div = (int) id.x;
-				
-				opCode = StochasticUtil.getInstance().getOperator(add, sub, mul, div);
-				
-				stochasticity = calculateStochasticity(add, sub, mul, div);
-				
-				System.out.println(opCode + " - " + stocasticityIndex);
-				if (opCode == Operator.INVALID) {
-					state.output.error("INVALID OP CODE " + toStringForError());
-				}
-			}
+		visited = true;
+		calculateStochasticCosts(state, thread, input, stack, individual, problem);
+		opCode = stochasticityIndex;
+		
+//		System.out.println(stochasticityIndex + " - " + stochasticity);
+		if (opCode == Operator.INVALID) {
+			state.output.error("INVALID OP CODE " + toStringForError());
 		}
+		
 		
 		switch (opCode) {
 		case ADD:
@@ -136,7 +130,6 @@ public class OPNode extends GPNode {
 			state.output.error("Illegal Operator!!! " + toStringForError());
 			break;
 		}
-		
 	}
 
 	public String makeCTree(boolean parentMadeParens, boolean printTerminalsAsVariables, boolean useOperatorForm)
@@ -147,46 +140,147 @@ public class OPNode extends GPNode {
                 (parentMadeParens ? "" : ")");
     }
 	
-	public synchronized double calculateStochasticity(int w1, int w2, int w3, int w4)
+	public synchronized double[] calculateStochasticCosts(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
+			final GPIndividual individual, final Problem problem)
 	{
-		double p1 = 0.0;
-		double p2 = 0.0;
-		double p3 = 0.0;
-		double p4 = 0.0;
+		if (!visited) {
+			double p1 = 0.0;
+			double p2 = 0.0;
+			double p3 = 0.0;
+			double p4 = 0.0;
+			
+			IntegerData id = new IntegerData();
+			
+			children[2].eval(state,thread,id,stack,individual,problem);
+			int w1 = (int) id.x;
+			
+			children[3].eval(state,thread,id,stack,individual,problem);
+			int w2 = (int) id.x;
+			
+			children[4].eval(state,thread,id,stack,individual,problem);
+			int w3 = (int) id.x;
+			
+			children[5].eval(state,thread,id,stack,individual,problem);
+			int w4 = (int) id.x;
+			
+			double weight_sum = w1 + w2 + w3 + w4;
+			if (weight_sum == 0.0) {
+				stochasticityIndex = StochasticUtil.getInstance().getOperator(w1, w2, w3, w4);
+				add_stochastic_cost = 0.25;
+				sub_stochastic_cost = 0.25;
+				mul_stochastic_cost = 0.25;
+				div_stochastic_cost = 0.25;
+				double[] result = {add_stochastic_cost, sub_stochastic_cost, mul_stochastic_cost, div_stochastic_cost};
+				return result;
+			}
+			
+			p1 = w1/weight_sum;
+			p2 = w2/weight_sum;
+			p3 = w3/weight_sum;
+			p4 = w4/weight_sum;
+			
+			double min = Double.MAX_VALUE;
+			add_stochastic_cost = Math.abs(p1-1) + p2 + p3 + p4;
+			sub_stochastic_cost = Math.abs(p2-1) + p1 + p3 + p4;
+			mul_stochastic_cost = Math.abs(p3-1) + p2 + p1 + p4;
+			div_stochastic_cost = Math.abs(p4-1) + p2 + p3 + p1;
+			
+			if (min > add_stochastic_cost) {
+				min = add_stochastic_cost;
+				stochasticityIndex = Operator.ADD;
+			}
+			if (min > sub_stochastic_cost) {
+				min = sub_stochastic_cost;
+				stochasticityIndex = Operator.SUB;
+			}
+			if (min > mul_stochastic_cost) {
+				min = mul_stochastic_cost;
+				stochasticityIndex = Operator.MUL;
+			}
+			if (min > div_stochastic_cost) {
+				min = div_stochastic_cost;
+				stochasticityIndex = Operator.DIV;
+			}
+			stochasticity = min;
+			double[] result = {add_stochastic_cost, sub_stochastic_cost, mul_stochastic_cost, div_stochastic_cost};
+			return result;
+		}
+		else {
+			double p1 = 0.0;
+			double p2 = 0.0;
+			double p3 = 0.0;
+			double p4 = 0.0;
+			
+			IntegerData id = new IntegerData();
+			
+			children[2].eval(state,thread,id,stack,individual,problem);
+			int w1 = (int) id.x;
+			
+			children[3].eval(state,thread,id,stack,individual,problem);
+			int w2 = (int) id.x;
+			
+			children[4].eval(state,thread,id,stack,individual,problem);
+			int w3 = (int) id.x;
+			
+			children[5].eval(state,thread,id,stack,individual,problem);
+			int w4 = (int) id.x;
+			
+			double weight_sum = w1 + w2 + w3 + w4;
+			if (weight_sum == 0.0) {
+				double[] result = {add_stochastic_cost, sub_stochastic_cost, mul_stochastic_cost, div_stochastic_cost};
+				return result;
+			}
+			
+			p1 = w1/weight_sum;
+			p2 = w2/weight_sum;
+			p3 = w3/weight_sum;
+			p4 = w4/weight_sum;
+			
+			double min = Double.MAX_VALUE;
+			add_stochastic_cost = ((Math.abs(p1-1) + p2 + p3 + p4) + add_stochastic_cost)/2;
+			sub_stochastic_cost = ((Math.abs(p2-1) + p1 + p3 + p4) + sub_stochastic_cost)/2;
+			mul_stochastic_cost = ((Math.abs(p3-1) + p2 + p1 + p4) + mul_stochastic_cost)/2;
+			div_stochastic_cost = ((Math.abs(p4-1) + p2 + p3 + p1) + div_stochastic_cost)/2;
+			
+			if (children[0] instanceof OPNode) {
+				OPNode temp = (OPNode) children[0];
+				double[] res = temp.calculateStochasticCosts(state, thread, input, stack, individual, problem);
+				add_stochastic_cost = ((res[0]) + add_stochastic_cost)/2;
+				sub_stochastic_cost = ((res[1]) + sub_stochastic_cost)/2;
+				mul_stochastic_cost = ((res[2]) + mul_stochastic_cost)/2;
+				div_stochastic_cost = ((res[3]) + div_stochastic_cost)/2;
+			}
+			
+			if (children[1] instanceof OPNode) {
+				OPNode temp = (OPNode) children[1];
+				double[] res = temp.calculateStochasticCosts(state, thread, input, stack, individual, problem);
+				add_stochastic_cost = ((res[0]) + add_stochastic_cost)/2;
+				sub_stochastic_cost = ((res[1]) + sub_stochastic_cost)/2;
+				mul_stochastic_cost = ((res[2]) + mul_stochastic_cost)/2;
+				div_stochastic_cost = ((res[3]) + div_stochastic_cost)/2;
+			}
 		
-		int weight_sum = w1 + w2 + w3 + w4;
-		if (weight_sum == 0.0) {
-			stocasticityIndex = StochasticUtil.getInstance().getOperator(w1, w2, w3, w4);
-			return 0.25;
+			if (min > add_stochastic_cost) {
+				min = add_stochastic_cost;
+				stochasticityIndex = Operator.ADD;
+			}
+			if (min > sub_stochastic_cost) {
+				min = sub_stochastic_cost;
+				stochasticityIndex = Operator.SUB;
+			}
+			if (min > mul_stochastic_cost) {
+				min = mul_stochastic_cost;
+				stochasticityIndex = Operator.MUL;
+			}
+			if (min > div_stochastic_cost) {
+				min = div_stochastic_cost;
+				stochasticityIndex = Operator.DIV;
+			}
+			stochasticity = min;
+			double[] result = {add_stochastic_cost, sub_stochastic_cost, mul_stochastic_cost, div_stochastic_cost};
+			return result;
 		}
 		
-		p1 = w1/weight_sum;
-		p2 = w2/weight_sum;
-		p3 = w3/weight_sum;
-		p4 = w4/weight_sum;
-		
-		double min = Double.MAX_VALUE;
-		double temp1 = Math.abs(p1-1) + p2 + p3 + p4;
-		double temp2 = Math.abs(p2-1) + p1 + p3 + p4;
-		double temp3 = Math.abs(p3-1) + p2 + p1 + p4;
-		double temp4 = Math.abs(p4-1) + p2 + p3 + p1;
-		if (min > temp1) {
-			min = temp1;
-			stocasticityIndex = Operator.ADD;
-		}
-		if (min > temp2) {
-			min = temp2;
-			stocasticityIndex = Operator.SUB;
-		}
-		if (min > temp3) {
-			min = temp3;
-			stocasticityIndex = Operator.MUL;
-		}
-		if (min > temp4) {
-			min = temp4;
-			stocasticityIndex = Operator.DIV;
-		}
-		return min;
 	}
 	
 }
