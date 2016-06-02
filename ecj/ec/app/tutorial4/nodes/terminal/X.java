@@ -5,14 +5,16 @@
 */
 
 
-package ec.app.tutorial4;
+package ec.app.tutorial4.nodes.terminal;
 import ec.*;
+import ec.app.tutorial4.DoubleData;
+import ec.app.tutorial4.MultiValuedRegression;
 import ec.gp.*;
 import ec.util.*;
 
-public class Y extends GPNode
+public class X extends GPNode
     {
-    public String toString() { return "y"; }
+    public String toString() { return "x"; }
 
 /*
   public void checkConstraints(final EvolutionState state,
@@ -37,7 +39,7 @@ public class Y extends GPNode
         final Problem problem)
         {
         DoubleData rd = ((DoubleData)(input));
-        rd.x = ((MultiValuedRegression)problem).currentY;
+        rd.x = ((MultiValuedRegression)problem).currentX;
         }
     }
 
