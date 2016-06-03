@@ -54,17 +54,14 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 				currentX = (double) state.random[threadnum].nextDouble();
 				currentY = (double) state.random[threadnum].nextDouble();
 				expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
-				expectedResult = currentX * currentY + currentY;
-
+				//expectedResult = currentX * currentY + currentY;
 				
 				double fitness_lowest = Double.MAX_VALUE;
-				
 
 				for(int i = 0; i < 100; i ++)
 				{
 					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
-					//System.out.println(((GPIndividual) ind).trees[0].child.makeCTree(true, true, true));
 					double stochastic_cost = input.stochastic_cost;
 					double functional_cost = 0.0;
 					double fitness_cost;
@@ -88,7 +85,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					
 					} else {
 						//give worst possible fitness score for illegal division
-						fitness_cost = Double.MAX_VALUE;
+						fitness_cost = Double.MAX_VALUE/100;
 					}
 					
 					if (fitness_cost <= fitness_lowest) {
@@ -103,6 +100,12 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			{
 				sum += fitnessArray[i];
 			}
+			
+			if (sum < 0) {
+				sum = Double.MAX_VALUE;
+			}
+			
+			//System.out.println("Sum is: " + sum);
 
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);

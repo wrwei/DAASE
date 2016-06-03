@@ -26,6 +26,8 @@ public class OPNode2 extends GPNode {
 	private double mul_stochastic_cost = 0.0;
 	private double div_stochastic_cost = 0.0;
 	
+	private double overall_stochastic_cost = 0.0;
+	
 	//weights
 	private int add_weight = 0;
 	private int sub_weight = 0;
@@ -145,7 +147,7 @@ public class OPNode2 extends GPNode {
 				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
 				+ (parentMadeParens ? "" : ")") + "(" + df.format(add_weight/total_weight) + ", "
 				+ df.format(sub_weight/total_weight) + ", " + df.format(mul_weight/total_weight) + ", "
-				+ df.format(div_weight/total_weight) + ")";
+				+ df.format(div_weight/total_weight) + " |" + df.format(overall_stochastic_cost) + ")";
 	}
 	
 	public synchronized double calculateStochasticCost(final EvolutionState state, final int thread,
@@ -239,6 +241,7 @@ public class OPNode2 extends GPNode {
 			max = div_stochastic_cost;
 		}
 		double result = stochastic_sum + (1 - max);
+		overall_stochastic_cost = result;
 		return result;
 	}
 
