@@ -193,14 +193,18 @@ public class OPNode2 extends GPNode {
 		p4 = div_weight / weight_sum;
 
 		//
-		double min = Double.MAX_VALUE;
 		
 		//calculating distance between vectors
 		
-		add_stochastic_cost = Math.sqrt((p1-1)*(p1-1) + p2*p2 + p3*p3 + p4*p4);
-		sub_stochastic_cost = Math.sqrt((p2-1)*(p2-1) + p1*p1 + p3*p3 + p4*p4);
-		mul_stochastic_cost = Math.sqrt((p3-1)*(p3-1) + p2*p2 + p1*p1 + p4*p4);
-		div_stochastic_cost = Math.sqrt((p4-1)*(p4-1) + p2*p2 + p3*p3 + p1*p1);
+//		add_stochastic_cost = Math.sqrt((p1-1)*(p1-1) + p2*p2 + p3*p3 + p4*p4);
+//		sub_stochastic_cost = Math.sqrt((p2-1)*(p2-1) + p1*p1 + p3*p3 + p4*p4);
+//		mul_stochastic_cost = Math.sqrt((p3-1)*(p3-1) + p2*p2 + p1*p1 + p4*p4);
+//		div_stochastic_cost = Math.sqrt((p4-1)*(p4-1) + p2*p2 + p3*p3 + p1*p1);
+		
+		add_stochastic_cost = p1;
+		sub_stochastic_cost = p2;
+		mul_stochastic_cost = p3;
+		div_stochastic_cost = p4;
 		
 		if (children[0] instanceof OPNode2) {
 			OPNode2 temp = (OPNode2) children[0];
@@ -219,20 +223,22 @@ public class OPNode2 extends GPNode {
 			double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
 			stochastic_sum += res;
 		}
+		
+		double max = Double.MIN_VALUE;
 
-		if (min > add_stochastic_cost) {
-			min = add_stochastic_cost;
+		if (max < add_stochastic_cost) {
+			max = add_stochastic_cost;
 		}
-		if (min > sub_stochastic_cost) {
-			min = sub_stochastic_cost;
+		if (max < sub_stochastic_cost) {
+			max = sub_stochastic_cost;
 		}
-		if (min > mul_stochastic_cost) {
-			min = mul_stochastic_cost;
+		if (max < mul_stochastic_cost) {
+			max = mul_stochastic_cost;
 		}
-		if (min > div_stochastic_cost) {
-			min = div_stochastic_cost;
+		if (max < div_stochastic_cost) {
+			max = div_stochastic_cost;
 		}
-		double result = stochastic_sum + min;
+		double result = stochastic_sum + (1 - max);
 		return result;
 	}
 

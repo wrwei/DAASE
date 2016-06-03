@@ -47,9 +47,10 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			double expectedResult;
 			double result;
 			for (int y = 0; y < 20; y++) {
-				currentX = state.random[threadnum].nextDouble();
-				currentY = state.random[threadnum].nextDouble();
+				currentX = (double) state.random[threadnum].nextInt(40);
+				currentY = (double) state.random[threadnum].nextInt(40);
 				expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
+				expectedResult = currentX * currentY + currentY;
 
 				// reset flag for illegal division
 				IllegalDivision.getInstance().reset();
@@ -64,14 +65,19 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
-						functional_cost = 1/20*1/100*(expectedResult-input.x)*(expectedResult-input.x);
+						functional_cost = 1.0/20.0*1.0/100.0*(expectedResult-input.x)*(expectedResult-input.x);
 						result = Math.abs(expectedResult - input.x);
-						if (result <= 0.01)
+						//System.out.println("Testing at iteration "+i+"  "+result);
+						if (result <= 50.0)
 							hits++;
-						sum += functional_cost + stochastic_cost + result;
+						sum += functional_cost + stochastic_cost;
+						//sum += stochastic_cost;
+//						System.out.println("expected result: " + expectedResult + " input.x: " + input.x);
+						//System.out.println("functional cost: " + functional_cost + " stochastic_cost: " + stochastic_cost);
+					
 					} else {
 						//give worst possible fitness score for illegal division
-						sum = Double.MAX_VALUE;
+						sum += 1.0;
 					}
 				}
 			}
