@@ -46,14 +46,19 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			double sum = 0.0;
 			double expectedResult;
 			double result;
+			
+			//prepare an array to store lowest fitness
+			double fitnessArray[] = new double[20];
+			
 			for (int y = 0; y < 20; y++) {
-				currentX = (double) state.random[threadnum].nextInt(40);
-				currentY = (double) state.random[threadnum].nextInt(40);
+				currentX = (double) state.random[threadnum].nextDouble();
+				currentY = (double) state.random[threadnum].nextDouble();
 				expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
 				expectedResult = currentX * currentY + currentY;
 
-				// reset flag for illegal division
-				IllegalDivision.getInstance().reset();
+				
+				double fitness_lowest = Double.MAX_VALUE;
+				
 
 				for(int i = 0; i < 100; i ++)
 				{
@@ -62,24 +67,41 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					//System.out.println(((GPIndividual) ind).trees[0].child.makeCTree(true, true, true));
 					double stochastic_cost = input.stochastic_cost;
 					double functional_cost = 0.0;
+					double fitness_cost;
+					
+					// reset flag for illegal division
+					IllegalDivision.getInstance().reset();
 					
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
-						functional_cost = 1.0/20.0*1.0/100.0*(expectedResult-input.x)*(expectedResult-input.x);
+						functional_cost = 1.0/20.0*(expectedResult-input.x)*(expectedResult-input.x);
 						result = Math.abs(expectedResult - input.x);
 						//System.out.println("Testing at iteration "+i+"  "+result);
-						if (result <= 50.0)
+						if (result <= 0.1)
 							hits++;
-						sum += functional_cost + stochastic_cost;
+						//sum += functional_cost + stochastic_cost;
+						fitness_cost = functional_cost + stochastic_cost;
+						
 						//sum += stochastic_cost;
 //						System.out.println("expected result: " + expectedResult + " input.x: " + input.x);
 						//System.out.println("functional cost: " + functional_cost + " stochastic_cost: " + stochastic_cost);
 					
 					} else {
 						//give worst possible fitness score for illegal division
-						sum += 1.0;
+						fitness_cost = Double.MAX_VALUE;
+					}
+					
+					if (fitness_cost <= fitness_lowest) {
+						fitness_lowest = fitness_cost;
 					}
 				}
+				
+				fitnessArray[y] = fitness_lowest;
+			}
+			
+			for(int i = 0; i < 20; i++)
+			{
+				sum += fitnessArray[i];
 			}
 
 			// the fitness better be KozaFitness!
