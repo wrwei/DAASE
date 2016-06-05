@@ -40,6 +40,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			final int threadnum) {
 		if (!ind.evaluated) // don't bother reevaluating
 		{
+			//resetNode(((GPIndividual) ind).trees[0].child);
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
@@ -85,7 +86,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					
 					} else {
 						//give worst possible fitness score for illegal division
-						fitness_cost = Double.MAX_VALUE/100;
+						fitness_cost = Double.MAX_VALUE/1000;
 					}
 					
 					if (fitness_cost <= fitness_lowest) {
@@ -132,5 +133,19 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			}
 		}
 		return false;
+	}
+	
+	public void resetNode(GPNode node)
+	{
+		if (node instanceof OPNode2) {
+			OPNode2 opNode = (OPNode2) node;
+			opNode.setVisited(false);
+			if (node.children[0] instanceof OPNode2) {
+				resetNode(node.children[0]);
+			}
+			if (node.children[1] instanceof OPNode2) {
+				resetNode(node.children[1]);
+			}
+		}
 	}
 }
