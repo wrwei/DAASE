@@ -8,7 +8,7 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 
-public class Twelve extends GPNode{
+public class Twelve extends Stochastic_Terminal{
 
 
 	@Override

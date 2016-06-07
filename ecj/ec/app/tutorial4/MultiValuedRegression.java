@@ -21,26 +21,17 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 	public double currentX;
 	public double currentY;
 
-//	public int p0 = 0;
-//	public int p1 = 1;
-//	public int p2 = 2;
-//	public int p3 = 3;
-//	public int p4 = 4;
-//	public int p5 = 5;
-
 	public void setup(final EvolutionState state, final Parameter base) {
 		super.setup(state, base);
-
-		// verify our input is the right class (or subclasses from it)
 		if (!(input instanceof DoubleData))
 			state.output.fatal("GPData class must subclass from " + DoubleData.class, base.push(P_DATA), null);
 	}
 
 	public void evaluate(final EvolutionState state, final Individual ind, final int subpopulation,
 			final int threadnum) {
-		if (!ind.evaluated) // don't bother reevaluating
-		{
-			//resetNode(((GPIndividual) ind).trees[0].child);
+		// don't bother reevaluating
+		if (!ind.evaluated) 
+		{	
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
@@ -72,21 +63,20 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
-						functional_cost = 1.0/20.0*(expectedResult-input.x)*(expectedResult-input.x);
+						//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
+						functional_cost = Math.abs(expectedResult-input.x);//*(expectedResult-input.x);
+						
 						result = Math.abs(expectedResult - input.x);
-						//System.out.println("Testing at iteration "+i+"  "+result);
-						if (result <= 0.1)
+						
+						if (result <= 0.01)
 							hits++;
-						//sum += functional_cost + stochastic_cost;
+						
 						fitness_cost = functional_cost + stochastic_cost;
 						
-						//sum += stochastic_cost;
-//						System.out.println("expected result: " + expectedResult + " input.x: " + input.x);
-						//System.out.println("functional cost: " + functional_cost + " stochastic_cost: " + stochastic_cost);
 					
 					} else {
 						//give worst possible fitness score for illegal division
-						fitness_cost = Double.MAX_VALUE/1000;
+						fitness_cost = 10000.0;
 					}
 					
 					if (fitness_cost <= fitness_lowest) {
@@ -106,8 +96,6 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 				sum = Double.MAX_VALUE;
 			}
 			
-			//System.out.println("Sum is: " + sum);
-
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);
@@ -115,36 +103,17 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			ind.evaluated = true;
 		}
 	}
-	
-	public boolean isStochasticTree(GPTree tree)
-	{
-		return isStochasticNode(tree.child);
-	}
-	
-	public boolean isStochasticNode(GPNode node)
-	{
-		if (node instanceof OPNode2) {
-			return true;
-		}
-		else {
-			for(GPNode n: node.children)
-			{
-				return isStochasticNode(n);
-			}
-		}
-		return false;
-	}
-	
-	public void resetNode(GPNode node)
+		
+	public void reset(GPNode node)
 	{
 		if (node instanceof OPNode2) {
 			OPNode2 opNode = (OPNode2) node;
-			opNode.setVisited(false);
+			opNode.reset();
 			if (node.children[0] instanceof OPNode2) {
-				resetNode(node.children[0]);
+				reset(node.children[0]);
 			}
 			if (node.children[1] instanceof OPNode2) {
-				resetNode(node.children[1]);
+				reset(node.children[1]);
 			}
 		}
 	}

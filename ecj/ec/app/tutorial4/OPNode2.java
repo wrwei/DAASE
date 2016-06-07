@@ -21,12 +21,9 @@ public class OPNode2 extends GPNode {
 	// flag determining if this node has been visited
 	private boolean visited = false;
 
-	private double add_stochastic_cost = 0.0;
-	private double sub_stochastic_cost = 0.0;
-	private double mul_stochastic_cost = 0.0;
-	private double div_stochastic_cost = 0.0;
-	
 	private double overall_stochastic_cost = 0.0;
+	
+	private double node_stochastic_cost = 0.0;
 	
 	//weights
 	private int add_weight = 0;
@@ -75,13 +72,10 @@ public class OPNode2 extends GPNode {
 
 		DoubleData rd = ((DoubleData) (input));
 
-		if (!visited) {
-			visited = true;
-			//calculate stochastic_cost recursively
-			double stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
-			//return stochastic cost to the input
-			rd.stochastic_cost = stochastic_cost;
-		}
+		//calculate stochastic_cost recursively
+		double stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
+		//return stochastic cost to the input
+		rd.stochastic_cost = stochastic_cost;
 		
 		opCode = StochasticUtil.getOperator(add_weight, sub_weight, mul_weight, div_weight);
 		//System.out.println(this.makeCTree(true, true, true));
@@ -152,97 +146,169 @@ public class OPNode2 extends GPNode {
 	
 	public synchronized double calculateStochasticCost(final EvolutionState state, final int thread,
 			final GPData input, final ADFStack stack, final GPIndividual individual, final Problem problem) {
-		
 		double stochastic_sum = 0.0;
-		
+
+		if (visited) {
+			stochastic_sum += node_stochastic_cost;
+			
+			if (children[0] instanceof OPNode2) {
+				OPNode2 temp = (OPNode2) children[0];
+				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);	
+				stochastic_sum += res;
+			}
+
+			if (children[1] instanceof OPNode2) {
+				OPNode2 temp = (OPNode2) children[1];
+				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);	
+				stochastic_sum += res;
+			}
+			
+			return stochastic_sum;
+		}
+		else {
+			visited = true;
+			double add_stochastic_cost = 0.0;
+			double sub_stochastic_cost = 0.0;
+			double mul_stochastic_cost = 0.0;
+			double div_stochastic_cost = 0.0;
+			
+			add_weight = 0;
+			sub_weight = 0;
+			mul_weight = 0;
+			div_weight = 0;
+			overall_stochastic_cost = 0.0;
+			node_stochastic_cost = 0.0;
+
+			
+			//probabilities
+			double p1 = 0.0;
+			double p2 = 0.0;
+			double p3 = 0.0;
+			double p4 = 0.0;
+
+			//populate weights
+			for (int i = 2; i < 12; i++) {
+				children[i].eval(state, thread, input, stack, individual, problem);
+				DoubleData rd = ((DoubleData) (input));
+				
+				int w = (int) rd.x;
+				if ((w&1) == 1) {
+					add_weight++;
+				}
+				if ((w&2) == 2) {
+					sub_weight++;
+				}
+				if ((w&4) == 4) {
+					mul_weight++;
+				}
+				if ((w&8) == 8) {
+					div_weight++;
+				}
+			}
+			
+			//get weight sum
+			double weight_sum = add_weight + sub_weight + mul_weight + div_weight;
+			//if sum is 0, set stochastic costs to 0.25 (equal probabilities) and return
+			if (weight_sum == 0.0) {
+				p1 = 0.0;
+				p2 = 0.0;
+				p3 = 0.0;
+				p4 = 0.0;
+			}
+			else
+			{
+				//calculate probabilities
+				p1 = add_weight / weight_sum;
+				p2 = sub_weight / weight_sum;
+				p3 = mul_weight / weight_sum;
+				p4 = div_weight / weight_sum;
+			}
+
+			add_stochastic_cost = p1;
+			sub_stochastic_cost = p2;
+			mul_stochastic_cost = p3;
+			div_stochastic_cost = p4;
+			
+			double max = Double.MIN_VALUE;
+
+			if (max < add_stochastic_cost) {
+				max = add_stochastic_cost;
+			}
+			if (max < sub_stochastic_cost) {
+				max = sub_stochastic_cost;
+			}
+			if (max < mul_stochastic_cost) {
+				max = mul_stochastic_cost;
+			}
+			if (max < div_stochastic_cost) {
+				max = div_stochastic_cost;
+			}
+
+			if (children[0] instanceof OPNode2) {
+				
+				OPNode2 temp = (OPNode2) children[0];
+				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
+				stochastic_sum += res;
+			}
+
+			if (children[1] instanceof OPNode2) {
+				OPNode2 temp = (OPNode2) children[1];
+				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
+				stochastic_sum += res;
+			}
+			node_stochastic_cost = 1 - max;
+			double result = stochastic_sum + node_stochastic_cost;
+
+			overall_stochastic_cost = result;
+			return result;
+		}
+	}
+	
+	public void reset()
+	{
+		visited = false;
+	}
+	
+	@Override
+	public Object clone() {
+		GPNode newnode = (GPNode)(lightClone());
+		OPNode2 node = (OPNode2) newnode;
+		node.reset();
+        for(int x=0;x<children.length;x++)
+        {
+        	newnode.children[x] = (GPNode)(children[x].cloneReplacing()); 
+        	if (children[x] instanceof OPNode2) {
+				OPNode2 temp = (OPNode2) children[x];
+				temp.reset();
+			}
+            newnode.children[x].parent = newnode;
+            newnode.children[x].argposition = (byte)x;
+        }
+        return newnode;
+	}
+	
+	public double calculateProbStd()
+	{
 		//probabilities
 		double p1 = 0.0;
 		double p2 = 0.0;
 		double p3 = 0.0;
 		double p4 = 0.0;
-
-		//populate weights
-		for (int i = 2; i < 12; i++) {
-			children[i].eval(state, thread, input, stack, individual, problem);
-			DoubleData rd = ((DoubleData) (input));
-			
-			int w = (int) rd.x;
-			if ((w&1) == 1) {
-				add_weight++;
-			}
-			if ((w&2) == 2) {
-				sub_weight++;
-			}
-			if ((w&4) == 4) {
-				mul_weight++;
-			}
-			if ((w&8) == 8) {
-				div_weight++;
-			}
-		}
-		
-		//get weight sum
 		double weight_sum = add_weight + sub_weight + mul_weight + div_weight;
-		//if sum is 0, set stochastic costs to 0.25 (equal probabilities) and return
 		if (weight_sum == 0.0) {
 			return 0.0;
 		}
-
-		//calculate probabilities
+		
 		p1 = add_weight / weight_sum;
 		p2 = sub_weight / weight_sum;
 		p3 = mul_weight / weight_sum;
 		p4 = div_weight / weight_sum;
-
-		//
 		
-		//calculating distance between vectors
+		double mean = (p1+p2+p3+p4)/4.0;
+		double sum = (p1-mean)*(p1-mean) + (p2-mean)*(p2-mean) + (p3-mean)*(p3-mean) + (p4-mean)*(p4-mean);
 		
-//		add_stochastic_cost = Math.sqrt((p1-1)*(p1-1) + p2*p2 + p3*p3 + p4*p4);
-//		sub_stochastic_cost = Math.sqrt((p2-1)*(p2-1) + p1*p1 + p3*p3 + p4*p4);
-//		mul_stochastic_cost = Math.sqrt((p3-1)*(p3-1) + p2*p2 + p1*p1 + p4*p4);
-//		div_stochastic_cost = Math.sqrt((p4-1)*(p4-1) + p2*p2 + p3*p3 + p1*p1);
-		
-		add_stochastic_cost = p1;
-		sub_stochastic_cost = p2;
-		mul_stochastic_cost = p3;
-		div_stochastic_cost = p4;
-		
-		if (children[0] instanceof OPNode2) {
-			OPNode2 temp = (OPNode2) children[0];
-			//set visited first
-			temp.setVisited(true);
-			//calculate stochastic cost recursively
-			double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
-			stochastic_sum += res;
-		}
-
-		if (children[1] instanceof OPNode2) {
-			OPNode2 temp = (OPNode2) children[1];
-			//set visited first
-			temp.setVisited(true);
-			//calculate stochastic cost recursively
-			double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
-			stochastic_sum += res;
-		}
-		
-		double max = Double.MIN_VALUE;
-
-		if (max < add_stochastic_cost) {
-			max = add_stochastic_cost;
-		}
-		if (max < sub_stochastic_cost) {
-			max = sub_stochastic_cost;
-		}
-		if (max < mul_stochastic_cost) {
-			max = mul_stochastic_cost;
-		}
-		if (max < div_stochastic_cost) {
-			max = div_stochastic_cost;
-		}
-		double result = stochastic_sum + (1 - max);
-		overall_stochastic_cost = result;
-		return result;
+		double variance = sum/3.0;
+		return Math.sqrt(variance);
 	}
 
 }

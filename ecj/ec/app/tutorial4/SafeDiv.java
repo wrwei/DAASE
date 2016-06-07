@@ -37,4 +37,8 @@ public class SafeDiv extends GPNode {
 		
 		OperatorCounter.getInstance().incrementDIV();
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(10 & 2);
+	}
 }
