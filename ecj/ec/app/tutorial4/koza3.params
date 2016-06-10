@@ -40,15 +40,20 @@ pop.subpop.0.species.pipe.generate-max = false
 # Subsidiary pipelines:
 pop.subpop.0.species.pipe.num-sources = 3
 pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
-pop.subpop.0.species.pipe.source.0.prob = 0.4
+pop.subpop.0.species.pipe.source.0.prob = 0.6
 pop.subpop.0.species.pipe.source.1 = ec.gp.koza.MutationPipeline
-pop.subpop.0.species.pipe.source.1.prob = 0.5
+pop.subpop.0.species.pipe.source.1.prob = 0.3
 pop.subpop.0.species.pipe.source.2 = ec.breed.ReproductionPipeline
 pop.subpop.0.species.pipe.source.2.prob = 0.1
 
-pop.subpop.0.species.pipe.source.1.build.0 = ec.gp.koza.GrowBuilder
+pop.subpop.0.species.pipe.source.0.build.0 = ec.gp.koza.GrowBuilder
 
-
+gp.koza.mutate.tries = 1
+gp.koza.mutate.maxdepth = 17
+gp.koza.mutate.tree.0 = 0
+gp.koza.mutate.pipe.ns = ec.gp.koza.KozaNodeSelector
+gp.koza.mutate.build.0 = ec.gp.koza.GrowBuilder
+gp.koza.mutate.equal = true
 
 #
 # Here we define the default values for Crossover,
@@ -88,14 +93,15 @@ gp.koza.mutate.maxdepth = 17
 # a little wimpy; on the other hand, a higher number can
 # make things really slow
 gp.koza.mutate.tries = 1
-gp.koza.mutate.equal = true
+
+
 
 
 #
 # The default tournament size for TournamentSelection is 7
 #
 
-select.tournament.size = 20
+select.tournament.size = 7
 
 
 
@@ -129,8 +135,8 @@ gp.adf-stack.context = ec.gp.ADFContext
 # The default is 10% terminals, 90% nonterminals when possible,
 # 0% "always pick the root", 0% "pick any node"
 
-gp.koza.ns.terminals = 0.4
-gp.koza.ns.nonterminals = 0.5
+gp.koza.ns.terminals = 0.5
+gp.koza.ns.nonterminals = 0.4
 gp.koza.ns.root = 0.1
 
 
@@ -153,11 +159,11 @@ gp.fs.0.name = f0
 gp.type.a.size = 2
 gp.type.a.0.name = nil
 gp.type.a.1.name = int
-gp.type.s.size = 0
+gp.type.s.size = 1
 gp.type.s.0.name = int-or-nil
-#gp.type.s.0.size = 2
-#gp.type.s.0.member.0 = nil
-#gp.type.s.0.member.1 = int
+gp.type.s.0.size = 2
+gp.type.s.0.member.0 = nil
+gp.type.s.0.member.1 = int
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -182,14 +188,14 @@ gp.tc.0.returns = nil
 # GROW, the tree can get no bigger than this)
 
 gp.tc.0.init = ec.gp.koza.HalfBuilder
-gp.tc.0.init.min-size = 10
-gp.tc.0.init.max-size = 20
+#gp.tc.0.init.min-size = 10
+#gp.tc.0.init.max-size = 20
 
 
 # We set the default for HalfBuilder to be a ramp of 2--6,
 # with a grow probability of 0.5
-gp.koza.half.min-depth = 4
-gp.koza.half.max-depth = 8
+gp.koza.half.min-depth = 2
+gp.koza.half.max-depth = 6
 gp.koza.half.growp = 0.5
 
 
@@ -205,14 +211,14 @@ gp.koza.half.growp = 0.5
 
 gp.nc.size = 3
 
-#gp.nc.0.prob = 0.5
-#gp.nc.1.prob = 0.1
-#gp.nc.2.prob = 0.4
+gp.nc.0.prob = 0.2
+gp.nc.1.prob = 0.1
+gp.nc.2.prob = 0.7
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0
 gp.nc.0.returns = nil
-gp.nc.0.size = 0 
+gp.nc.0.size = 0
 
 gp.nc.1 = ec.gp.GPNodeConstraints
 gp.nc.1.name = nc1
@@ -221,7 +227,7 @@ gp.nc.1.size = 0
 
 gp.nc.2 = ec.gp.GPNodeConstraints
 gp.nc.2.name = nc2
-gp.nc.2.returns = nil
+gp.nc.2.returns = int-or-nil
 gp.nc.2.size = 12
 gp.nc.2.child.0 = nil
 gp.nc.2.child.1 = nil

@@ -10,69 +10,65 @@ parent.0 = koza.params
 # We have one function set, of class GPFunctionSet
 gp.fs.size = 1
 gp.fs.0 = ec.gp.GPFunctionSet
-
 # We'll call the function set "f0".
 gp.fs.0.name = f0
 
 # functions in the function set
 gp.fs.0.size = 19
-
-gp.fs.0.func.0 = ec.app.tutorial4.nodes.terminal.X
+gp.fs.0.func.0 = ec.app.tutorial4.X
 gp.fs.0.func.0.nc = nc0
-
-gp.fs.0.func.1 = ec.app.tutorial4.nodes.terminal.Y
+gp.fs.0.func.1 = ec.app.tutorial4.Y
 gp.fs.0.func.1.nc = nc0
-
 gp.fs.0.func.2 = ec.app.tutorial4.OPNode2
-gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.2.nc = nc9
 
 gp.fs.0.func.3 = ec.app.tutorial4.nodes.terminal.Zero
-gp.fs.0.func.3.nc = nc1
+gp.fs.0.func.3.nc = nc8
 
 gp.fs.0.func.4 = ec.app.tutorial4.nodes.terminal.One
-gp.fs.0.func.4.nc = nc1
+gp.fs.0.func.4.nc = nc8
 
 gp.fs.0.func.5 = ec.app.tutorial4.nodes.terminal.Two
-gp.fs.0.func.5.nc = nc1
+gp.fs.0.func.5.nc = nc8
 
 gp.fs.0.func.6 = ec.app.tutorial4.nodes.terminal.Three
-gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.6.nc = nc8
 
 gp.fs.0.func.7 = ec.app.tutorial4.nodes.terminal.Four
-gp.fs.0.func.7.nc = nc1
+gp.fs.0.func.7.nc = nc8
 
 gp.fs.0.func.8 = ec.app.tutorial4.nodes.terminal.Five
-gp.fs.0.func.8.nc = nc1
+gp.fs.0.func.8.nc = nc8
 
 gp.fs.0.func.9 = ec.app.tutorial4.nodes.terminal.Six
-gp.fs.0.func.9.nc = nc1
+gp.fs.0.func.9.nc = nc8
 
 gp.fs.0.func.10 = ec.app.tutorial4.nodes.terminal.Seven
-gp.fs.0.func.10.nc = nc1
+gp.fs.0.func.10.nc = nc8
 
 gp.fs.0.func.11 = ec.app.tutorial4.nodes.terminal.Eight
-gp.fs.0.func.11.nc = nc1
+gp.fs.0.func.11.nc = nc8
 
 gp.fs.0.func.12 = ec.app.tutorial4.nodes.terminal.Nine
-gp.fs.0.func.12.nc = nc1
+gp.fs.0.func.12.nc = nc8
 
 gp.fs.0.func.13 = ec.app.tutorial4.nodes.terminal.Ten
-gp.fs.0.func.13.nc = nc1
+gp.fs.0.func.13.nc = nc8
 
 gp.fs.0.func.14 = ec.app.tutorial4.nodes.terminal.Eleven
-gp.fs.0.func.14.nc = nc1
+gp.fs.0.func.14.nc = nc8
 
 gp.fs.0.func.15 = ec.app.tutorial4.nodes.terminal.Twelve
-gp.fs.0.func.15.nc = nc1
+gp.fs.0.func.15.nc = nc8
 
 gp.fs.0.func.16 = ec.app.tutorial4.nodes.terminal.Thirteen
-gp.fs.0.func.16.nc = nc1
+gp.fs.0.func.16.nc = nc8
 
 gp.fs.0.func.17 = ec.app.tutorial4.nodes.terminal.Fourteen
-gp.fs.0.func.17.nc = nc1
+gp.fs.0.func.17.nc = nc8
 
 gp.fs.0.func.18 = ec.app.tutorial4.nodes.terminal.Fifteen
-gp.fs.0.func.18.nc = nc1
+gp.fs.0.func.18.nc = nc8
 
 
 

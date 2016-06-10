@@ -142,7 +142,8 @@ gp.koza.ns.root = 0.1
 # but it quiets warnings.
 
 gp.fs.size = 1
-gp.fs.0 = ec.gp.GPFunctionSet
+#gp.fs.0 = ec.gp.GPFunctionSet
+gp.fs.0 = ec.gp.build.PTCFunctionSet
 gp.fs.0.name = f0
 #fill the rest of this out on a per-problem basis
 
@@ -181,16 +182,19 @@ gp.tc.0.returns = nil
 # (for the FULL approach, it's the tree size of the tree, for
 # GROW, the tree can get no bigger than this)
 
-gp.tc.0.init = ec.gp.koza.HalfBuilder
-gp.tc.0.init.min-size = 10
-gp.tc.0.init.max-size = 20
+#gp.tc.0.init = ec.gp.koza.HalfBuilder
+#gp.tc.0.init.min-size = 10
+#gp.tc.0.init.max-size = 20
 
+gp.tc.0.init = ec.gp.build.PTC1
+gp.tc.0.init.expected-size = 10
+gp.tc.0.init.max-depth = 6
 
 # We set the default for HalfBuilder to be a ramp of 2--6,
 # with a grow probability of 0.5
-gp.koza.half.min-depth = 4
-gp.koza.half.max-depth = 8
-gp.koza.half.growp = 0.5
+#gp.koza.half.min-depth = 4
+#gp.koza.half.max-depth = 8
+#gp.koza.half.growp = 0.5
 
 
 
@@ -205,9 +209,9 @@ gp.koza.half.growp = 0.5
 
 gp.nc.size = 3
 
-#gp.nc.0.prob = 0.5
-#gp.nc.1.prob = 0.1
-#gp.nc.2.prob = 0.4
+gp.nc.0.prob = 0.5
+gp.nc.1.prob = 0.1
+gp.nc.2.prob = 0.4
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0

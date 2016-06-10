@@ -9,8 +9,8 @@ parent.0 = koza.params
 
 # We have one function set, of class GPFunctionSet
 gp.fs.size = 1
-gp.fs.0 = ec.gp.GPFunctionSet
-
+#gp.fs.0 = ec.gp.GPFunctionSet
+gp.fs.0 = ec.gp.build.PTCFunctionSet
 # We'll call the function set "f0".
 gp.fs.0.name = f0
 

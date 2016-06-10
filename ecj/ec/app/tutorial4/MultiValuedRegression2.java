@@ -15,7 +15,7 @@ import ec.gp.*;
 import ec.gp.koza.*;
 import ec.simple.*;
 
-public class MultiValuedRegression extends GPProblem implements SimpleProblemForm {
+public class MultiValuedRegression2 extends GPProblem implements SimpleProblemForm {
 	private static final long serialVersionUID = 1;
 
 	public double currentX;
@@ -46,6 +46,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 				currentX = (double) state.random[threadnum].nextDouble();
 				currentY = (double) state.random[threadnum].nextDouble();
 				expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
+				//expectedResult = currentX * currentY + currentY;
 				
 				double fitness_lowest = Double.MAX_VALUE;
 
@@ -63,23 +64,26 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
 						//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-						functional_cost = Math.abs(expectedResult-input.x);
+						functional_cost = (expectedResult-input.x)*(expectedResult-input.x);
 						
 						result = Math.abs(expectedResult - input.x);
 						
 						if (result <= 0.01)
-						{
 							hits++;
-						}
-						fitness_cost = functional_cost + 0.618*stochastic_cost;
+						
+						fitness_cost = functional_cost + stochastic_cost;
+						
+					
 					} else {
-						fitness_cost = 100.0;
+						//give worst possible fitness score for illegal division
+						fitness_cost = 10000.0;
 					}
 					
 					if (fitness_cost <= fitness_lowest) {
 						fitness_lowest = fitness_cost;
 					}
 				}
+				
 				fitnessArray[y] = fitness_lowest;
 			}
 			
@@ -97,6 +101,20 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 			f.setStandardizedFitness(state, sum);
 			f.hits = hits;
 			ind.evaluated = true;
+		}
+	}
+		
+	public void reset(GPNode node)
+	{
+		if (node instanceof OPNode2) {
+			OPNode2 opNode = (OPNode2) node;
+			opNode.reset();
+			if (node.children[0] instanceof OPNode2) {
+				reset(node.children[0]);
+			}
+			if (node.children[1] instanceof OPNode2) {
+				reset(node.children[1]);
+			}
 		}
 	}
 }
