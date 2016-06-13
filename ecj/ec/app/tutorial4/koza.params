@@ -129,9 +129,9 @@ gp.adf-stack.context = ec.gp.ADFContext
 # The default is 10% terminals, 90% nonterminals when possible,
 # 0% "always pick the root", 0% "pick any node"
 
-gp.koza.ns.terminals = 0.4
-gp.koza.ns.nonterminals = 0.5
-gp.koza.ns.root = 0.1
+gp.koza.ns.terminals = 0.1
+gp.koza.ns.nonterminals = 0.9
+gp.koza.ns.root = 0
 
 
 
@@ -188,8 +188,8 @@ gp.tc.0.init.max-size = 20
 
 # We set the default for HalfBuilder to be a ramp of 2--6,
 # with a grow probability of 0.5
-gp.koza.half.min-depth = 4
-gp.koza.half.max-depth = 8
+gp.koza.half.min-depth = 3
+gp.koza.half.max-depth = 6
 gp.koza.half.growp = 0.5
 
 

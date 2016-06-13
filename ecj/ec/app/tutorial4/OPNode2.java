@@ -89,6 +89,7 @@ public class OPNode2 extends GPNode {
 		
 		if (parent instanceof GPTree) {
 			rd.stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
+			//System.out.println(makeCTree(true, true, true));
 		}
 		
 		calculateWeights(state, thread, input, stack, individual, problem);
