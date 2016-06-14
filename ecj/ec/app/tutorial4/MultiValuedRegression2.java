@@ -106,13 +106,13 @@ public class MultiValuedRegression2 extends GPProblem implements SimpleProblemFo
 		
 	public void reset(GPNode node)
 	{
-		if (node instanceof OPNode2) {
-			OPNode2 opNode = (OPNode2) node;
+		if (node instanceof OPNode) {
+			OPNode opNode = (OPNode) node;
 			opNode.reset();
-			if (node.children[0] instanceof OPNode2) {
+			if (node.children[0] instanceof OPNode) {
 				reset(node.children[0]);
 			}
-			if (node.children[1] instanceof OPNode2) {
+			if (node.children[1] instanceof OPNode) {
 				reset(node.children[1]);
 			}
 		}

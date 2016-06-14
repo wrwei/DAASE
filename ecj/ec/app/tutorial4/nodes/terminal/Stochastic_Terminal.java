@@ -1,6 +1,6 @@
 package ec.app.tutorial4.nodes.terminal;
 
-import ec.app.tutorial4.OPNode2;
+import ec.app.tutorial4.OPNode;
 import ec.gp.GPNode;
 
 public abstract class Stochastic_Terminal extends GPNode{

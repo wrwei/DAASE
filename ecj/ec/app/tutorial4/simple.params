@@ -42,7 +42,7 @@ eval =					ec.simple.SimpleEvaluator
 stat =					ec.simple.SimpleStatistics
 
 # run for 51 generations, quit prematurely if I find something ideal
-generations =				500000
+generations =				10000
 quit-on-run-complete =			true
 
 
