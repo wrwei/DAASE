@@ -19,9 +19,6 @@ public class OPNode extends GPNode {
 	// op code of this node, default is INVALID
 	private Operator opCode = Operator.INVALID;
 
-	// flag determining if this node has been visited
-	private boolean visited = false;
-
 	private double overall_stochastic_cost = 0.0;
 	
 	private double node_stochastic_cost = 0.0;
@@ -47,14 +44,6 @@ public class OPNode extends GPNode {
 		}
 	}
 
-	public void setVisited(boolean visited) {
-		this.visited = visited;
-	}
-	
-	public boolean isVisited() {
-		return visited;
-	}
-	
 	@Override
 	public void checkConstraints(EvolutionState state, int tree, GPIndividual typicalIndividual,
 			Parameter individualBase) {
@@ -73,23 +62,10 @@ public class OPNode extends GPNode {
 
 		DoubleData rd = ((DoubleData) (input));
 
-//		if (!visited) {
-//			//calculate stochastic_cost recursively
-//			double stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
-//			//return stochastic cost to the input
-//			rd.stochastic_cost += stochastic_cost;
-//		}
-//		else
-//		{
-//			rd.stochastic_cost -= overall_stochastic_cost;
-//			double stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
-//			//return stochastic cost to the input
-//			rd.stochastic_cost += stochastic_cost;
-//		}
 		
+		//if this node is the root of a tree, calculate stochastic cost recursively once
 		if (parent instanceof GPTree) {
 			rd.stochastic_cost = calculateStochasticCost(state, thread, input, stack, individual, problem);
-			//System.out.println(makeCTree(true, true, true));
 		}
 		
 		calculateWeights(state, thread, input, stack, individual, problem);
@@ -189,25 +165,6 @@ public class OPNode extends GPNode {
 			final GPData input, final ADFStack stack, final GPIndividual individual, final Problem problem) {
 		double stochastic_sum = 0.0;
 
-//		if (visited) {
-//			stochastic_sum += node_stochastic_cost;
-//			
-//			if (children[0] instanceof OPNode2) {
-//				OPNode2 temp = (OPNode2) children[0];
-//				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);	
-//				stochastic_sum += res;
-//			}
-//
-//			if (children[1] instanceof OPNode2) {
-//				OPNode2 temp = (OPNode2) children[1];
-//				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);	
-//				stochastic_sum += res;
-//			}
-//			
-//			return stochastic_sum;
-//		}
-//		else {
-//			visited = true;
 			double add_stochastic_cost = 0.0;
 			double sub_stochastic_cost = 0.0;
 			double mul_stochastic_cost = 0.0;
@@ -299,47 +256,9 @@ public class OPNode extends GPNode {
 
 			overall_stochastic_cost = result;
 			return result;
-//		}
 	}
 	
-	public void reset()
-	{
-		visited = false;
-	}
 
-	@Override
-	public void resetNode(EvolutionState state, int thread) {
-		visited = false;
-		add_weight = 0;
-		sub_weight = 0;
-		mul_weight = 0;
-		div_weight = 0;
-		overall_stochastic_cost = 0.0;
-		node_stochastic_cost = 0.0;
-		super.resetNode(state, thread);
-	}
-	
-//	@Override
-//	public GPNode lightClone() {
-//		// TODO Auto-generated method stub
-//		OPNode2 node = (OPNode2) super.lightClone();
-//		node.reset();
-//		return node;
-//	}
-//	
-//	@Override
-//	public Object clone() {
-//		GPNode newnode = (GPNode)(lightClone());
-//		OPNode2 node = (OPNode2) newnode;
-//		node.reset();
-//        for(int x=0;x<children.length;x++)
-//        {
-//        	newnode.children[x] = (GPNode)(children[x].cloneReplacing()); 
-//            newnode.children[x].parent = newnode;
-//            newnode.children[x].argposition = (byte)x;
-//        }
-//        return newnode;
-//	}
 	
 //	public double calculateProbStd()
 //	{

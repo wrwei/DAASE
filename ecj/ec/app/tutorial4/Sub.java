@@ -36,16 +36,14 @@ public class Sub extends GPNode
         final GPIndividual individual,
         final Problem problem)
         {
-        double result;
-        DoubleData rd = ((DoubleData)(input));
-
-        children[0].eval(state,thread,input,stack,individual,problem);
-        result = rd.x;
-
-        children[1].eval(state,thread,input,stack,individual,problem);
-        rd.x = result - rd.x;
-        
-        OperatorCounter.getInstance().incrementSUB();
+	        double result;
+	        DoubleData rd = ((DoubleData)(input));
+	
+	        children[0].eval(state,thread,input,stack,individual,problem);
+	        result = rd.x;
+	
+	        children[1].eval(state,thread,input,stack,individual,problem);
+	        rd.x = result - rd.x;
         }
     }
 
