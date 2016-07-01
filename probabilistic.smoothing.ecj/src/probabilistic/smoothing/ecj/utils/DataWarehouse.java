@@ -8,7 +8,6 @@ public class DataWarehouse {
 	
 	private boolean initialised = false;
 	private ArrayList<DataEntity> data = new ArrayList<>();
-	private int pointer = -1;
 	
 	private DataWarehouse()
 	{
@@ -28,18 +27,27 @@ public class DataWarehouse {
 		CSVUtil csvUtil = CSVUtil.getInstance();
 		ArrayList<String[]> read = csvUtil.readFile(s);
 		if (read != null) {
-			for(String[] strs: read)
+			for(int i = 1; i < read.size(); i++)
 			{
-				data.add(new DataEntity(strs));
+				data.add(new DataEntity(read.get(i)));
+
 			}
 		}
-		pointer = 0;
 		initialised = true;
 	}
 	
-	public synchronized DataEntity getNext()
+	public synchronized DataEntity getData(int index)
 	{
-		return data.get(pointer++);
+		return data.get(index);
 	}
 	
+	public synchronized boolean initialised()
+	{
+		return initialised;
+	}
+	
+	public synchronized int size()
+	{
+		return data.size();
+	}
 }
