@@ -20,6 +20,6 @@ public class Result_One extends GPNode{
 
 	@Override
 	public String toString() {
-		return "1";
+		return "#";
 	}
 }

@@ -19,7 +19,7 @@ public class Result_Zero extends GPNode {
 
 	@Override
 	public String toString() {
-		return "0";
+		return "#";
 	}
 
 }

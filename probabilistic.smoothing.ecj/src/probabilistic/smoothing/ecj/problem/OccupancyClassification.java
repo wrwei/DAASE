@@ -10,6 +10,7 @@ import ec.util.Parameter;
 import probabilistic.smoothing.ecj.utils.DataEntity;
 import probabilistic.smoothing.ecj.utils.DataWarehouse;
 import probabilistic.smoothing.ecj.utils.DoubleData;
+import probabilistic.smoothing.ecj.utils.ParamCounter;
 
 public class OccupancyClassification extends GPProblem implements SimpleProblemForm {
 	private static final long serialVersionUID = 1;
@@ -32,8 +33,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			final int threadnum) {
 		if (!ind.evaluated) 
 		{	
-			
-			System.out.println("new generation");
+			System.out.println("New Generation");
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
@@ -47,7 +47,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			}
 			else
 			{
-				System.out.println(dw.size());
 				for(int i=0; i < dw.size(); i++)
 				{
 					//prepare data
@@ -63,20 +62,26 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					//get occupancy
 					expectedResult = de.getOccupancy();
 
+					ParamCounter paramCounter = ParamCounter.getInstance();
+					paramCounter.clear();
+					
 					//eval tree
 					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
+//					System.out.println(((GPIndividual) ind).trees[0].child.makeLispTree());
+					
 					//get the result for fitness and hits
-					result = expectedResult - input.x;
+					result = Math.abs(expectedResult - input.x);
 					
 					//if result is 0, hit++
-					if (result == 0.0) {
+					if (result == 0.0 && paramCounter.getScore() == 0) {
 						hits++;
 					}
 					//if result is not 0, add to sum
 					else
 					{
-						sum += Math.abs(result);
+						sum += paramCounter.getScore();
+						sum += result;
 					}
 				}
 			}

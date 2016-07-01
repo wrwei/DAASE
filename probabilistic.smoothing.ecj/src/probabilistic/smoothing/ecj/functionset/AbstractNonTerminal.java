@@ -9,6 +9,7 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import probabilistic.smoothing.ecj.utils.DoubleData;
+import probabilistic.smoothing.ecj.utils.ParamCounter;
 
 public abstract class AbstractNonTerminal extends GPNode {
 
@@ -51,7 +52,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				floatpoint += 1 << (i-2);
+				floatpoint += 1 << (i-14);
 			}
 		}
 		
@@ -64,7 +65,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				div_factor += 1 << (i-2);
+				div_factor += 1 << (i-18);
 			}
 		}
 		
@@ -89,6 +90,8 @@ public abstract class AbstractNonTerminal extends GPNode {
 		
 		//this gives a double value that is able to represent any number in the data set
 		value += factor;
+		
+		ParamCounter.getInstance().addCount(children[22].toString());
 	}
 	
 	@Override
@@ -97,7 +100,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 		return (parentMadeParens ? "" : "(") + children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
 				+ " " + toStringForHumans() + " "
 				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
-				+ (parentMadeParens ? "" : ")") + "(" + value + ")";
+				+ (parentMadeParens ? "" : ")") + "(" + children[22].toString() + ")";
 
 	}
 	

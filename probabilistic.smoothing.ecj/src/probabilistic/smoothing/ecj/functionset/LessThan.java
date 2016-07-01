@@ -6,6 +6,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
+import ec.gp.GPTree;
 import probabilistic.smoothing.ecj.utils.DoubleData;
 
 public class LessThan extends AbstractNonTerminal {
@@ -25,8 +26,11 @@ public class LessThan extends AbstractNonTerminal {
 
 		data = rd.x;
 		
+		boolean primitiveNode = false;
+		
 		if (data < value) {
 			if (!(children[1] instanceof AbstractNonTerminal)) {
+				primitiveNode = true;
 				rd.x = 1;
 			}
 			else
@@ -36,7 +40,19 @@ public class LessThan extends AbstractNonTerminal {
 		}
 		else {
 			if (!(children[0] instanceof AbstractNonTerminal)) {
-				rd.x = 0;
+				if (primitiveNode) {
+					if (parent instanceof GPTree) {
+						rd.x = 100000;
+					}
+					else
+					{
+						rd.x = 0;	
+					}
+				}
+				else
+				{
+					rd.x = 0;	
+				}
 			}
 			else
 			{

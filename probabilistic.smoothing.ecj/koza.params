@@ -145,15 +145,16 @@ gp.fs.0.name = f0
 # Here we define a single atomic type, "nil", which everyone will use.
 # There are no set types defined.
 
-gp.type.a.size = 3
+gp.type.a.size = 4
 gp.type.a.0.name = nil
 gp.type.a.1.name = int
 gp.type.a.2.name = data
-gp.type.s.size = 0
-gp.type.s.0.name = int-or-nil-or-data
-#gp.type.s.0.size = 2
-#gp.type.s.0.member.0 = nil
-#gp.type.s.0.member.1 = int
+gp.type.a.3.name = result
+gp.type.s.size = 1
+gp.type.s.0.name = nil-or-result
+gp.type.s.0.size = 2
+gp.type.s.0.member.0 = nil
+gp.type.s.0.member.1 = result
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -199,7 +200,7 @@ gp.koza.half.growp = 0.5
 
 
 
-gp.nc.size = 4
+gp.nc.size = 5
 
 #gp.nc.0.prob = 0.5
 #gp.nc.1.prob = 0.1
@@ -224,8 +225,8 @@ gp.nc.3 = ec.gp.GPNodeConstraints
 gp.nc.3.name = nc3
 gp.nc.3.returns = nil
 gp.nc.3.size = 23
-gp.nc.3.child.0 = nil
-gp.nc.3.child.1 = nil
+gp.nc.3.child.0 = nil-or-result
+gp.nc.3.child.1 = nil-or-result
 gp.nc.3.child.2 = int
 gp.nc.3.child.3 = int
 gp.nc.3.child.4 = int
@@ -250,3 +251,8 @@ gp.nc.3.child.20 = int
 gp.nc.3.child.21 = int
 
 gp.nc.3.child.22 = data
+
+gp.nc.4 = ec.gp.GPNodeConstraints
+gp.nc.4.name = nc4
+gp.nc.4.returns = result
+gp.nc.4.size = 0

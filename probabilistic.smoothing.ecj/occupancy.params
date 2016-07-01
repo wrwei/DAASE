@@ -18,10 +18,10 @@ gp.fs.0.name = f0
 gp.fs.0.size = 15
 
 gp.fs.0.func.0 = probabilistic.smoothing.ecj.terminals.Result_One
-gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.0.nc = nc4
 
 gp.fs.0.func.1 = probabilistic.smoothing.ecj.terminals.Result_Zero
-gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.1.nc = nc4
 
 gp.fs.0.func.2 = probabilistic.smoothing.ecj.terminals.Temperature
 gp.fs.0.func.2.nc = nc1
