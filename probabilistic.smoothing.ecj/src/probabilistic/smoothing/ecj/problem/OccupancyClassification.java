@@ -32,6 +32,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			final int threadnum) {
 		if (!ind.evaluated) 
 		{	
+			
+			System.out.println("new generation");
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
@@ -45,6 +47,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			}
 			else
 			{
+				System.out.println(dw.size());
 				for(int i=0; i < dw.size(); i++)
 				{
 					//prepare data

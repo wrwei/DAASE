@@ -1,5 +1,7 @@
 package probabilistic.smoothing.ecj.functionset;
 
+import java.text.DecimalFormat;
+
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -11,6 +13,7 @@ import probabilistic.smoothing.ecj.utils.DoubleData;
 public abstract class AbstractNonTerminal extends GPNode {
 
 	protected double value;
+	protected double data;
 	
 	public int expectedChildren() {
 		//2 nodes for subtree
@@ -86,6 +89,16 @@ public abstract class AbstractNonTerminal extends GPNode {
 		
 		//this gives a double value that is able to represent any number in the data set
 		value += factor;
+	}
+	
+	@Override
+	public String makeCTree(boolean parentMadeParens, boolean printTerminalsAsVariables, boolean useOperatorForm) {
+		DecimalFormat df = new DecimalFormat("###.##");
+		return (parentMadeParens ? "" : "(") + children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
+				+ " " + toStringForHumans() + " "
+				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
+				+ (parentMadeParens ? "" : ")") + "(" + value + ")";
+
 	}
 	
 	public static void main(String[] args) {

@@ -23,13 +23,25 @@ public class GreaterThan extends AbstractNonTerminal {
 		
 		children[22].eval(state, thread, input, stack, individual, problem);
 
-		double data = rd.x;
+		data = rd.x;
 		
 		if (data > value) {
-			children[1].eval(state, thread, input, stack, individual, problem);
+			if (!(children[1] instanceof AbstractNonTerminal)) {
+				rd.x = 1;
+			}
+			else
+			{
+				children[1].eval(state, thread, input, stack, individual, problem);	
+			}
 		}
 		else {
-			children[0].eval(state, thread, input, stack, individual, problem);	
+			if (!(children[0] instanceof AbstractNonTerminal)) {
+				rd.x = 0;
+			}
+			else
+			{
+				children[0].eval(state, thread, input, stack, individual, problem);	
+			}	
 		}
 	}
 }

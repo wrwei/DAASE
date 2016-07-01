@@ -23,7 +23,7 @@ public class LessThanOrEqualTo extends AbstractNonTerminal {
 		
 		children[22].eval(state, thread, input, stack, individual, problem);
 
-		double data = rd.x;
+		data = rd.x;
 		
 		if (data <= value) {
 			if (!(children[1] instanceof AbstractNonTerminal)) {
