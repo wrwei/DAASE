@@ -33,7 +33,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			final int threadnum) {
 		if (!ind.evaluated) 
 		{	
-			System.out.println("New Generation");
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
