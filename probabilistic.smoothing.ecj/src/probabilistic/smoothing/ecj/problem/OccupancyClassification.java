@@ -10,6 +10,7 @@ import ec.util.Parameter;
 import probabilistic.smoothing.ecj.utils.DataEntity;
 import probabilistic.smoothing.ecj.utils.DataWarehouse;
 import probabilistic.smoothing.ecj.utils.DoubleData;
+import probabilistic.smoothing.ecj.utils.EvaluationObserver;
 import probabilistic.smoothing.ecj.utils.ParamCounter;
 
 public class OccupancyClassification extends GPProblem implements SimpleProblemForm {
@@ -32,7 +33,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public void evaluate(final EvolutionState state, final Individual ind, final int subpopulation,
 			final int threadnum) {
 		if (!ind.evaluated) 
-		{	
+		{
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
@@ -64,6 +65,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					ParamCounter paramCounter = ParamCounter.getInstance();
 					paramCounter.clear();
 					
+					EvaluationObserver.getInstance().reset();;
+					
 					//eval tree
 					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
@@ -76,6 +79,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					if (result == 0.0 && paramCounter.getScore() == 0) {
 						hits++;
 					}
+					
 					//if result is not 0, add to sum
 					else
 					{

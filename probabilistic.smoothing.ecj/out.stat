@@ -5,11 +5,11 @@ Subpopulation 0:
 Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=0
 Tree 0:
-(((# <= #)(ws) < (# < #)(nsm))(co2) >= ((# < #)(hr) > (# <= #)(nsm))(temperature))(nsm) < (((# < #)(ws) <= (# > #)(ws))(nsm) < ((# <= #)(co2) < (# >= #)(temperature))(hr))(temperature)(co2)
+(# >= #)(co2: -1.0) <= #(co2: -1.0)
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=0
 Tree 0:
-(((# <= #)(ws) < (# < #)(nsm))(co2) >= ((# < #)(hr) > (# <= #)(nsm))(temperature))(nsm) < (((# < #)(ws) <= (# > #)(ws))(nsm) < ((# <= #)(co2) < (# >= #)(temperature))(hr))(temperature)(co2)
+(# >= #)(co2: -1.0) <= #(co2: -1.0)
