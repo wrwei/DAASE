@@ -1,9 +1,6 @@
 
-# parent params for basic evolutionary mechanisms, selection mechanisms...
-
 parent.0 = simple.params
 
-# fitness for sub population 0
 
 pop.subpop.0.species.fitness = ec.gp.koza.KozaFitness
 
@@ -36,6 +33,7 @@ pop.subpop.0.species.ind.tree.0.tc = tc0
 # The GPSpecies has 2 pipelines, Crossover and Reproduction,
 # chosen with 0.9 and 0.1 likelihood respectively.
 
+#pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
 pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
 # Koza's decision here was odd...
 pop.subpop.0.species.pipe.generate-max = false
@@ -45,8 +43,6 @@ pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
 pop.subpop.0.species.pipe.source.0.prob = 0.9
 pop.subpop.0.species.pipe.source.1 = ec.breed.ReproductionPipeline
 pop.subpop.0.species.pipe.source.1.prob = 0.1
-
-
 
 
 #
@@ -87,8 +83,7 @@ gp.koza.mutate.maxdepth = 17
 # a little wimpy; on the other hand, a higher number can
 # make things really slow
 gp.koza.mutate.tries = 1
-
-
+gp.koza.mutate.equal = true
 
 
 #
@@ -131,7 +126,7 @@ gp.adf-stack.context = ec.gp.ADFContext
 
 gp.koza.ns.terminals = 0.1
 gp.koza.ns.nonterminals = 0.9
-gp.koza.ns.root = 0.0
+gp.koza.ns.root = 0
 
 
 
@@ -154,10 +149,10 @@ gp.type.a.size = 2
 gp.type.a.0.name = nil
 gp.type.a.1.name = int
 gp.type.s.size = 0
-#gp.type.s.0.name = st0
-#gp.type.s.0.size = 1
+gp.type.s.0.name = int-or-nil
+#gp.type.s.0.size = 2
 #gp.type.s.0.member.0 = nil
-
+#gp.type.s.0.member.1 = int
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -182,6 +177,9 @@ gp.tc.0.returns = nil
 # GROW, the tree can get no bigger than this)
 
 gp.tc.0.init = ec.gp.koza.HalfBuilder
+gp.tc.0.init.min-size = 10
+gp.tc.0.init.max-size = 20
+
 
 # We set the default for HalfBuilder to be a ramp of 2--6,
 # with a grow probability of 0.5
@@ -198,94 +196,37 @@ gp.koza.half.growp = 0.5
 # You don't need to include the class declarations with everything
 # else below, but it quiets warnings
 
-gp.nc.size = 10
+
+
+gp.nc.size = 3
+
+#gp.nc.0.prob = 0.5
+#gp.nc.1.prob = 0.1
+#gp.nc.2.prob = 0.4
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0
 gp.nc.0.returns = nil
-gp.nc.0.size = 0
+gp.nc.0.size = 0 
 
 gp.nc.1 = ec.gp.GPNodeConstraints
 gp.nc.1.name = nc1
-gp.nc.1.returns = nil
-gp.nc.1.size = 1
-gp.nc.1.child.0 = nil
+gp.nc.1.returns = int
+gp.nc.1.size = 0
 
 gp.nc.2 = ec.gp.GPNodeConstraints
 gp.nc.2.name = nc2
 gp.nc.2.returns = nil
-gp.nc.2.size = 2
+gp.nc.2.size = 12
 gp.nc.2.child.0 = nil
 gp.nc.2.child.1 = nil
-
-gp.nc.3 = ec.gp.GPNodeConstraints
-gp.nc.3.name = nc3
-gp.nc.3.returns = nil
-gp.nc.3.size = 3
-gp.nc.3.child.0 = nil
-gp.nc.3.child.1 = nil
-gp.nc.3.child.2 = nil
-
-gp.nc.4 = ec.gp.GPNodeConstraints
-gp.nc.4.name = nc4
-gp.nc.4.returns = nil
-gp.nc.4.size = 4
-gp.nc.4.child.0 = nil
-gp.nc.4.child.1 = nil
-gp.nc.4.child.2 = nil
-gp.nc.4.child.3 = nil
-
-gp.nc.5 = ec.gp.GPNodeConstraints
-gp.nc.5.name = nc5
-gp.nc.5.returns = nil
-gp.nc.5.size = 5
-gp.nc.5.child.0 = nil
-gp.nc.5.child.1 = nil
-gp.nc.5.child.2 = nil
-gp.nc.5.child.3 = nil
-gp.nc.5.child.4 = nil
-
-gp.nc.6 = ec.gp.GPNodeConstraints
-gp.nc.6.name = nc6
-gp.nc.6.returns = nil
-gp.nc.6.size = 6
-gp.nc.6.child.0 = nil
-gp.nc.6.child.1 = nil
-gp.nc.6.child.2 = nil
-gp.nc.6.child.3 = nil
-gp.nc.6.child.4 = nil
-gp.nc.6.child.5 = nil
-
-
-gp.nc.7 = ec.gp.GPNodeConstraints
-gp.nc.7.name = nc7
-gp.nc.7.returns = nil
-gp.nc.7.size = 6
-gp.nc.7.child.0 = nil
-gp.nc.7.child.1 = nil
-gp.nc.7.child.2 = int
-gp.nc.7.child.3 = int
-gp.nc.7.child.4 = int
-gp.nc.7.child.5 = int
-
-gp.nc.8 = ec.gp.GPNodeConstraints
-gp.nc.8.name = nc8
-gp.nc.8.returns = int
-gp.nc.8.size = 0
-
-gp.nc.9 = ec.gp.GPNodeConstraints
-gp.nc.9.name = nc9
-gp.nc.9.returns = nil
-gp.nc.9.size = 12
-gp.nc.9.child.0 = nil
-gp.nc.9.child.1 = nil
-gp.nc.9.child.2 = int
-gp.nc.9.child.3 = int
-gp.nc.9.child.4 = int
-gp.nc.9.child.5 = int
-gp.nc.9.child.6 = int
-gp.nc.9.child.7 = int
-gp.nc.9.child.8 = int
-gp.nc.9.child.9 = int
-gp.nc.9.child.10 = int
-gp.nc.9.child.11 = int
+gp.nc.2.child.2 = int
+gp.nc.2.child.3 = int
+gp.nc.2.child.4 = int
+gp.nc.2.child.5 = int
+gp.nc.2.child.6 = int
+gp.nc.2.child.7 = int
+gp.nc.2.child.8 = int
+gp.nc.2.child.9 = int
+gp.nc.2.child.10 = int
+gp.nc.2.child.11 = int

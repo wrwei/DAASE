@@ -1,0 +1,58 @@
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{pgfplots}
+\usepackage{subfig}
+\usepackage[hidelinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{url}
+\usetikzlibrary{arrows,calc}
+\pgfplotsset{width=3.4cm,compat=1.7}
+
+\renewcommand{\UrlFont}{\footnotesize}
+\usepackage{listings, color}
+
+
+\authorrunning{Ran Wei, John Clark}
+
+
+\definecolor{mygray}{rgb}{0.95,0.95,0.95}
+\lstset{frame=none,
+	backgroundcolor=\color{mygray},
+	language=Octave,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	xleftmargin=15pt,
+	numbers=left,
+	breaklines=true,
+	breakatwhitespace=false,
+	tabsize=2,
+	captionpos=b,
+}
+
+\begin{document}
+	
+	\title{\textbf{{Probabilistic Smoothing of Genetic Programming}}}
+	\author{Ran Wei \and John A. Clark}
+	\institute{Department of Computer Science, \\ University of York, United Kingdom \\ ran.wei, john.clark@york.ac.uk}
+	\maketitle
+	
+	\input{abstract}
+	
+	\input{introduction}
+	\input{background}
+	\input{problem}
+	\input{example}
+	
+	\input{occupancy}
+	
+
+%	\bibliographystyle{unsrt} 
+%	\bibliography{aaaaa}  
+	
+\end{document}

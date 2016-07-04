@@ -44,7 +44,6 @@ public class Add extends GPNode
 
         children[1].eval(state,thread,input,stack,individual,problem);
         rd.x = result + rd.x;
-        OperatorCounter.getInstance().incrementADD();
         }
     }
 
