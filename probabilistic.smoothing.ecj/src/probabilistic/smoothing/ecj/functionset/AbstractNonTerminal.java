@@ -1,5 +1,7 @@
 package probabilistic.smoothing.ecj.functionset;
 
+import probabilistic.smoothing.ecj.utils.DoubleData;
+import probabilistic.smoothing.ecj.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -7,9 +9,7 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import ec.gp.GPTree;
-import probabilistic.smoothing.ecj.utils.DoubleData;
-import probabilistic.smoothing.ecj.utils.EvaluationObserver;
-import probabilistic.smoothing.ecj.utils.ParamCounter;
+import ec.util.Parameter;
 
 public abstract class AbstractNonTerminal extends GPNode {
 
@@ -19,44 +19,41 @@ public abstract class AbstractNonTerminal extends GPNode {
 	
 	public int expectedChildren() {
 		//2 nodes for subtree
-		//20 nodes to calculate value
+		//17 + 4 + 4 = 25 nodes to calculate value
 		//1 node to store data
-		return 23;
+		return 28;
 	}
 	
 	public abstract boolean process();
+	
+	@Override
+	public void checkConstraints(EvolutionState state, int tree,
+			GPIndividual typicalIndividual, Parameter individualBase) {
+		super.checkConstraints(state, tree, typicalIndividual, individualBase);
+		if (children.length != 28)
+			state.output.error("Incorrect number of children for node " + toStringForError() + " at " + individualBase);
+	}
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
 
 		DoubleData rd = ((DoubleData) (input));
 		
-		//calculate the values of each node only once
+		//calculate the values of each node once for each tree
 		if (parent instanceof GPTree) {
-			calculateValue(state, thread, input, stack, individual, problem);	
+			calculateValueAndData(state, thread, input, stack, individual, problem);	
 		}
 		
 		if (process()) {
 			//if child 1 is a terminal
 			if (!(children[1] instanceof AbstractNonTerminal)) {
-				
-				//if should not eval, do nothing
-				if (EvaluationObserver.getInstance().shouldNotEval()) {
-						
-				}
-				//else set primitive node, set tree val to 1, signal do not eval
-				else
-				{
-					rd.x = 1;
-					EvaluationObserver.getInstance().doNotEval();
-				}
+				rd.x = 1;
 				
 				//if child 0 is a terminal
 				if (!(children[0] instanceof AbstractNonTerminal)) {
 					//if parent is GPTree, it means this tree is useless, give high fitness
 					if (parent instanceof GPTree) {
-						rd.x = 100000;
-						EvaluationObserver.getInstance().doNotEval();
+						rd.x = 20;
 					}
 				}
 			}
@@ -67,23 +64,13 @@ public abstract class AbstractNonTerminal extends GPNode {
 		}
 		else {
 			if (!(children[0] instanceof AbstractNonTerminal)) {
-				//if should not eval, do nothing
-				if (EvaluationObserver.getInstance().shouldNotEval()) {
-						
-				}
-				//else set primitive node, set tree val to 0, signal do not eval
-				else
-				{
-					rd.x = 0;
-					EvaluationObserver.getInstance().doNotEval();
-				}
+				rd.x = 0;
 				
 				//if child 0 is a terminal
 				if (!(children[1] instanceof AbstractNonTerminal)) {
 					//if parent is GPTree, it means this tree is useless, give high fitness
 					if (parent instanceof GPTree) {
-						rd.x = 100000;
-						EvaluationObserver.getInstance().doNotEval();
+						rd.x = 20;
 					}
 				}
 			}
@@ -94,14 +81,17 @@ public abstract class AbstractNonTerminal extends GPNode {
 		}
 	}
 	
-	public synchronized void calculateValue(final EvolutionState state, final int thread,
+	public synchronized void calculateValueAndData(final EvolutionState state, final int thread,
 			final GPData input, final ADFStack stack, final GPIndividual individual, final Problem problem)
 	{
+		//signal that the value of this node has been calculated 
 		calc_value = true;
-		//12 bits to calculate the decimal part
+		
+		//17 bits to calculate the decimal part
 		int decimal = 0;
-		//get decimal
-		for (int i = 2; i < 14; i++) {
+		
+		//17 bits for decimal
+		for (int i = 2; i < 19; i++) {
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
@@ -113,32 +103,32 @@ public abstract class AbstractNonTerminal extends GPNode {
 		
 		//4 bits to caluculate the float
 		int floatpoint = 0;
-		for(int i = 14; i < 18; i++)
+		for(int i = 19; i < 23; i++)
 		{
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				floatpoint += 1 << (i-14);
+				floatpoint += 1 << (i-19);
 			}
 		}
 		
 		//4 bits to calculate div factor
 		int div_factor = 1;
-		for(int i = 18; i < 22; i++)
+		for(int i = 23; i < 27; i++)
 		{
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				div_factor += 1 << (i-18);
+				div_factor += 1 << (i-23);
 			}
 		}
 		
 		//add decimal part
-		value += decimal;
+		value += (double)decimal;
 		
 		//get factor part
 		double factor = floatpoint;
@@ -159,20 +149,24 @@ public abstract class AbstractNonTerminal extends GPNode {
 		//this gives a double value that is able to represent any number in the data set
 		value += factor;
 		
-		children[22].eval(state, thread, input, stack, individual, problem);
+		//get the data from children 22
+		children[27].eval(state, thread, input, stack, individual, problem);
 		DoubleData rd = ((DoubleData) (input));
-		data = rd.x;
+		data = (double)rd.x;
 		
-		ParamCounter.getInstance().addCount(children[22].toString());
+		//add the count to the param counter
+		ParamCounter.getInstance().addCount(children[27].toString());
 		
+		//calculate value and data recursively for child 0
 		if (children[0] instanceof AbstractNonTerminal) {
 			AbstractNonTerminal child0 = (AbstractNonTerminal) children[0];
-			child0.calculateValue(state, thread, input, stack, individual, problem);
+			child0.calculateValueAndData(state, thread, input, stack, individual, problem);
 		}
 		
+		//calculate value and data recursively for child 1
 		if (children[1] instanceof AbstractNonTerminal) {
 			AbstractNonTerminal child1 = (AbstractNonTerminal) children[1];
-			child1.calculateValue(state, thread, input, stack, individual, problem);
+			child1.calculateValueAndData(state, thread, input, stack, individual, problem);
 		}	
 	}
 	
@@ -185,7 +179,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 		return (parentMadeParens ? "" : "(") + children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
 				+ " " + toStringForHumans() + " "
 				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
-				+ (parentMadeParens ? "" : ")") + "(" + children[22].toString() + ": " +  value + ")";
+				+ (parentMadeParens ? "" : ")") + "(" + children[27].toString() + ": " +  value + ")";
 
 	}
 	

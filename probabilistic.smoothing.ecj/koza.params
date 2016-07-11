@@ -149,12 +149,12 @@ gp.type.a.size = 4
 gp.type.a.0.name = nil
 gp.type.a.1.name = int
 gp.type.a.2.name = data
-gp.type.a.3.name = result
+gp.type.a.3.name = bool
 gp.type.s.size = 1
-gp.type.s.0.name = nil-or-result
+gp.type.s.0.name = nil-or-bool
 gp.type.s.0.size = 2
 gp.type.s.0.member.0 = nil
-gp.type.s.0.member.1 = result
+gp.type.s.0.member.1 = bool
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -200,7 +200,7 @@ gp.koza.half.growp = 0.5
 
 
 
-gp.nc.size = 5
+gp.nc.size = 4
 
 #gp.nc.0.prob = 0.5
 #gp.nc.1.prob = 0.1
@@ -208,7 +208,7 @@ gp.nc.size = 5
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0
-gp.nc.0.returns = nil
+gp.nc.0.returns = bool
 gp.nc.0.size = 0 
 
 gp.nc.1 = ec.gp.GPNodeConstraints
@@ -224,9 +224,10 @@ gp.nc.2.size = 0
 gp.nc.3 = ec.gp.GPNodeConstraints
 gp.nc.3.name = nc3
 gp.nc.3.returns = nil
-gp.nc.3.size = 23
-gp.nc.3.child.0 = nil-or-result
-gp.nc.3.child.1 = nil-or-result
+gp.nc.3.size = 28
+gp.nc.3.child.0 = nil-or-bool
+gp.nc.3.child.1 = nil-or-bool
+
 gp.nc.3.child.2 = int
 gp.nc.3.child.3 = int
 gp.nc.3.child.4 = int
@@ -239,20 +240,20 @@ gp.nc.3.child.10 = int
 gp.nc.3.child.11 = int
 gp.nc.3.child.12 = int
 gp.nc.3.child.13 = int
-
 gp.nc.3.child.14 = int
 gp.nc.3.child.15 = int
 gp.nc.3.child.16 = int
 gp.nc.3.child.17 = int
-
 gp.nc.3.child.18 = int
+
 gp.nc.3.child.19 = int
 gp.nc.3.child.20 = int
 gp.nc.3.child.21 = int
+gp.nc.3.child.22 = int
 
-gp.nc.3.child.22 = data
+gp.nc.3.child.23 = int
+gp.nc.3.child.24 = int
+gp.nc.3.child.25 = int
+gp.nc.3.child.26 = int
 
-gp.nc.4 = ec.gp.GPNodeConstraints
-gp.nc.4.name = nc4
-gp.nc.4.returns = result
-gp.nc.4.size = 0
+gp.nc.3.child.27 = data

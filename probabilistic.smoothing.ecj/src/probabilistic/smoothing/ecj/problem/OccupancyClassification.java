@@ -44,51 +44,48 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			DataWarehouse dw = DataWarehouse.getInstance();
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
+				System.out.println("Expected hits: " + dw.size());
 			}
-			else
+
+			for(int i=0; i < dw.size(); i++)
 			{
-				for(int i=0; i < dw.size(); i++)
+				DataEntity de = dw.getData(i);
+				temperature = de.getTemperature();
+				humidity = de.getHumidity();
+				light = de.getLight();
+				co2 = de.getCo2();
+				hr = de.getHr();
+				nsm = de.getNsm();
+				ws = de.getWs();
+				
+				//get occupancy
+				expectedResult = de.getOccupancy();
+
+				ParamCounter paramCounter = ParamCounter.getInstance();
+				paramCounter.clear();
+				
+				//eval tree
+				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
+
+//				System.out.println(((GPIndividual) ind).trees[0].child.makeLispTree());
+				
+				//get the result for fitness and hits
+				result = Math.abs(expectedResult - input.x);
+				
+				//if result is 0, hit++
+				if (result == 0.0) {
+					hits++;
+				}
+				
+				//if result is not 0, add to sum
+				else
 				{
-					//prepare data
-					DataEntity de = dw.getData(i);
-					temperature = de.getTemperature();
-					humidity = de.getHumidity();
-					light = de.getLight();
-					co2 = de.getCo2();
-					hr = de.getHr();
-					nsm = de.getNsm();
-					ws = de.getWs();
-					
-					//get occupancy
-					expectedResult = de.getOccupancy();
-
-					ParamCounter paramCounter = ParamCounter.getInstance();
-					paramCounter.clear();
-					
-					EvaluationObserver.getInstance().reset();;
-					
-					//eval tree
-					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
-
-//					System.out.println(((GPIndividual) ind).trees[0].child.makeLispTree());
-					
-					//get the result for fitness and hits
-					result = Math.abs(expectedResult - input.x);
-					
-					//if result is 0, hit++
-					if (result == 0.0 && paramCounter.getScore() == 0) {
-						hits++;
-					}
-					
-					//if result is not 0, add to sum
-					else
-					{
-						sum += paramCounter.getScore();
-						sum += result;
-					}
+					sum += paramCounter.getScore();
+					sum += result;
 				}
 			}
-			
+		
+//			System.out.println(sum);
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);
