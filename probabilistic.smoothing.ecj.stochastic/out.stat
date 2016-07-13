@@ -1,0 +1,15 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=14076
+Tree 0:
+co2(17839684403.79) + (hr(33490530399) / ws(63538200399))(0.3, 0.1, 0.2, 0.4 |0.6)(0.4, 0.4, 0, 0.2 |1.2)
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=14076
+Tree 0:
+co2(17839684403.79) + (hr(33490530399) / ws(63538200399))(0.3, 0.1, 0.2, 0.4 |0.6)(0.4, 0.4, 0, 0.2 |1.2)
