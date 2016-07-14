@@ -3,7 +3,7 @@ package symbolic.regression.stochastic.problem;
 import ec.util.*;
 import symbolic.regression.stochastic.util.DoubleData;
 import symbolic.regression.stochastic.util.IllegalDivision;
-
+import symbolic.regression.stochastic.util.StochasticityNormaliser;
 import ec.*;
 import ec.gp.*;
 import ec.gp.koza.*;
@@ -65,7 +65,19 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 						{
 							hits++;
 						}
-						fitness_cost = functional_cost + 0.01*stochastic_cost;
+						
+						double lambda = 0.0;
+						if (StochasticityNormaliser.getInstance().isRun()) {
+						}
+						else
+						{
+							lambda  = StochasticityNormaliser.getInstance().normalise(functional_cost, stochastic_cost);
+							System.out.println(functional_cost);
+							System.out.println(stochastic_cost);
+							System.out.println(lambda);
+							
+						}
+						fitness_cost = functional_cost + 0.01*stochastic_cost;	
 					} else {
 						fitness_cost = 100.0;
 					}
