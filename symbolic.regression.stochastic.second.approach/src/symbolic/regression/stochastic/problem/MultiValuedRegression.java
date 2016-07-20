@@ -66,10 +66,9 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 						{
 							hits++;
 						}
-//						System.out.println(functional_cost);
-//						System.out.println(stochastic_cost);
+//						System.out.println(functional_cost + "-" + stochastic_cost);
 
-						fitness_cost = functional_cost + stochastic_cost;
+						fitness_cost = functional_cost + 0.031*stochastic_cost;
 					} else {
 						fitness_cost = 100.0;
 					}

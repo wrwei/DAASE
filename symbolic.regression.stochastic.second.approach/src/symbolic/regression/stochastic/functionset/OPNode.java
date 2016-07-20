@@ -34,6 +34,7 @@ public class OPNode extends GPNode {
 	private int div_weight = 0;
 
 	public String toString() {
+		opCode = getOperator();
 		switch (opCode) {
 		case ADD:
 			return "+";
@@ -107,6 +108,38 @@ public class OPNode extends GPNode {
 				+ (parentMadeParens ? "" : ")") + "(" + df.format(add_weight/total_weight) + ", "
 				+ df.format(sub_weight/total_weight) + ", " + df.format(mul_weight/total_weight) + ", "
 				+ df.format(div_weight/total_weight) + " |" + df.format(overall_stochastic_cost) + ")";
+	}
+	
+	private Operator getOperator()
+	{
+		if (add_weight == 0 && sub_weight == 0 && mul_weight == 0 && div_weight == 0) {
+			return Operator.INVALID;
+		}
+		double sum = add_weight + sub_weight + mul_weight + div_weight;
+		double p1 = add_weight/sum;
+		double p2 = sub_weight/sum;
+		double p3 = mul_weight/sum;
+		double p4 = div_weight/sum;
+
+		Operator op = Operator.INVALID;
+		double temp = -100;
+		if (temp < p1) {
+			temp = p1;
+			op = Operator.ADD;
+		}
+		if (temp < p2) {
+			temp = p2;
+			op = Operator.SUB;
+		}
+		if (temp < p3) {
+			temp = p3;
+			op = Operator.MUL;
+		}
+		if (temp < p4) {
+			temp = p4;
+			op = Operator.DIV;
+		}
+		return op;
 	}
 	
 	
