@@ -92,7 +92,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 						{
 							hits++;
 						}
-						fitness_cost = functional_cost + 0.01*stochastic_cost;
+						//System.out.println(functional_cost + "-" + stochastic_cost);
+						fitness_cost = functional_cost + 0.01*stochastic_cost + 0.01* paramCounter.getScore();
 					} else {
 						fitness_cost = 100.0;
 					}

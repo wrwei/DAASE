@@ -2,6 +2,7 @@ package classification.regression.stochastic.terminals;
 
 import classification.regression.stochastic.problem.OccupancyClassification;
 import classification.regression.stochastic.utils.DoubleData;
+import classification.regression.stochastic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -19,5 +20,6 @@ public class CO2 extends AbstractAttributeNode {
 		double co2 = ((OccupancyClassification) problem).co2;
 		DoubleData rd = ((DoubleData) (input));
 		rd.x = co2;
+		ParamCounter.getInstance().addCount("co2");
 	}
 }
