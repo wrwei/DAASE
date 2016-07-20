@@ -105,6 +105,15 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				
 				fitnessArray[i] = fitness_lowest;
 			}
+			
+			for(int i = 0; i < dw.size(); i++)
+			{
+				sum += fitnessArray[i];
+			}
+			
+			if (sum < 0) {
+				sum = Double.MAX_VALUE;
+			}
 		
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
