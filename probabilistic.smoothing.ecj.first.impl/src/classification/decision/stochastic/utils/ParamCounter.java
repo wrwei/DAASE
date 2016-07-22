@@ -1,4 +1,4 @@
-package probabilistic.smoothing.ecj.utils;
+package classification.decision.stochastic.utils;
 
 public class ParamCounter {
 

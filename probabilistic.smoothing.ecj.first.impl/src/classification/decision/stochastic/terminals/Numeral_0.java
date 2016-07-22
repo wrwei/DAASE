@@ -1,12 +1,12 @@
-package probabilistic.smoothing.ecj.terminals;
+package classification.decision.stochastic.terminals;
 
+import classification.decision.stochastic.utils.DoubleData;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
-import probabilistic.smoothing.ecj.utils.DoubleData;
 
 public class Numeral_0 extends GPNode {
 

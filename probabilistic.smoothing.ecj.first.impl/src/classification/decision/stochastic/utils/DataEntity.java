@@ -1,4 +1,4 @@
-package probabilistic.smoothing.ecj.utils;
+package classification.decision.stochastic.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

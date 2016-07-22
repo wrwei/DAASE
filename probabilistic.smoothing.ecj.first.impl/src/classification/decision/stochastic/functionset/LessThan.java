@@ -1,5 +1,5 @@
 
-package probabilistic.smoothing.ecj.functionset;
+package classification.decision.stochastic.functionset;
 
 public class LessThan extends AbstractNonTerminal {
 	

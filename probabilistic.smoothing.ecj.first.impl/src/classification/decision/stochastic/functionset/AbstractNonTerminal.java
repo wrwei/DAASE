@@ -1,7 +1,7 @@
-package probabilistic.smoothing.ecj.functionset;
+package classification.decision.stochastic.functionset;
 
-import probabilistic.smoothing.ecj.utils.DoubleData;
-import probabilistic.smoothing.ecj.utils.ParamCounter;
+import classification.decision.stochastic.utils.DoubleData;
+import classification.decision.stochastic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;

@@ -1,17 +1,18 @@
-package probabilistic.smoothing.ecj.terminals;
+package classification.decision.stochastic.terminals;
 
+import classification.decision.stochastic.problem.OccupancyClassification;
+import classification.decision.stochastic.utils.DoubleData;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
-import probabilistic.smoothing.ecj.problem.OccupancyClassification;
-import probabilistic.smoothing.ecj.utils.DoubleData;
 
-public class Temperature extends GPNode {
+public class Humidity extends GPNode {
 
-    public String toString() { return "temperature"; }
+
+    public String toString() { return "humidity"; }
 
     public int expectedChildren() { return 0; }
 
@@ -23,8 +24,9 @@ public class Temperature extends GPNode {
         final Problem problem)
         {
         	DoubleData rd = ((DoubleData)(input));
-        	rd.x = ((OccupancyClassification)problem).temperature;
+        	rd.x = ((OccupancyClassification)problem).humidity;
         }
     
+
 
 }

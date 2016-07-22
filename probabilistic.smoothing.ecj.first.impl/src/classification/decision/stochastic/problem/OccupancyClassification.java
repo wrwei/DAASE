@@ -1,5 +1,10 @@
-package probabilistic.smoothing.ecj.problem;
+package classification.decision.stochastic.problem;
 
+import classification.decision.stochastic.utils.DataEntity;
+import classification.decision.stochastic.utils.DataWarehouse;
+import classification.decision.stochastic.utils.DoubleData;
+import classification.decision.stochastic.utils.EvaluationObserver;
+import classification.decision.stochastic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gp.GPIndividual;
@@ -7,11 +12,6 @@ import ec.gp.GPProblem;
 import ec.gp.koza.KozaFitness;
 import ec.simple.SimpleProblemForm;
 import ec.util.Parameter;
-import probabilistic.smoothing.ecj.utils.DataEntity;
-import probabilistic.smoothing.ecj.utils.DataWarehouse;
-import probabilistic.smoothing.ecj.utils.DoubleData;
-import probabilistic.smoothing.ecj.utils.EvaluationObserver;
-import probabilistic.smoothing.ecj.utils.ParamCounter;
 
 public class OccupancyClassification extends GPProblem implements SimpleProblemForm {
 	private static final long serialVersionUID = 1;

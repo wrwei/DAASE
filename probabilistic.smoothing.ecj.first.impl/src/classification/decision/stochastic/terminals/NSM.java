@@ -1,17 +1,17 @@
-package probabilistic.smoothing.ecj.terminals;
+package classification.decision.stochastic.terminals;
 
+import classification.decision.stochastic.problem.OccupancyClassification;
+import classification.decision.stochastic.utils.DoubleData;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
-import probabilistic.smoothing.ecj.problem.OccupancyClassification;
-import probabilistic.smoothing.ecj.utils.DoubleData;
 
-public class WS extends GPNode {
+public class NSM extends GPNode{
     
-	public String toString() { return "ws"; }
+	public String toString() { return "nsm"; }
 
     public int expectedChildren() { return 0; }
 
@@ -23,6 +23,7 @@ public class WS extends GPNode {
         final Problem problem)
         {
         	DoubleData rd = ((DoubleData)(input));
-        	rd.x = ((OccupancyClassification)problem).ws;
+        	rd.x = ((OccupancyClassification)problem).nsm;
         }
+
 }
