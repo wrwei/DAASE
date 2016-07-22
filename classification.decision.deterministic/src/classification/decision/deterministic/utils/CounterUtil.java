@@ -1,18 +1,19 @@
 package classification.decision.deterministic.utils;
 
-public class ParamCounter {
+public class CounterUtil {
 
-	private static ParamCounter instance = new ParamCounter();
+	private static CounterUtil instance = new CounterUtil();
 	
 	
 	private int[] a = new int[] {0,0,0,0,0,0,0};
+	private int treeDepth = 1;
 	
-	private ParamCounter() {}
+	private CounterUtil() {}
 	
-	public static ParamCounter getInstance()
+	public static CounterUtil getInstance()
 	{
 		if (instance == null) {
-			instance = new ParamCounter();
+			instance = new CounterUtil();
 		}
 		
 		return instance;
@@ -21,9 +22,10 @@ public class ParamCounter {
 	public synchronized void clear()
 	{
 		a = new int[] {0,0,0,0,0,0,0};
+		treeDepth = 1;
 	}
 	
-	public synchronized void addCount(String param)
+	public synchronized void addParamCount(String param)
 	{
 		if (param.equals("temperature")) {
 			a[0] = 1;
@@ -51,7 +53,7 @@ public class ParamCounter {
 		}
 	}
 	
-	public int getScore()
+	public int getParamScore()
 	{
 		int result = 0;
 		int total = 0;
@@ -78,6 +80,15 @@ public class ParamCounter {
 		{
 			return result;
 		}
+	}
+	
+	public void increaseTreeDepth()
+	{
+		treeDepth++;
+	}
+	
+	public int getTreeDepth() {
+		return treeDepth;
 	}
 	
 }

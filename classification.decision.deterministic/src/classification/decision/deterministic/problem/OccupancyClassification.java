@@ -1,9 +1,11 @@
 package classification.decision.deterministic.problem;
 
+import javax.swing.event.TreeSelectionEvent;
+
 import classification.decision.deterministic.utils.DataEntity;
 import classification.decision.deterministic.utils.DataWarehouse;
 import classification.decision.deterministic.utils.DoubleData;
-import classification.decision.deterministic.utils.ParamCounter;
+import classification.decision.deterministic.utils.CounterUtil;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gp.GPIndividual;
@@ -60,8 +62,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				//get occupancy
 				expectedResult = de.getOccupancy();
 
-				ParamCounter paramCounter = ParamCounter.getInstance();
-				paramCounter.clear();
+				CounterUtil counterUtil = CounterUtil.getInstance();
+				counterUtil.clear();
 				
 				//eval tree
 				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
@@ -77,7 +79,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				if (result == 0.0) {
 					hits++;
 				}
-				fitness_cost = result + 0.01*paramCounter.getScore();
+				fitness_cost = result + 0.01*counterUtil.getParamScore() + 0.01*1/counterUtil.getTreeDepth();
 				sum += fitness_cost;
 			}
 		

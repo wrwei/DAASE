@@ -1,7 +1,7 @@
 package classification.decision.deterministic.functionset;
 
 import classification.decision.deterministic.utils.DoubleData;
-import classification.decision.deterministic.utils.ParamCounter;
+import classification.decision.deterministic.utils.CounterUtil;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -60,6 +60,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			else
 			{
 				children[1].eval(state, thread, input, stack, individual, problem);	
+				CounterUtil.getInstance().increaseTreeDepth();
 			}
 		}
 		else {
@@ -77,6 +78,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			else
 			{
 				children[0].eval(state, thread, input, stack, individual, problem);	
+				CounterUtil.getInstance().increaseTreeDepth();
 			}
 		}
 	}
@@ -155,7 +157,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 		data = (double)rd.x;
 		
 		//add the count to the param counter
-		ParamCounter.getInstance().addCount(children[27].toString());
+		CounterUtil.getInstance().addParamCount(children[27].toString());
 		
 		//calculate value and data recursively for child 0
 		if (children[0] instanceof AbstractNonTerminal) {
