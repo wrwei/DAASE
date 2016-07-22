@@ -1,0 +1,69 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 15
+
+gp.fs.0.func.0 = classification.decision.deterministic.terminals.Result_One
+gp.fs.0.func.0.nc = nc0
+
+gp.fs.0.func.1 = classification.decision.deterministic.terminals.Result_Zero
+gp.fs.0.func.1.nc = nc0
+
+gp.fs.0.func.2 = classification.decision.deterministic.terminals.Temperature
+gp.fs.0.func.2.nc = nc1
+
+gp.fs.0.func.3 = classification.decision.deterministic.terminals.Humidity
+gp.fs.0.func.3.nc = nc1
+
+gp.fs.0.func.4 = classification.decision.deterministic.terminals.Light
+gp.fs.0.func.4.nc = nc1
+
+gp.fs.0.func.5 = classification.decision.deterministic.terminals.CO2
+gp.fs.0.func.5.nc = nc1
+
+gp.fs.0.func.6 = classification.decision.deterministic.terminals.HumidityRatio
+gp.fs.0.func.6.nc = nc1
+
+gp.fs.0.func.7 = classification.decision.deterministic.terminals.NSM
+gp.fs.0.func.7.nc = nc1
+
+gp.fs.0.func.8 = classification.decision.deterministic.terminals.WS
+gp.fs.0.func.8.nc = nc1
+
+gp.fs.0.func.9 = classification.decision.deterministic.terminals.Numeral_0
+gp.fs.0.func.9.nc = nc2
+
+gp.fs.0.func.10 = classification.decision.deterministic.terminals.Numeral_1
+gp.fs.0.func.10.nc = nc2
+
+gp.fs.0.func.11 = classification.decision.deterministic.functionset.GreaterThan
+gp.fs.0.func.11.nc = nc3
+
+gp.fs.0.func.12 = classification.decision.deterministic.functionset.GreaterThanOrEqualTo
+gp.fs.0.func.12.nc = nc3
+
+gp.fs.0.func.13 = classification.decision.deterministic.functionset.LessThan
+gp.fs.0.func.13.nc = nc3
+
+gp.fs.0.func.14 = classification.decision.deterministic.functionset.LessThanOrEqualTo
+gp.fs.0.func.14.nc = nc3
+
+
+
+eval.problem = classification.decision.deterministic.problem.OccupancyClassification
+eval.problem.data = classification.decision.deterministic.utils.DoubleData
+
