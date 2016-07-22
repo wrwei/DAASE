@@ -44,7 +44,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			DataWarehouse dw = DataWarehouse.getInstance();
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				System.out.println("Expected hits: " + dw.size());
+				System.out.println("Expected hits: " + dw.size() * 200);
 			}
 
 			//prepare an array to store lowest fitness
@@ -102,7 +102,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 						fitness_lowest = fitness_cost;
 					}
 				}
-				
 				fitnessArray[i] = fitness_lowest;
 			}
 			
