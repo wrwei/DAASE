@@ -1,11 +1,9 @@
 package classification.decision.deterministic.problem;
 
-import javax.swing.event.TreeSelectionEvent;
-
+import classification.decision.deterministic.utils.CounterUtil;
 import classification.decision.deterministic.utils.DataEntity;
 import classification.decision.deterministic.utils.DataWarehouse;
 import classification.decision.deterministic.utils.DoubleData;
-import classification.decision.deterministic.utils.CounterUtil;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gp.GPIndividual;
@@ -42,10 +40,39 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			double expectedResult;
 			double result;
 			
+			double temp_mean, temp_sd;
+			double humidty_mean, humidity_sd;
+			double light_mean, light_sd;
+			double co2_mean, co2_sd;
+			double hr_mean, hr_sd;
+			double nsm_mean, nsm_sd;
+			double ws_mean, ws_sd;
+			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
 				System.out.println("Expected hits: " + dw.size());
+				
+				temp_mean = dw.getMean("temperature");
+				temp_sd = dw.getStDeviation("temperature");
+				
+				humidty_mean = dw.getMean("humidity");
+				humidity_sd = dw.getStDeviation("humidity");
+				
+				light_mean = dw.getMean("light");
+				light_sd = dw.getStDeviation("light");
+				
+				co2_mean = dw.getMean("co2");
+				co2_sd = dw.getStDeviation("co2");
+				
+				hr_mean = dw.getMean("hr");
+				hr_sd = dw.getStDeviation("hr");
+				
+				nsm_mean = dw.getMean("nsm");
+				nsm_sd = dw.getStDeviation("nsm");
+				
+				ws_mean = dw.getMean("ws");
+				ws_sd = dw.getStDeviation("ws");
 			}
 
 			for(int i=0; i < dw.size(); i++)
