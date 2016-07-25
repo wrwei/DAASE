@@ -79,7 +79,10 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				if (result == 0.0) {
 					hits++;
 				}
-				fitness_cost = result + 0.01*counterUtil.getParamScore() + 0.01*1/counterUtil.getTreeDepth();
+				fitness_cost = result + 0.01*counterUtil.getParamScore(); // + 0.01*1/counterUtil.getTreeDepth();
+				if (counterUtil.getParamScore() != 0) {
+					fitness_cost += 0.01*1/counterUtil.getTreeDepth();
+				}
 				sum += fitness_cost;
 			}
 		
