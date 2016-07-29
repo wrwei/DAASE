@@ -60,7 +60,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			else
 			{
 				children[1].eval(state, thread, input, stack, individual, problem);	
-				CounterUtil.getInstance().increaseTreeDepth();
+//				CounterUtil.getInstance().increaseTreeDepth();
 			}
 		}
 		else {
@@ -78,7 +78,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 			else
 			{
 				children[0].eval(state, thread, input, stack, individual, problem);	
-				CounterUtil.getInstance().increaseTreeDepth();
+//				CounterUtil.getInstance().increaseTreeDepth();
 			}
 		}
 	}

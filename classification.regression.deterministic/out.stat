@@ -1,0 +1,520 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=655.959248977059 Adjusted=0.001522164428854734 Hits=5187
+Tree 0:
+sqrt(light) / temperature
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=655.959248977059 Adjusted=0.001522164428854734 Hits=5187
+Tree 0:
+sqrt(light) / temperature
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=655.959248977059 Adjusted=0.001522164428854734 Hits=5187
+Tree 0:
+sqrt(light) / temperature
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=490.8628874905014 Adjusted=0.002033086913920318 Hits=5172
+Tree 0:
+square(sqrt(light) / temperature)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=155.59807802713166 Adjusted=0.006385774414336958 Hits=5244
+Tree 0:
+sqrt(square(sqrt(sqrt(light) / temperature) * ((ws + hr) - (hr * ws))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=153.15192578088025 Adjusted=0.006487106761296341 Hits=6336
+Tree 0:
+sqrt(sqrt(ws) * (sqrt(light) / temperature))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.8536168944574 Adjusted=0.0064996847015042465 Hits=6426
+Tree 0:
+sqrt(sqrt(ws) * sqrt(sqrt(light) / temperature))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.8536168944574 Adjusted=0.0064996847015042465 Hits=6426
+Tree 0:
+sqrt(ws) * sqrt(sqrt(sqrt(square(sqrt(light) / temperature))))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.8536168944574 Adjusted=0.0064996847015042465 Hits=6426
+Tree 0:
+sqrt(ws) * sqrt(sqrt(sqrt(light) / temperature))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.8536168944574 Adjusted=0.0064996847015042465 Hits=6426
+Tree 0:
+sqrt(ws) * sqrt(sqrt(sqrt(light) / temperature))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4405489174253 Adjusted=0.0065171821076979745 Hits=6361
+Tree 0:
+sqrt(ws) * sqrt(sqrt(sqrt((ws * square(ws * (sqrt(light) / temperature))) * (sqrt(light) / temperature))))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4405489174253 Adjusted=0.0065171821076979745 Hits=6361
+Tree 0:
+sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt((ws * square(ws * (sqrt(light) / temperature))) * (sqrt(light) / temperature)))))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4405489174253 Adjusted=0.0065171821076979745 Hits=6361
+Tree 0:
+sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt((ws * square(ws * (sqrt(light) / temperature))) * (sqrt(light) / temperature)))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.43033295042088 Adjusted=0.006517616046125232 Hits=6377
+Tree 0:
+square(sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(ws) * sqrt(square(sqrt(light) / temperature))) * (sqrt(light) / temperature)) * (ws * sqrt((sqrt(light) / temperature) * sqrt(sqrt(sqrt(ws)) * sqrt(sqrt(light) / temperature))))))))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.43033295042082 Adjusted=0.006517616046125234 Hits=6377
+Tree 0:
+sqrt(sqrt(sqrt(ws) * (ws * sqrt(sqrt(sqrt(ws) * (ws * (sqrt(sqrt(square(sqrt(light) / temperature))) * (sqrt(light) / temperature)))))))) * (sqrt(ws) * square(sqrt(sqrt(sqrt(sqrt(ws) * (sqrt(light) / temperature))))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(ws) * (sqrt(light) / temperature)) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt(sqrt(sqrt(ws) * (sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * (ws * (ws * sqrt(sqrt(light) / temperature)))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(sqrt(ws)) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(ws) * (sqrt(light) / temperature))) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(sqrt(ws) * (sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(sqrt(sqrt(ws * (sqrt(light) / temperature)) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt((sqrt(light) / temperature) * sqrt((sqrt(ws) * sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(ws) * (sqrt(light) / temperature)) * (sqrt(light) / temperature)))) * (ws * (sqrt(sqrt(ws)) * sqrt(sqrt(light) / temperature))))) * sqrt(sqrt(ws) * (sqrt(light) / temperature)))))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(ws) * (sqrt(light) / temperature)) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(sqrt(ws)) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(sqrt(ws)) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(ws) * (sqrt(light) / temperature))))))))) * (sqrt(light) / temperature)))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt((ws * sqrt(sqrt(sqrt(ws) * sqrt(sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))) * (sqrt(light) / temperature))) * sqrt(sqrt(light) / temperature))) * (sqrt(light) / temperature)))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(sqrt(ws)) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(ws) * (sqrt(light) / temperature))))))))) * (sqrt(light) / temperature)))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(sqrt(ws)) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * (ws * sqrt(sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (ws * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt((ws * sqrt(sqrt(sqrt(sqrt(ws)) * sqrt(sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))) * (sqrt(light) / temperature))) * sqrt(sqrt(light) / temperature))) * (sqrt(light) / temperature)))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))))))) * (sqrt(ws) * (sqrt(light) / temperature))))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt((ws * sqrt(sqrt(sqrt(ws) * sqrt(sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))) * (sqrt(light) / temperature))) * sqrt(sqrt(light) / temperature))) * (sqrt(ws) * (sqrt(light) / temperature))))
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((sqrt(ws) * (ws * sqrt(sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (ws * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature)))))))) * (sqrt(light) / temperature)))
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(sqrt((sqrt(ws) * sqrt(sqrt(ws) * (sqrt(light) / temperature))) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(light) / temperature))))))) * (sqrt(light) / temperature)))
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=152.4257467615457 Adjusted=0.006517810870128597 Hits=6376
+Tree 0:
+sqrt(sqrt(sqrt(ws * (sqrt((ws * sqrt(sqrt(light) / temperature)) * (sqrt(light) / temperature)) * sqrt(sqrt(ws * (sqrt(ws) * sqrt(sqrt(sqrt(sqrt(light) / temperature) * (sqrt(sqrt(ws)) * (sqrt(light) / temperature))))))))) * (sqrt(light) / temperature)))

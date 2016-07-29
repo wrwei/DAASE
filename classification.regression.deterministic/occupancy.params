@@ -1,0 +1,67 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 15
+
+gp.fs.0.func.0 = classification.regression.stochastic.terminals.Temperature
+gp.fs.0.func.0.nc = nc0
+
+gp.fs.0.func.1 = classification.regression.stochastic.terminals.Humidity
+gp.fs.0.func.1.nc = nc0
+
+gp.fs.0.func.2 = classification.regression.stochastic.terminals.Light
+gp.fs.0.func.2.nc = nc0
+
+gp.fs.0.func.3 = classification.regression.stochastic.terminals.CO2
+gp.fs.0.func.3.nc = nc0
+
+gp.fs.0.func.4 = classification.regression.stochastic.terminals.HumidityRatio
+gp.fs.0.func.4.nc = nc0
+
+gp.fs.0.func.5 = classification.regression.stochastic.terminals.NSM
+gp.fs.0.func.5.nc = nc0
+
+gp.fs.0.func.6 = classification.regression.stochastic.terminals.WS
+gp.fs.0.func.6.nc = nc0
+
+gp.fs.0.func.7 = classification.regression.stochastic.functionset.Log_base_10
+gp.fs.0.func.7.nc = nc1
+
+gp.fs.0.func.8 = classification.regression.stochastic.functionset.Log_base_e
+gp.fs.0.func.8.nc = nc1
+
+gp.fs.0.func.9 = classification.regression.stochastic.functionset.Square
+gp.fs.0.func.9.nc = nc1
+
+gp.fs.0.func.10 = classification.regression.stochastic.functionset.SquareRoot
+gp.fs.0.func.10.nc = nc1
+
+gp.fs.0.func.11 = classification.regression.stochastic.functionset.Add
+gp.fs.0.func.11.nc = nc2
+
+gp.fs.0.func.12 = classification.regression.stochastic.functionset.Sub
+gp.fs.0.func.12.nc = nc2
+
+gp.fs.0.func.13 = classification.regression.stochastic.functionset.Mul
+gp.fs.0.func.13.nc = nc2
+
+gp.fs.0.func.14 = classification.regression.stochastic.functionset.Div
+gp.fs.0.func.14.nc = nc2
+
+eval.problem = classification.regression.stochastic.problem.OccupancyClassification
+eval.problem.data = classification.regression.stochastic.utils.DoubleData
+

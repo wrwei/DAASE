@@ -40,18 +40,20 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			double expectedResult;
 			double result;
 			
-			double temp_mean, temp_sd;
-			double humidty_mean, humidity_sd;
-			double light_mean, light_sd;
-			double co2_mean, co2_sd;
-			double hr_mean, hr_sd;
-			double nsm_mean, nsm_sd;
-			double ws_mean, ws_sd;
+			double temp_mean = 0, temp_sd = 0;
+			double humidty_mean = 0, humidity_sd = 0;
+			double light_mean = 0, light_sd = 0;
+			double co2_mean = 0, co2_sd = 0;
+			double hr_mean = 0, hr_sd = 0;
+			double nsm_mean = 0, nsm_sd = 0;
+			double ws_mean = 0, ws_sd = 0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
 				System.out.println("Expected hits: " + dw.size());
+				
+				System.out.println(dw.getStatistics());
 				
 				temp_mean = dw.getMean("temperature");
 				temp_sd = dw.getStDeviation("temperature");
@@ -106,11 +108,78 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				if (result == 0.0) {
 					hits++;
 				}
-				fitness_cost = result + 0.01*counterUtil.getParamScore(); // + 0.01*1/counterUtil.getTreeDepth();
-				if (counterUtil.getParamScore() != 0) {
-					fitness_cost += 0.01*1/counterUtil.getTreeDepth();
+				
+				
+				double fitness = 0.0;
+				if (!counterUtil.tempEmpty()) {
+						fitness += counterUtil.getTemperatureMean() - temp_mean; 
+						fitness += counterUtil.getTemperatureSD() - temp_sd;
 				}
-				sum += fitness_cost;
+				else
+				{
+					fitness += 10000;
+				}
+				
+				if (!counterUtil.humidityEmpty()) {
+						fitness += counterUtil.getHumidityMean() - humidty_mean;
+						fitness += counterUtil.getHumiditySD() - humidity_sd;
+				}
+				else
+				{
+					fitness += 15000;
+				}
+				
+				if (!counterUtil.lightsEmpty()) {
+						fitness += counterUtil.getLightMean() - light_mean;
+						fitness += counterUtil.getLightSD() - light_sd;
+				}
+				else
+				{
+					fitness += 100000;
+				}
+				
+				if (!counterUtil.co2sEmpty()) {
+						fitness += counterUtil.getCO2Mean() - co2_mean;
+						fitness += counterUtil.getCO2SD() - co2_sd;
+				}
+				else
+				{
+					fitness += 500000;
+				}
+				
+				if (!counterUtil.hrsEmpty()) {
+						fitness += counterUtil.getHRMean() - hr_mean;
+						fitness += counterUtil.getHRSD() - hr_sd;
+				}
+				else
+				{
+					fitness += 500;
+				}
+				
+				if (!counterUtil.nsmsEmpty()) {
+						fitness += counterUtil.getNSMMean() - nsm_mean;
+						fitness += counterUtil.getNSMSD() - nsm_sd;	
+				}
+				else
+				{
+					fitness += 12000000;
+				}
+				
+				if (!counterUtil.wssEmpty()) {
+						fitness += counterUtil.getWSMean() - ws_mean;
+						fitness += counterUtil.getWSSD() - ws_sd;
+				}
+				else {
+					fitness += 1000;
+				}
+				
+				fitness = 0.0001 * (fitness) + result;
+				
+				sum += fitness;
+			}
+			
+			if (sum < 0) {
+				sum = Double.MAX_VALUE - 100;
 			}
 		
 			// the fitness better be KozaFitness!
