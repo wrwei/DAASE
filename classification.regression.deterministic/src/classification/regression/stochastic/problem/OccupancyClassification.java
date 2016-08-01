@@ -42,8 +42,10 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			double result;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
+			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
+				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
 			}
 
@@ -90,8 +92,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				
 				sum += fitness_cost;
 			}
-			
-			
 			
 			if (Double.isInfinite(sum) || Double.isNaN(sum)) {
 				sum = Double.MAX_VALUE - 100;

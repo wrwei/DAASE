@@ -72,9 +72,9 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 						else
 						{
 							lambda  = StochasticityNormaliser.getInstance().normalise(functional_cost, stochastic_cost);
-							System.out.println(functional_cost);
-							System.out.println(stochastic_cost);
-							System.out.println(lambda);
+//							System.out.println(functional_cost);
+//							System.out.println(stochastic_cost);
+//							System.out.println(lambda);
 						}
 						fitness_cost = functional_cost + 0.01*stochastic_cost;	
 					} else {

@@ -19,7 +19,7 @@ public class CO2 extends AbstractAttributeNode {
 			final GPIndividual individual, final Problem problem) {
 		double co2 = ((OccupancyClassification) problem).co2;
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = co2;
+		rd.x = co2/100;
 		ParamCounter.getInstance().addCount("co2");
 	}
 }

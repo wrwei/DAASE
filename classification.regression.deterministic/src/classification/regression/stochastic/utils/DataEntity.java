@@ -34,7 +34,7 @@ public class DataEntity {
 		
 		GregorianCalendar temp = new GregorianCalendar(date.get(Calendar.YEAR),date.get(Calendar.MONTH), date.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
 
-		nsm = (date.getTimeInMillis() - temp.getTimeInMillis())/1000/60;
+		nsm = (date.getTimeInMillis() - temp.getTimeInMillis())/1000;
 		
 		if (date.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || date.get(Calendar.DAY_OF_WEEK)== Calendar.SUNDAY) {
 			ws = 0;

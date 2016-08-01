@@ -3,493 +3,574 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7384058904056933 Adjusted=0.5752396523268966 Hits=58
+Fitness: Standardized=0.8183345060537909 Adjusted=0.5499538157972005 Hits=28
 Tree 0:
-((y - y)(0.22, 0.33, 0, 0.44 |0.56) + y)(0.25, 0.12, 0.25, 0.38 |1.18) + x(0.38, 0.38, 0.12, 0.12 |1.81)
+(x - y)(0.3, 0.2, 0.4, 0.1 |0.6) - (x * x)(0.29, 0.29, 0.29, 0.14 |0.71)(0.22, 0.11, 0.44, 0.22 |1.87)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.6946114213300956 Adjusted=0.5901057831978395 Hits=43
+Fitness: Standardized=0.7096579412257048 Adjusted=0.5849123242062504 Hits=64
 Tree 0:
-y + (((x * y)(0.33, 0.22, 0.33, 0.11 |0.67) / y)(0.4, 0.2, 0.1, 0.3 |1.27) * x)(0.33, 0.33, 0.33, 0 |1.93)(0.38, 0.12, 0.25, 0.25 |2.56)
+(y + x)(0.75, 0, 0, 0.25 |0.25) - (x * x)(0.29, 0.29, 0.29, 0.14 |0.71)(0.22, 0.11, 0.44, 0.22 |1.52)
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.6527501792320375 Adjusted=0.6050521201363036 Hits=27
+Fitness: Standardized=0.7096579412257048 Adjusted=0.5849123242062504 Hits=64
 Tree 0:
-((x * y)(0.5, 0.12, 0.25, 0.12 |0.5) / (y - x)(0.33, 0.17, 0.17, 0.33 |0.67))(0.22, 0.44, 0.22, 0.11 |1.72) + y(0.67, 0.17, 0.17, 0 |2.06)
+(y + x)(0.75, 0, 0, 0.25 |0.25) - (x * x)(0.29, 0.29, 0.29, 0.14 |0.71)(0.22, 0.11, 0.44, 0.22 |1.52)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.5490691307686205 Adjusted=0.6455489817318983 Hits=61
+Fitness: Standardized=0.7096579412257048 Adjusted=0.5849123242062504 Hits=64
 Tree 0:
-y / (((x - y)(0.11, 0.33, 0.44, 0.11 |0.56) - y)(0.4, 0.2, 0.1, 0.3 |1.16) * x)(0.33, 0.33, 0.33, 0 |1.82)(0.38, 0.12, 0.25, 0.25 |2.45)
+(y + x)(0.75, 0, 0, 0.25 |0.25) - (x * x)(0.29, 0.29, 0.29, 0.14 |0.71)(0.22, 0.11, 0.44, 0.22 |1.52)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4903836920706143 Adjusted=0.670968157609591 Hits=84
+Fitness: Standardized=0.5673852927905195 Adjusted=0.6380052209240996 Hits=94
 Tree 0:
-((x * y)(0.17, 0, 0.83, 0 |0.17) / ((y * y)(0.25, 0.12, 0.38, 0.25 |0.62) / x)(0.33, 0.11, 0.22, 0.33 |1.29))(0.22, 0.44, 0.22, 0.11 |2.01) + y(0.67, 0.17, 0.17, 0 |2.35)
+y - ((x + x)(0.4, 0.4, 0, 0.2 |0.6) / x)(0.25, 0.25, 0.25, 0.25 |1.35)(0.33, 0.17, 0.5, 0 |1.85)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4903836920706143 Adjusted=0.670968157609591 Hits=84
+Fitness: Standardized=0.5673852927905195 Adjusted=0.6380052209240996 Hits=94
 Tree 0:
-((x * y)(0.17, 0, 0.83, 0 |0.17) / ((y * y)(0.25, 0.12, 0.38, 0.25 |0.62) / x)(0.33, 0.11, 0.22, 0.33 |1.29))(0.22, 0.44, 0.22, 0.11 |2.01) + y(0.67, 0.17, 0.17, 0 |2.35)
+y - ((x + x)(0.4, 0.4, 0, 0.2 |0.6) / x)(0.25, 0.25, 0.25, 0.25 |1.35)(0.33, 0.17, 0.5, 0 |1.85)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4533333333333339 Adjusted=0.6880733944954125 Hits=102
+Fitness: Standardized=0.5299282899539909 Adjusted=0.653625406214348 Hits=58
 Tree 0:
-(((x + y)(0.33, 0.22, 0.33, 0.11 |0.67) / y)(0.4, 0.2, 0.1, 0.3 |1.27) + x)(0.33, 0.33, 0.33, 0 |1.93) + y(0.67, 0.17, 0.17, 0 |2.27)
+y + ((x / y)(0.12, 0.25, 0.25, 0.38 |0.62) / ((x * x)(0.25, 0.25, 0.38, 0.12 |0.62) / y)(0.17, 0, 0.17, 0.67 |0.96))(0.83, 0, 0, 0.17 |1.75)(0.33, 0.17, 0.5, 0 |2.25)
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.35333333333333367 Adjusted=0.7389162561576352 Hits=202
+Fitness: Standardized=0.5299073719257982 Adjusted=0.6536343430656407 Hits=43
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) - y)(0.4, 0.2, 0.1, 0.3 |0.77) * x)(0.33, 0.33, 0.33, 0 |1.43) + y(0.67, 0.17, 0.17, 0 |1.77)
+y + ((y / (y / x)(0, 0.12, 0.38, 0.5 |0.5))(0.33, 0.17, 0.17, 0.33 |1.17) * x)(0.25, 0.25, 0.25, 0.25 |1.92)(0.33, 0.17, 0.5, 0 |2.42)
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3533333333333334 Adjusted=0.7389162561576353 Hits=163
+Fitness: Standardized=0.5249025938546874 Adjusted=0.6557795914506085 Hits=85
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.4, 0.2, 0.1, 0.3 |0.77) * x)(0.33, 0.33, 0.33, 0 |1.43) + y(0.67, 0.17, 0.17, 0 |1.77)
+y + (y * ((x / x)(0.22, 0.11, 0.33, 0.33 |0.67) + x)(0.38, 0, 0.25, 0.38 |1.29))(0.33, 0.17, 0.5, 0 |1.79)(0.33, 0.17, 0.5, 0 |2.29)
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3533333333333334 Adjusted=0.7389162561576353 Hits=163
+Fitness: Standardized=0.5184858128233357 Adjusted=0.6585507691643757 Hits=62
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.4, 0.2, 0.1, 0.3 |0.77) * x)(0.33, 0.33, 0.33, 0 |1.43) + y(0.67, 0.17, 0.17, 0 |1.77)
+y * ((x / y)(0, 0.29, 0.43, 0.29 |0.57) + ((x * x)(0.25, 0.25, 0.38, 0.12 |0.62) / y)(0.17, 0, 0.17, 0.67 |0.96))(0.83, 0, 0, 0.17 |1.7)(0.33, 0.17, 0.5, 0 |2.2)
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.35333333333333333 Adjusted=0.7389162561576355 Hits=157
+Fitness: Standardized=0.4583333333333338 Adjusted=0.6857142857142854 Hits=86
 Tree 0:
-(((x + y)(0.17, 0, 0.83, 0 |0.17) + y)(0.4, 0.2, 0.1, 0.3 |0.77) * x)(0.33, 0.33, 0.33, 0 |1.43) * y(0.67, 0.17, 0.17, 0 |1.77)
+y * (y * ((x * x)(0.22, 0.11, 0.33, 0.33 |0.67) * x)(0.38, 0, 0.25, 0.38 |1.29))(0.33, 0.17, 0.5, 0 |1.79)(0.33, 0.17, 0.5, 0 |2.29)
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3450000000000002 Adjusted=0.7434944237918214 Hits=156
+Fitness: Standardized=0.45452114483804856 Adjusted=0.6875114903271781 Hits=68
 Tree 0:
-(((x + y)(0.17, 0, 0.83, 0 |0.17) + y)(0.4, 0.2, 0.1, 0.3 |0.77) + x)(0.38, 0.25, 0.25, 0.12 |1.39) + y(0.67, 0.17, 0.17, 0 |1.73)
+y + (y * ((x / x)(0.2, 0.1, 0.5, 0.2 |0.5) + x)(0.25, 0.25, 0.25, 0.25 |1.25))(0.33, 0.17, 0.5, 0 |1.75)(0.33, 0.17, 0.5, 0 |2.25)
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3222222222222227 Adjusted=0.7563025210084031 Hits=169
+Fitness: Standardized=0.45452114483804856 Adjusted=0.6875114903271781 Hits=68
 Tree 0:
-(x / ((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5))(0.33, 0.11, 0.22, 0.33 |1.17) / y(0.56, 0.33, 0, 0.11 |1.61)
+y + (y * ((x / x)(0.2, 0.1, 0.5, 0.2 |0.5) + x)(0.25, 0.25, 0.25, 0.25 |1.25))(0.33, 0.17, 0.5, 0 |1.75)(0.33, 0.17, 0.5, 0 |2.25)
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3000000000000004 Adjusted=0.769230769230769 Hits=180
+Fitness: Standardized=0.40986065370714725 Adjusted=0.7092899552665419 Hits=82
 Tree 0:
-(x * ((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5))(0.33, 0.11, 0.22, 0.33 |1.17) + y(0.67, 0.17, 0.17, 0 |1.5)
+y * (y - (x + (x * x)(0.2, 0.1, 0.5, 0.2 |0.5))(0.33, 0, 0.5, 0.17 |1))(0.33, 0.17, 0.5, 0 |1.5)(0.33, 0.17, 0.5, 0 |2)
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3000000000000004 Adjusted=0.769230769230769 Hits=180
+Fitness: Standardized=0.4000000000000002 Adjusted=0.7142857142857142 Hits=89
 Tree 0:
-(x * ((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5))(0.33, 0.11, 0.22, 0.33 |1.17) + y(0.67, 0.17, 0.17, 0 |1.5)
+y - (y * (x / (x * x)(0.2, 0.1, 0.5, 0.2 |0.5))(0.33, 0, 0.5, 0.17 |1))(0.33, 0.17, 0.5, 0 |1.5)(0.33, 0.17, 0.5, 0 |2)
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3000000000000005 Adjusted=0.7692307692307689 Hits=225
+Fitness: Standardized=0.4000000000000002 Adjusted=0.7142857142857142 Hits=89
 Tree 0:
-(x / ((x * y)(0.17, 0, 0.83, 0 |0.17) - y)(0.67, 0.17, 0.17, 0 |0.5))(0.33, 0.11, 0.22, 0.33 |1.17) + y(0.67, 0.17, 0.17, 0 |1.5)
+y - (y * (x / (x * x)(0.2, 0.1, 0.5, 0.2 |0.5))(0.33, 0, 0.5, 0.17 |1))(0.33, 0.17, 0.5, 0 |1.5)(0.33, 0.17, 0.5, 0 |2)
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2916666666666667 Adjusted=0.7741935483870968 Hits=215
+Fitness: Standardized=0.3000000000000008 Adjusted=0.7692307692307688 Hits=204
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5) + x)(0.38, 0.25, 0.25, 0.12 |1.12) + y(0.67, 0.17, 0.17, 0 |1.46)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.33, 0.17, 0.5, 0 |1)(0.33, 0.17, 0.5, 0 |1.5)
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2777777777777784 Adjusted=0.7826086956521736 Hits=290
+Fitness: Standardized=0.30000000000000054 Adjusted=0.7692307692307689 Hits=179
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5) * x)(0.44, 0.22, 0.33, 0 |1.06) + y(0.67, 0.17, 0.17, 0 |1.39)
+y - (y + (x / (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.33, 0.17, 0.5, 0 |1)(0.33, 0.17, 0.5, 0 |1.5)
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.27777777777777835 Adjusted=0.7826086956521736 Hits=319
+Fitness: Standardized=0.30000000000000016 Adjusted=0.769230769230769 Hits=277
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.67, 0.17, 0.17, 0 |0.5) - x)(0.22, 0.33, 0.44, 0 |1.06) + y(0.67, 0.17, 0.17, 0 |1.39)
+y - (y * (x / (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.33, 0.17, 0.5, 0 |1)(0.33, 0.17, 0.5, 0 |1.5)
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.26666666666666683 Adjusted=0.7894736842105262 Hits=95
+Fitness: Standardized=0.3000000000000002 Adjusted=0.769230769230769 Hits=215
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) - y)(0.67, 0.17, 0.17, 0 |0.5) + x)(0.5, 0.25, 0.12, 0.12 |1) * y(0.67, 0.17, 0.17, 0 |1.33)
+y * (y + (x + (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.33, 0.17, 0.5, 0 |1)(0.33, 0.17, 0.5, 0 |1.5)
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.2583333333333343 Adjusted=0.7947019867549664 Hits=251
+Fitness: Standardized=0.26666666666666705 Adjusted=0.7894736842105261 Hits=310
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.67, 0.17, 0.17, 0 |0.33) + x)(0.38, 0.25, 0.25, 0.12 |0.96) - y(0.67, 0.17, 0.17, 0 |1.29)
+y + (y + (x * (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.33, 0.17, 0.5, 0 |1.33)
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.25111111111111184 Adjusted=0.7992895204262873 Hits=332
+Fitness: Standardized=0.26666666666666694 Adjusted=0.7894736842105261 Hits=260
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) - y)(0.67, 0.17, 0.17, 0 |0.5) - x)(0.44, 0.22, 0.33, 0 |1.06) + y(0.8, 0, 0.2, 0 |1.26)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.33, 0.17, 0.5, 0 |1.33)
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23492063492063575 Adjusted=0.809768637532133 Hits=371
+Fitness: Standardized=0.2666666666666667 Adjusted=0.7894736842105263 Hits=198
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.67, 0.17, 0.17, 0 |0.33) + x)(0.44, 0.22, 0.33, 0 |0.89) + y(0.71, 0.14, 0.14, 0 |1.17)
+y + (y * (x * (x * x)(0, 0, 1, 0 |0))(0.33, 0, 0.5, 0.17 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.5, 0.1, 0.1, 0.3 |1.33)
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.23333333333333364 Adjusted=0.8108108108108106 Hits=128
+Fitness: Standardized=0.2666666666666667 Adjusted=0.7894736842105263 Hits=277
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) * y)(0.67, 0.17, 0.17, 0 |0.33) + x)(0.5, 0.25, 0.12, 0.12 |0.83) - y(0.67, 0.17, 0.17, 0 |1.17)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.33, 0.17, 0.5, 0 |1.33)
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.21777777777777793 Adjusted=0.8211678832116788 Hits=332
+Fitness: Standardized=0.2666666666666667 Adjusted=0.7894736842105263 Hits=223
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.67, 0.17, 0.17, 0 |0.33) * x)(0.44, 0.22, 0.33, 0 |0.89) + y(0.8, 0, 0.2, 0 |1.09)
+y - (y * (x + (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.33, 0.17, 0.5, 0 |1.33)
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20500000000000096 Adjusted=0.8298755186721986 Hits=335
+Fitness: Standardized=0.24166666666666678 Adjusted=0.8053691275167785 Hits=425
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.38, 0.25, 0.25, 0.12 |0.82) * y(0.8, 0, 0.2, 0 |1.02)
+y * (y - (x + (x * x)(0, 0, 1, 0 |0))(0.62, 0.12, 0.25, 0 |0.38))(0.17, 0.17, 0.67, 0 |0.71)(0.33, 0.17, 0.5, 0 |1.21)
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.19111111111111215 Adjusted=0.8395522388059694 Hits=418
+Fitness: Standardized=0.25238095238095243 Adjusted=0.7984790874524715 Hits=203
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0.2, 0, 0 |0.2) + x)(0.44, 0.22, 0.33, 0 |0.76) + y(0.8, 0, 0.2, 0 |0.96)
+y + (y + (x - (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0.17, 0.17, 0.67, 0 |0.83)(0.29, 0.14, 0.57, 0 |1.26)
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.19111111111111123 Adjusted=0.8395522388059701 Hits=455
+Fitness: Standardized=0.23333333333333348 Adjusted=0.8108108108108107 Hits=288
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.44, 0.22, 0.33, 0 |0.76) + y(0.8, 0, 0.2, 0 |0.96)
+y * (y * (x * (x * x)(0, 0, 1, 0 |0))(0.5, 0.12, 0.25, 0.12 |0.5))(0, 0.17, 0.83, 0 |0.67)(0.33, 0.17, 0.5, 0 |1.17)
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.17333333333333387 Adjusted=0.852272727272727 Hits=182
+Fitness: Standardized=0.20952380952381036 Adjusted=0.8267716535433065 Hits=256
 Tree 0:
-(((x * y)(0.17, 0, 0.83, 0 |0.17) + y)(0.8, 0, 0.2, 0 |0.37) + x)(0.5, 0.25, 0.12, 0.12 |0.87) + y(1, 0, 0, 0 |0.87)
+y - (y * (x + (x * x)(0, 0, 1, 0 |0))(0.71, 0.14, 0.14, 0 |0.29))(0.17, 0.17, 0.67, 0 |0.62)(0.29, 0.14, 0.57, 0 |1.05)
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16888888888889036 Adjusted=0.8555133079847898 Hits=314
+Fitness: Standardized=0.19047619047619044 Adjusted=0.84 Hits=446
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) * y)(0.8, 0, 0.2, 0 |0.2) + x)(0.56, 0.22, 0.22, 0 |0.64) + y(0.8, 0, 0.2, 0 |0.84)
+y + (y * (x * (x * x)(0, 0, 1, 0 |0))(0.71, 0.14, 0.14, 0 |0.29))(0, 0.17, 0.83, 0 |0.45)(0.33, 0.17, 0.5, 0 |0.95)
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16888888888888914 Adjusted=0.8555133079847907 Hits=313
+Fitness: Standardized=0.16666666666666688 Adjusted=0.8571428571428569 Hits=509
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.56, 0.22, 0.22, 0 |0.64) + y(0.8, 0, 0.2, 0 |0.84)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.33, 0.17, 0.5, 0 |0.83)
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16888888888888903 Adjusted=0.8555133079847907 Hits=289
+Fitness: Standardized=0.16666666666666688 Adjusted=0.8571428571428569 Hits=509
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) * x)(0.56, 0.22, 0.22, 0 |0.64) + y(0.8, 0, 0.2, 0 |0.84)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.33, 0.17, 0.5, 0 |0.83)
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16888888888888892 Adjusted=0.8555133079847909 Hits=280
+Fitness: Standardized=0.15238095238095295 Adjusted=0.8677685950413219 Hits=469
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.56, 0.22, 0.22, 0 |0.64) + y(0.8, 0, 0.2, 0 |0.84)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.29, 0.14, 0.57, 0 |0.76)
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15500000000000114 Adjusted=0.8658008658008649 Hits=167
+Fitness: Standardized=0.1523809523809525 Adjusted=0.8677685950413222 Hits=392
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.29, 0.14, 0.57, 0 |0.76)
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15499999999999997 Adjusted=0.8658008658008658 Hits=183
+Fitness: Standardized=0.15238095238095245 Adjusted=0.8677685950413222 Hits=395
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) * y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.29, 0.14, 0.57, 0 |0.76)
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15500000000000008 Adjusted=0.8658008658008658 Hits=211
+Fitness: Standardized=0.1523809523809524 Adjusted=0.8677685950413224 Hits=409
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.29, 0.14, 0.57, 0 |0.76)
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15499999999999997 Adjusted=0.8658008658008658 Hits=212
+Fitness: Standardized=0.1523809523809524 Adjusted=0.8677685950413224 Hits=409
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.17, 0.83, 0 |0.33)(0.29, 0.14, 0.57, 0 |0.76)
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15499999999999997 Adjusted=0.8658008658008658 Hits=212
+Fitness: Standardized=0.14761904761904832 Adjusted=0.8713692946058085 Hits=417
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y * (y - (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0.14, 0.86, 0 |0.31)(0.29, 0.14, 0.57, 0 |0.74)
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.15499999999999997 Adjusted=0.8658008658008658 Hits=156
+Fitness: Standardized=0.11904761904761954 Adjusted=0.8936170212765954 Hits=450
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(0.8, 0, 0.2, 0 |0.77)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0, 1, 0 |0.17)(0.29, 0.14, 0.57, 0 |0.6)
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.14833333333333365 Adjusted=0.8708272859216253 Hits=179
+Fitness: Standardized=0.11904761904761932 Adjusted=0.8936170212765956 Hits=447
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.83, 0, 0.17, 0 |0.17) + x)(0.62, 0.12, 0.12, 0.12 |0.54) * y(0.8, 0, 0.2, 0 |0.74)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0, 1, 0 |0.17)(0.29, 0.14, 0.57, 0 |0.6)
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.14666666666666683 Adjusted=0.8720930232558137 Hits=302
+Fitness: Standardized=0.09047619047619097 Adjusted=0.917030567685589 Hits=241
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.67, 0.11, 0.22, 0 |0.53) + y(0.8, 0, 0.2, 0 |0.73)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0, 1, 0 |0.17)(0.14, 0.14, 0.71, 0 |0.45)
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11500000000000049 Adjusted=0.8968609865470849 Hits=239
+Fitness: Standardized=0.09047619047619097 Adjusted=0.917030567685589 Hits=241
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(1, 0, 0, 0 |0.57)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(0.83, 0, 0.17, 0 |0.17))(0, 0, 1, 0 |0.17)(0.14, 0.14, 0.71, 0 |0.45)
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11500000000000049 Adjusted=0.8968609865470849 Hits=239
+Fitness: Standardized=0.08571428571428627 Adjusted=0.9210526315789469 Hits=617
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.62, 0.12, 0.12, 0.12 |0.57) + y(1, 0, 0, 0 |0.57)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.29, 0.14, 0.57, 0 |0.43)
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10666666666666698 Adjusted=0.9036144578313251 Hits=380
+Fitness: Standardized=0.057142857142857446 Adjusted=0.9459459459459457 Hits=292
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(0.8, 0, 0.2, 0 |0.2) + x)(0.67, 0.11, 0.22, 0 |0.53) + y(1, 0, 0, 0 |0.53)
+y - (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0.14, 0.71, 0 |0.29)
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.07500000000000062 Adjusted=0.9302325581395343 Hits=228
+Fitness: Standardized=0.057142857142857946 Adjusted=0.9459459459459452 Hits=331
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) * x)(0.62, 0.12, 0.12, 0.12 |0.38) + y(1, 0, 0, 0 |0.38)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0.14, 0.71, 0 |0.29)
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.07500000000000004 Adjusted=0.9302325581395349 Hits=242
+Fitness: Standardized=0.0571428571428576 Adjusted=0.9459459459459455 Hits=286
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) - x)(0.62, 0.12, 0.12, 0.12 |0.38) + y(1, 0, 0, 0 |0.38)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0.14, 0.71, 0 |0.29)
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.07500000000000034 Adjusted=0.9302325581395345 Hits=242
+Fitness: Standardized=0.05714285714285714 Adjusted=0.9459459459459459 Hits=252
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.62, 0.12, 0.12, 0.12 |0.38) + y(1, 0, 0, 0 |0.38)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0.14, 0.71, 0 |0.29)
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000052 Adjusted=0.9523809523809519 Hits=266
+Fitness: Standardized=0.05000000000000063 Adjusted=0.9523809523809518 Hits=248
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0.12, 0.75, 0 |0.25)
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000052 Adjusted=0.9523809523809519 Hits=266
+Fitness: Standardized=0.05000000000000048 Adjusted=0.9523809523809519 Hits=246
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0.12, 0.75, 0 |0.25)
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000048 Adjusted=0.9523809523809519 Hits=278
+Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=270
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0.12, 0.75, 0 |0.25)
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000035 Adjusted=0.9523809523809521 Hits=249
+Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=270
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0.12, 0.75, 0 |0.25)
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=257
+Fitness: Standardized=0.02857142857142957 Adjusted=0.9722222222222213 Hits=278
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) * x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=257
+Fitness: Standardized=0.02857142857142878 Adjusted=0.9722222222222221 Hits=310
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) * x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=268
+Fitness: Standardized=0.02857142857142878 Adjusted=0.9722222222222221 Hits=310
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=286
+Fitness: Standardized=0.02857142857142868 Adjusted=0.9722222222222221 Hits=285
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) * x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.05000000000000001 Adjusted=0.9523809523809523 Hits=269
+Fitness: Standardized=0.028571428571428626 Adjusted=0.9722222222222221 Hits=287
 Tree 0:
-(((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0) + x)(0.75, 0.12, 0.12, 0 |0.25) + y(1, 0, 0, 0 |0.25)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.885780586188048E-16 Adjusted=0.9999999999999996 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=280
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.7755575615628914E-16 Adjusted=0.9999999999999998 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=284
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.469446951953614E-16 Adjusted=0.9999999999999996 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=304
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=5.551115123125783E-17 Adjusted=1.0 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=270
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0 Adjusted=1.0 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=296
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
 
-Best Individual of Run:
+Generation: 61
+Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.0 Adjusted=1.0 Hits=2000
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=283
 Tree 0:
-(x * ((x * y)(0, 0, 1, 0 |0) + y)(1, 0, 0, 0 |0))(0, 0, 1, 0 |0) + y(1, 0, 0, 0 |0)
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=270
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=309
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=282
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=270
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=378
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=298
+Tree 0:
+y + (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.02857142857142857 Adjusted=0.9722222222222223 Hits=284
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.14, 0, 0.86, 0 |0.14)
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.025000000000000116 Adjusted=0.9756097560975608 Hits=333
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0, 0.88, 0 |0.12)
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.025000000000000116 Adjusted=0.9756097560975608 Hits=333
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0, 0.88, 0 |0.12)
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.025000000000000005 Adjusted=0.9756097560975611 Hits=216
+Tree 0:
+y * (y * (x + (x * x)(0, 0, 1, 0 |0))(1, 0, 0, 0 |0))(0, 0, 1, 0 |0)(0.12, 0, 0.88, 0 |0.12)

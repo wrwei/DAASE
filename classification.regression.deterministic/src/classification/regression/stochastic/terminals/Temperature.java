@@ -20,7 +20,7 @@ public class Temperature extends AbstractAttributeNode {
 		double temperature = ((OccupancyClassification) problem).temperature;
 
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = temperature;
+		rd.x = temperature/10;
 		ParamCounter.getInstance().addCount("temperature");
 	}
 }
