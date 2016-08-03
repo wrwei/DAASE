@@ -21,7 +21,7 @@ public class HumidityRatio extends AbstractAttributeNode {
 		double hr = ((OccupancyClassification) problem).hr;
 
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = hr*1000;
+		rd.x = hr;
 		ParamCounter.getInstance().addCount("hr");
 	}
 }

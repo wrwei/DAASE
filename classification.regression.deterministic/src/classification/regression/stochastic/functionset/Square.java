@@ -10,7 +10,7 @@ import ec.gp.GPIndividual;
 public class Square extends AbstractFunctionNode {
 
 	public String toString() {
-		return "square";
+		return "pow^2";
 	}
 
 	public int expectedChildren() {

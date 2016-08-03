@@ -19,7 +19,7 @@ public class Humidity extends AbstractAttributeNode {
 			final GPIndividual individual, final Problem problem) {
 		double humidity = ((OccupancyClassification) problem).humidity;
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = humidity/10;
+		rd.x = humidity;
 		ParamCounter.getInstance().addCount("humidity");
 	}
 }

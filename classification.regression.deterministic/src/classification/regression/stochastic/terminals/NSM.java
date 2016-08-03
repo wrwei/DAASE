@@ -20,7 +20,7 @@ public class NSM extends AbstractAttributeNode {
 		double nsm = ((OccupancyClassification) problem).nsm;
 
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = nsm/10000;
+		rd.x = nsm;
 		ParamCounter.getInstance().addCount("nsm");
 	}
 }

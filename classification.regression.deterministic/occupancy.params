@@ -38,29 +38,29 @@ gp.fs.0.func.5.nc = nc0
 gp.fs.0.func.6 = classification.regression.stochastic.terminals.WS
 gp.fs.0.func.6.nc = nc0
 
-gp.fs.0.func.7 = classification.regression.stochastic.functionset.Log_base_10
-gp.fs.0.func.7.nc = nc1
+gp.fs.0.func.7 = classification.regression.stochastic.functionset.Add
+gp.fs.0.func.7.nc = nc2
 
-gp.fs.0.func.8 = classification.regression.stochastic.functionset.Log_base_e
-gp.fs.0.func.8.nc = nc1
+gp.fs.0.func.8 = classification.regression.stochastic.functionset.Sub
+gp.fs.0.func.8.nc = nc2
 
-gp.fs.0.func.9 = classification.regression.stochastic.functionset.Square
-gp.fs.0.func.9.nc = nc1
+gp.fs.0.func.9 = classification.regression.stochastic.functionset.Mul
+gp.fs.0.func.9.nc = nc2
 
-gp.fs.0.func.10 = classification.regression.stochastic.functionset.SquareRoot
-gp.fs.0.func.10.nc = nc1
+gp.fs.0.func.10 = classification.regression.stochastic.functionset.Div
+gp.fs.0.func.10.nc = nc2
 
-gp.fs.0.func.11 = classification.regression.stochastic.functionset.Add
-gp.fs.0.func.11.nc = nc2
+gp.fs.0.func.11 = classification.regression.stochastic.functionset.Square
+gp.fs.0.func.11.nc = nc1
 
-gp.fs.0.func.12 = classification.regression.stochastic.functionset.Sub
-gp.fs.0.func.12.nc = nc2
+gp.fs.0.func.12 = classification.regression.stochastic.functionset.SquareRoot
+gp.fs.0.func.12.nc = nc1
 
-gp.fs.0.func.13 = classification.regression.stochastic.functionset.Mul
-gp.fs.0.func.13.nc = nc2
+gp.fs.0.func.13 = classification.regression.stochastic.functionset.Log_base_10
+gp.fs.0.func.13.nc = nc1
 
-gp.fs.0.func.14 = classification.regression.stochastic.functionset.Div
-gp.fs.0.func.14.nc = nc2
+gp.fs.0.func.14 = classification.regression.stochastic.functionset.Log_base_e
+gp.fs.0.func.14.nc = nc1
 
 eval.problem = classification.regression.stochastic.problem.OccupancyClassification
 eval.problem.data = classification.regression.stochastic.utils.DoubleData

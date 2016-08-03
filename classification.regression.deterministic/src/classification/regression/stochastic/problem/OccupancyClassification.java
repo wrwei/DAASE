@@ -21,7 +21,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public double light;
 	public double co2;
 	public double hr;
-	public long nsm;
+	public double nsm;
 	public int ws;
 	
 	public void setup(final EvolutionState state, final Parameter base) {
@@ -52,12 +52,12 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			for(int i=0; i < dw.size(); i++)
 			{
 				DataEntity de = dw.getData(i);
-				temperature = de.getTemperature();
-				humidity = de.getHumidity();
-				light = de.getLight();
-				co2 = de.getCo2();
+				temperature = de.getTemperature()*0.1;
+				humidity = de.getHumidity()*0.1;
+				light = de.getLight()*0.01;
+				co2 = de.getCo2()*0.01;
 				hr = de.getHr();
-				nsm = de.getNsm();
+				nsm = de.getNsm() * 0.00001;
 				ws = de.getWs();
 				
 				//get occupancy
@@ -81,11 +81,11 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					
 					result = Math.abs(expectedResult - input.x);
 					
-					if (result <= 0.001)
+					if (result <= 0.00001)
 					{
 						hits++;
 					}
-					fitness_cost = functional_cost;
+					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();
 				} else {
 					fitness_cost = 100.0;
 				}

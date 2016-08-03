@@ -20,7 +20,7 @@ public class Light extends AbstractAttributeNode {
 		double light = ((OccupancyClassification) problem).light;
 
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = light/100;
+		rd.x = light;
 		ParamCounter.getInstance().addCount("light");
 	}
 }
