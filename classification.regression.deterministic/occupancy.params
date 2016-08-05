@@ -50,17 +50,20 @@ gp.fs.0.func.9.nc = nc2
 gp.fs.0.func.10 = classification.regression.stochastic.functionset.Div
 gp.fs.0.func.10.nc = nc2
 
-gp.fs.0.func.11 = classification.regression.stochastic.functionset.Square
+gp.fs.0.func.11 = classification.regression.stochastic.functionset.Sin
 gp.fs.0.func.11.nc = nc1
 
-gp.fs.0.func.12 = classification.regression.stochastic.functionset.SquareRoot
+gp.fs.0.func.12 = classification.regression.stochastic.functionset.Cos
 gp.fs.0.func.12.nc = nc1
 
-gp.fs.0.func.13 = classification.regression.stochastic.functionset.Log_base_10
+gp.fs.0.func.13 = classification.regression.stochastic.functionset.Exp
 gp.fs.0.func.13.nc = nc1
 
 gp.fs.0.func.14 = classification.regression.stochastic.functionset.Log_base_e
 gp.fs.0.func.14.nc = nc1
+
+gp.fs.0.func.15 = classification.regression.stochastic.functionset.Log_base_10
+gp.fs.0.func.15.nc = nc1
 
 eval.problem = classification.regression.stochastic.problem.OccupancyClassification
 eval.problem.data = classification.regression.stochastic.utils.DoubleData
