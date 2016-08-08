@@ -4,6 +4,7 @@ import classification.decision.deterministic.utils.CounterUtil;
 import classification.decision.deterministic.utils.DataEntity;
 import classification.decision.deterministic.utils.DataWarehouse;
 import classification.decision.deterministic.utils.DoubleData;
+import classification.decision.deterministic.utils.Normaliser;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gp.GPIndividual;
@@ -20,8 +21,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public double light;
 	public double co2;
 	public double hr;
-	public long nsm;
-	public int ws;
+	public double nsm;
+	public double ws;
 	
 	public void setup(final EvolutionState state, final Parameter base) {
 		super.setup(state, base);
@@ -51,10 +52,9 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			DataWarehouse dw = DataWarehouse.getInstance();
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				System.out.println("Expected hits: " + dw.size());
 				
 				System.out.println(dw.getStatistics());
-				
+				System.out.println("Expected hits: " + dw.size());
 				temp_mean = dw.getMean("temperature");
 				temp_sd = dw.getStDeviation("temperature");
 				
@@ -79,14 +79,16 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 			for(int i=0; i < dw.size(); i++)
 			{
+				Normaliser normaliser = Normaliser.getInstance();
+				
 				DataEntity de = dw.getData(i);
-				temperature = de.getTemperature();
-				humidity = de.getHumidity();
-				light = de.getLight();
-				co2 = de.getCo2();
-				hr = de.getHr();
-				nsm = de.getNsm();
-				ws = de.getWs();
+				temperature = de.getTemperature() * normaliser.getTemp();
+				humidity = de.getHumidity() * normaliser.getHumidity();
+				light = de.getLight() * normaliser.getLight();
+				co2 = de.getCo2() * normaliser.getCo2();
+				hr = de.getHr() * normaliser.getHr();
+				nsm = (double) de.getNsm() * normaliser.getNsm();
+				ws = (double) de.getWs() * normaliser.getWs();
 				
 				//get occupancy
 				expectedResult = de.getOccupancy();
@@ -173,7 +175,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					fitness += 1000;
 				}
 				
-				fitness = 0.0001 * (fitness) + result;
+				fitness = result + fitness + counterUtil.getInstance().getParamScore();
 				
 				sum += fitness;
 			}

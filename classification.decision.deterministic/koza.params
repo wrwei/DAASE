@@ -224,7 +224,7 @@ gp.nc.2.size = 0
 gp.nc.3 = ec.gp.GPNodeConstraints
 gp.nc.3.name = nc3
 gp.nc.3.returns = nil
-gp.nc.3.size = 28
+gp.nc.3.size = 19
 gp.nc.3.child.0 = nil-or-bool
 gp.nc.3.child.1 = nil-or-bool
 
@@ -236,24 +236,16 @@ gp.nc.3.child.6 = int
 gp.nc.3.child.7 = int
 gp.nc.3.child.8 = int
 gp.nc.3.child.9 = int
+
+
 gp.nc.3.child.10 = int
 gp.nc.3.child.11 = int
 gp.nc.3.child.12 = int
 gp.nc.3.child.13 = int
+
 gp.nc.3.child.14 = int
 gp.nc.3.child.15 = int
 gp.nc.3.child.16 = int
 gp.nc.3.child.17 = int
-gp.nc.3.child.18 = int
 
-gp.nc.3.child.19 = int
-gp.nc.3.child.20 = int
-gp.nc.3.child.21 = int
-gp.nc.3.child.22 = int
-
-gp.nc.3.child.23 = int
-gp.nc.3.child.24 = int
-gp.nc.3.child.25 = int
-gp.nc.3.child.26 = int
-
-gp.nc.3.child.27 = data
+gp.nc.3.child.18 = data

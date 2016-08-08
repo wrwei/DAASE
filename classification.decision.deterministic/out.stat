@@ -1,0 +1,64 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589777E11 Adjusted=9.725962280959548E-12 Hits=7866
+Tree 0:
+0 <= 1(light: 27.000004)
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.02817589601E11 Adjusted=9.725962297608153E-12 Hits=8042
+Tree 0:
+0 <= 1(nsm: 7.011)

@@ -19,9 +19,9 @@ public abstract class AbstractNonTerminal extends GPNode {
 	
 	public int expectedChildren() {
 		//2 nodes for subtree
-		//17 + 4 + 4 = 25 nodes to calculate value
+		//8 + 4 + 4 = 25 nodes to calculate value
 		//1 node to store data
-		return 28;
+		return 19;
 	}
 	
 	public abstract boolean process();
@@ -30,7 +30,7 @@ public abstract class AbstractNonTerminal extends GPNode {
 	public void checkConstraints(EvolutionState state, int tree,
 			GPIndividual typicalIndividual, Parameter individualBase) {
 		super.checkConstraints(state, tree, typicalIndividual, individualBase);
-		if (children.length != 28)
+		if (children.length != 19)
 			state.output.error("Incorrect number of children for node " + toStringForError() + " at " + individualBase);
 	}
 
@@ -89,11 +89,13 @@ public abstract class AbstractNonTerminal extends GPNode {
 		//signal that the value of this node has been calculated 
 		calc_value = true;
 		
-		//17 bits to calculate the decimal part
+		value = 0;
+		
+		//8 bits to calculate the decimal part
 		int decimal = 0;
 		
-		//17 bits for decimal
-		for (int i = 2; i < 19; i++) {
+		//8 bits for decimal
+		for (int i = 2; i < 10; i++) {
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
@@ -103,31 +105,39 @@ public abstract class AbstractNonTerminal extends GPNode {
 			}
 		}
 		
+//		System.out.println("decimal is: " + decimal);
+		
 		//4 bits to caluculate the float
 		int floatpoint = 0;
-		for(int i = 19; i < 23; i++)
+		for(int i = 10; i < 14; i++)
 		{
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				floatpoint += 1 << (i-19);
+				floatpoint += 1 << (i-10);
 			}
 		}
 		
+//		System.out.println("float is: " + floatpoint);
+
+		
 		//4 bits to calculate div factor
 		int div_factor = 1;
-		for(int i = 23; i < 27; i++)
+		for(int i = 14; i < 18; i++)
 		{
 			DoubleData rd = ((DoubleData) (input));
 
 			children[i].eval(state, thread, input, stack, individual, problem);
 			int result = (int) rd.x;
 			if (result == 1) {
-				div_factor += 1 << (i-23);
+				div_factor += 1 << (i-14);
 			}
 		}
+		
+//		System.out.println("div fac is: " + div_factor);
+
 		
 		//add decimal part
 		value += (double)decimal;
@@ -152,12 +162,12 @@ public abstract class AbstractNonTerminal extends GPNode {
 		value += factor;
 		
 		//get the data from children 22
-		children[27].eval(state, thread, input, stack, individual, problem);
+		children[18].eval(state, thread, input, stack, individual, problem);
 		DoubleData rd = ((DoubleData) (input));
 		data = (double)rd.x;
 		
 		//add the count to the param counter
-		CounterUtil.getInstance().addParamCount(children[27].toString());
+		CounterUtil.getInstance().addParamCount(children[18].toString());
 		
 		//calculate value and data recursively for child 0
 		if (children[0] instanceof AbstractNonTerminal) {
@@ -178,10 +188,14 @@ public abstract class AbstractNonTerminal extends GPNode {
 		if (!calc_value) {
 			System.out.println("Value not calc!");
 		}
-		return (parentMadeParens ? "" : "(") + children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
+		return (parentMadeParens ? "" : "(") + "0"
 				+ " " + toStringForHumans() + " "
-				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
-				+ (parentMadeParens ? "" : ")") + "(" + children[27].toString() + ": " +  value + ")";
+				+ "1"
+				+ (parentMadeParens ? "" : ")") + "(" + children[18].toString() + ": " +  value + ")";
+//		return (parentMadeParens ? "" : "(") + children[0].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
+//				+ " " + toStringForHumans() + " "
+//				+ children[1].makeCTree(false, printTerminalsAsVariables, useOperatorForm)
+//				+ (parentMadeParens ? "" : ")") + "(" + children[18].toString() + ": " +  value + ")";
 
 	}
 	
