@@ -33,7 +33,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public void evaluate(final EvolutionState state, final Individual ind, final int subpopulation,
 			final int threadnum) {
 		if (!ind.evaluated) 
-		{
+		{ 
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
