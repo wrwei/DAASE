@@ -194,4 +194,17 @@ public class DataWarehouse {
 		return str;
 	}
 	
+	public double getMeanSum()
+	{
+		double result = 0.0;
+		result += getMean("temperature");
+		result += getMean("humidity");
+		result += getMean("light");
+		result += getMean("co2");
+		result += getMean("hr");
+		result += getMean("nsm");
+		result += getMean("ws");
+		return result;
+	}
+	
 }

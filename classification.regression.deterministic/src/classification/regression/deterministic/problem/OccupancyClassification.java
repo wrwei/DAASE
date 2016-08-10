@@ -38,13 +38,15 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 			int hits = 0;
 			double sum = 0.0;
-			double expectedResult;
 			double result;
+			double expectedResult = 0.0;
+			double sum_mean = 0.0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
 			if (!dw.initialised()) {
-				dw.initialise("data/datatraining.txt");
+				dw.initialise("data/datatest2.txt");
+				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
 			}
@@ -54,8 +56,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				DataEntity de = dw.getData(i);
 				temperature = de.getTemperature();
 				humidity = de.getHumidity();
-				light = de.getLight()*0.1;
-				co2 = de.getCo2()*0.1;
+				light = de.getLight();
+				co2 = de.getCo2();
 				hr = de.getHr();
 				nsm = de.getNsm() ;
 				ws = de.getWs();
@@ -87,13 +89,13 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				// check for existence of illegal divisions
 				if (!IllegalDivision.getInstance().illegalDivision()) {
 					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-					double threshold=3.0;
+					double threshold = sum_mean;
 					
 					double actual=(input.x<threshold)?0:1;
 					
-					functional_cost = Math.abs(expectedResult-input.x);
+					functional_cost = Math.abs(actual-input.x);
 					
-					result = Math.abs(expectedResult - input.x);
+					result = Math.abs(actual - input.x);
 					//System.out.println("result is   "+result);
 					
 					if (result <= 0.00001)
