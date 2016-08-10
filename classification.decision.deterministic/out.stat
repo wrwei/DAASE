@@ -3,54 +3,102 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=37.80000000000027 Adjusted=0.02577319587628848 Hits=7765
+Fitness: Standardized=261.0 Adjusted=0.003816793893129771 Hits=7882
 Tree 0:
-0 <= 1(humidity: 202.000000000009)
+0 >= 1(light: 145.0000000013)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
+Fitness: Standardized=98.0 Adjusted=0.010101010101010102 Hits=8045
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
+Fitness: Standardized=98.0 Adjusted=0.010101010101010102 Hits=8045
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
+Fitness: Standardized=98.0 Adjusted=0.010101010101010102 Hits=8045
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
+Fitness: Standardized=98.0 Adjusted=0.010101010101010102 Hits=8045
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
 Tree 0:
-0 >= 1(humidity: 216.0000014)
+0 < 1(temperature: 252.0)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=97.0 Adjusted=0.01020408163265306 Hits=8046
+Tree 0:
+0 < 1(temperature: 252.0)

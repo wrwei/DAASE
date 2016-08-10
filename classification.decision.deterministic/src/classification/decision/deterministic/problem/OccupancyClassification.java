@@ -175,7 +175,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 //					fitness += 1000;
 //				}
 				
-				fitness = 0.1*result + counterUtil.getInstance().getParamScore();
+				fitness = result + counterUtil.getInstance().getParamScore();
 				sum += fitness;
 			}
 			
