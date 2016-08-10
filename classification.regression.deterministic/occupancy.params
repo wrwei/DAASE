@@ -15,7 +15,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 15
+gp.fs.0.size = 12
 
 gp.fs.0.func.0 = classification.regression.stochastic.terminals.Temperature
 gp.fs.0.func.0.nc = nc0

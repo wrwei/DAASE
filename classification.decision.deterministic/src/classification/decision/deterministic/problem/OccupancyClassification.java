@@ -55,26 +55,26 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
-				temp_mean = dw.getMean("temperature");
-				temp_sd = dw.getStDeviation("temperature");
-				
-				humidty_mean = dw.getMean("humidity");
-				humidity_sd = dw.getStDeviation("humidity");
-				
-				light_mean = dw.getMean("light");
-				light_sd = dw.getStDeviation("light");
-				
-				co2_mean = dw.getMean("co2");
-				co2_sd = dw.getStDeviation("co2");
-				
-				hr_mean = dw.getMean("hr");
-				hr_sd = dw.getStDeviation("hr");
-				
-				nsm_mean = dw.getMean("nsm");
-				nsm_sd = dw.getStDeviation("nsm");
-				
-				ws_mean = dw.getMean("ws");
-				ws_sd = dw.getStDeviation("ws");
+//				temp_mean = dw.getMean("temperature");
+//				temp_sd = dw.getStDeviation("temperature");
+//				
+//				humidty_mean = dw.getMean("humidity");
+//				humidity_sd = dw.getStDeviation("humidity");
+//				
+//				light_mean = dw.getMean("light");
+//				light_sd = dw.getStDeviation("light");
+//				
+//				co2_mean = dw.getMean("co2");
+//				co2_sd = dw.getStDeviation("co2");
+//				
+//				hr_mean = dw.getMean("hr");
+//				hr_sd = dw.getStDeviation("hr");
+//				
+//				nsm_mean = dw.getMean("nsm");
+//				nsm_sd = dw.getStDeviation("nsm");
+//				
+//				ws_mean = dw.getMean("ws");
+//				ws_sd = dw.getStDeviation("ws");
 			}
 
 			for(int i=0; i < dw.size(); i++)
@@ -113,70 +113,69 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				
 				
 				double fitness = 0.0;
-				if (!counterUtil.tempEmpty()) {
-						fitness += counterUtil.getTemperatureMean() - temp_mean; 
-						fitness += counterUtil.getTemperatureSD() - temp_sd;
-				}
-				else
-				{
-					fitness += 10000;
-				}
+//				if (!counterUtil.tempEmpty()) {
+//						fitness += counterUtil.getTemperatureMean() - temp_mean; 
+//						fitness += counterUtil.getTemperatureSD() - temp_sd;
+//				}
+//				else
+//				{
+//					fitness += 10000;
+//				}
+//				
+//				if (!counterUtil.humidityEmpty()) {
+//						fitness += counterUtil.getHumidityMean() - humidty_mean;
+//						fitness += counterUtil.getHumiditySD() - humidity_sd;
+//				}
+//				else
+//				{
+//					fitness += 15000;
+//				}
+//				
+//				if (!counterUtil.lightsEmpty()) {
+//						fitness += counterUtil.getLightMean() - light_mean;
+//						fitness += counterUtil.getLightSD() - light_sd;
+//				}
+//				else
+//				{
+//					fitness += 100000;
+//				}
+//				
+//				if (!counterUtil.co2sEmpty()) {
+//						fitness += counterUtil.getCO2Mean() - co2_mean;
+//						fitness += counterUtil.getCO2SD() - co2_sd;
+//				}
+//				else
+//				{
+//					fitness += 500000;
+//				}
+//				
+//				if (!counterUtil.hrsEmpty()) {
+//						fitness += counterUtil.getHRMean() - hr_mean;
+//						fitness += counterUtil.getHRSD() - hr_sd;
+//				}
+//				else
+//				{
+//					fitness += 500;
+//				}
+//				
+//				if (!counterUtil.nsmsEmpty()) {
+//						fitness += counterUtil.getNSMMean() - nsm_mean;
+//						fitness += counterUtil.getNSMSD() - nsm_sd;	
+//				}
+//				else
+//				{
+//					fitness += 12000000;
+//				}
+//				
+//				if (!counterUtil.wssEmpty()) {
+//						fitness += counterUtil.getWSMean() - ws_mean;
+//						fitness += counterUtil.getWSSD() - ws_sd;
+//				}
+//				else {
+//					fitness += 1000;
+//				}
 				
-				if (!counterUtil.humidityEmpty()) {
-						fitness += counterUtil.getHumidityMean() - humidty_mean;
-						fitness += counterUtil.getHumiditySD() - humidity_sd;
-				}
-				else
-				{
-					fitness += 15000;
-				}
-				
-				if (!counterUtil.lightsEmpty()) {
-						fitness += counterUtil.getLightMean() - light_mean;
-						fitness += counterUtil.getLightSD() - light_sd;
-				}
-				else
-				{
-					fitness += 100000;
-				}
-				
-				if (!counterUtil.co2sEmpty()) {
-						fitness += counterUtil.getCO2Mean() - co2_mean;
-						fitness += counterUtil.getCO2SD() - co2_sd;
-				}
-				else
-				{
-					fitness += 500000;
-				}
-				
-				if (!counterUtil.hrsEmpty()) {
-						fitness += counterUtil.getHRMean() - hr_mean;
-						fitness += counterUtil.getHRSD() - hr_sd;
-				}
-				else
-				{
-					fitness += 500;
-				}
-				
-				if (!counterUtil.nsmsEmpty()) {
-						fitness += counterUtil.getNSMMean() - nsm_mean;
-						fitness += counterUtil.getNSMSD() - nsm_sd;	
-				}
-				else
-				{
-					fitness += 12000000;
-				}
-				
-				if (!counterUtil.wssEmpty()) {
-						fitness += counterUtil.getWSMean() - ws_mean;
-						fitness += counterUtil.getWSSD() - ws_sd;
-				}
-				else {
-					fitness += 1000;
-				}
-				
-				fitness = result + fitness + counterUtil.getInstance().getParamScore();
-				
+				fitness = 0.1*result + counterUtil.getInstance().getParamScore();
 				sum += fitness;
 			}
 			

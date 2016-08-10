@@ -52,21 +52,21 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			for(int i=0; i < dw.size(); i++)
 			{
 				DataEntity de = dw.getData(i);
-//				temperature = de.getTemperature()*0.1;
-//				humidity = de.getHumidity()*0.1;
-//				light = de.getLight()*0.01;
-//				co2 = de.getCo2()*0.01;
-//				hr = de.getHr();
-//				nsm = de.getNsm() * 0.00001;
-//				ws = de.getWs();
-				
 				temperature = de.getTemperature();
 				humidity = de.getHumidity();
-				light = de.getLight();
-				co2 = de.getCo2();
+				light = de.getLight()*0.1;
+				co2 = de.getCo2()*0.1;
 				hr = de.getHr();
-				nsm = de.getNsm();
+				nsm = de.getNsm() ;
 				ws = de.getWs();
+				
+//				temperature = de.getTemperature();
+//				humidity = de.getHumidity();
+//				light = de.getLight();
+//				co2 = de.getCo2();
+//				hr = de.getHr();
+//				nsm = de.getNsm();
+//				ws = de.getWs();
 				
 				//System.out.println(de.toString());
 				//System.out.println(temperature + " " + humidity + " " + light + " " + co2 + " " + hr + " " + nsm + " " + ws);

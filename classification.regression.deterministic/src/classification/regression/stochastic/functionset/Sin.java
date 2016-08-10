@@ -25,6 +25,7 @@ public class Sin extends AbstractFunctionNode{
 		children[0].eval(state, thread, input, stack, individual, problem);
 		result = rd.x;
 
+		
 		rd.x = Math.sin(result);
 	}
 
