@@ -45,7 +45,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
 			if (!dw.initialised()) {
-				dw.initialise("data/datatest2.txt");
+				dw.initialise("data/datatraining.txt");
 				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
@@ -98,11 +98,11 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					result = Math.abs(actual - input.x);
 					//System.out.println("result is   "+result);
 					
-					if (result <= 0.00001)
+					if (result == 0)
 					{
 						hits++;
 					}
-					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();
+					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();	
 				} else {
 					fitness_cost = 100.0;
 				}
@@ -110,12 +110,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				sum += fitness_cost;
 			}
 			
-			if (Double.isInfinite(sum) || Double.isNaN(sum)) {
-				sum = Double.MAX_VALUE - 100;
-			}
+			//System.out.println(ParamCounter.getInstance().getScore());
 			
-			//System.out.println(sum);
-		
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);

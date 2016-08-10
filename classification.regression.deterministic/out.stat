@@ -3,118 +3,85 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=216.00014218122016 Adjusted=0.004608291911462826 Hits=9536
+Fitness: Standardized=3012.4798339914464 Adjusted=3.3184227374618577E-4 Hits=0
 Tree 0:
-(((temperature - light) - (humidity - light)) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))
+((((light * co2) * (nsm - hr)) + ((hr - nsm) * (nsm * hr))) / (((hr * temperature) + (humidity / humidity)) + ((nsm - nsm) - (nsm + co2)))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=216.00000184235589 Adjusted=0.004608294891750603 Hits=9536
+Fitness: Standardized=778.9895519755636 Adjusted=0.0012820684552340377 Hits=0
 Tree 0:
-((((temperature - light) - (humidity - light)) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))) * ((humidity + temperature) / (temperature / hr))
+(((ws - light) / (co2 / humidity)) + ((light / temperature) + (temperature - co2))) / ((nsm * co2) - ((temperature / hr) / (hr - nsm)))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6424089722188945E-5 Adjusted=0.9999835761800241 Hits=9752
+Fitness: Standardized=5.288440588645901E-6 Adjusted=0.9999947115873788 Hits=0
 Tree 0:
-((((temperature - light) - (humidity - (humidity / humidity))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))) * ((humidity + temperature) / (temperature / hr))
+hr / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6328226082383534E-5 Adjusted=0.9999836720405243 Hits=9752
+Fitness: Standardized=1.6586553403368016E-6 Adjusted=0.9999983413474107 Hits=0
 Tree 0:
-((((temperature - light) - (humidity - (humidity / humidity))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr - humidity) - (co2 * ws)))) * ((humidity + temperature) / (temperature / hr))
+(((hr * temperature) + (humidity / humidity)) / (((hr * temperature) + (humidity / humidity)) + (co2 + co2))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.138229578820494E-9 Adjusted=0.9999999988617705 Hits=9752
+Fitness: Standardized=1.4246860874024796E-7 Adjusted=0.9999998575314116 Hits=0
 Tree 0:
-((nsm + humidity) / (light - co2)) / (((((ws - co2) * ((temperature + hr) / ((((hr * temperature) / (ws - temperature)) / ((co2 - light) + ((((ws * ws) - (humidity - light)) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (light / temperature)) - ((hr / humidity) - (co2 * ws)))))) / co2))) + (humidity + ws)) - ((hr - hr) + (light * humidity))) * (nsm + co2))
+(((hr * temperature) + (humidity / humidity)) / (((co2 + humidity) * (temperature + hr)) + (co2 + co2))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1382284800233101E-9 Adjusted=0.9999999988617716 Hits=9752
+Fitness: Standardized=6.292230907118776E-13 Adjusted=0.9999999999993707 Hits=0
 Tree 0:
-((nsm + humidity) / (light - co2)) / (((((ws - co2) * ((temperature + hr) / ((((hr * temperature) / (ws - temperature)) / ((co2 - light) + ((((ws * ws) - (humidity - light)) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + ws) - ((hr / humidity) - (co2 * ws)))))) / co2))) + (humidity + ws)) - ((hr - hr) + (light * humidity))) * (nsm + co2))
+(((hr * temperature) + (humidity / humidity)) / (((co2 + humidity) * (temperature + hr)) + (co2 + co2))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr)))) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.997178053460634E-12 Adjusted=0.9999999999970028 Hits=9752
+Fitness: Standardized=5.293360523429172E-13 Adjusted=0.9999999999994706 Hits=0
 Tree 0:
-((((temperature - light) - (humidity - (((hr * temperature) / (ws - temperature)) / (hr / humidity)))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr - humidity) - (co2 * ws)))) * (((hr / co2) + (temperature - temperature)) / (temperature / hr))
+(((hr * temperature) + (humidity / humidity)) / (((co2 + humidity) * (temperature + hr)) + (co2 + co2))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (light * humidity)))) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.6621283902820266E-14 Adjusted=0.9999999999999734 Hits=9752
+Fitness: Standardized=6.214400317075839E-17 Adjusted=1.0 Hits=0
 Tree 0:
-(((((((hr - light) / (ws - temperature)) / (((ws + hr) - light) + ((temperature / temperature) / (ws - co2)))) / (humidity + nsm)) / (((hr + nsm) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) * ((humidity + temperature) / (temperature / hr))
+(((hr * temperature) + (humidity / humidity)) / (((((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))) * (temperature + hr)) + (co2 + co2))) / ((((temperature * humidity) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (light * humidity)))) * ((co2 + nsm) + (hr + hr))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1337113317425536E-16 Adjusted=0.9999999999999998 Hits=9752
+Fitness: Standardized=2.461528232103774E-19 Adjusted=1.0 Hits=0
 Tree 0:
-((nsm + humidity) / (light - co2)) / (((((ws - co2) * ((temperature * ((co2 * co2) * temperature)) / ((((hr * temperature) / (ws - temperature)) / ((co2 - light) + ((((ws * ws) - (humidity - light)) * (hr / humidity)) / ((ws - co2) - ((hr / humidity) - (co2 * ws)))))) / co2))) + (humidity + ws)) - ((hr - hr) + (light * humidity))) * (nsm + co2))
+((humidity / humidity) / ((((((nsm - nsm) - (hr * light)) - ((light - light) - (light / humidity))) + (light + ws)) - (((temperature + hr) - (ws / humidity)) - (nsm * hr))) - (((co2 + humidity) * ((((light + co2) - ((((co2 + nsm) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr)))) + hr)) * ((co2 + nsm) + (hr + hr))))) / ((temperature + light) + (temperature / hr))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.279096264376336E-19 Adjusted=1.0 Hits=9752
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=8143
 Tree 0:
-((hr / co2) / (light - co2)) / (((((ws - co2) * ((temperature / hr) / ((((hr * temperature) / (ws - temperature)) / ((co2 - light) + ((((ws * ws) - (humidity - light)) * ((hr / co2) + (hr / co2))) / (((hr + nsm) + ws) - ((hr / humidity) - (hr / co2)))))) / co2))) + (humidity + ws)) - ((hr - hr) + (light * humidity))) * (nsm + co2))
+co2 / (co2 + (((((light - hr) / (co2 + light)) / ((co2 + humidity) + ((temperature / co2) + ((((humidity - temperature) / (temperature - light)) / ((light + co2) - (temperature / hr))) / (ws - humidity))))) - hr) / (((((((temperature * humidity) + (light + ws)) - ((co2 - hr) - ((co2 + nsm) + (hr + hr)))) - (((co2 + humidity) * (temperature + hr)) * ((((light + co2) - ((((co2 + nsm) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr)))) + (hr + hr)))) / (humidity / humidity)) - nsm) - (nsm + co2))))
 
-Generation: 10
-Best Individual:
+Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2066244659566832E-31 Adjusted=1.0 Hits=9752
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=8143
 Tree 0:
-(((((((((((hr - light) / (ws - temperature)) / (((ws + hr) - light) + ((temperature / temperature) / (ws - co2)))) / (humidity + nsm)) / ((((hr + nsm) * (nsm + co2)) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))) / humidity) * ((hr / co2) + (temperature - temperature))) / ((((temperature * temperature) + (((hr + nsm) + (temperature / hr)) - (((hr * temperature) + ((nsm + co2) - ((humidity + nsm) + (co2 - light)))) - (co2 * ws)))) + (ws * temperature)) - (((nsm + humidity) / (((temperature - light) - (humidity - (humidity / humidity))) - (co2 / hr))) / ((hr + co2) * (nsm + co2))))
-
-Generation: 11
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=1.2058669307744967E-31 Adjusted=1.0 Hits=9752
-Tree 0:
-(((((((((((hr - light) / (ws - temperature)) / (((ws + hr) - light) + ((temperature / temperature) / (ws - co2)))) / (humidity + nsm)) / ((((hr + nsm) * (nsm + co2)) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))) / humidity) * ((hr / co2) + (temperature - temperature))) / ((((temperature * temperature) + (((hr + nsm) + (temperature / hr)) - (((hr * temperature) + ((nsm + co2) - ((humidity + nsm) + (co2 - light)))) - (co2 * ws)))) + (ws * temperature)) - (((ws / humidity) - (((hr + nsm) + (temperature / hr)) / hr)) / ((hr + co2) * (nsm + co2))))
-
-Generation: 12
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=4.493865312898398E-38 Adjusted=1.0 Hits=9752
-Tree 0:
-(((((((((((((temperature - light) - (humidity - (humidity / humidity))) * ((hr / co2) + (temperature - temperature))) / ((((humidity - (humidity / humidity)) + nsm) + (temperature / hr)) - (hr - (co2 * ws)))) * ((humidity + temperature) / (temperature / hr))) / ((nsm + co2) - ((((((hr + ws) - (temperature / hr)) / hr) + ((humidity - co2) / ((co2 + co2) - (light / co2)))) - (humidity - light)) - (co2 * ws)))) / (((hr + nsm) + (hr / humidity)) - ((temperature - light) - co2))) * ((humidity + (temperature - ws)) / (temperature / hr))) * ((hr / co2) + (temperature - temperature))) / ((((humidity - (humidity / humidity)) + nsm) + (temperature / hr)) - (hr - (co2 * ws)))) * ((temperature + hr) / (temperature / hr))) / ((nsm + co2) - ((((((hr + ws) - (temperature / hr)) / hr) + ((humidity - co2) / ((co2 + co2) - (light / co2)))) - (humidity - light)) - (co2 * ws)))) / (((hr + nsm) + (hr / humidity)) - ((temperature - light) - co2))) * ((humidity + (temperature - ws)) / (temperature / hr))
-
-Generation: 13
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=3.4948351496376177E-40 Adjusted=1.0 Hits=9752
-Tree 0:
-(((((((((((hr - light) / (ws - temperature)) / (((ws + hr) - light) + ((temperature / temperature) / (ws - co2)))) / (humidity + nsm)) / ((((hr + nsm) * (nsm + co2)) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (temperature / hr)) - ((hr / humidity) - (co2 * ws)))) / humidity) * ((hr / co2) + (temperature - temperature))) / ((((co2 * co2) * ((co2 * co2) * temperature)) + (ws * temperature)) - (((nsm + humidity) / (((temperature - light) - ((((hr + nsm) + (light / temperature)) - ((hr / humidity) - (co2 * ws))) - ((hr / humidity) - (co2 * ws)))) - (co2 / hr))) / ((hr + co2) * (nsm + co2))))
-
-Generation: 14
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=1.634393345276314E-42 Adjusted=1.0 Hits=9752
-Tree 0:
-((((((((((((((hr - light) / (ws - temperature)) / (((ws + hr) - light) + ((temperature / temperature) / (ws - co2)))) / (humidity + nsm)) / ((((hr + nsm) * (nsm + co2)) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) / ((((hr + nsm) * (nsm + co2)) + (temperature / hr)) - ((temperature - light) - co2))) * ((hr / co2) + (temperature - temperature))) / ((co2 + (temperature / hr)) - (((hr * temperature) + (light - nsm)) - (co2 * ws)))) * ((hr / co2) + (temperature - temperature))) / (((hr + nsm) + (humidity - (((hr * temperature) / (ws - temperature)) / (hr / humidity)))) - ((hr / humidity) - (co2 * ws)))) / humidity) * ((hr / co2) + (temperature - temperature))) / ((((temperature * temperature) + (((hr + nsm) + (temperature / hr)) - (((hr * temperature) + ((hr / co2) - ((humidity + nsm) + (co2 - light)))) - (co2 * ws)))) + (ws * temperature)) - (((nsm + humidity) / (((temperature - light) - (humidity - (humidity / humidity))) - (co2 / hr))) / ((hr + co2) * (nsm + co2))))
+co2 / (co2 + (((((light - hr) / (co2 + light)) / ((co2 + humidity) + ((temperature / co2) + ((((humidity - temperature) / (temperature - light)) / ((light + co2) - (temperature / hr))) / (ws - humidity))))) - hr) / (((((((temperature * humidity) + (light + ws)) - ((co2 - hr) - ((co2 + nsm) + (hr + hr)))) - (((co2 + humidity) * (temperature + hr)) * ((((light + co2) - ((((co2 + nsm) + (light + ws)) - ((co2 - hr) - (nsm * hr))) - (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr))))) * (((co2 + humidity) * (temperature + hr)) * ((co2 + nsm) + (hr + hr)))) + (hr + hr)))) / (humidity / humidity)) - nsm) - (nsm + co2))))

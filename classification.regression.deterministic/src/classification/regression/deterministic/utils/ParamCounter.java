@@ -64,7 +64,7 @@ public class ParamCounter {
 				total++;
 			}
 			else if (i > 1) {
-				result += i * 40;
+				result += 40;
 			}
 		}
 		
