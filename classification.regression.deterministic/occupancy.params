@@ -15,7 +15,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 12
+gp.fs.0.size = 15
 
 gp.fs.0.func.0 = classification.regression.stochastic.terminals.Temperature
 gp.fs.0.func.0.nc = nc0
@@ -52,6 +52,15 @@ gp.fs.0.func.10.nc = nc2
 
 gp.fs.0.func.11 = classification.regression.stochastic.functionset.Sin
 gp.fs.0.func.11.nc = nc1
+
+gp.fs.0.func.12 = classification.regression.stochastic.functionset.Numeral_0
+gp.fs.0.func.12.nc = nc0
+
+gp.fs.0.func.13 = classification.regression.stochastic.functionset.Numeral_1
+gp.fs.0.func.13.nc = nc0
+
+gp.fs.0.func.13 = classification.regression.stochastic.functionset.DayMod48
+gp.fs.0.func.13.nc = nc1
 
 gp.fs.0.func.12 = classification.regression.stochastic.functionset.Cos
 gp.fs.0.func.12.nc = nc1

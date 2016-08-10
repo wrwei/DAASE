@@ -3,86 +3,54 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=24.900000000000084 Adjusted=0.038610038610038484 Hits=7894
+Fitness: Standardized=37.80000000000027 Adjusted=0.02577319587628848 Hits=7765
 Tree 0:
-0 >= 1(ws: 222.000000014)
+0 <= 1(humidity: 202.000000000009)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=24.900000000000084 Adjusted=0.038610038610038484 Hits=7894
+Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
 Tree 0:
-0 >= 1(ws: 222.000000014)
+0 >= 1(humidity: 216.0000014)
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=11.299999999999976 Adjusted=0.08130081300813025 Hits=8030
+Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
 Tree 0:
-0 < 1(co2: 37.0)
+0 >= 1(humidity: 216.0000014)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=11.299999999999976 Adjusted=0.08130081300813025 Hits=8030
+Fitness: Standardized=10.29999999999998 Adjusted=0.0884955752212391 Hits=8040
 Tree 0:
-0 < 1(co2: 37.0)
+0 >= 1(humidity: 216.0000014)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
+Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
 Tree 0:
-0 <= 1(nsm: 238.0)
+0 >= 1(humidity: 216.0000014)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
+Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
 Tree 0:
-0 <= 1(nsm: 238.0)
+0 >= 1(humidity: 216.0000014)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
+Fitness: Standardized=9.399999999999983 Adjusted=0.09615384615384631 Hits=8049
 Tree 0:
-0 <= 1(nsm: 238.0)
-
-Generation: 7
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
-Tree 0:
-0 <= 1(nsm: 238.0)
-
-Generation: 8
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
-Tree 0:
-0 <= 1(nsm: 238.0)
-
-Generation: 9
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
-Tree 0:
-0 <= 1(nsm: 238.0)
-
-Generation: 10
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=8.999999999999984 Adjusted=0.10000000000000016 Hits=8053
-Tree 0:
-0 <= 1(nsm: 238.0)
+0 >= 1(humidity: 216.0000014)
