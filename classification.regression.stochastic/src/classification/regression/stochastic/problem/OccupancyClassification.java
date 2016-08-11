@@ -12,6 +12,7 @@ import ec.gp.GPProblem;
 import ec.gp.koza.KozaFitness;
 import ec.simple.SimpleProblemForm;
 import ec.util.Parameter;
+import symbolic.regression.stochastic.util.StochasticityNormaliser;
 
 public class OccupancyClassification extends GPProblem implements SimpleProblemForm {
 	private static final long serialVersionUID = 1;
@@ -33,22 +34,27 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public void evaluate(final EvolutionState state, final Individual ind, final int subpopulation,
 			final int threadnum) {
 		if (!ind.evaluated) 
-		{
+		{ 
 			DoubleData input = (DoubleData) (this.input);
 
 			int hits = 0;
 			double sum = 0.0;
-			double expectedResult;
 			double result;
+			double expectedResult = 0.0;
+			double sum_mean = 0.0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
+			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				System.out.println("Expected hits: " + dw.size() * 200);
+				sum_mean = dw.getMeanSum();
+				System.out.println(dw.getStatistics());
+				System.out.println("Expected hits: " + dw.size());
 			}
 
 			//prepare an array to store lowest fitness
 			double fitnessArray[] = new double[dw.size()];
+
 			
 			for(int i=0; i < dw.size(); i++)
 			{
@@ -58,7 +64,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				light = de.getLight();
 				co2 = de.getCo2();
 				hr = de.getHr();
-				nsm = de.getNsm();
+				nsm = de.getNsm() ;
 				ws = de.getWs();
 				
 				//get occupancy
@@ -68,32 +74,35 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 				for(int j = 0; j < 100; j ++)
 				{
-					
 					ParamCounter paramCounter = ParamCounter.getInstance();
 					paramCounter.clear();
 
+					// reset flag for illegal division
+					IllegalDivision.getInstance().reset();
+					
 					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
 					double stochastic_cost = input.stochastic_cost;
 					double functional_cost = 0.0;
 					double fitness_cost;
 					
-					// reset flag for illegal division
-					IllegalDivision.getInstance().reset();
-					
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
 						//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-						functional_cost = Math.abs(expectedResult-input.x);
+						double threshold = sum_mean;
 						
-						result = Math.abs(expectedResult - input.x);
+						double actual=(input.x<threshold)?0:1;
 						
-						if (result <= 0.001)
+						functional_cost = Math.abs(actual-input.x);
+						
+						result = Math.abs(actual - input.x);
+						//System.out.println("result is   "+result);
+						
+						if (result == 0)
 						{
 							hits++;
 						}
-						//System.out.println(functional_cost + "-" + stochastic_cost);
-						fitness_cost = functional_cost + 0.01*stochastic_cost + 0.01* paramCounter.getScore();
+						fitness_cost = functional_cost + 0.01 * paramCounter.getScore() + 0.01*stochastic_cost;	
 					} else {
 						fitness_cost = 100.0;
 					}
@@ -113,7 +122,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			if (sum < 0) {
 				sum = Double.MAX_VALUE;
 			}
-		
+
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);

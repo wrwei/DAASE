@@ -45,14 +45,14 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 
 				for(int i = 0; i < 100; i ++)
 				{
+					// reset flag for illegal division
+					IllegalDivision.getInstance().reset();
+					
 					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
 					double stochastic_cost = input.stochastic_cost;
 					double functional_cost = 0.0;
 					double fitness_cost;
-					
-					// reset flag for illegal division
-					IllegalDivision.getInstance().reset();
 					
 					// check for existence of illegal divisions
 					if (!IllegalDivision.getInstance().illegalDivision()) {
@@ -72,9 +72,6 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 						else
 						{
 							lambda  = StochasticityNormaliser.getInstance().normalise(functional_cost, stochastic_cost);
-//							System.out.println(functional_cost);
-//							System.out.println(stochastic_cost);
-//							System.out.println(lambda);
 						}
 						fitness_cost = functional_cost + 0.01*stochastic_cost;	
 					} else {

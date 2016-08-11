@@ -93,9 +93,9 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					
 					double actual=(input.x<threshold)?0:1;
 					
-					functional_cost = Math.abs(actual-input.x);
+					functional_cost = Math.abs(actual-expectedResult);
 					
-					result = Math.abs(actual - input.x);
+					result = Math.abs(actual - expectedResult);
 					//System.out.println("result is   "+result);
 					
 					if (result == 0)
