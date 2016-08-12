@@ -141,7 +141,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				sum += fitness_cost;
 			}
 			
-			
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);

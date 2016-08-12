@@ -145,7 +145,7 @@ gp.fs.0.name = f0
 # Here we define a single atomic type, "nil", which everyone will use.
 # There are no set types defined.
 
-gp.type.a.size = 8
+gp.type.a.size = 9
 gp.type.a.0.name = nil
 gp.type.a.1.name = boolean
 gp.type.a.2.name = data
@@ -154,11 +154,12 @@ gp.type.a.4.name = std
 gp.type.a.5.name = factor
 gp.type.a.6.name = int
 gp.type.a.7.name = std_norm
-gp.type.s.size = 0
-gp.type.s.0.name = nil-or-std
+gp.type.a.8.name = bool
+gp.type.s.size = 1
+gp.type.s.0.name = bool-or-boolean
 gp.type.s.0.size = 2
-gp.type.s.0.member.0 = nil
-gp.type.s.0.member.1 = std
+gp.type.s.0.member.0 = bool
+gp.type.s.0.member.1 = boolean
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -254,7 +255,7 @@ gp.nc.5.child.1 = std_norm
 
 gp.nc.6 = ec.gp.GPNodeConstraints
 gp.nc.6.name = nc6
-gp.nc.6.returns = boolean
+gp.nc.6.returns = bool
 gp.nc.6.size = 2
 gp.nc.6.child.0 = data
 gp.nc.6.child.1 = nil
@@ -263,8 +264,8 @@ gp.nc.7 = ec.gp.GPNodeConstraints
 gp.nc.7.name = nc7
 gp.nc.7.returns = boolean
 gp.nc.7.size = 2
-gp.nc.7.child.0 = boolean
-gp.nc.7.child.1 = boolean
+gp.nc.7.child.0 = bool-or-boolean
+gp.nc.7.child.1 = bool-or-boolean
 
 gp.nc.8 = ec.gp.GPNodeConstraints
 gp.nc.8.name = nc8
