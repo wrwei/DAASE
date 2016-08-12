@@ -89,7 +89,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				// check for existence of illegal divisions
 				if (!IllegalDivision.getInstance().illegalDivision()) {
 					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-					double threshold = sum_mean;
+					double threshold = 40;
 					
 					double actual=(input.x<threshold)?0:1;
 					
