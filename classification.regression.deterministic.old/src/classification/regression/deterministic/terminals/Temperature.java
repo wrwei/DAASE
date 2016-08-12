@@ -9,17 +9,18 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class WS extends AbstractAttributeNode {
+public class Temperature extends AbstractTemperatureNode {
 
 	public String toString() {
-		return "ws";
+		return "temperature";
 	}
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
-		double ws = ((OccupancyClassification) problem).ws;
+		double temperature = ((OccupancyClassification) problem).temperature;
+
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = ws;
-		ParamCounter.getInstance().addCount("ws");
+		rd.x = temperature;
+		ParamCounter.getInstance().addCount("temperature");
 	}
 }

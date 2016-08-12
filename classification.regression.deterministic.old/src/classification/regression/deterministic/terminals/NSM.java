@@ -9,17 +9,18 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class Humidity extends AbstractAttributeNode {
+public class NSM extends AbstractNSMNode {
 
 	public String toString() {
-		return "humidity";
+		return "nsm";
 	}
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
-		double humidity = ((OccupancyClassification) problem).humidity;
+		double nsm = ((OccupancyClassification) problem).nsm;
+
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = humidity;
-		ParamCounter.getInstance().addCount("humidity");
+		rd.x = nsm;
+		ParamCounter.getInstance().addCount("nsm");
 	}
 }

@@ -1,25 +1,38 @@
-package classification.regression.deterministic.terminals;
+package classification.regression.deterministic.functionset;
 
-import classification.regression.deterministic.problem.OccupancyClassification;
 import classification.regression.deterministic.utils.DoubleData;
-import classification.regression.deterministic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class CO2 extends AbstractAttributeNode {
+public class LessThan extends AbstractFunctionNode{
 
 	public String toString() {
-		return "co2";
+		return "<";
+	}
+
+	public int expectedChildren() {
+		return 2;
 	}
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
-		double co2 = ((OccupancyClassification) problem).co2;
+		double result;
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = co2;
-		ParamCounter.getInstance().addCount("co2");
+
+		children[0].eval(state, thread, input, stack, individual, problem);
+		result = rd.x;
+
+		children[1].eval(state, thread, input, stack, individual, problem);
+		if (result < rd.x) {
+			rd.x = 1;
+		}
+		else
+		{
+			rd.x = 0;
+		}
 	}
+
 }
