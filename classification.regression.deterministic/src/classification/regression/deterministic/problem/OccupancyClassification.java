@@ -44,7 +44,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public double ws_mean;
 	public double ws_std;
 	
-	
 	public void setup(final EvolutionState state, final Parameter base) {
 		super.setup(state, base);
 		if (!(input instanceof DoubleData))
@@ -111,7 +110,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				ParamCounter paramCounter = ParamCounter.getInstance();
 				paramCounter.clear();
 
-				// reset flag for illegal division
+				// reset flag for illegal activity
 				IllegalActivity.getInstance().reset();
 				
 				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
@@ -119,7 +118,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				double functional_cost = 0.0;
 				double fitness_cost;
 				
-				// check for existence of illegal divisions
+				// check for existence of illegal activity
 				if (!IllegalActivity.getInstance().illegalDivision()) {
 					
 					double actual= input.x;
@@ -127,7 +126,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					functional_cost = Math.abs(actual-expectedResult);
 					
 					result = Math.abs(actual - expectedResult);
-					//System.out.println("result is   "+result);
 					
 					if (result == 0)
 					{

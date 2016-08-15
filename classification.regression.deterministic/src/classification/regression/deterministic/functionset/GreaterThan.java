@@ -46,7 +46,7 @@ public class GreaterThan extends AbstractComparisonNode {
 		}
 		else
 		{
-			IllegalActivity.getInstance().illegal();
+			//IllegalActivity.getInstance().illegal();
 			rd.x = 0;
 		}
 		

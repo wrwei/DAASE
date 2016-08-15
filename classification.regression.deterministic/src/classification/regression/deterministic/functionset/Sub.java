@@ -40,8 +40,8 @@ public class Sub extends AbstractFunctionNode {
 		}
 		else
 		{
-			IllegalActivity.getInstance().illegal();
-			rd.x = -1000;
+			IllegalActivity.getInstance().illegalDivision();
+			rd.x = 100000;
 		}
 		
 	}

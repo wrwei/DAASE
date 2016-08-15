@@ -229,15 +229,19 @@ gp.nc.2.size = 0
 gp.nc.3 = ec.gp.GPNodeConstraints
 gp.nc.3.name = nc3
 gp.nc.3.returns = factor
-gp.nc.3.size = 8
+gp.nc.3.size = 10
 gp.nc.3.child.0 = int
 gp.nc.3.child.1 = int
+
 gp.nc.3.child.2 = int
 gp.nc.3.child.3 = int
 gp.nc.3.child.4 = int
 gp.nc.3.child.5 = int
+
 gp.nc.3.child.6 = int
 gp.nc.3.child.7 = int
+gp.nc.3.child.8 = int
+gp.nc.3.child.9 = int
 
 gp.nc.4 = ec.gp.GPNodeConstraints
 gp.nc.4.name = nc4
