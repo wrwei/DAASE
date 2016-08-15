@@ -133,7 +133,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					}
 					fitness_cost = functional_cost + paramCounter.getScore();	
 				} else {
-					fitness_cost = 100.0;
+					fitness_cost = 10000.0;
 				}
 				
 				sum += fitness_cost;
