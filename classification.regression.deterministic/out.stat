@@ -3,78 +3,166 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=164589.0 Adjusted=6.075703262652652E-6 Hits=6414
+Fitness: Standardized=653169.0 Adjusted=1.5309949936463708E-6 Hits=6414
 Tree 0:
-(co2 > (hr_mean / (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity > (light_mean - (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws > (hr_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (nsm > (ws_mean * (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (light < (hr_mean - (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+(hr < (temperature_mean / (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=164589.0 Adjusted=6.075703262652652E-6 Hits=6414
+Fitness: Standardized=653169.0 Adjusted=1.5309949936463708E-6 Hits=6414
 Tree 0:
-(ws < (humidity_mean - (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and ((light < (nsm_mean * (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((co2 < (co2_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (humidity < (hr_mean - (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and ((temperature > (temperature_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (hr < (hr_mean + (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))))
+(hr < (temperature_mean / (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-((hr > (humidity_mean * (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity < (co2_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws < (ws_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (temperature_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (temperature > (hr_mean + (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (nsm > (hr_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and ((light > (light_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (temperature > (co2_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-((hr > (humidity_mean * (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity < (co2_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws < (ws_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (temperature_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (temperature > (hr_mean + (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (nsm > (hr_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and ((light > (light_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (temperature > (co2_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-(((((((temperature > (temperature_mean * (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (humidity_mean / (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (hr_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (temperature > (ws_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (nsm < (ws_mean - (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (humidity > (co2_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (ws < (humidity_mean / (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr < (humidity_mean / (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-(co2 > (hr_mean / (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity > (temperature_mean + (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws > (hr_mean + (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (nsm > (ws_mean * (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (light < (hr_mean - (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-((humidity > (light_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and ((hr < (light_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and ((nsm < (humidity_mean - (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (light > (nsm_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))))) and ((ws < (temperature_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (nsm_mean / (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-((hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity < (co2_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws < (ws_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (temperature_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (temperature > (hr_mean + (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (nsm > (hr_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and ((light > (light_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (temperature > (co2_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=490309.0 Adjusted=2.0395260141543106E-6 Hits=6414
 Tree 0:
-((humidity > (light_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and ((hr < (light_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and ((nsm < (humidity_mean - (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (light > (nsm_mean / (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))))) and ((ws < (temperature_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (nsm_mean / (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+((hr < (light_mean - (light_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 < (temperature_mean - (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (light > (ws_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
 Tree 0:
-((hr > (humidity_mean * (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((humidity < (co2_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (((ws < (ws_mean / (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (co2 > (temperature_mean / (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (temperature > (hr_mean + (hr_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and (nsm > (hr_mean / (co2_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))) and ((light > (light_mean + (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (temperature > (co2_mean * (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))))
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=327449.0 Adjusted=3.053901358986105E-6 Hits=6414
+Tree 0:
+(((light < (temperature_mean * (temperature_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)))) and (ws > (nsm_mean + (nsm_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (co2 > (ws_mean * (ws_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))) and (hr > (humidity_mean + (humidity_std factor_mul 3.0(1, 1, 1, 1, 1, 1, 1, 1, 1, 1))))

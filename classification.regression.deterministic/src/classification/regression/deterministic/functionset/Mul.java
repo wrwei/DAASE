@@ -40,7 +40,7 @@ public class Mul extends AbstractFunctionNode {
 		}
 		else
 		{
-			IllegalActivity.getInstance().illegalDivision();
+			IllegalActivity.getInstance().illegal();
 			rd.x = 100000;
 		}
 		

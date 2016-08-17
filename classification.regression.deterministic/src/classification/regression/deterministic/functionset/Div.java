@@ -40,14 +40,14 @@ public class Div extends AbstractFunctionNode {
 		if (checkIntegrity()) {
 			if (rd.x == 0.0) {
 				rd.x = -1000; // create a bias
-				IllegalActivity.getInstance().illegalDivision();
+				IllegalActivity.getInstance().illegal();
 			} else {
 				rd.x = result / rd.x;
 			}
 		}
 		else
 		{
-			IllegalActivity.getInstance().illegalDivision();
+			IllegalActivity.getInstance().illegal();
 			rd.x = 100000;
 		}
 	}

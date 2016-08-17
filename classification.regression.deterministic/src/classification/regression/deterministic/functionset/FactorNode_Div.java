@@ -31,7 +31,7 @@ public class FactorNode_Div extends AbstractFactorNode{
 		children[1].eval(state, thread, input, stack, individual, problem);
 		if (rd.x == 0.0) {
 			rd.x = 10000; // create a bias
-			IllegalActivity.getInstance().illegalDivision();
+			IllegalActivity.getInstance().illegal();
 		} else {
 			rd.x = result / rd.x;
 		}

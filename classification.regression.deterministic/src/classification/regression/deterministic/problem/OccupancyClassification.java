@@ -119,7 +119,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				double fitness_cost;
 				
 				// check for existence of illegal activity
-				if (!IllegalActivity.getInstance().illegalDivision()) {
+				if (!IllegalActivity.getInstance().illegalActivity()) {
 					
 					double actual= input.x;
 					
@@ -133,7 +133,8 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 					}
 					fitness_cost = functional_cost + paramCounter.getScore();	
 				} else {
-					fitness_cost = 10000.0;
+					fitness_cost = 1000.0 * IllegalActivity.getInstance().getCount();
+					//System.out.println(IllegalActivity.getInstance().getCount());
 				}
 				
 				sum += fitness_cost;
