@@ -54,22 +54,19 @@ gp.fs.0.func.11 = classification.regression.deterministic.functionset.Sin
 gp.fs.0.func.11.nc = nc1
 
 gp.fs.0.func.12 = classification.regression.deterministic.functionset.DayMod48
-gp.fs.0.func.12.nc = nc0
-
-gp.fs.0.func.13 = classification.regression.deterministic.functionset.DayMod48
-gp.fs.0.func.13.nc = nc1
-
-gp.fs.0.func.12 = classification.regression.deterministic.functionset.Cos
 gp.fs.0.func.12.nc = nc1
 
-gp.fs.0.func.13 = classification.regression.deterministic.functionset.Exp
+gp.fs.0.func.13 = classification.regression.deterministic.functionset.Cos
 gp.fs.0.func.13.nc = nc1
 
-gp.fs.0.func.14 = classification.regression.deterministic.functionset.Log_base_e
+gp.fs.0.func.14 = classification.regression.deterministic.functionset.Exp
 gp.fs.0.func.14.nc = nc1
 
-gp.fs.0.func.15 = classification.regression.deterministic.functionset.Log_base_10
+gp.fs.0.func.15 = classification.regression.deterministic.functionset.Log_base_e
 gp.fs.0.func.15.nc = nc1
+
+gp.fs.0.func.16 = classification.regression.deterministic.functionset.Log_base_10
+gp.fs.0.func.16.nc = nc1
 
 eval.problem = classification.regression.deterministic.problem.OccupancyClassification
 eval.problem.data = classification.regression.deterministic.utils.DoubleData

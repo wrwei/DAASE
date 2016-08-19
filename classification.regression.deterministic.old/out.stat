@@ -3,38 +3,14 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=406.0 Adjusted=0.002457002457002457 Hits=7737
+Fitness: Standardized=1019.0 Adjusted=9.80392156862745E-4 Hits=7124
 Tree 0:
-(((nsm / co2) * (hr / temperature)) / ((ws + ws) - (hr / humidity))) - (((nsm * ws) * (humidity + co2)) * ((co2 * ws) - (light * co2)))
+(((temperature - ws) + (temperature + ws)) / ((co2 + hr) * (nsm - hr))) - (((temperature + co2) + (ws / humidity)) - ((light * humidity) + (hr * humidity)))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=130.0 Adjusted=0.007633587786259542 Hits=8013
+Fitness: Standardized=158.0 Adjusted=0.006289308176100629 Hits=7985
 Tree 0:
-(((((nsm + humidity) + (humidity / temperature)) * ((temperature / hr) / (co2 / temperature))) - (((ws + temperature) / (hr / temperature)) + ((light + hr) - (hr - hr)))) + (humidity * nsm)) - ((nsm - light) * (co2 - humidity))
-
-Generation: 2
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=105.0 Adjusted=0.009433962264150943 Hits=8038
-Tree 0:
-(((ws * humidity) - (temperature * humidity)) * ((temperature - humidity) + (humidity + humidity))) + (((ws / humidity) * (nsm - co2)) + ((light / hr) * ws))
-
-Generation: 3
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=105.0 Adjusted=0.009433962264150943 Hits=8038
-Tree 0:
-(((ws * humidity) - (temperature * humidity)) * ((temperature - humidity) + (humidity + humidity))) + (((ws / humidity) * (nsm - co2)) + ((light / hr) * ws))
-
-Generation: 4
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=103.0 Adjusted=0.009615384615384616 Hits=8040
-Tree 0:
-((((humidity - hr) * (nsm - co2)) - (((ws + temperature) / (hr / temperature)) + ((light + hr) - ((nsm / humidity) - (nsm / temperature))))) + (humidity * nsm)) - ((nsm - light) * (co2 - humidity))
+((hr + temperature) - (co2 * nsm)) - (((((hr + ws) * (ws - light)) * ((ws / temperature) * (ws + nsm))) * (((humidity + humidity) * (co2 * humidity)) - ((light * ws) - (hr * humidity)))) + (humidity * co2))

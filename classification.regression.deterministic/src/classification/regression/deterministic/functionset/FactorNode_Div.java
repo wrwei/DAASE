@@ -30,6 +30,7 @@ public class FactorNode_Div extends AbstractFactorNode{
 
 		children[1].eval(state, thread, input, stack, individual, problem);
 		if (rd.x == 0.0) {
+			System.out.println("rd.x is 0!!!!!!");
 			rd.x = 0; // create a bias
 			IllegalActivity.getInstance().illegal();
 		} else {

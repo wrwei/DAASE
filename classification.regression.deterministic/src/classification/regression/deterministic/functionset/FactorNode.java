@@ -63,6 +63,10 @@ public class FactorNode extends GPNode {
 		}
 		
 		value = result;
+		
+		if (value == 0.0) {
+			System.out.println("value: " + value);
+		}
 		rd.x = result;
 		
 	}

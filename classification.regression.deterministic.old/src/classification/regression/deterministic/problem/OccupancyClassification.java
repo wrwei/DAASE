@@ -46,9 +46,10 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				sum_mean = dw.getMeanSum();
+				sum_mean = 60;//dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
+				System.out.println("Mean Sum: " + sum_mean);
 			}
 
 			for(int i=0; i < dw.size(); i++)
@@ -62,16 +63,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				nsm = de.getNsm() ;
 				ws = de.getWs();
 				
-//				temperature = de.getTemperature();
-//				humidity = de.getHumidity();
-//				light = de.getLight();
-//				co2 = de.getCo2();
-//				hr = de.getHr();
-//				nsm = de.getNsm();
-//				ws = de.getWs();
-				
-				//System.out.println(de.toString());
-				//System.out.println(temperature + " " + humidity + " " + light + " " + co2 + " " + hr + " " + nsm + " " + ws);
 				//get occupancy
 				expectedResult = de.getOccupancy();
 
