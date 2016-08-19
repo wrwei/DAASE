@@ -83,22 +83,28 @@ gp.fs.0.func.20.nc = nc2
 gp.fs.0.func.21 = classification.regression.deterministic.terminals.Zero
 gp.fs.0.func.21.nc = nc8
 
-gp.fs.0.func.22 = classification.regression.deterministic.terminals.One
-gp.fs.0.func.22.nc = nc8
+gp.fs.0.func.21 = classification.regression.deterministic.terminals.One
+gp.fs.0.func.21.nc = nc8
 
-gp.fs.0.func.23 = classification.regression.deterministic.functionset.FactorNode
-gp.fs.0.func.23.nc = nc3
+gp.fs.0.func.22 = classification.regression.deterministic.functionset.FactorNode
+gp.fs.0.func.22.nc = nc3
 
-gp.fs.0.func.24 = classification.regression.deterministic.functionset.FactorNode_Mul
+gp.fs.0.func.23 = classification.regression.deterministic.functionset.FactorNode_Mul
+gp.fs.0.func.23.nc = nc4
+
+gp.fs.0.func.24 = classification.regression.deterministic.functionset.FactorNode_Div
 gp.fs.0.func.24.nc = nc4
 
-gp.fs.0.func.25 = classification.regression.deterministic.functionset.FactorNode_Div
-gp.fs.0.func.25.nc = nc4
+gp.fs.0.func.24 = classification.regression.deterministic.functionset.Add
+gp.fs.0.func.24.nc = nc5
 
-gp.fs.0.func.26 = classification.regression.deterministic.functionset.Add
+gp.fs.0.func.25 = classification.regression.deterministic.functionset.Sub
+gp.fs.0.func.25.nc = nc5
+
+gp.fs.0.func.26 = classification.regression.deterministic.functionset.Mul
 gp.fs.0.func.26.nc = nc5
 
-gp.fs.0.func.27 = classification.regression.deterministic.functionset.Sub
+gp.fs.0.func.27 = classification.regression.deterministic.functionset.Div
 gp.fs.0.func.27.nc = nc5
 
 gp.fs.0.func.28 = classification.regression.deterministic.functionset.LessThan

@@ -14,6 +14,7 @@ public abstract class AbstractFunctionNode extends GPNode{
 	public String leftType = "l";
 	public String rightType = "r";
 	
+	public double functional_cost = 0.0;
 	public String determineType(GPNode node)
 	{
 		String type = "";

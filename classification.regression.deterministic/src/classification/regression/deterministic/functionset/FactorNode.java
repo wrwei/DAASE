@@ -17,7 +17,7 @@ public class FactorNode extends GPNode {
 	}
 
 	public int expectedChildren() {
-		return 10;
+		return 6;
 	}
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
@@ -25,7 +25,7 @@ public class FactorNode extends GPNode {
 		double result;
 		
 
-		int decimal = 0;
+ 		double decimal = 1;
 		DoubleData rd = ((DoubleData) (input));
 
 		//2 bits for decimal
@@ -39,7 +39,7 @@ public class FactorNode extends GPNode {
 		}
 		
 		//4 bits for fraction
-		int fraction = 0;
+		double fraction = 0;
 		for(int i = 2; i < 6; i++)
 		{
 
@@ -50,35 +50,17 @@ public class FactorNode extends GPNode {
 			}
 		}
 		
-		//4 bits to calculate div factor
-		int div_factor = 1;
-		for(int i = 6; i < 10; i++)
-		{
-
-			children[i].eval(state, thread, input, stack, individual, problem);
-			int temp = (int) rd.x;
-			if (temp == 1) {
-				div_factor += 1 << (i-6);
-			}
-		}
-		
-		//get factor part
-		double factor = fraction;
 		
 		//make factor less than 1 first
-		while(factor >= 1)
+		while(fraction >= 1)
 		{
-			factor /= 10;
+			fraction /= 10.0;
 		}
 		
-		//div by 10 until div_factor is 0
-		while(div_factor > 0)
-		{
-			factor /= 10;
-			div_factor--;
+		result = decimal + fraction;
+		if (result == 0.0) {
+			System.out.println("decimal: " + decimal + " fraction: " + fraction);
 		}
-
-		result = decimal + factor;
 		
 		value = result;
 		rd.x = result;

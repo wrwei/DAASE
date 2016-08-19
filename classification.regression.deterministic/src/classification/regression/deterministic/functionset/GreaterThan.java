@@ -12,7 +12,7 @@ import ec.gp.GPIndividual;
 public class GreaterThan extends AbstractComparisonNode {
 
 	public String toString() {
-		return ">";
+		return ">=";
 	}
 
 	public int expectedChildren() {
@@ -36,7 +36,8 @@ public class GreaterThan extends AbstractComparisonNode {
 		rightType = rightNode.leftType;
 
 		if (checkIntegrity()) {
-			if (result > rd.x) {
+			functional_cost = Math.abs(result - rd.x);
+			if (result >= rd.x) {
 				rd.x = 1;
 			}
 			else

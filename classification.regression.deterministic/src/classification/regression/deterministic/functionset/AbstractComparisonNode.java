@@ -13,6 +13,8 @@ public abstract class AbstractComparisonNode extends GPNode{
 
 	public String leftType = "l";
 	public String rightType = "r";
+
+	public double functional_cost = 0.0;
 	
 	public String determineType(GPNode node)
 	{
@@ -45,5 +47,4 @@ public abstract class AbstractComparisonNode extends GPNode{
 	{
 		return leftType.equals(rightType);
 	}
-	
 }

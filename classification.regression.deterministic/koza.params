@@ -103,7 +103,7 @@ select.tournament.size = 7
 # This means that if someone decided to use GROW to generate
 # new individual trees, it's also use the defaults below
 # unless he overrided them locally.
-gp.koza.grow.min-depth = 7
+gp.koza.grow.min-depth = 5
 gp.koza.grow.max-depth = 7
 
 
@@ -184,8 +184,8 @@ gp.tc.0.returns = boolean
 # GROW, the tree can get no bigger than this)
 
 gp.tc.0.init = ec.gp.koza.HalfBuilder
-gp.tc.0.init.min-size = 10
-gp.tc.0.init.max-size = 20
+gp.tc.0.init.min-size = 2
+gp.tc.0.init.max-size = 6
 
 
 # We set the default for HalfBuilder to be a ramp of 2--6,
@@ -209,7 +209,7 @@ gp.nc.size = 9
 
 #gp.nc.0.prob = 0.5
 #gp.nc.1.prob = 0.1
-#gp.nc.2.prob = 0.4
+#gp.nc.3.prob = 0.6
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0
@@ -229,7 +229,7 @@ gp.nc.2.size = 0
 gp.nc.3 = ec.gp.GPNodeConstraints
 gp.nc.3.name = nc3
 gp.nc.3.returns = factor
-gp.nc.3.size = 10
+gp.nc.3.size = 6
 gp.nc.3.child.0 = int
 gp.nc.3.child.1 = int
 
@@ -240,8 +240,6 @@ gp.nc.3.child.5 = int
 
 gp.nc.3.child.6 = int
 gp.nc.3.child.7 = int
-gp.nc.3.child.8 = int
-gp.nc.3.child.9 = int
 
 gp.nc.4 = ec.gp.GPNodeConstraints
 gp.nc.4.name = nc4

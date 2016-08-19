@@ -58,9 +58,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 			int hits = 0;
 			double sum = 0.0;
-			double result;
 			double expectedResult = 0.0;
-			double sum_mean = 0.0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
@@ -88,7 +86,6 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				ws_mean = dw.getMean("ws");
 				ws_std = dw.getStDeviation("ws");
 				
-				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
 			}
@@ -122,21 +119,34 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				if (!IllegalActivity.getInstance().illegalActivity()) {
 					
 					double actual= input.x;
+					functional_cost = Math.abs(actual - expectedResult);
 					
-					functional_cost = Math.abs(actual-expectedResult);
+//					if (expectedResult == 0) {
+//						functional_cost = actual;
+//					}
+//					else
+//					{
+//						functional_cost = 7 - actual;
+//					}
 					
-					result = Math.abs(actual - expectedResult);
+//					functional_cost = Math.abs(actual-expectedResult);
+
+//					if ((expectedResult == 0 && actual == 0) || (expectedResult == 1 && actual > 0)) {
+//						hits++;
+//					}
 					
-					if (result == 0)
-					{
+					if (functional_cost == 0) {
 						hits++;
 					}
+					
 					fitness_cost = functional_cost + paramCounter.getScore();	
 				} else {
-					fitness_cost = 1000.0 * IllegalActivity.getInstance().getCount();
+					sum = Double.MAX_VALUE - 100;
+					break;
+					
+					//fitness_cost = 1000.0 * IllegalActivity.getInstance().getCount();
 					//System.out.println(IllegalActivity.getInstance().getCount());
 				}
-				
 				sum += fitness_cost;
 			}
 			
