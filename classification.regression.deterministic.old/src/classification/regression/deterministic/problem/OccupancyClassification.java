@@ -46,7 +46,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				sum_mean = 50;//dw.getMeanSum();
+				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
 				System.out.println("Mean Sum: " + sum_mean);

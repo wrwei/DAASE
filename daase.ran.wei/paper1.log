@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.1)  22 AUG 2016 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.1)  22 AUG 2016 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -956,8 +956,8 @@ Package rerunfilecheck Info: File `paper1.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 27926 strings out of 493089
- 651193 string characters out of 6134843
+ 27927 strings out of 493089
+ 651204 string characters out of 6134843
  830841 words of memory out of 5000000
  30920 multiletter control sequences out of 15000+600000
  10958 words of font info for 42 fonts, out of 8000000 for 9000
@@ -979,10 +979,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on paper1.pdf (5 pages, 207387 bytes).
+Output written on paper1.pdf (5 pages, 208109 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\section{The Occupancy Classification Problem: Example}
+\section{The Occupancy Classification Problem: Deterministic}
 
 In this section we adapt our approach to the study of the classification problem presented in \cite{Candanedo201628}. In this study, data collected from sensors in a room, such as temperature, humidity, light, and $CO_2$ levels (and other fields derived from the aforementioned) are used to determine if the room is occupied. The data and the occupancy are used to train the classification models. In this section, we first present the classification model we implemented using ECJ, we then adapt our approach to the classification problem and evaluate our hypothesis.
 
@@ -27,6 +27,10 @@ We then define our fitness:
 \begin{align*}
 fitness = cost_f + cost_{param}
 \end{align*}
+
+With our implementation we managed to get 98.99\% accuracy within 30 generations of evolution in ECJ. However, the accuracy is not able to improve any further.
+
+\section{The Occupancy Classification Problem: Stochastic}
 
 %An abstract representation of our initial classification model is illustrated in Figure \ref{fig:class_abstract-tree} to better understand our approach. The representation contains a number of functions (in this case study, $<$, $>$, $\leq$ and $\geq$) and a number of terminals (\emph{1} and \emph{0} representing if a room is occupied or not). When the tree is evaluated, data from a single data set (the set containing the data from all the sensors at a specific point in time) is selected and used to determine if a room is occupied. In our implementation, an ideal classification model is \emph{searched} using the data provided in the study \cite{}. The types of data used in our implementation are \emph{temperature}, \emph{humidity}, \emph{light}, \emph{co2}, \emph{humidity ratio}, \emph{NSM} (the number of seconds from midnight for each day) and \emph{WS} (week status, derived from the time stamp provided, which yields 1 if weekdays and 0 otherwise).
 %
