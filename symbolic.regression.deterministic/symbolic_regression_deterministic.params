@@ -1,0 +1,36 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 6
+gp.fs.0.func.0 = symbolic.regression.deterministic.terminals.X
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = symbolic.regression.deterministic.terminals.Y
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = symbolic.regression.deterministic.functionset.Add
+gp.fs.0.func.2.nc = nc1
+
+gp.fs.0.func.3 = symbolic.regression.deterministic.functionset.Sub
+gp.fs.0.func.3.nc = nc1
+
+gp.fs.0.func.4 = symbolic.regression.deterministic.functionset.Mul
+gp.fs.0.func.4.nc = nc1
+
+gp.fs.0.func.5 = symbolic.regression.deterministic.functionset.SafeDiv
+gp.fs.0.func.5.nc = nc1
+
+eval.problem = symbolic.regression.deterministic.problem.MultiValuedRegression
+eval.problem.data = symbolic.regression.deterministic.util.DoubleData
