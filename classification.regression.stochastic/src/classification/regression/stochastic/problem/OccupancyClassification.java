@@ -12,7 +12,6 @@ import ec.gp.GPProblem;
 import ec.gp.koza.KozaFitness;
 import ec.simple.SimpleProblemForm;
 import ec.util.Parameter;
-import symbolic.regression.stochastic.util.StochasticityNormaliser;
 
 public class OccupancyClassification extends GPProblem implements SimpleProblemForm {
 	private static final long serialVersionUID = 1;
@@ -22,7 +21,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	public double light;
 	public double co2;
 	public double hr;
-	public long nsm;
+	public double nsm;
 	public int ws;
 	
 	public void setup(final EvolutionState state, final Parameter base) {
@@ -45,17 +44,17 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
+			//prepare an array to store lowest fitness
+			double fitnessArray[] = new double[dw.size()];
+			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
 				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
+				System.out.println("Mean Sum: " + sum_mean);
 			}
 
-			//prepare an array to store lowest fitness
-			double fitnessArray[] = new double[dw.size()];
-
-			
 			for(int i=0; i < dw.size(); i++)
 			{
 				DataEntity de = dw.getData(i);
@@ -72,57 +71,47 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 				double fitness_lowest = Double.MAX_VALUE;
 
-				for(int j = 0; j < 100; j ++)
+				for(int i = 0; i < 100; i ++)
 				{
-					ParamCounter paramCounter = ParamCounter.getInstance();
-					paramCounter.clear();
-
-					// reset flag for illegal division
-					IllegalDivision.getInstance().reset();
 					
-					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
-
-					double stochastic_cost = input.stochastic_cost;
-					double functional_cost = 0.0;
-					double fitness_cost;
-					
-					// check for existence of illegal divisions
-					if (!IllegalDivision.getInstance().illegalDivision()) {
-						//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-						double threshold = sum_mean;
-						
-						double actual=(input.x<threshold)?0:1;
-						
-						functional_cost = Math.abs(actual-input.x);
-						
-						result = Math.abs(actual - input.x);
-						//System.out.println("result is   "+result);
-						
-						if (result == 0)
-						{
-							hits++;
-						}
-						fitness_cost = functional_cost + 0.01 * paramCounter.getScore() + 0.01*stochastic_cost;	
-					} else {
-						fitness_cost = 100.0;
-					}
-					
-					if (fitness_cost <= fitness_lowest) {
-						fitness_lowest = fitness_cost;
-					}
 				}
-				fitnessArray[i] = fitness_lowest;
-			}
-			
-			for(int i = 0; i < dw.size(); i++)
-			{
-				sum += fitnessArray[i];
-			}
-			
-			if (sum < 0) {
-				sum = Double.MAX_VALUE;
-			}
+				ParamCounter paramCounter = ParamCounter.getInstance();
+				paramCounter.clear();
 
+				// reset flag for illegal division
+				IllegalDivision.getInstance().reset();
+				
+				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
+
+				double functional_cost = 0.0;
+				double fitness_cost;
+				
+				// check for existence of illegal divisions
+				if (!IllegalDivision.getInstance().illegalDivision()) {
+					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
+					double threshold = sum_mean;
+					
+					double actual=(input.x<threshold)?0:1;
+					
+					functional_cost = Math.abs(actual-expectedResult);
+					
+					result = Math.abs(actual - expectedResult);
+					//System.out.println("result is   "+result);
+					
+					if (result == 0)
+					{
+						hits++;
+					}
+					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();	
+				} else {
+					fitness_cost = 100.0;
+				}
+				
+				sum += fitness_cost;
+			}
+			
+			//System.out.println(ParamCounter.getInstance().getScore());
+			
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);

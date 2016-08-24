@@ -8,9 +8,8 @@ import ec.Problem;
 import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
-import ec.gp.GPNode;
 
-public class HumidityRatio extends AbstractAttributeNode {
+public class HumidityRatio extends AbstractHumidityRatioNode {
 
 	public String toString() {
 		return "hr";

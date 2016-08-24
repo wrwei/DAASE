@@ -50,7 +50,7 @@ gp.fs.0.func.9.nc = nc1
 gp.fs.0.func.10 = classification.regression.stochastic.terminals.Eight
 gp.fs.0.func.10.nc = nc1
 
-gp.fs.0.func.11 = classification.regression.stochastic.functionset.StochasticNode
+gp.fs.0.func.11 = classification.regression.stochastic.functionset.OPNode
 gp.fs.0.func.11.nc = nc2
 
 

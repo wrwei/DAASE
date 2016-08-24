@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class Humidity extends AbstractAttributeNode {
+public class Humidity extends AbstractHumidityNode {
 
 	public String toString() {
 		return "humidity";

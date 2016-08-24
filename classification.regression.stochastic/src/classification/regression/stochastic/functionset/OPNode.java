@@ -13,8 +13,9 @@ import ec.gp.GPData;
 import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import ec.gp.GPTree;
+import ec.util.Parameter;
 
-public class StochasticNode extends GPNode {
+public class OPNode extends GPNode {
 
 	// bias for illegal division
 	private static float BIAS = 1 / Float.MAX_VALUE;
@@ -45,6 +46,14 @@ public class StochasticNode extends GPNode {
 		default:
 			return "invalid";
 		}
+	}
+
+	@Override
+	public void checkConstraints(EvolutionState state, int tree, GPIndividual typicalIndividual,
+			Parameter individualBase) {
+		super.checkConstraints(state, tree, typicalIndividual, individualBase);
+		if (children.length != 12)
+			state.output.error("Incorrect number of children for node " + toStringForError() + " at " + individualBase);
 	}
 
 	public int expectedChildren() {
@@ -235,14 +244,14 @@ public class StochasticNode extends GPNode {
 				max = div_stochastic_cost;
 			}
 
-			if (children[0] instanceof StochasticNode) {
-				StochasticNode temp = (StochasticNode) children[0];
+			if (children[0] instanceof OPNode) {
+				OPNode temp = (OPNode) children[0];
 				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
 				stochastic_sum += res;
 			}
 
-			if (children[1] instanceof StochasticNode) {
-				StochasticNode temp = (StochasticNode) children[1];
+			if (children[1] instanceof OPNode) {
+				OPNode temp = (OPNode) children[1];
 				double res = temp.calculateStochasticCost(state, thread, input, stack, individual, problem);
 				stochastic_sum += res;
 			}
@@ -255,4 +264,28 @@ public class StochasticNode extends GPNode {
 	
 
 	
+//	public double calculateProbStd()
+//	{
+//		//probabilities
+//		double p1 = 0.0;
+//		double p2 = 0.0;
+//		double p3 = 0.0;
+//		double p4 = 0.0;
+//		double weight_sum = add_weight + sub_weight + mul_weight + div_weight;
+//		if (weight_sum == 0.0) {
+//			return 0.0;
+//		}
+//		
+//		p1 = add_weight / weight_sum;
+//		p2 = sub_weight / weight_sum;
+//		p3 = mul_weight / weight_sum;
+//		p4 = div_weight / weight_sum;
+//		
+//		double mean = (p1+p2+p3+p4)/4.0;
+//		double sum = (p1-mean)*(p1-mean) + (p2-mean)*(p2-mean) + (p3-mean)*(p3-mean) + (p4-mean)*(p4-mean);
+//		
+//		double variance = sum/4.0;
+//		return Math.sqrt(variance);
+//	}
+
 }

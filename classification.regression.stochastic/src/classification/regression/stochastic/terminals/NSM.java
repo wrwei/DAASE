@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class NSM extends AbstractAttributeNode {
+public class NSM extends AbstractNSMNode {
 
 	public String toString() {
 		return "nsm";

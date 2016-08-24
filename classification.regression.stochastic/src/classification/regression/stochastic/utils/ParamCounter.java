@@ -58,13 +58,13 @@ public class ParamCounter {
 		for(int i : a)
 		{
 			if (i == 0) {
-				result +=2;
+				result += 20;
 			}
 			else if (i == 1) {
 				total++;
 			}
 			else if (i > 1) {
-				result += i * 2;
+				result += 40;
 			}
 		}
 		

@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class WS extends AbstractAttributeNode {
+public class WS extends AbstractWSNode {
 
 	public String toString() {
 		return "ws";

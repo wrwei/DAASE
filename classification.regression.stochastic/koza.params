@@ -103,8 +103,8 @@ select.tournament.size = 7
 # This means that if someone decided to use GROW to generate
 # new individual trees, it's also use the defaults below
 # unless he overrided them locally.
-gp.koza.grow.min-depth = 7
-gp.koza.grow.max-depth = 7
+gp.koza.grow.min-depth = 5
+gp.koza.grow.max-depth = 5
 
 
 
@@ -145,16 +145,14 @@ gp.fs.0.name = f0
 # Here we define a single atomic type, "nil", which everyone will use.
 # There are no set types defined.
 
-gp.type.a.size = 4
+gp.type.a.size = 2
 gp.type.a.0.name = nil
 gp.type.a.1.name = int
-gp.type.a.2.name = data
-gp.type.a.3.name = weight
-gp.type.s.size = 1
-gp.type.s.0.name = nil-or-data
-gp.type.s.0.size = 2
-gp.type.s.0.member.0 = nil
-gp.type.s.0.member.1 = data
+gp.type.s.size = 0
+gp.type.s.0.name = int-or-nil
+#gp.type.s.0.size = 2
+#gp.type.s.0.member.0 = nil
+#gp.type.s.0.member.1 = int
 
 # Here we define one GPTreeConstraints object, "tc0",
 # which uses ec.gp.koza.HalfBuilder to create nodes,
@@ -208,27 +206,27 @@ gp.nc.size = 3
 
 gp.nc.0 = ec.gp.GPNodeConstraints
 gp.nc.0.name = nc0
-gp.nc.0.returns = data
+gp.nc.0.returns = nil
 gp.nc.0.size = 0 
 
 gp.nc.1 = ec.gp.GPNodeConstraints
 gp.nc.1.name = nc1
-gp.nc.1.returns = weight
+gp.nc.1.returns = int
 gp.nc.1.size = 0
 
 gp.nc.2 = ec.gp.GPNodeConstraints
 gp.nc.2.name = nc2
 gp.nc.2.returns = nil
 gp.nc.2.size = 12
-gp.nc.2.child.0 = nil-or-data
-gp.nc.2.child.1 = nil-or-data
-gp.nc.2.child.2 = weight
-gp.nc.2.child.3 = weight
-gp.nc.2.child.4 = weight
-gp.nc.2.child.5 = weight
-gp.nc.2.child.6 = weight
-gp.nc.2.child.7 = weight
-gp.nc.2.child.8 = weight
-gp.nc.2.child.9 = weight
-gp.nc.2.child.10 = weight
-gp.nc.2.child.11 = weight
+gp.nc.2.child.0 = nil
+gp.nc.2.child.1 = nil
+gp.nc.2.child.2 = int
+gp.nc.2.child.3 = int
+gp.nc.2.child.4 = int
+gp.nc.2.child.5 = int
+gp.nc.2.child.6 = int
+gp.nc.2.child.7 = int
+gp.nc.2.child.8 = int
+gp.nc.2.child.9 = int
+gp.nc.2.child.10 = int
+gp.nc.2.child.11 = int

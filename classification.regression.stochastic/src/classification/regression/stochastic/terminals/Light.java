@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class Light extends AbstractAttributeNode {
+public class Light extends AbstractLightNode {
 
 	public String toString() {
 		return "light";

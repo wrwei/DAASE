@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class Temperature extends AbstractAttributeNode {
+public class Temperature extends AbstractTemperatureNode {
 
 	public String toString() {
 		return "temperature";

@@ -9,7 +9,7 @@ import ec.gp.ADFStack;
 import ec.gp.GPData;
 import ec.gp.GPIndividual;
 
-public class CO2 extends AbstractAttributeNode {
+public class CO2 extends AbstractCO2Node {
 
 	public String toString() {
 		return "co2";
