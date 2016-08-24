@@ -44,8 +44,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
-			//prepare an array to store lowest fitness
-			double fitnessArray[] = new double[dw.size()];
+			
 			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
@@ -54,6 +53,9 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				System.out.println("Expected hits: " + dw.size());
 				System.out.println("Mean Sum: " + sum_mean);
 			}
+			
+			//prepare an array to store lowest fitness
+			double fitnessArray[] = new double[dw.size()];
 
 			for(int i=0; i < dw.size(); i++)
 			{
@@ -71,45 +73,55 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 				double fitness_lowest = Double.MAX_VALUE;
 
-				for(int i = 0; i < 100; i ++)
+				for(int j = 0; j < 10; j ++)
 				{
-					
-				}
-				ParamCounter paramCounter = ParamCounter.getInstance();
-				paramCounter.clear();
+					ParamCounter paramCounter = ParamCounter.getInstance();
+					paramCounter.clear();
 
-				// reset flag for illegal division
-				IllegalDivision.getInstance().reset();
-				
-				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
+					// reset flag for illegal division
+					IllegalDivision.getInstance().reset();
+					
+					((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
-				double functional_cost = 0.0;
-				double fitness_cost;
-				
-				// check for existence of illegal divisions
-				if (!IllegalDivision.getInstance().illegalDivision()) {
-					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-					double threshold = sum_mean;
+					double stochastic_cost = input.stochastic_cost;
+					double functional_cost = 0.0;
+					double fitness_cost;
 					
-					double actual=(input.x<threshold)?0:1;
-					
-					functional_cost = Math.abs(actual-expectedResult);
-					
-					result = Math.abs(actual - expectedResult);
-					//System.out.println("result is   "+result);
-					
-					if (result == 0)
-					{
-						hits++;
+					// check for existence of illegal divisions
+					if (!IllegalDivision.getInstance().illegalDivision()) {
+						//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
+						double threshold = sum_mean;
+						
+						double actual=(input.x<threshold)?0:1;
+						
+						functional_cost = Math.abs(actual-expectedResult);
+						
+						result = Math.abs(actual - expectedResult);
+						//System.out.println("result is   "+result);
+						
+						if (result == 0)
+						{
+							hits++;
+						}
+						fitness_cost = functional_cost + 0.01 * paramCounter.getScore() + 0.01*stochastic_cost;	
+					} else {
+						fitness_cost = 100.0;
 					}
-					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();	
-				} else {
-					fitness_cost = 100.0;
+					if (fitness_cost <= fitness_lowest) {
+						fitness_lowest = fitness_cost;
+					}
 				}
-				
-				sum += fitness_cost;
+				fitnessArray[i] = fitness_lowest;
 			}
 			
+			for(int i = 0; i < dw.size(); i++)
+			{
+				sum += fitnessArray[i];
+			}
+			
+			if (sum < 0) {
+				sum = Double.MAX_VALUE;
+			}
 			//System.out.println(ParamCounter.getInstance().getScore());
 			
 			// the fitness better be KozaFitness!
