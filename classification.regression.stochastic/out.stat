@@ -1,0 +1,544 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=400.0059999999245 Adjusted=0.0024937282733928875 Hits=33618
+Tree 0:
+((ws * humidity)(0.3, 0.3, 0.3, 0.1 |0.7) / (co2 / light)(0.2, 0.2, 0.5, 0.1 |0.5))(0.1, 0.3, 0.2, 0.4 |1.8) * ((co2 / temperature)(0.2, 0, 0.4, 0.4 |0.6) - (nsm - hr)(0.2, 0.4, 0.2, 0.2 |0.6))(0.4, 0.2, 0.3, 0.1 |1.8)(0.2, 0.4, 0.3, 0.1 |4.2)
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=434.4340000000472 Adjusted=0.0022965592948641853 Hits=34716
+Tree 0:
+((temperature + hr)(0.4, 0.2, 0.2, 0.2 |0.6) / (co2 * nsm)(0, 0.6, 0.2, 0.2 |0.4))(0.4, 0.2, 0, 0.4 |1.6) * ((light - ws)(0.2, 0.5, 0.2, 0.1 |0.5) - (humidity - hr)(0.2, 0.2, 0.2, 0.4 |0.6))(0.4, 0.3, 0, 0.3 |1.7)(0.1, 0.2, 0.5, 0.2 |3.8)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=417.00699999995504 Adjusted=0.0023923044350934496 Hits=37749
+Tree 0:
+((nsm + hr)(0.2, 0.5, 0.3, 0 |0.5) - ((light / co2)(0.3, 0.1, 0.2, 0.4 |0.6) * (ws / nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.5) / ((temperature / hr)(0.1, 0.5, 0.2, 0.2 |0.5) * (temperature - humidity)(0.2, 0.3, 0.2, 0.3 |0.7))(0.4, 0.4, 0.2, 0 |1.8)(0.1, 0.4, 0.2, 0.3 |4.9)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=392.7210000000578 Adjusted=0.002539869603094204 Hits=40473
+Tree 0:
+(((ws + temperature)(0.1, 0.3, 0.2, 0.4 |0.6) / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |1.5) - ((light / co2)(0.3, 0.1, 0.2, 0.4 |0.6) + (ws - nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |3.5) - (humidity + co2)(0.4, 0.3, 0.3, 0 |0.6)(0.1, 0.4, 0.2, 0.3 |4.7)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=350.00500000004087 Adjusted=0.002848962265494462 Hits=36566
+Tree 0:
+((nsm * hr)(0.1, 0.4, 0.4, 0.1 |0.6) + (humidity / co2)(0.5, 0.2, 0.1, 0.2 |0.5))(0.2, 0.4, 0.2, 0.2 |1.7) + ((light * temperature)(0.3, 0.2, 0.1, 0.4 |0.6) + (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |1.5)(0.7, 0, 0.1, 0.2 |3.5)
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=350.00500000004087 Adjusted=0.002848962265494462 Hits=36566
+Tree 0:
+((nsm * hr)(0.1, 0.4, 0.4, 0.1 |0.6) + (humidity / co2)(0.5, 0.2, 0.1, 0.2 |0.5))(0.2, 0.4, 0.2, 0.2 |1.7) + ((light * temperature)(0.3, 0.2, 0.1, 0.4 |0.6) + (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |1.5)(0.7, 0, 0.1, 0.2 |3.5)
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=311.14800000001037 Adjusted=0.003203608544664604 Hits=37472
+Tree 0:
+((nsm + hr)(0.2, 0.5, 0.3, 0 |0.5) / ((light - co2)(0.3, 0.1, 0.2, 0.4 |0.6) * (ws * nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.5) - (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |3.6)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=292.0050000000046 Adjusted=0.0034129110424736243 Hits=40208
+Tree 0:
+((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) / ((ws - nsm)(0.5, 0.2, 0.2, 0.1 |0.5) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |1.4))(0.3, 0.1, 0.1, 0.5 |2.4) * (humidity / temperature)(0.3, 0.2, 0.2, 0.3 |0.7)(0.1, 0.2, 0.6, 0.1 |3.5)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=285.71899999996896 Adjusted=0.003487735378541737 Hits=39754
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light - co2)(0.3, 0.1, 0.2, 0.4 |0.6) + (ws + nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.2) - (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |3.3)
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=277.7189999999637 Adjusted=0.003587842952938731 Hits=39727
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light * co2)(0.3, 0.1, 0.2, 0.4 |0.6) * (ws + nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.2) / (humidity * temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |3.3)
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=277.7189999999637 Adjusted=0.003587842952938731 Hits=39727
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light * co2)(0.3, 0.1, 0.2, 0.4 |0.6) * (ws + nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.2) / (humidity * temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |3.3)
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=277.7189999999637 Adjusted=0.003587842952938731 Hits=39727
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light * co2)(0.3, 0.1, 0.2, 0.4 |0.6) * (ws + nsm)(0.5, 0.2, 0.2, 0.1 |0.5))(0.6, 0, 0.2, 0.2 |1.5))(0.2, 0.5, 0.2, 0.1 |2.2) / (humidity * temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |3.3)
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=274.7189999999632 Adjusted=0.003626880991154521 Hits=42312
+Tree 0:
+((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.2) * ((humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5) + (nsm * temperature)(0.4, 0.1, 0.4, 0.1 |0.6))(0.4, 0, 0.4, 0.2 |1.7)(0.1, 0.2, 0.6, 0.1 |3.3)
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=253.2900000000085 Adjusted=0.003932517991269679 Hits=42190
+Tree 0:
+((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) * (nsm + (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |0.9))(0.3, 0.1, 0.1, 0.5 |1.9) * (humidity - temperature)(0.3, 0.2, 0.2, 0.3 |0.7)(0.1, 0.2, 0.6, 0.1 |3)
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=237.86099999995292 Adjusted=0.0041865352652806324 Hits=37492
+Tree 0:
+(nsm + ((light + co2)(0.2, 0.5, 0.2, 0.1 |0.5) + (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.6, 0, 0.2, 0.2 |1.1))(0.2, 0.5, 0.2, 0.1 |1.6) - (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |2.7)
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=234.00399999997921 Adjusted=0.004255246719205156 Hits=42535
+Tree 0:
+((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) / (nsm / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |0.9))(0.3, 0.1, 0.1, 0.5 |1.9) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.8)
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=234.00399999997921 Adjusted=0.004255246719205156 Hits=42535
+Tree 0:
+((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) / (nsm / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.3, 0.2, 0.2 |0.9))(0.3, 0.1, 0.1, 0.5 |1.9) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.8)
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=231.86099999995557 Adjusted=0.004294407393252588 Hits=41782
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) - ((light / co2)(0.3, 0.1, 0.2, 0.4 |0.6) * nsm)(0.6, 0, 0.2, 0.2 |1))(0.2, 0.5, 0.2, 0.1 |1.7) * (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.4, 0.2, 0.3 |2.7)
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=230.86099999995665 Adjusted=0.004312928866865005 Hits=40779
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) / ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) * nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |2.7)
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=227.86099999995602 Adjusted=0.004369464434745073 Hits=40967
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) / nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) - (humidity * temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |2.7)
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=227.86099999995602 Adjusted=0.004369464434745073 Hits=40967
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) / nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) - (humidity * temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.4, 0.2, 0.3 |2.7)
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=213.57500000002943 Adjusted=0.004660375160199757 Hits=38241
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.5)
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=213.57500000002943 Adjusted=0.004660375160199757 Hits=38241
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.5)
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=213.57500000002943 Adjusted=0.004660375160199757 Hits=38241
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.5)
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=213.57500000002943 Adjusted=0.004660375160199757 Hits=38241
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) * (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.5)
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=211.4320000000067 Adjusted=0.004707388717330574 Hits=38270
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) - ((light + co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9))(0.2, 0.5, 0.2, 0.1 |1.6) / (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.4)
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=210.28899999998217 Adjusted=0.0047328540529799675 Hits=37709
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) - ((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) * (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=210.28899999998217 Adjusted=0.0047328540529799675 Hits=37709
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) - ((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) * (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=210.28899999998217 Adjusted=0.0047328540529799675 Hits=37709
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) - ((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) * (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=208.57500000002938 Adjusted=0.004771561493498079 Hits=41780
+Tree 0:
+(((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) * nsm)(0.6, 0, 0.2, 0.2 |0.9) * (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.6) + (humidity + temperature)(0.5, 0.1, 0.2, 0.2 |0.5)(0.1, 0.2, 0.6, 0.1 |2.5)
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=205.28899999998157 Adjusted=0.004847568217404173 Hits=37829
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light + co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) / (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=199.43200000000655 Adjusted=0.004989223277719962 Hits=41700
+Tree 0:
+(((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.6) + (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.4)
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=199.43200000000655 Adjusted=0.004989223277719962 Hits=41700
+Tree 0:
+(((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.6, 0, 0.2, 0.2 |0.9) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.6) + (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.4)
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.28899999998296 Adjusted=0.0051206161125311065 Hits=38940
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.7, 0, 0.1, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) + (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.28899999998296 Adjusted=0.0051206161125311065 Hits=38940
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.7, 0, 0.1, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) + (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.28899999998296 Adjusted=0.0051206161125311065 Hits=38940
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.7, 0, 0.1, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) + (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.28899999998296 Adjusted=0.0051206161125311065 Hits=38940
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light * co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.7, 0, 0.1, 0.2 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) + (humidity / temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.3)
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.14599999998916 Adjusted=0.005177430544769533 Hits=38559
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light + co2)(0.1, 0.6, 0.2, 0.1 |0.4) * nsm)(0.7, 0, 0.2, 0.1 |0.7))(0.2, 0.5, 0.2, 0.1 |1.4) - (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.2)
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=190.14599999998893 Adjusted=0.005231603067812342 Hits=39131
+Tree 0:
+((ws + hr)(0.8, 0.1, 0, 0.1 |0.2) + ((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) + nsm)(0.7, 0, 0.2, 0.1 |0.8))(0.2, 0.5, 0.2, 0.1 |1.5) * (humidity / temperature)(0.7, 0, 0.1, 0.2 |0.3)(0.1, 0.2, 0.6, 0.1 |2.2)
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.14599999999095 Adjusted=0.005372127254950677 Hits=44190
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.5) + (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.2, 0.1, 0.6, 0.1 |2.2)
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.14599999999095 Adjusted=0.005372127254950677 Hits=44190
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.5) + (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.2, 0.1, 0.6, 0.1 |2.2)
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.00299999997233 Adjusted=0.005464391294132617 Hits=38488
+Tree 0:
+((ws / hr)(0.8, 0.1, 0, 0.1 |0.2) * ((light + co2)(0.1, 0.7, 0.1, 0.1 |0.3) + nsm)(0.7, 0, 0.1, 0.2 |0.6))(0.2, 0.5, 0.2, 0.1 |1.3) - (humidity + temperature)(0.6, 0.1, 0.1, 0.2 |0.4)(0.1, 0.2, 0.6, 0.1 |2.1)
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.00299999997569 Adjusted=0.005681721334296223 Hits=45373
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0.1, 0.5 |1.4) + (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |2.1)
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.00299999997432 Adjusted=0.0055864985503044275 Hits=44063
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.6, 0, 0.2, 0.2 |0.8) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0, 0.6 |1.4) + (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.2, 0.1, 0.6, 0.1 |2.1)
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.002999999975 Adjusted=0.005681721334296245 Hits=41938
+Tree 0:
+(((light - co2)(0.2, 0.5, 0.2, 0.1 |0.5) * nsm)(0.7, 0, 0.2, 0.1 |0.8) + (ws / hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0, 0.6 |1.4) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |2.1)
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.86000000001295 Adjusted=0.005654189754607751 Hits=45950
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0, 0.6 |1.3) * (humidity - temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |2)
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=173.8600000000132 Adjusted=0.005718860802927625 Hits=45532
+Tree 0:
+(((light + co2)(0.1, 0.6, 0.2, 0.1 |0.4) * nsm)(0.7, 0, 0.2, 0.1 |0.7) - (ws + hr)(0.8, 0.1, 0, 0.1 |0.2))(0.3, 0.1, 0, 0.6 |1.3) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |2)
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=163.71700000002272 Adjusted=0.006071018777660242 Hits=46579
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=163.71700000002272 Adjusted=0.006071018777660242 Hits=46579
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=163.71700000002272 Adjusted=0.006071018777660242 Hits=46579
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=166.7170000000246 Adjusted=0.005962424798916349 Hits=46783
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) / nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity * temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=166.7170000000246 Adjusted=0.005962424798916349 Hits=46783
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) / nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity * temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=162.71700000002423 Adjusted=0.006108101174586952 Hits=45478
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) - (ws - hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) / (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.2, 0.1, 0.6, 0.1 |1.9)
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=160.71700000002383 Adjusted=0.006183641793997246 Hits=46661
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) / nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws - hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) - (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=159.71700000002272 Adjusted=0.006222117137576352 Hits=46806
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) / (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity / temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=158.71700000002346 Adjusted=0.0062610742751232065 Hits=46833
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws - hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.7, 0.1, 0.1, 0.1 |0.3)(0.1, 0.2, 0.6, 0.1 |1.9)
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=153.5740000000052 Adjusted=0.00646939330029608 Hits=45595
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.8)
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=153.5740000000052 Adjusted=0.00646939330029608 Hits=45595
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.8)
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=151.57400000000519 Adjusted=0.006554196652116128 Hits=45582
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.8)
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=151.57400000000519 Adjusted=0.006554196652116128 Hits=45515
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.7, 0, 0.2, 0.1 |0.7) + (ws - hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.2) - (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.8)
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=142.43099999998603 Adjusted=0.006971993502102735 Hits=45428
+Tree 0:
+(((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) - (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.1) - (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.7)
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=142.43099999998603 Adjusted=0.006971993502102735 Hits=45428
+Tree 0:
+(((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) - (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.1) - (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.7)
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=145.4309999999854 Adjusted=0.006829155028648986 Hits=45595
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) + (ws + hr)(0.9, 0.1, 0, 0 |0.1))(0.3, 0.1, 0, 0.6 |1.1) * (humidity * temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.7)
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=141.28800000000626 Adjusted=0.00702799955020772 Hits=45769
+Tree 0:
+(((light / co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) + (ws + hr)(1, 0, 0, 0 |0))(0.3, 0.1, 0, 0.6 |1) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.6)
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=137.28800000000993 Adjusted=0.007231285433298104 Hits=45803
+Tree 0:
+(((light - co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) / (ws + hr)(1, 0, 0, 0 |0))(0.3, 0.1, 0, 0.6 |1) * (humidity * temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.6)
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=136.28800000001084 Adjusted=0.007283957811315782 Hits=45776
+Tree 0:
+(((light * co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) + (ws + hr)(1, 0, 0, 0 |0))(0.3, 0.1, 0, 0.6 |1) / (humidity - temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.6)
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=135.2880000000126 Adjusted=0.00733740314627779 Hits=45769
+Tree 0:
+(((light + co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) / (ws + hr)(1, 0, 0, 0 |0))(0.3, 0.1, 0, 0.6 |1) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.6)
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=135.2880000000126 Adjusted=0.00733740314627779 Hits=45769
+Tree 0:
+(((light + co2)(0.1, 0.6, 0.2, 0.1 |0.4) + nsm)(0.8, 0, 0.1, 0.1 |0.6) / (ws + hr)(1, 0, 0, 0 |0))(0.3, 0.1, 0, 0.6 |1) * (humidity + temperature)(0.8, 0.1, 0.1, 0 |0.2)(0.2, 0.1, 0.6, 0.1 |1.6)
