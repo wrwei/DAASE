@@ -1,8 +1,6 @@
 package classification.regression.deterministic.functionset;
 
-import classification.regression.deterministic.terminals.NSM;
 import classification.regression.deterministic.utils.DoubleData;
-import classification.regression.deterministic.utils.IllegalDivision;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -24,16 +22,20 @@ public class DayMod48 extends AbstractFunctionNode{
 		double result;
 		DoubleData rd = ((DoubleData) (input));
 
-		if (children[0] instanceof NSM) {
-			children[0].eval(state, thread, input, stack, individual, problem);
-			result = rd.x;
-			rd.x = (result)%48;
-		}
-		else
-		{
-			rd.x = 0;
-			IllegalDivision.getInstance().illegal();
-		}
+		children[0].eval(state, thread, input, stack, individual, problem);
+		result = rd.x;
+		rd.x = (result)%48;
+		
+//		if (children[0] instanceof NSM) {
+//			children[0].eval(state, thread, input, stack, individual, problem);
+//			result = rd.x;
+//			rd.x = (result)%48;
+//		}
+//		else
+//		{
+//			rd.x = 0;
+//			IllegalDivision.getInstance().illegal();
+//		}
 	}
 
 }

@@ -73,7 +73,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 				double fitness_lowest = Double.MAX_VALUE;
 
-				for(int j = 0; j < 10; j ++)
+				for(int j = 0; j < 50; j ++)
 				{
 					ParamCounter paramCounter = ParamCounter.getInstance();
 					paramCounter.clear();
