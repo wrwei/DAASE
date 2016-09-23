@@ -3,30 +3,22 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1285.0 Adjusted=7.776049766718507E-4 Hits=6858
+Fitness: Standardized=988.0 Adjusted=0.0010111223458038423 Hits=7155
 Tree 0:
-(humidity + ws) * (lg(nsm * light) + ((hr * temperature) + ln(co2)))
+((((light - humidity) * ln(nsm)) + ((temperature - temperature) - (ws + humidity))) - ((2(1) - (hr * co2)) + 2(2(co2)))) - ln(2(ln(humidity)) + ((light * light) * (light * co2)))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1729.0 Adjusted=5.780346820809249E-4 Hits=6414
+Fitness: Standardized=980.0 Adjusted=0.0010193679918450561 Hits=7163
 Tree 0:
-(ln(lg(co2 + temperature)) - ((ln(hr) / lg(temperature)) / ((humidity + light) * (hr - nsm)))) / ((((hr / temperature) / (humidity * hr)) + ((ws * ws) - (ws * ws))) - daymod(lg(co2 - humidity)))
+((((light - humidity) * ln(nsm)) + ((temperature - temperature) - (ws + humidity))) - ((2(1) - (hr * co2)) + 2(2(co2)))) - ((nsm + 1) - ln(nsm))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1145.0 Adjusted=8.726003490401396E-4 Hits=6998
+Fitness: Standardized=265.0 Adjusted=0.0037593984962406013 Hits=7878
 Tree 0:
-((light - ws) + daymod(co2)) + ((lg(nsm / humidity) - (ln(temperature) + lg(temperature))) * daymod((co2 * temperature) / daymod(hr)))
-
-Generation: 3
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=406.0 Adjusted=0.002457002457002457 Hits=7737
-Tree 0:
-(nsm / temperature) * (lg((ws * hr) * light) + (humidity * co2))
+2((humidity * 1) / ln(hr)) * (((nsm + temperature) / (hr - co2)) - ((humidity + temperature) / ((((1 / hr) - (light - nsm)) - ((temperature + ws) * 2(temperature))) + 1)))

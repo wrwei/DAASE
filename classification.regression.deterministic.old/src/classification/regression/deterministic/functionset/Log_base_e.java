@@ -26,13 +26,6 @@ public class Log_base_e extends AbstractFunctionNode {
 		children[0].eval(state, thread, input, stack, individual, problem);
 		result = rd.x;
 
-		if (result < 0) {
-			IllegalDivision.getInstance().illegal();
-			rd.x = 10000;
-		}
-		else
-		{
-			rd.x = Math.log(result);
-		}
+		rd.x = Math.log(result);
 	}
 }
