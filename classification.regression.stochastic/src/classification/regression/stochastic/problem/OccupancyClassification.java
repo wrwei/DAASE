@@ -73,7 +73,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 				double fitness_lowest = Double.MAX_VALUE;
 
-				for(int j = 0; j < 50; j ++)
+				for(int j = 0; j < 10; j ++)
 				{
 					ParamCounter paramCounter = ParamCounter.getInstance();
 					paramCounter.clear();
@@ -103,7 +103,7 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 						{
 							hits++;
 						}
-						fitness_cost = functional_cost + 0.01 * paramCounter.getScore() + 0.01*stochastic_cost;	
+						fitness_cost = functional_cost + 0.01 * paramCounter.getScore() + 0.05*stochastic_cost;	
 					} else {
 						fitness_cost = 100.0;
 					}
