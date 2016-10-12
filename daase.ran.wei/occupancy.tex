@@ -1,24 +1,24 @@
 \section{The Occupancy Classification Problem: Deterministic}
-
-In this section we adapt our approach to the study of the classification problem presented in \cite{Candanedo201628}. In this study, data collected from sensors in a room, such as temperature, humidity, light, and $CO_2$ levels (and other fields derived from the aforementioned) are used to determine if the room is occupied. The data and the occupancy are used to train the classification models. In this section, we first present the classification model we implemented using ECJ, we then adapt our approach to the classification problem and evaluate our hypothesis.
+\label{classification_deterministic}
+In this section we adapt our approach to the study of the classification problem presented in \cite{Candanedo201628}. In this study, data collected from sensors in a room, such as temperature, humidity, light, and $CO_2$ levels (and other fields derived from these statistics) are used to determine if the room is occupied. The data and the occupancy are used to train the classification models. In this section, we first present the classification model we implemented using ECJ, we then adapt our approach to the classification problem and evaluate our hypothesis.
 
 \subsection{Representation}
-In order for our approach to apply, we first represent the problem using ECJ with only deterministic nodes. 
+We apply our approach used in the symbolic regression problem to the classification problem. This is an inconventional approach as we are trying to solve a classification problem using regression methods. In this section, we discuss the problem representation.
 
 In the occupancy classification problem, there are eight different types of data that are used in the study: \emph{temperature}, \emph{humidity}, \emph{light}, $CO_2$, \emph{humidity ratio}, \emph{number of seconds from midnight} (denoted by \emph{nsm}), week status (denoted by \emph{ws}) and \emph{occupancy}. In our representation, there are seven terminal nodes \textbf{T} (temperature), \textbf{H} (humidity), \textbf{L} (light), \textbf{HR} (humidity ratio), \textbf{NSM} (number of seconds from midnight) and \textbf{WS} (week status). There are also four function nodes \textbf{add} (+), \textbf{sub} (-), \textbf{mul} (*), and \textbf{div} (/). 
 
-The node constraints are the same as it is illustrated in Figure~\ref{fig:symb_ncs}, where nodes \textbf{T}, \textbf{H}, \textbf{L}, \textbf{HR}, \textbf{NSM} and \textbf{WS} conform to \emph{nc0} and nodes \textbf{add}, \textbf{sub}, \textbf{mul}, and \textbf{div} conform to \emph{nc1}.
+The node constraints are the same as it is illustrated in Figure~\ref{fig:symb_ncs} in the symbolic regression problem, where nodes \textbf{T}, \textbf{H}, \textbf{L}, \textbf{HR}, \textbf{NSM} and \textbf{WS} conform to \emph{nc0} and nodes \textbf{add}, \textbf{sub}, \textbf{mul}, and \textbf{div} conform to \emph{nc1}.
 
 \subsection{Fitness}
 
-The objective of the classification problem is to determine if a room is occupied with the data. In our implementation we use an threshold approach. In the training data provided\footnote{\url{https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+}}, there are 8143 data entries. We obtained the threshold (denoted by $\theta$) by summing the means of all types of data:
+The objective of the classification problem is to determine if a room is occupied with the data. In our implementation we use a threshold approach. In the training data provided\footnote{\url{https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+}}, there are 8143 data entries. We obtained the threshold (denoted by $\theta$) by summing the means of all types of data:
 \begin{align*}
 \theta = \overline{T} + \overline{H} + \overline{L} + \overline{HR} + \overline{NSM} + \overline{WS}
 \end{align*}
 When the evaluated value of a tree (denoted by \emph{v}) is obtained, we compare \emph{v} with the threshold $\theta$ to form our functional cost ($cost_f$):
 \begin{align*}
-v \leq \theta \Rightarrow cost_f = 1;\\
-v > \theta \Rightarrow cost_f = 0;
+v \leq \theta \Rightarrow cost_f = 0;\\
+v > \theta \Rightarrow cost_f = 1;
 \end{align*}
 
 In order to guarantee that all seven terminals are used, we check for existence of the terminals regardless of repetitions (denoted as the parameter cost $cost_{param}$). If all seven terminals are used, $cost_{param}$ is 0, otherwise $cost_{param}$ equals the number of terminals that are not used. 
@@ -28,10 +28,49 @@ We then define our fitness:
 fitness = cost_f + cost_{param}
 \end{align*}
 
-With our implementation we managed to get 98.99\% accuracy within 30 generations of evolution in ECJ. However, the accuracy is not able to improve any further.
+With our implementation we managed to get 99.19\% accuracy within 116 generations of evolution in ECJ. However, the accuracy is not able to improve any further.
 
 \section{The Occupancy Classification Problem: Stochastic}
+We now discuss the stochastic approach for the occupancy classification problem. We adapt our approach in solving the symbolic regression problem, as discussed in Section \ref{sr_stochastic}. For the classification problem, we use the same \emph{OPNode} which integrates the functions \textbf{add}, \textbf{sub}. \textbf{mul} and \textbf{div} in it. 
 
+\subsection{Representation}
+For the classification problem, we re-use the seven terminal nodes introduced in Section \ref{classification_deterministic}, i.e. \textbf{T} (temperature), \textbf{H} (humidity), \textbf{L} (light), \textbf{HR} (humidity ratio), \textbf{NSM} (number of seconds from midnight) and \textbf{WS} (week status). 
+
+The node constraints are the same as it is illustrated in Figure~\ref{fig:symb_stochastic_ncs} in the symbolic regression problem, where nodes \textbf{T}, \textbf{H}, \textbf{L}, \textbf{HR}, \textbf{NSM} and \textbf{WS} conform to \emph{nc0} and \emph{OPNode} conforms to \emph{nc2}. 
+
+\subsection{Fitness}
+Same as the deterministic approach to the occupancy classification problem, we use a threshold approach. We obtain the threshold (denoted by $\theta$) by adding the means of all types of data:
+\begin{align*}
+\theta = \overline{T} + \overline{H} + \overline{L} + \overline{HR} + \overline{NSM} + \overline{WS}
+\end{align*}
+When the evaluated value of a tree (denoted by \emph{v}) is obtained, we compare \emph{v} with the threshold $\theta$ to form our functional cost ($cost_f$):
+\begin{align*}
+v \leq \theta \Rightarrow cost_f = 0;\\
+v > \theta \Rightarrow cost_f = 1;
+\end{align*}
+
+To guarantee that all seven terminals are used, we check for existence of the terminals regardless of repetitions (denoted as the parameter cost $cost_{param}$). If all seven terminals are used, $cost_{param}$ is 0, otherwise $cost_{param}$ equals the number of terminals that are not used. 
+
+We define our preliminary fitness:
+\begin{align}
+fitness = cost_f + cost_{param}
+\end{align}
+
+Since we also introduce stochasticity in the problem, we also need to minimise the \emph{stochastic cost} ($T_{stochastic}$) of the tree. Thus, we refine our fitness function: 
+
+\begin{align}
+fitness = cost_f + cost_{param} + T_{stochastic}
+\end{align}
+
+During the evolutionary process, for each set of data, the tree is evaluated 10 times (due to the huge amount of calculation) and the lowest fitness cost is kept.
+
+In addition, we normalise the weightings of the three objectives (cost function, parameter cost function and stochastic cost function). After experimentations we observe that the best results are obtained when the factor of 0.01 is applied to both the parameter cost function and stochastic cost function. Thus, we refine our fitness:
+
+\begin{align}
+fitness = cost_f + 0.01*cost_{param} + 0.01*T_{stochastic}
+\end{align}
+
+Due to the amount of calculations needed, we limit the evolution to 1000 generations. We observe that the stochastic approach is able to achieve 84.19\% accuracy within 1000 generations of evolution. We believe that the accuracy will improve as the \emph{OPNodes} in the tree are not-but-close-to deterministic. We anticipate that the stochastic approach is applicable to the occupancy classification problem if sufficient resources are provided. 
 %An abstract representation of our initial classification model is illustrated in Figure \ref{fig:class_abstract-tree} to better understand our approach. The representation contains a number of functions (in this case study, $<$, $>$, $\leq$ and $\geq$) and a number of terminals (\emph{1} and \emph{0} representing if a room is occupied or not). When the tree is evaluated, data from a single data set (the set containing the data from all the sensors at a specific point in time) is selected and used to determine if a room is occupied. In our implementation, an ideal classification model is \emph{searched} using the data provided in the study \cite{}. The types of data used in our implementation are \emph{temperature}, \emph{humidity}, \emph{light}, \emph{co2}, \emph{humidity ratio}, \emph{NSM} (the number of seconds from midnight for each day) and \emph{WS} (week status, derived from the time stamp provided, which yields 1 if weekdays and 0 otherwise).
 %
 %The function nodes in our implementation has a number of attributes:

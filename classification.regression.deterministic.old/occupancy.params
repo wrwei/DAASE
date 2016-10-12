@@ -15,7 +15,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 11
+gp.fs.0.size = 9
 
 gp.fs.0.func.0 = classification.regression.deterministic.terminals.Temperature
 gp.fs.0.func.0.nc = nc0
@@ -32,23 +32,23 @@ gp.fs.0.func.3.nc = nc0
 gp.fs.0.func.4 = classification.regression.deterministic.terminals.HumidityRatio
 gp.fs.0.func.4.nc = nc0
 
-gp.fs.0.func.5 = classification.regression.deterministic.terminals.NSM
-gp.fs.0.func.5.nc = nc0
+#gp.fs.0.func.5 = classification.regression.deterministic.terminals.NSM
+#gp.fs.0.func.5.nc = nc0
 
-gp.fs.0.func.6 = classification.regression.deterministic.terminals.WS
-gp.fs.0.func.6.nc = nc0
+#gp.fs.0.func.6 = classification.regression.deterministic.terminals.WS
+#gp.fs.0.func.6.nc = nc0
 
-gp.fs.0.func.7 = classification.regression.deterministic.functionset.Add
+gp.fs.0.func.5 = classification.regression.deterministic.functionset.Add
+gp.fs.0.func.5.nc = nc2
+
+gp.fs.0.func.6 = classification.regression.deterministic.functionset.Sub
+gp.fs.0.func.6.nc = nc2
+
+gp.fs.0.func.7 = classification.regression.deterministic.functionset.Mul
 gp.fs.0.func.7.nc = nc2
 
-gp.fs.0.func.8 = classification.regression.deterministic.functionset.Sub
+gp.fs.0.func.8 = classification.regression.deterministic.functionset.Div
 gp.fs.0.func.8.nc = nc2
-
-gp.fs.0.func.9 = classification.regression.deterministic.functionset.Mul
-gp.fs.0.func.9.nc = nc2
-
-gp.fs.0.func.10 = classification.regression.deterministic.functionset.Div
-gp.fs.0.func.10.nc = nc2
 
 gp.fs.0.func.11 = classification.regression.deterministic.terminals.Numeral_1
 gp.fs.0.func.11.nc = nc0
@@ -71,3 +71,14 @@ gp.fs.0.func.16.nc = nc1
 eval.problem = classification.regression.deterministic.problem.OccupancyClassification
 eval.problem.data = classification.regression.deterministic.utils.DoubleData
 
+#gp.fs.0.func.7 = classification.regression.deterministic.functionset.Add
+#gp.fs.0.func.7.nc = nc2
+
+#gp.fs.0.func.8 = classification.regression.deterministic.functionset.Sub
+#gp.fs.0.func.8.nc = nc2
+
+#gp.fs.0.func.9 = classification.regression.deterministic.functionset.Mul
+#gp.fs.0.func.9.nc = nc2
+
+#gp.fs.0.func.10 = classification.regression.deterministic.functionset.Div
+#gp.fs.0.func.10.nc = nc2

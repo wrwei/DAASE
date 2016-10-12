@@ -202,8 +202,8 @@ public class DataWarehouse {
 		result += getMean("light");
 		result += getMean("co2");
 		result += getMean("hr");
-		result += getMean("nsm");
-		result += getMean("ws");
+		//result += getMean("nsm");
+		//result += getMean("ws");
 		return result;
 	}
 	

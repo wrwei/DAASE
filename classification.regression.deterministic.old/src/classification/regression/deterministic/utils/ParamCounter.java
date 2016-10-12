@@ -68,7 +68,7 @@ public class ParamCounter {
 			}
 		}
 		
-		if (total == 7) {
+		if (total == 5) {
 			return 0;
 		}
 		else if (total == 0) {

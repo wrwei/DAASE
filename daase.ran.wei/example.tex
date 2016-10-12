@@ -1,8 +1,9 @@
 \section{Symbolic Regression: Stochastic}
+\label{sr_stochastic}
 With the extended symbolic regression implementation, we move on to the stochastic approach. In this approach, we introduce the concept of \emph{stochastic node}, which is a versatile node that integrates the functions \textbf{add}, \textbf{sub}. \textbf{mul} and \textbf{div} in it. An probability is associated to each of the functions so that when a stochastic node is evaluated, the function of the node is determined (randomly) by their probabilities. 
 
 \subsection{Representation}
-In our approach, there is only one function node: \textbf{OPNode}. There are two terminal nodes \textbf{X} and \textbf{Y}. In order to model the probability mechanism, we introduce four additional terminals: \textbf{One} (1), \textbf{Two} (2), \textbf{Three} (3) and \textbf{Four} (4). Instead of giving these nodes the \emph{nil} type (ECJ's default type), we give these nodes the \emph{int} type, so that they can be distinguished from the \emph{nil} type during evolution. %The \emph{OPNode} has ten children of type \emph{int}, when an \emph{OPNode} is evaluated, it evaluates the ten children to determine the probabilities of the functions.
+In our approach, there is only one function node: \textbf{OPNode}. There are two terminal nodes \textbf{X} and \textbf{Y}. In order to model the probability mechanism, we introduce four additional terminals: \textbf{One} (1), \textbf{Two} (2), \textbf{Three} (3) and \textbf{Four} (4). Instead of giving these nodes the \emph{nil} type (ECJ's default type), we give these nodes the \emph{int} type, so that they can be distinguished from the nodes of \emph{nil} type in the tree. %The \emph{OPNode} has ten children of type \emph{int}, when an \emph{OPNode} is evaluated, it evaluates the ten children to determine the probabilities of the functions.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{./fig/symbolic_stochastic_ncs}
@@ -39,12 +40,18 @@ The probability and the selection of the function of an \emph{OPNode} is explain
 \end{itemize}
 
 \subsection{Fitness}
-The objective of the symbolic regression is the same. In our approach we use the same experiment settings (same upfront equations and 20 randomised values for \textbf{X} and \textbf{Y} and their expected results $ev$). In addition, we add another objective: to minimise the \emph{stochastic cost} ($T_{stochastic}$) of the tree. Let $v$ denote the value retured by evaluating a tree, we define our secondary fitness:
-\begin{align*}
-fitness = abs(ev - v) + T_{stochastic}
-\end{align*}
+The objective of the stochastic symbolic regression is the same as the symbolic regression. In our approach we use the same experiment settings (same upfront equations, 20 randomised values for each \textbf{X} and \textbf{Y}, and their expected results $ev$). In addition, we add another search objective: to minimise the \emph{stochastic cost} ($T_{stochastic}$) of the tree. Let $v$ denote the value retured by evaluating a tree, we define our secondary fitness:
+\begin{align}
+fitness = abs(ev - v) + T_{stochastic} \label{eq:1}
+\end{align}
 
-Thus, for each pair of \textbf{X} and \textbf{Y}, the tree is evaluated 100 times and the lowest fitness cost is kept.
+During the evolutionary process, for each pair of \textbf{X} and \textbf{Y}, the tree is evaluated 100 times and the lowest fitness cost is kept.
 
-The global optimal is obtained within 80 generations of evolution by ECJ. 
+Through experimentation, we observe that the weightings of the objectives are significant to the evolutionary process. We observe that if the two objectives share the same weighting (as in Equation \ref{eq:1}), the stochastic cost dominates the evolution, causing the main tree (the tree containing \emph{OPNode}s only, not the subtrees of each \emph{OPNode}) to stop evolving from early generations. We then search for the weightings of the two objectives and observe that the factor of 0.01 should be applied to the stochastic cost in order to balance the two objectives. Thus, we refine our fitness:
+
+\begin{align}
+fitness = abs(ev - v) + 0.01*T_{stochastic} \label{eq:2}
+\end{align}
+
+With the refined fitness, we observe that the global optimal is obtained within 80 generations of evolution. The stochastic cost of the final tree is zero as a result of evolution, this means that each node in the tree is deterministic, i.e. it only has one function every time it is evaluated. 
 
