@@ -15,6 +15,7 @@ import ec.simple.SimpleProblemForm;
 import ec.util.Parameter;
 import regression.bike.sharing.deterministic.util.DataWarehouse;
 import regression.bike.sharing.deterministic.util.DayDataEntity;
+import regression.bike.sharing.deterministic.util.DayParamCounter;
 import regression.bike.sharing.deterministic.util.DoubleData;
 import regression.bike.sharing.deterministic.util.IllegalDivision;
 
@@ -70,7 +71,6 @@ public class BikeSharingRegression extends GPProblem implements SimpleProblemFor
 			double sum = 0.0;
 			double result;
 			double expectedResult = 0.0;
-			double sum_mean = 0.0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
@@ -110,21 +110,18 @@ public class BikeSharingRegression extends GPProblem implements SimpleProblemFor
 				
 				// check for existence of illegal divisions
 				if (!IllegalDivision.getInstance().illegalDivision()) {
-					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
-					double threshold = sum_mean;
 					
-					double actual=(input.x<threshold)?0:1;
+					double actual= input.x;
 					
 					functional_cost = Math.abs(actual-expectedResult);
 					
 					result = Math.abs(actual - expectedResult);
-					//System.out.println("result is   "+result);
 					
-					if (result == 0)
+					if (result <= 0.001)
 					{
 						hits++;
 					}
-					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();	
+					fitness_cost = functional_cost;// + 0.01 * paramCounter.getScore();	
 				} else {
 					fitness_cost = 100.0;
 				}
@@ -132,9 +129,6 @@ public class BikeSharingRegression extends GPProblem implements SimpleProblemFor
 				sum += fitness_cost;
 			}
 			
-			//System.out.println(ParamCounter.getInstance().getScore());
-			
-			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
 			f.setStandardizedFitness(state, sum);
 			f.hits = hits;

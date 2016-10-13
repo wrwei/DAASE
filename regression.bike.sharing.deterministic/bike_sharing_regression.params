@@ -1,0 +1,55 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 14
+gp.fs.0.func.0 = regression.bike.sharing.deterministic.terminals.ATemp
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = regression.bike.sharing.deterministic.terminals.Holiday
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = regression.bike.sharing.deterministic.terminals.Year
+gp.fs.0.func.2.nc = nc0
+gp.fs.0.func.3 = regression.bike.sharing.deterministic.terminals.Hum
+gp.fs.0.func.3.nc = nc0
+gp.fs.0.func.4 = regression.bike.sharing.deterministic.terminals.Month
+gp.fs.0.func.4.nc = nc0
+gp.fs.0.func.5 = regression.bike.sharing.deterministic.terminals.Season
+gp.fs.0.func.5.nc = nc0
+gp.fs.0.func.6 = regression.bike.sharing.deterministic.terminals.Temp
+gp.fs.0.func.6.nc = nc0
+gp.fs.0.func.7 = regression.bike.sharing.deterministic.terminals.WeatherSit
+gp.fs.0.func.7.nc = nc0
+gp.fs.0.func.8 = regression.bike.sharing.deterministic.terminals.Weekday
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = regression.bike.sharing.deterministic.terminals.WindSpeed
+gp.fs.0.func.9.nc = nc0
+gp.fs.0.func.10 = regression.bike.sharing.deterministic.terminals.Workingday
+gp.fs.0.func.10.nc = nc0
+
+gp.fs.0.func.11 = regression.bike.sharing.deterministic.functionset.Add
+gp.fs.0.func.11.nc = nc1
+gp.fs.0.func.12 = regression.bike.sharing.deterministic.functionset.Sub
+gp.fs.0.func.12.nc = nc1
+gp.fs.0.func.13 = regression.bike.sharing.deterministic.functionset.Mul
+gp.fs.0.func.13.nc = nc1
+
+gp.fs.0.func.14 = regression.bike.sharing.deterministic.functionset.SafeDiv
+gp.fs.0.func.14.nc = nc1
+gp.fs.0.func.15 = regression.bike.sharing.deterministic.terminals.Ten
+gp.fs.0.func.15.nc = nc0
+
+eval.problem = regression.bike.sharing.deterministic.problem.BikeSharingRegression
+eval.problem.data = regression.bike.sharing.deterministic.util.DoubleData

@@ -5,7 +5,7 @@ public class DayParamCounter {
 	private static DayParamCounter instance = new DayParamCounter();
 	
 	
-	private int[] a = new int[] {0,0,0,0,0,0,0};
+	private int[] a = new int[] {0,0,0,0,0,0,0,0,0,0,0};
 	
 	private DayParamCounter() {}
 	
@@ -20,30 +20,42 @@ public class DayParamCounter {
 	
 	public synchronized void clear()
 	{
-		a = new int[] {0,0,0,0,0,0,0};
+		a = new int[] {0,0,0,0,0,0,0,0,0,0,0};
 	}
 	
 	public synchronized void addCount(String param)
 	{
-		if (param.equals("temperature")) {
+		if (param.equals("season")) {
 			a[0] = 1;
 		}
-		else if (param.equals("humidity")) {
+		else if (param.equals("year")) {
 			a[1] = 1;
 		}
-		else if (param.equals("light")) {
+		else if (param.equals("month")) {
 			a[2] = 1;
 		}
-		else if (param.equals("co2")) {
+		else if (param.equals("holiday")) {
 			a[3] = 1;
 		}
-		else if (param.equals("hr")) {
+		else if (param.equals("weekday")) {
 			a[4] = 1;
 		}
-		else if (param.equals("nsm")) {
+		else if (param.equals("workingday")) {
 			a[5] = 1;
 		}
-		else if (param.equals("ws")) {
+		else if (param.equals("weathersit")) {
+			a[6] = 1;
+		}
+		else if (param.equals("temp")) {
+			a[6] = 1;
+		}
+		else if (param.equals("atemp")) {
+			a[6] = 1;
+		}
+		else if (param.equals("hum")) {
+			a[6] = 1;
+		}
+		else if (param.equals("windspeed")) {
 			a[6] = 1;
 		}
 		else {
@@ -67,8 +79,7 @@ public class DayParamCounter {
 				result += 40;
 			}
 		}
-		
-		if (total == 5) {
+		if (total == 11) {
 			return 0;
 		}
 		else if (total == 0) {

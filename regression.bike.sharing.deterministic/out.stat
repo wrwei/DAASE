@@ -1,0 +1,720 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1883516.5293374567 Adjusted=5.30921525509645E-7 Hits=0
+Tree 0:
+((((month * windspeed) - (windspeed * weekday)) - ((holiday + holiday) * (holiday - weekday))) - (((atemp + holiday) * (weekday - windspeed)) - ((weathersit + windspeed) + (weekday - temp)))) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((season - month) + (temp * atemp))))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1855038.4979707645 Adjusted=5.390720796478481E-7 Hits=0
+Tree 0:
+((month * temp) * (month + atemp)) * ((season * windspeed) + (weathersit + workingday))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1506207.529549211 Adjusted=6.639186941128844E-7 Hits=0
+Tree 0:
+((atemp * (hum + atemp)) + (season * month)) * ((atemp * month) + weekday)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1474311.7406914085 Adjusted=6.782821394672544E-7 Hits=0
+Tree 0:
+(((hum * hum) * (hum * windspeed)) - ((temp + weathersit) * weekday)) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1462738.615361843 Adjusted=6.836486750600697E-7 Hits=0
+Tree 0:
+(temp + temp) * (((weekday + month) + (weekday + temp)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * (weekday - temp))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1461834.7036624083 Adjusted=6.84071402480218E-7 Hits=0
+Tree 0:
+(((hum * hum) * (hum * windspeed)) - ((temp + weathersit) * weekday)) - (((weekday + temp) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1424766.4742728304 Adjusted=7.018689140909662E-7 Hits=0
+Tree 0:
+((((temp + hum) * hum) * (hum * windspeed)) - (((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month)))) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1422784.8516389455 Adjusted=7.028464605886212E-7 Hits=0
+Tree 0:
+((((temp + hum) * hum) * (hum * windspeed)) - (((weekday + month) - (windspeed * hum)) - ((month + month) * (weathersit - month)))) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1423857.7471205904 Adjusted=7.023168569370086E-7 Hits=0
+Tree 0:
+((((temp + hum) * hum) * (hum * windspeed)) - ((workingday + workingday) - ((month + month) * (weathersit - month)))) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1423849.1417156486 Adjusted=7.023211015697648E-7 Hits=0
+Tree 0:
+((((temp + hum) * hum) * (hum * windspeed)) - ((((windspeed + windspeed) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) - ((weathersit + month) * (weathersit - month)))) - ((((weekday + month) - (holiday * windspeed)) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1400835.4518186075 Adjusted=7.13859207976613E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + ((weekday + month) - (holiday * windspeed))) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * (((((temp * hum) + (weathersit + month)) * ((month - (weathersit - hum)) * (weekday + atemp))) - ((((workingday - hum) + (year - weekday)) + atemp) - (workingday + workingday))) - temp))))))) + (((atemp * hum) * ((atemp * month) + ((holiday - weekday) + (holiday - weekday)))) - ((workingday * year) - (hum - (workingday + workingday))))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1394935.1162713172 Adjusted=7.168787074443332E-7 Hits=0
+Tree 0:
+((((temp + hum) * hum) * (hum * windspeed)) - (((year * season) - (weathersit + month)) - ((month + month) * (weathersit - month)))) - ((((((weekday + atemp) + weathersit) + ((year * atemp) + (holiday + workingday))) - ((year * year) * (season + year))) - ((month + month) * (weathersit - month))) * (((workingday - workingday) - (workingday + workingday)) - ((year * season) + (temp * atemp))))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1331804.8588418323 Adjusted=7.508601898399982E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * year) - (hum - (workingday + workingday))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1331804.8588418323 Adjusted=7.508601898399982E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * year) - (hum - (workingday + workingday))))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1308589.8788180253 Adjusted=7.641807811645778E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * (((weekday + month) - (holiday * (year * season))) - ((month + month) * (weekday + month)))) - (hum - (workingday + workingday))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1280553.924655428 Adjusted=7.809114476437473E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((temp + hum) * hum) * (hum * windspeed))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1227984.4642422711 Adjusted=8.14341886870013E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * (((weekday + month) - (holiday * (year * season))) - (((season - weathersit) + month) * (weekday + month)))) - (hum - (workingday + workingday))))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1226430.4642422711 Adjusted=8.153737319662067E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * (((weekday + month) - (holiday * (year * season))) - (((season - weathersit) + month) * (weekday + month)))) - (month - (weathersit - hum))))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1216987.3754975407 Adjusted=8.217005356285105E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * ((weekday + month) + month)) - ((workingday * (((weekday + month) - (holiday * (year * season))) - (((season - weathersit) + month) * (weekday + month)))) - (month - (weathersit - hum))))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1203919.541321711 Adjusted=8.306196012754804E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp))))))) + (((atemp * hum) * (month + month)) - ((workingday * (((weekday + month) - (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * month) - temp)))))) - (((season - weathersit) + month) * (weekday + month)))) - (month - (weathersit - hum))))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1150376.3014134804 Adjusted=8.692800168877547E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * (year * season))) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + (((atemp * hum) * month) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1150376.3014134804 Adjusted=8.692800168877547E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (weathersit + year))) - temp))))))) + (((atemp * hum) * month) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1135854.8017656212 Adjusted=8.803934429401678E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (atemp * atemp)) + ((temp + hum) * (((weekday + month) + (temp + hum)) * ((((temp + hum) + ((year * season) + workingday)) + ((year * season) + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month * (atemp * (month - workingday))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))))))))))) + ((temp * (month + month)) - ((workingday * (((weekday + month) - (holiday * (year * season))) - (((season - weathersit) + month) * (weekday + month)))) - (month - (weathersit - hum))))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1114230.783545739 Adjusted=8.974793348810896E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * (year * season))) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + (((atemp * hum) * month) - ((workingday * ((((weekday + month) - (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((workingday - (year * season)) - (workingday + workingday)))))) - (((season - weathersit) + month) * (weekday + month))) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1112414.636758239 Adjusted=8.989445733738187E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * (year * season))) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + (((atemp * hum) * month) - ((workingday * ((((weekday + month) - (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((workingday - (year * season)) - (workingday + workingday)))))) - ((weekday + month) * (weekday + month))) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1113544.91426732 Adjusted=8.980321217001369E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * (year * season))) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + (((atemp * hum) * month) - ((workingday * ((((weekday + month) - (((weekday + month) + (temp + hum)) * (((temp + hum) + (workingday + workingday)) - ((weathersit + year) * ((workingday - (year * season)) - (workingday + workingday)))))) - (((season - weathersit) + month) * (weekday + month))) - hum)) - (hum - (workingday + workingday))))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1096205.4317438279 Adjusted=9.122369391768809E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1095573.62374383 Adjusted=9.127630179884693E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1095573.62374383 Adjusted=9.127630179884693E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1080008.6712907709 Adjusted=9.259176344271551E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((temp + hum) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1076674.4773912732 Adjusted=9.287849691003888E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + (((((weekday + month) + (temp + hum)) + (temp + hum)) * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((((weekday + month) + (workingday + (year * season))) - ((weathersit + year) * ((workingday - (year * season)) - (workingday + workingday)))) * ((atemp - atemp) * ((month * (workingday * (((month + month) * ((weekday + month) - hum)) - ((weathersit + year) * holiday)))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1076414.9345485035 Adjusted=9.290089155168855E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((month + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (workingday + workingday)) - ((weathersit + year) * ((atemp - atemp) * ((month + month) - temp)))) + (year * season))) * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((((weathersit + year) + (workingday + (year * season))) - ((weathersit + year) * ((workingday - (year * season)) - (workingday + workingday)))) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (hum - (workingday + workingday))))
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1067852.8481717033 Adjusted=9.364577387740117E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1067852.8481717033 Adjusted=9.364577387740117E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * ((month + month) * ((weekday + month) - hum))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1057502.451009252 Adjusted=9.45623391626408E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * (month * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weekday + month) + (temp + hum)))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + season))) - (weathersit - month))))) + workingday)) + hum) + ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - ((month + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp)))) - ((season - weathersit) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1057502.451009252 Adjusted=9.45623391626408E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * (month * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weekday + month) + (temp + hum)))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + season))) - (weathersit - month))))) + workingday)) + hum) + ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - ((month + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp)))) - ((season - weathersit) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1056720.1826564646 Adjusted=9.463234166330661E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * (month * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weekday + month) + (temp + hum)))) - ((weathersit + year) * ((atemp - atemp) * ((month * season) - (weathersit - month))))) + workingday)) + hum) + ((year * season) + workingday)) - ((season - weathersit) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1043162.5536508085 Adjusted=9.586224485127505E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + (weekday + month)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1043162.5536508085 Adjusted=9.586224485127505E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + (weekday + month)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1037128.9504828273 Adjusted=9.641993267424764E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + ((weekday + month) - (weathersit - month))) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1037128.9504828273 Adjusted=9.641993267424764E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (weathersit - month)))) - temp))))))) + ((((weekday + month) + (temp + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + ((weekday + month) - (weathersit - month))) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1017895.2393213423 Adjusted=9.82418405108487E-7 Hits=0
+Tree 0:
+(((season - weathersit) * (month * ((weekday + month) * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((atemp + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month))))) - temp))))))) + ((((weekday + month) + ((temp + hum) + (hum + workingday))) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + hum) + (weekday + month)) - ((weathersit + year) * ((atemp - atemp) * ((season - weathersit) - temp))))) - ((workingday * ((hum - (workingday + workingday)) - ((month + month) * ((weekday + month) - hum)))) - (season - (workingday + workingday))))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=977207.4322211883 Adjusted=1.0233231386747315E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - ((((workingday - (year * season)) - (weathersit + year)) + ((weekday + month) - (holiday * (year * season)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((temp + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=977207.4322211883 Adjusted=1.0233231386747315E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - ((((workingday - (year * season)) - (weathersit + year)) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((temp + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=971770.7029748437 Adjusted=1.0290482805156214E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (temp + hum))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - ((((workingday - (year * season)) - (weathersit + year)) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((temp + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=958671.1942994788 Adjusted=1.0431094235821873E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (month * (month * (year * season)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (year * season)) - temp))))))) + ((((weekday + month) + (((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((year * season) - temp)))) + workingday)) + hum)) * (((((temp + hum) + ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))) + workingday)) + hum) + ((weathersit + year) * ((atemp - atemp) * ((month * ((month + month) * (((weekday + month) - (holiday * year)) - ((month + ((weekday + month) - (season - weathersit))) * (weathersit - month))))) - temp)))) - ((season - weathersit) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - (weathersit - month)) - ((month + month) * ((weekday + month) - hum)))) - (weekday + month)))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=916533.2973029324 Adjusted=1.0910666441427021E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=916533.2973029324 Adjusted=1.0910666441427021E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=915929.6906629317 Adjusted=1.0917856669659369E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (hum * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=905991.1387267517 Adjusted=1.103762336619569E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=904334.1081920596 Adjusted=1.1057847814834845E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * ((atemp - atemp) * ((month * (year * season)) - temp)))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=892006.7922517491 Adjusted=1.1210664398745214E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - ((temp + hum) + (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=891746.7922517491 Adjusted=1.1213933005372559E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - ((temp + hum) + (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - ((workingday - (year * season)) - (workingday + workingday))) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=886650.6478406632 Adjusted=1.1278386527960372E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - ((temp + hum) + (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + month) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (weathersit + year)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - ((workingday * (((weekday + month) - ((workingday - ((workingday - (year * season)) - (workingday + workingday))) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=880349.8041452264 Adjusted=1.1359108156559778E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=871519.6016863275 Adjusted=1.1474198063305382E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (hum * year)) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - (weathersit + year))
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=871242.6993158029 Adjusted=1.1477844841636282E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((workingday + workingday) - (hum * year)) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - (weathersit + year))
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=865467.0422233117 Adjusted=1.1554441657153365E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + ((((((((((temp + hum) + (weekday + workingday)) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + (weekday + ((weekday + month) - month))) + hum) + (year * (weekday + month))) - ((weathersit + (year * season)) * ((weathersit + year) * ((atemp - atemp) * ((month * (year * season)) - temp)))))) - ((workingday * (((holiday * (year * season)) - ((year * season) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=863440.5475374471 Adjusted=1.1581559896579224E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * season)))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + ((year * season) + workingday)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (year * season)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + ((year * season) + workingday)) + hum)) + (((weekday + month) - month) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((workingday - (year * season)) - ((workingday - (year * season)) - (workingday + workingday))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=863172.0422813448 Adjusted=1.1585162545820767E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (hum * year)) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weekday + month) * ((atemp - atemp) * ((month * (workingday * (((((weekday + month) + (temp + hum)) + atemp) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (holiday * (holiday * year)))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((((year * season) + workingday) + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((holiday * year) - temp))))) - (weathersit + year))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=852794.067803094 Adjusted=1.1726146617804957E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((workingday + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))))) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - (weathersit + year))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=852794.067803094 Adjusted=1.1726146617804957E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((workingday + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))))) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (weathersit + year))
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=850008.1728839081 Adjusted=1.1764578923392126E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (holiday * year)) - (((month + month) + ((weekday + month) - (holiday * (year * (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=848823.7355356137 Adjusted=1.1780995040972666E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + ((weekday + month) - (holiday * (year * (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=840435.7608492653 Adjusted=1.1898575200226788E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + month) - (hum * (temp + hum))) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - (year * season))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * (((weekday + month) + temp) + (temp + (year * (weekday + month)))))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (weekday + month))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - (weathersit + year))
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=835525.9552257468 Adjusted=1.1968494777404459E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=834806.3956439688 Adjusted=1.1978810983443695E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((weathersit + year) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=834078.5571485448 Adjusted=1.198926399081983E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=834038.1908393666 Adjusted=1.1989844254124466E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((weathersit + year) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (year * season)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((holiday * (year * season)) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))))) - (weekday + month)))
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=828239.6784665665 Adjusted=1.2073785144813638E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((workingday + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))))) - (((month + month) + ((weekday + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (weekday + ((weekday + month) - month)))) - ((weathersit + year) * month)))) + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * season)))))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * ((((((temp + hum) + (weekday + workingday)) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (workingday + workingday))) - temp))))) - (weathersit + year))
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=825429.6956548091 Adjusted=1.2114887479520084E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (year * season)))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (temp + hum))
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=825429.6956548091 Adjusted=1.2114887479520084E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (((weekday + month) - (holiday * year)) - (year * season)))) - temp))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (temp + hum))
+
+Generation: 72
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=810306.7893927913 Adjusted=1.2340989597907674E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * (((temp + hum) - (season - weathersit)) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 73
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=809722.3695375196 Adjusted=1.2349896737834781E-6 Hits=0
+Tree 0:
+(((season - weathersit) * ((((year * season) + workingday) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * (((temp + hum) - (season - weathersit)) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 74
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=809152.0188136941 Adjusted=1.2358601855877746E-6 Hits=0
+Tree 0:
+(((season - weathersit) * ((((year * season) + workingday) + ((((weathersit + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * (((temp + hum) - (season - weathersit)) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 75
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=807238.6893893846 Adjusted=1.238789436575429E-6 Hits=0
+Tree 0:
+(((season - weathersit) * ((((year * season) + workingday) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + ((weekday + month) - month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * (year - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 76
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=803756.4866623187 Adjusted=1.2441563737746287E-6 Hits=0
+Tree 0:
+(((season - weathersit) * ((((year * season) + workingday) + (((((temp + hum) + (weekday + workingday)) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - (((year * season) + workingday) * (((temp + hum) - ((weekday + month) + (temp + hum))) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 77
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=796421.1704187846 Adjusted=1.2556154727261894E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + ((weekday + month) - month)) + (((((((((weathersit + (temp + hum)) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((temp + hum) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 78
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=794600.5852868478 Adjusted=1.2584923293841709E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + ((weekday + month) - month)) + (((((((((weathersit + (temp + hum)) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - (year * season)) + hum) + (year * season)) - ((temp + hum) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + temp) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + hum) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - ((month + month) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 79
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=792585.4161502466 Adjusted=1.261692074988117E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((temp + hum) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + (((temp + hum) + (year * season)) - (season - weathersit))) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((((((year * season) + workingday) - atemp) * (year - temp)) - (year * (weekday + month))) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 80
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=790252.2269650656 Adjusted=1.2654171674065264E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((temp + hum) + (((((((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((temp + hum) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + hum) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + hum)) * (((((((weekday + month) - (holiday * year)) + ((((temp + hum) + (((temp + hum) + (year * season)) - (season - weathersit))) + (year * (weekday + (((temp + hum) + (year * season)) - (season - weathersit))))) + hum)) + weekday) + hum) + (year * (weekday + month))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - (year * season)) - (temp + temp))) - (((((((temp + (weekday + month)) + (weekday + month)) + hum) + (((weekday + month) + (temp + hum)) + hum)) - ((weathersit + year) * ((((((year * season) + workingday) - atemp) * (year - temp)) - (year * (weekday + month))) - (holiday * (year * season))))) + hum) * ((weekday + ((weekday + month) - month)) - hum)))) - ((weathersit + year) * (weekday + month))))
+
+Generation: 81
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=783131.2307108473 Adjusted=1.276923565120417E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + ((month + month) + (weekday + month))) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * (weekday + month))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((((((temp + hum) + (weekday + ((weekday + month) - month))) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((weekday + (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * season))))
+
+Generation: 82
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=783123.2499708475 Adjusted=1.2769365781192778E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + ((month + month) + (weekday + month))) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * (weekday + month))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((((((temp + hum) + (weekday + ((weekday + month) - month))) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((weekday + (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * (((year * season) + ((weekday + month) - month)) - hum)))))
+
+Generation: 83
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=780694.3533190566 Adjusted=1.2809093787334448E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + ((weekday + month) - month)) + (((((((temp + hum) - (season - weathersit)) - (holiday * (year * season))) + hum) + (year * season)) - ((temp + hum) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + temp) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + (((((temp + hum) + (weekday + workingday)) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year))) - (temp + temp))) - (((weekday + month) - (holiday * year)) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 84
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=777946.4667535464 Adjusted=1.2854338406333544E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + ((month + month) + (weekday + month))) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * (weekday + month))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((((((temp + hum) + (weekday + ((weekday + month) - month))) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((weekday + (((weathersit + (temp + hum)) + (weathersit + year)) - month)) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * (((year * season) + ((weekday + month) - month)) - hum)))))
+
+Generation: 85
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=777884.4282335462 Adjusted=1.2855363575466898E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((((weathersit + year) * ((weekday + month) - (holiday * (year * season)))) + workingday) - (hum * (((((temp + hum) + (weekday + workingday)) + hum) + (year * ((weathersit + ((month + month) + (weekday + month))) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (weekday + month))))))) - (((month + month) + ((month + month) - ((weathersit + year) * ((weathersit + (temp + hum)) + (temp + hum))))) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((temp + hum) + (year * season)) - ((weathersit + year) * ((atemp - atemp) * (weekday + month))))))) + (((((temp + hum) + (((((((((temp + hum) + (weekday + month)) + hum) + (year * ((temp + temp) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - (holiday * (year * season))))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * (year - temp)))) + workingday)) + (temp + hum)) * (((((((((((temp + hum) + (weekday + ((weekday + month) - month))) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year)) + (((temp + hum) + ((year * season) + workingday)) + hum)) + ((year * season) + workingday)) + hum) + (year * (((weekday + (((weathersit + (temp + hum)) + (weathersit + year)) - month)) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))))) - ((weathersit + year) * ((atemp - atemp) * ((month * (workingday * (year * season))) - temp))))) - (((weathersit + year) + ((weekday + (year * season)) - (weathersit + year))) * (holiday * (year * ((weekday + month) - (((year * season) + ((weekday + month) - month)) - hum))))))
+
+Generation: 86
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=770560.4706105288 Adjusted=1.297754998323084E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + ((weekday + month) - month)) + ((((((temp + hum) - (holiday * (year * season))) + hum) + (year * season)) - ((temp + hum) * (((weathersit + year) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + temp) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + (((((temp + hum) + (weekday + workingday)) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year))) - (temp + temp))) - (((temp + hum) - (holiday * year)) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 87
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=770091.6945611243 Adjusted=1.2985449765497384E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + ((weekday + month) - month)) + ((((((temp + hum) - (holiday * (year * season))) + hum) + (year * season)) - ((temp + hum) * (((weathersit + year) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + temp) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + (((((temp + hum) + (weekday + workingday)) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * (((weathersit + year) - ((workingday - ((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * (((weekday + month) + (temp + hum)) + atemp))) - ((weathersit + year) * (temp + hum))) - (holiday * year))) - (temp + temp))) - (((temp + hum) - (holiday * year)) * ((weekday + season) - hum)))) - (weekday + month)))
+
+Generation: 88
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=765800.0921854884 Adjusted=1.3058221125620765E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + (((month + month) + (weekday + month)) - month)) + (((((((temp + hum) - (season - weathersit)) - (holiday * (year * season))) + hum) + (year * season)) - ((temp + hum) * (((holiday * (year * season)) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + temp) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + (((((temp + hum) + (weekday + workingday)) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * ((year * ((weathersit + (temp + hum)) + (temp + hum))) - (((weekday + month) - (holiday * year)) * ((weekday + ((weekday + month) - month)) - hum)))) - (weekday + month)))
+
+Generation: 89
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=763825.12635872 Adjusted=1.3091984752697033E-6 Hits=0
+Tree 0:
+(((season - weathersit) * (((weekday + (((month + month) + (weekday + month)) - month)) + (((((((temp + hum) - (season - weathersit)) - (holiday * (year * season))) + hum) + (year * season)) - ((temp + hum) * (((holiday * (year * season)) - atemp) * ((season - weathersit) - temp)))) + workingday)) - (((month + month) + (weekday + month)) * (weathersit - month)))) + ((temp + temp) * (((weekday + month) + (temp + hum)) * (((weathersit + (temp + hum)) + (weathersit + year)) - (season - weathersit))))) + (((((temp + temp) + (((((((((temp + hum) + ((year * season) + workingday)) + hum) + (year * ((weathersit + (temp + hum)) + (temp + hum)))) - ((weathersit + year) * ((weekday + month) - ((weekday + ((weekday + month) - month)) - hum)))) + hum) + (year * season)) - ((weathersit + year) * ((((year * season) + workingday) - atemp) * ((season - weathersit) - temp)))) + workingday)) + (temp + temp)) * (((((((weekday + month) - (holiday * year)) + (((((temp + hum) + (weekday + workingday)) + hum) + (year * (weekday + (((temp + hum) + (temp + temp)) - (season - weathersit))))) + hum)) + ((year * season) + workingday)) + hum) + (year * (temp + hum))) - ((weathersit + year) * ((weathersit + year) * (year * season))))) - ((workingday * ((year * ((weathersit + (temp + hum)) + (temp + hum))) - (((weekday + month) - (holiday * year)) * (((weekday + month) - (holiday * (weekday + month))) - hum)))) - (weekday + month)))
