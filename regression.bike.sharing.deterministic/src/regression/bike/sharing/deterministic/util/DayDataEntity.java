@@ -52,10 +52,10 @@ public class DayDataEntity {
 		weekday = parseDouble(data[6]);
 		workingday = parseDouble(data[7]);
 		weathersit = parseDouble(data[8]);
-		temp = parseDouble(data[9])*10;
-		atemp = parseDouble(data[10])*10;
-		hum = parseDouble(data[11])*10;
-		windspeed = parseDouble(data[12])*10;
+		temp = parseDouble(data[9]);
+		atemp = parseDouble(data[10]);
+		hum = parseDouble(data[11]);
+		windspeed = parseDouble(data[12]);
 		cnt = parseDouble(data[15]);
 		
 	}

@@ -117,7 +117,7 @@ public class BikeSharingRegression extends GPProblem implements SimpleProblemFor
 					
 					result = Math.abs(actual - expectedResult);
 					
-					if (result <= 0.001)
+					if (result <= 0.01)
 					{
 						hits++;
 					}
