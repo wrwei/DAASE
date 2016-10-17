@@ -1,0 +1,104 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+thickness
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+frequency
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+sqrt(thickness) + (velocity + chordLength)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+angle + (((angle + velocity) - sqrt(frequency)) * ((((chordLength * velocity) * (velocity - (velocity - chordLength))) * sqrt(velocity * velocity)) + sqrt((angle + velocity) - (angle + velocity))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+sqrt(chordLength + thickness) + ((((thickness + thickness) - sqrt(angle)) - ((velocity * angle) + (velocity - velocity))) * (sqrt(velocity) + (angle - velocity)))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+((velocity - velocity) * sqrt(thickness + frequency)) * ((chordLength * chordLength) - (chordLength + angle))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+sqrt(((chordLength * chordLength) - ((chordLength * chordLength) + (velocity + velocity))) * ((thickness - angle) - (angle * (sqrt(velocity) - (velocity - frequency)))))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+thickness - (chordLength * chordLength)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+((thickness + frequency) * (frequency + angle)) + (thickness - velocity)
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+((((((angle + velocity) - sqrt(thickness)) * (chordLength - thickness)) * sqrt(thickness)) + (angle - chordLength)) + (frequency - frequency)) - (((thickness + frequency) * thickness) + (chordLength + chordLength))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+(velocity - frequency) * (angle + angle)
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+velocity - (velocity - sqrt(frequency))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Tree 0:
+sqrt(frequency - sqrt(thickness))

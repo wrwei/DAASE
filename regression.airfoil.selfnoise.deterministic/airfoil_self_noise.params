@@ -1,0 +1,45 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 9
+gp.fs.0.func.0 = regression.airfoil.selfnoise.deterministic.terminals.Angle
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = regression.airfoil.selfnoise.deterministic.terminals.CordLength
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = regression.airfoil.selfnoise.deterministic.terminals.Frequency
+gp.fs.0.func.2.nc = nc0
+gp.fs.0.func.3 = regression.airfoil.selfnoise.deterministic.terminals.Thickness
+gp.fs.0.func.3.nc = nc0
+gp.fs.0.func.4 = regression.airfoil.selfnoise.deterministic.terminals.Velocity
+gp.fs.0.func.4.nc = nc0
+
+gp.fs.0.func.5 = regression.airfoil.selfnoise.deterministic.functionset.Add
+gp.fs.0.func.5.nc = nc1
+gp.fs.0.func.6 = regression.airfoil.selfnoise.deterministic.functionset.Sub
+gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.7 = regression.airfoil.selfnoise.deterministic.functionset.Mul
+gp.fs.0.func.7.nc = nc1
+
+gp.fs.0.func.8 = regression.airfoil.selfnoise.deterministic.functionset.SafeDiv
+gp.fs.0.func.8.nc = nc1
+
+gp.fs.0.func.8 = regression.airfoil.selfnoise.deterministic.functionset.Sqrt
+gp.fs.0.func.8.nc = nc2
+
+
+eval.problem = regression.airfoil.selfnoise.deterministic.problem.AirfoilSelfNoiseRegression
+eval.problem.data = regression.airfoil.selfnoise.deterministic.util.DoubleData
