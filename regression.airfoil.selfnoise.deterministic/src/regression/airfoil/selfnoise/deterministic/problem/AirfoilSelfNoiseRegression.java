@@ -53,6 +53,12 @@ public class AirfoilSelfNoiseRegression extends GPProblem implements SimpleProbl
 			{
 				DayDataEntity de = dw.getData(i);
 				
+				frequency  = de.frequency;
+				angle = de.angle;
+				chordLength = de.chordLength;
+				velocity = de.veolcity;
+				thickness = de.thickness;
+				
 				//get count
 				expectedResult = de.pressureLevel;
 
@@ -76,7 +82,7 @@ public class AirfoilSelfNoiseRegression extends GPProblem implements SimpleProbl
 					
 					result = functional_cost;
 					
-					if (result <= 0.001)
+					if (result <= 0.01)
 					{
 						hits++;
 					}

@@ -37,8 +37,8 @@ gp.fs.0.func.7.nc = nc1
 gp.fs.0.func.8 = regression.airfoil.selfnoise.deterministic.functionset.SafeDiv
 gp.fs.0.func.8.nc = nc1
 
-gp.fs.0.func.8 = regression.airfoil.selfnoise.deterministic.functionset.Sqrt
-gp.fs.0.func.8.nc = nc2
+gp.fs.0.func.9 = regression.airfoil.selfnoise.deterministic.functionset.Sqrt
+gp.fs.0.func.9.nc = nc2
 
 
 eval.problem = regression.airfoil.selfnoise.deterministic.problem.AirfoilSelfNoiseRegression

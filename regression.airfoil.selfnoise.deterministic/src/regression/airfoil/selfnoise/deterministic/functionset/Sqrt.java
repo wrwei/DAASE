@@ -24,6 +24,14 @@ public class Sqrt extends GPNode {
 		DoubleData rd = ((DoubleData) (input));
 
 		children[0].eval(state, thread, input, stack, individual, problem);
-		result = Math.sqrt(rd.x);
+		result = rd.x;
+		
+		if (result >= 0) {
+			rd.x = Math.sqrt(result);
+		}
+		else
+		{
+			rd.x = 10000;
+		}
 	}
 }

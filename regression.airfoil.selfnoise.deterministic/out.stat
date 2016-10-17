@@ -3,102 +3,198 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=47627.22300000001 Adjusted=2.0995954436511305E-5 Hits=0
 Tree 0:
-thickness
+angle + (velocity + velocity)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=46219.41723259196 Adjusted=2.163546025488619E-5 Hits=1
 Tree 0:
-frequency
+(velocity + ((thickness + thickness) + (angle + velocity))) + (angle + chordLength)
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=46164.60403259202 Adjusted=2.1661148401611283E-5 Hits=0
 Tree 0:
-sqrt(thickness) + (velocity + chordLength)
+((thickness + thickness) + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=46164.60403259202 Adjusted=2.1661148401611283E-5 Hits=0
 Tree 0:
-angle + (((angle + velocity) - sqrt(frequency)) * ((((chordLength * velocity) * (velocity - (velocity - chordLength))) * sqrt(velocity * velocity)) + sqrt((angle + velocity) - (angle + velocity))))
+((thickness + thickness) + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=44526.63989109631 Adjusted=2.245796099783763E-5 Hits=0
 Tree 0:
-sqrt(chordLength + thickness) + ((((thickness + thickness) - sqrt(angle)) - ((velocity * angle) + (velocity - velocity))) * (sqrt(velocity) + (angle - velocity)))
+(angle + angle) + (((velocity + velocity) + ((chordLength - thickness) / (thickness / chordLength))) + (angle * chordLength))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=44518.47425137786 Adjusted=2.2462080175375168E-5 Hits=1
 Tree 0:
-((velocity - velocity) * sqrt(thickness + frequency)) * ((chordLength * chordLength) - (chordLength + angle))
+(velocity + (((chordLength - thickness) / (thickness / chordLength)) + (angle + velocity))) + (angle + chordLength)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=44518.47425137786 Adjusted=2.2462080175375168E-5 Hits=1
 Tree 0:
-sqrt(((chordLength * chordLength) - ((chordLength * chordLength) + (velocity + velocity))) * ((thickness - angle) - (angle * (sqrt(velocity) - (velocity - frequency)))))
+(velocity + (((chordLength - thickness) / (thickness / chordLength)) + (angle + velocity))) + (angle + chordLength)
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=44222.37846799602 Adjusted=2.2612474094978726E-5 Hits=0
 Tree 0:
-thickness - (chordLength * chordLength)
+((chordLength + (velocity + angle)) + (angle + velocity)) + ((chordLength - thickness) / (thickness + thickness))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=44222.37846799602 Adjusted=2.2612474094978726E-5 Hits=0
 Tree 0:
-((thickness + frequency) * (frequency + angle)) + (thickness - velocity)
+((velocity + (chordLength + angle)) + (angle + velocity)) + ((chordLength - thickness) / (thickness + thickness))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=43455.50662970753 Adjusted=2.301151375376282E-5 Hits=0
 Tree 0:
-((((((angle + velocity) - sqrt(thickness)) * (chordLength - thickness)) * sqrt(thickness)) + (angle - chordLength)) + (frequency - frequency)) - (((thickness + frequency) * thickness) + (chordLength + chordLength))
+(velocity + angle) + (velocity + (((angle + (((velocity + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity)))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + (((velocity + chordLength) + angle) + (angle + velocity))))) / velocity))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=42911.88537704747 Adjusted=2.3303024050087843E-5 Hits=0
 Tree 0:
-(velocity - frequency) * (angle + angle)
+(((velocity + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((velocity + (((angle + (velocity + chordLength)) + ((chordLength + ((angle + velocity) + (angle + velocity))) + (angle + velocity))) / velocity)) + (angle + velocity))) / velocity)) + (chordLength / chordLength)) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + (angle + velocity))) + ((velocity + velocity) + (angle - thickness)))) / velocity))) + angle
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=41783.501911313404 Adjusted=2.393231830601872E-5 Hits=0
 Tree 0:
-velocity - (velocity - sqrt(frequency))
+(((velocity + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity))) / velocity)) + (chordLength / chordLength)) + (velocity + (((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + ((chordLength + ((angle + chordLength) + ((angle + velocity) + (angle + velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity))) + velocity))) / velocity))) + angle
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=187502.22099999982 Adjusted=5.3332417153516574E-6 Hits=0
+Fitness: Standardized=41717.981783493 Adjusted=2.39699042797749E-5 Hits=0
 Tree 0:
-sqrt(frequency - sqrt(thickness))
+angle + ((velocity + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / (thickness / chordLength))) + (angle + chordLength))))) + (angle + velocity))) / velocity)) + (velocity + ((((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity)))) + (((velocity - chordLength) + (chordLength / chordLength)) + (velocity + (angle + chordLength))))) + ((chordLength + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + ((velocity - chordLength) + (chordLength / chordLength))))) + (angle + velocity))) / velocity)))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=41504.73513845481 Adjusted=2.4093055975618805E-5 Hits=0
+Tree 0:
+(((velocity + (((angle + (((velocity + ((angle + (((velocity - thickness) / velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity)))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity))) / velocity)) + (chordLength / chordLength)) + (velocity + (((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + ((chordLength + (angle + ((angle + velocity) + (angle + velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity))) + velocity))) / velocity))) + angle
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=41144.98487492515 Adjusted=2.4303707956919312E-5 Hits=0
+Tree 0:
+angle + ((velocity + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + ((chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength))))) + (angle + velocity))) / velocity)) + (velocity + ((((angle + ((chordLength + velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity)))) + (((velocity - chordLength) + (chordLength / chordLength)) + (velocity + (angle + chordLength))))) + ((chordLength + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + ((velocity - chordLength) + (chordLength / chordLength))))) + (angle + velocity))) / velocity)))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=40997.15627247822 Adjusted=2.439134075576206E-5 Hits=0
+Tree 0:
+(velocity + ((angle + chordLength) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (((angle + velocity) + (((velocity + angle) + velocity) + ((chordLength - thickness) / (thickness / chordLength)))) + (((chordLength + ((angle + chordLength) + ((velocity + velocity) + ((velocity + chordLength) - thickness)))) + (angle + velocity)) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle + velocity))))) + (angle + velocity))) / velocity)))) + ((((chordLength + ((angle + chordLength) + ((velocity + velocity) + (angle - thickness)))) + (angle + velocity)) + ((chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength))) + (angle + velocity))) / velocity)
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=40190.82203052653 Adjusted=2.488068341963893E-5 Hits=0
+Tree 0:
+(velocity + ((((angle + (((((velocity + (chordLength / chordLength)) + (chordLength / chordLength)) + (angle + velocity)) + velocity) - (velocity * thickness))) + ((angle + velocity) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity))))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (velocity + velocity)) + (angle + velocity))))) + (angle + velocity))) / velocity)
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=39659.470987899265 Adjusted=2.52140223020828E-5 Hits=0
+Tree 0:
+(velocity + ((((angle + (((((velocity + (chordLength / chordLength)) + (chordLength / chordLength)) + ((angle + chordLength) / (thickness / chordLength))) + velocity) - (velocity * thickness))) + ((angle + velocity) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity))))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (velocity + velocity)) + (angle + velocity))))) + (angle + velocity))) / velocity)
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=39613.11966507921 Adjusted=2.5243524492140205E-5 Hits=0
+Tree 0:
+(velocity + ((((angle + (((((velocity + (chordLength / chordLength)) + (chordLength / chordLength)) + ((angle + chordLength) / (thickness / chordLength))) + velocity) - (velocity * thickness))) + ((angle + velocity) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity))))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (velocity + velocity)) + (angle + (((angle + velocity) + velocity) - (velocity * thickness))))))) + (angle + velocity))) / velocity)
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=39208.63635326477 Adjusted=2.5503934568287206E-5 Hits=0
+Tree 0:
+(velocity + ((((angle + (((((velocity + (chordLength / chordLength)) + (chordLength / chordLength)) + (angle + velocity)) + velocity) - (velocity * thickness))) + ((angle + velocity) + ((angle + (((angle + (velocity + ((angle + chordLength) / (thickness / chordLength)))) - (angle + velocity)) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + ((angle + ((velocity + ((angle + chordLength) / (thickness / chordLength))) - (velocity * thickness))) + ((chordLength + (chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity))))) + (angle + velocity)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (velocity + velocity)) + (angle + velocity))))) + (angle + velocity))) / velocity)
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=38721.69105732555 Adjusted=2.58246514561601E-5 Hits=0
+Tree 0:
+(velocity + ((((angle + (((((velocity + (chordLength / chordLength)) + (chordLength / chordLength)) + (angle + velocity)) + velocity) - (velocity * thickness))) + ((angle + velocity) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + (velocity + ((angle + chordLength) / (thickness / chordLength)))))))) + (angle + velocity))))) + (angle + velocity))) / velocity)
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=38642.171853861255 Adjusted=2.5877792945717503E-5 Hits=0
+Tree 0:
+(velocity + (velocity + ((((angle + chordLength) / (thickness / chordLength)) + (chordLength + ((angle + chordLength) + (velocity + chordLength)))) / velocity))) + (((angle + ((angle + ((chordLength + angle) + (velocity + ((chordLength - thickness) / (thickness / chordLength))))) + ((chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / thickness)) + (angle + chordLength))))) + (angle + (chordLength + (chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength)))))))))) + (((angle + (((velocity + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((angle + velocity) + ((velocity + angle) + (angle + velocity)))) + (angle + velocity)))) + (angle + angle)) - (velocity * thickness))) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + ((chordLength + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((thickness + (((velocity + chordLength) + angle) + (angle + velocity))) + ((angle + velocity) + (angle - thickness)))) + (angle + velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + chordLength) + ((angle + velocity) + (angle - thickness))) + (angle + velocity))) + velocity)))) + (angle + velocity))) / velocity)
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=38405.418766207404 Adjusted=2.6037314389746446E-5 Hits=0
+Tree 0:
+(velocity + ((((chordLength + (chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + chordLength))))) + ((angle + velocity) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + (angle + velocity)))) / velocity) + (velocity + (((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + (angle + ((angle + velocity) + ((chordLength + ((angle + chordLength) + (velocity + chordLength))) + (angle * chordLength))))) + (angle + velocity))) / velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + (((velocity + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength)))) + (angle + chordLength)) - (velocity * thickness))) + (chordLength + (thickness + ((chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + (velocity + ((angle + chordLength) / (thickness / chordLength)))))))) + (angle + velocity))))) + (angle + velocity))) / velocity)
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33638.43043149914 Adjusted=2.9727019369020722E-5 Hits=1
+Tree 0:
+(chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / thickness)) + (angle + chordLength))))) + (((angle + ((angle + ((chordLength + angle) + (velocity + ((chordLength - thickness) / (thickness / chordLength))))) + ((chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / thickness)) + (angle + chordLength))))) + (angle + (chordLength + (chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength)))))))))) + (((angle + (((angle - thickness) + (angle + angle)) - (velocity * thickness))) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + ((chordLength + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((thickness + (((velocity + chordLength) + angle) + (angle + velocity))) + ((angle + velocity) + (angle - thickness)))) + (angle + velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + chordLength) + ((angle + velocity) + (angle - thickness))) + (angle + velocity))) + velocity)))) + (angle + velocity))) / velocity)
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33613.8544416692 Adjusted=2.9748752942996333E-5 Hits=3
+Tree 0:
+(chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / thickness)) + (angle + chordLength))))) + (((angle + (((angle + chordLength) / (thickness / chordLength)) + ((chordLength + (angle + (chordLength + ((velocity + ((chordLength - thickness) / thickness)) + (angle + chordLength))))) + (angle + (chordLength + (chordLength + (angle + (chordLength + ((velocity + ((angle + chordLength) / (thickness / chordLength))) + (angle + chordLength)))))))))) + (((angle + (((angle - thickness) + (angle + angle)) - (velocity * thickness))) + ((angle + (((angle + (chordLength + (angle + velocity))) - chordLength) + (angle + velocity))) + ((chordLength + ((angle + ((angle + velocity) - (velocity * thickness))) + ((chordLength + ((thickness + (((velocity + chordLength) + angle) + (angle + velocity))) + ((angle + velocity) + (angle - thickness)))) + (angle + velocity)))) + (((angle + (((angle + velocity) + velocity) - (velocity * thickness))) + (((angle + chordLength) + ((angle + velocity) + (angle - thickness))) + (angle + velocity))) + velocity)))) + (angle + velocity))) / velocity)
