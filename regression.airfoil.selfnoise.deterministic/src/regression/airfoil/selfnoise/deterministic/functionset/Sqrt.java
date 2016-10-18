@@ -26,12 +26,12 @@ public class Sqrt extends GPNode {
 		children[0].eval(state, thread, input, stack, individual, problem);
 		result = rd.x;
 		
-		if (result >= 0) {
-			rd.x = Math.sqrt(result);
+		if (result > 0) {
+			rd.x = Math.log(result);
 		}
 		else
 		{
-			rd.x = 10000;
+			rd.x = 1;
 		}
 	}
 }
