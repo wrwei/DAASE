@@ -3,294 +3,511 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=50294.47099999997 Adjusted=1.9882505921855283E-5 Hits=1
 Tree 0:
 velocity + velocity
+=======
+Fitness: Standardized=37301.49658225464 Adjusted=2.6807857157628295E-5 Hits=0
+Tree 0:
+sqrt(sqrt(angle - velocity) - ((velocity / frequency) - (chordLength + thickness)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=49813.40215246401 Adjusted=2.0074515738226846E-5 Hits=1
 Tree 0:
 (((chordLength / chordLength) + velocity) + velocity) - (thickness + chordLength)
+=======
+Fitness: Standardized=37301.49658225464 Adjusted=2.6807857157628295E-5 Hits=0
+Tree 0:
+sqrt(sqrt((angle + thickness) - velocity) - ((velocity / frequency) - (chordLength + thickness)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=33552.05930388036 Adjusted=2.9803541636644484E-5 Hits=6
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(velocity + velocity)) * sqrt((frequency / velocity) * (frequency / chordLength))
+=======
+Fitness: Standardized=27363.50843999998 Adjusted=3.6543685854712933E-5 Hits=0
+Tree 0:
+(velocity * chordLength) + sqrt(sqrt(angle - velocity))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=35968.962727535756 Adjusted=2.7800974039777893E-5 Hits=2
 Tree 0:
 velocity + (sqrt(frequency + thickness) * sqrt(((frequency / frequency) - (chordLength * thickness)) + ((velocity * velocity) + (velocity + ((chordLength / chordLength) + (frequency / velocity))))))
+=======
+Fitness: Standardized=24912.384597592576 Adjusted=4.013906645573287E-5 Hits=0
+Tree 0:
+sqrt(sqrt((angle + thickness) - velocity) - ((velocity / frequency) - sqrt(angle - velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=27821.232560079767 Adjusted=3.5942478657691624E-5 Hits=9
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + velocity) + thickness) + (velocity - chordLength)) * (frequency / chordLength))
+=======
+Fitness: Standardized=21125.886614600626 Adjusted=4.733305092426197E-5 Hits=0
+Tree 0:
+sqrt(sqrt(((thickness / (angle + velocity)) / (thickness + chordLength)) - sqrt(frequency)) - (((thickness + velocity) * (angle - velocity)) + ((velocity + frequency) / (frequency + frequency))))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=23421.770206265726 Adjusted=4.269349830074729E-5 Hits=5
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(velocity + velocity)) * sqrt(((angle + velocity) + velocity) * (frequency / chordLength))
+=======
+Fitness: Standardized=11044.90628167109 Adjusted=9.053127688212778E-5 Hits=2
+Tree 0:
+sqrt(sqrt(angle - velocity) - ((velocity / frequency) - (sqrt(sqrt(((velocity - thickness) / (velocity + thickness)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=23581.754771084925 Adjusted=4.2403867135408244E-5 Hits=6
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((angle + velocity) + velocity) + (velocity - chordLength))) * sqrt((velocity + angle) * (frequency / chordLength))
+=======
+Fitness: Standardized=10902.50131934818 Adjusted=9.171365882494164E-5 Hits=1
+Tree 0:
+sqrt((sqrt((angle + thickness) - velocity) - ((velocity / frequency) - sqrt(frequency / chordLength))) - ((velocity / frequency) - (sqrt(sqrt(((velocity - thickness) / (velocity + thickness)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=23187.391734930246 Adjusted=4.3125026152358475E-5 Hits=4
 Tree 0:
 ((sqrt(((angle + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((velocity - (thickness + chordLength)) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (frequency / chordLength))
+=======
+Fitness: Standardized=10902.50131934818 Adjusted=9.171365882494164E-5 Hits=1
+Tree 0:
+sqrt((sqrt((angle + thickness) - velocity) - ((velocity / frequency) - sqrt(frequency / chordLength))) - ((velocity / frequency) - (sqrt(sqrt(((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=23006.26907675725 Adjusted=4.346452404515211E-5 Hits=7
 Tree 0:
 ((sqrt(((angle + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((velocity - (thickness + chordLength)) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + sqrt((velocity + thickness) * (frequency / chordLength))) * (frequency / chordLength))
+=======
+Fitness: Standardized=10899.468455686609 Adjusted=9.173917653771249E-5 Hits=2
+Tree 0:
+sqrt((sqrt((angle + thickness) - velocity) - ((velocity / frequency) - sqrt(frequency / chordLength))) - ((angle - velocity) - (sqrt(sqrt(((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=22408.006290298865 Adjusted=4.4624914958094876E-5 Hits=9
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency)) + (velocity + chordLength)))))) * (frequency / chordLength))) * sqrt((velocity * velocity) + ((velocity * velocity) + (thickness / frequency))))) * sqrt(((velocity + chordLength) + (thickness + (velocity + sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) * (frequency / chordLength))
+=======
+Fitness: Standardized=10574.68622165385 Adjusted=9.455651189352493E-5 Hits=4
+Tree 0:
+sqrt((sqrt((angle + thickness) - velocity) - ((velocity / frequency) - sqrt(sqrt(angle - velocity) / chordLength))) - ((angle - velocity) - (sqrt(sqrt(((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=22383.56811467557 Adjusted=4.467363385690649E-5 Hits=3
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency)) + (velocity + chordLength)))))) * (frequency / chordLength))) * sqrt(sqrt((((angle + velocity) + thickness) + sqrt(velocity + velocity)) * (frequency / chordLength)) + ((velocity * velocity) + (thickness / frequency))))) * sqrt(((velocity + chordLength) + (thickness + (velocity + sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) * (frequency / chordLength))
+=======
+Fitness: Standardized=10361.789186566402 Adjusted=9.649911640548765E-5 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - ((velocity / frequency) - sqrt(frequency / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / (velocity + thickness)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=22355.077287899792 Adjusted=4.4730566419237116E-5 Hits=9
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + ((velocity + velocity) - sqrt(chordLength / ((velocity + sqrt(frequency)) + (velocity + chordLength)))))) * (frequency / chordLength))) * sqrt(sqrt((((angle + velocity) + thickness) + sqrt(velocity + velocity)) * (frequency / chordLength)) + ((velocity * velocity) + (thickness / frequency))))) * sqrt(((velocity + chordLength) + (thickness + (velocity + sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) * (frequency / chordLength))
+=======
+Fitness: Standardized=10361.789186566402 Adjusted=9.649911640548765E-5 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - ((velocity / frequency) - sqrt(frequency / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=21932.83707564871 Adjusted=4.5591658064708416E-5 Hits=0
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency)) + (velocity + chordLength)))))) * (frequency / chordLength))) * sqrt((velocity * velocity) + ((velocity * velocity) + (thickness / frequency))))) * sqrt(((velocity + chordLength) + (thickness + (chordLength / thickness))) * (frequency / chordLength))
+=======
+Fitness: Standardized=10361.620061891728 Adjusted=9.650069133360149E-5 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((angle - velocity) / frequency) - sqrt(frequency / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / (velocity + thickness)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=21248.11656279593 Adjusted=4.7060780011478334E-5 Hits=12
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * sqrt(((velocity + (thickness + velocity)) + (velocity + angle)) * (frequency / chordLength))
+=======
+Fitness: Standardized=10159.030756757053 Adjusted=9.842489889461582E-5 Hits=1
+Tree 0:
+sqrt((sqrt((angle + thickness) - velocity) - (((velocity / frequency) - sqrt(frequency / chordLength)) - sqrt(frequency / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt((velocity / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=21248.11656279593 Adjusted=4.7060780011478334E-5 Hits=12
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * sqrt(((velocity + (thickness + velocity)) + (velocity + angle)) * (frequency / chordLength))
+=======
+Fitness: Standardized=9744.052179284841 Adjusted=1.0261617707144867E-4 Hits=0
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt(chordLength) + thickness) / sqrt((angle + thickness) - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=20990.741823798668 Adjusted=4.763778100901966E-5 Hits=3
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + (thickness + (velocity + sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + sqrt(frequency)) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((((velocity + velocity) + sqrt(velocity + sqrt(frequency - chordLength))) + velocity) + (velocity - chordLength))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=9744.052179284841 Adjusted=1.0261617707144867E-4 Hits=0
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt(chordLength) + thickness) / sqrt((angle + thickness) - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * (sqrt(sqrt((velocity / frequency) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=20632.941348641212 Adjusted=4.8463838444798724E-5 Hits=6
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (velocity + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * sqrt(((velocity + (thickness + velocity)) + ((sqrt(frequency) + (velocity + sqrt(frequency))) + ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness)))) * (frequency / chordLength))
+=======
+Fitness: Standardized=9742.753882468567 Adjusted=1.0262985006212527E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((((velocity / frequency) - sqrt((angle + thickness) - velocity)) + thickness) / sqrt((angle + thickness) - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=20162.566799145887 Adjusted=4.959440013571206E-5 Hits=7
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (sqrt(frequency) - sqrt(velocity * velocity))) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + ((velocity + velocity) - sqrt(chordLength / (((velocity * velocity) + ((velocity * velocity) + (thickness / frequency))) + (velocity + chordLength)))))) * (frequency / chordLength)))
+=======
+Fitness: Standardized=9730.438964090437 Adjusted=1.027597258421963E-4 Hits=0
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt(chordLength) + thickness) / sqrt((angle + thickness) - velocity)) - sqrt((sqrt((angle + velocity) - sqrt(sqrt(((sqrt(chordLength) + thickness) - velocity) - velocity) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=20116.177973796723 Adjusted=4.970876140294292E-5 Hits=5
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (sqrt(frequency) - sqrt(velocity * velocity))) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + sqrt(((velocity + (thickness + velocity)) + (velocity + angle)) * (frequency / chordLength)))) - sqrt(chordLength / thickness))))) * sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + ((velocity + velocity) - sqrt(chordLength / (((velocity * velocity) + ((velocity * velocity) + (thickness / frequency))) + (velocity + chordLength)))))) * (frequency / chordLength)))
+=======
+Fitness: Standardized=9258.55903922527 Adjusted=1.0799650347968061E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((frequency * thickness) - frequency) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=20109.57022219325 Adjusted=4.972509426393283E-5 Hits=5
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt((((sqrt(((thickness + velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + sqrt(velocity))) - sqrt(chordLength / thickness)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness)))) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) - (sqrt(frequency) - sqrt(velocity * velocity))) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + sqrt(((velocity + (thickness + velocity)) + (velocity + angle)) * (frequency / chordLength)))) - sqrt(chordLength / thickness))))) * sqrt(frequency + ((((angle + velocity) + thickness) + (((frequency / frequency) + (velocity + sqrt(frequency))) + ((velocity + velocity) - sqrt(chordLength / (((velocity * velocity) + ((velocity * velocity) + (thickness / frequency))) + (velocity + chordLength)))))) * (frequency / chordLength)))
+=======
+Fitness: Standardized=9258.55903922527 Adjusted=1.0799650347968061E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((frequency * thickness) - frequency) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=19523.7450240153 Adjusted=5.1217058085522084E-5 Hits=4
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + velocity) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=9258.55903922527 Adjusted=1.0799650347968061E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((frequency * thickness) - frequency) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + ((velocity - thickness) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=18620.02879228055 Adjusted=5.370272562032424E-5 Hits=10
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + (thickness + ((((sqrt((sqrt(velocity + sqrt(frequency - chordLength)) + (velocity + (chordLength * chordLength))) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness)))) + sqrt((((angle + velocity) + thickness) + ((((velocity + velocity) + ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))) + thickness) + (((frequency / frequency) + (sqrt(frequency) + (thickness + ((thickness + velocity) + velocity)))) + ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * (frequency / chordLength)))))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + sqrt(frequency)) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((((velocity + velocity) + sqrt(velocity + sqrt(frequency - chordLength))) + velocity) + (velocity - chordLength))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + sqrt(((velocity + chordLength) + (velocity + chordLength)) * (frequency / chordLength))))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=9256.37447584459 Adjusted=1.0802198858967144E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((frequency * thickness) - frequency) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * chordLength) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=18391.640090298628 Adjusted=5.436957364959582E-5 Hits=5
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + (thickness + ((((sqrt((sqrt(velocity + sqrt(frequency - chordLength)) + (velocity + (chordLength * chordLength))) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness)))) + sqrt((((angle + velocity) + thickness) + ((((velocity + velocity) + ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))) + thickness) + (((frequency / frequency) + (sqrt(frequency) + (thickness + ((thickness + velocity) + velocity)))) + ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * (frequency / chordLength)))))) * sqrt(((((sqrt(velocity) - (sqrt(velocity) - (chordLength * chordLength))) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + sqrt(frequency)) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((((velocity + velocity) + sqrt(velocity + sqrt(frequency - chordLength))) + velocity) + (velocity - chordLength))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + sqrt(((velocity + chordLength) + (velocity + chordLength)) * (frequency / chordLength))))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=9236.45569106275 Adjusted=1.0825491709448752E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency + chordLength)) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((thickness + thickness) - velocity)) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=18297.653749183046 Adjusted=5.464882901807165E-5 Hits=14
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((sqrt(((thickness + velocity) + (velocity + (chordLength * chordLength))) + ((velocity + angle) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + sqrt(frequency)) + (velocity + (((angle + velocity) + thickness) + (velocity - velocity)))) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((((velocity + velocity) + sqrt(velocity + sqrt(frequency - chordLength))) + velocity) + chordLength)) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=8956.11940852119 Adjusted=1.116430354884706E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((thickness + thickness) - velocity)) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + ((velocity - thickness) * ((frequency * chordLength) - (frequency + chordLength)))) - ((sqrt(chordLength) + thickness) * chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=17568.864807319933 Adjusted=5.691563429579614E-5 Hits=14
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=8956.11940852119 Adjusted=1.116430354884706E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((thickness + thickness) - velocity)) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * chordLength) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + ((velocity - thickness) * ((frequency * chordLength) - (frequency + chordLength)))) - ((sqrt(chordLength) + thickness) * chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=17466.058244628217 Adjusted=5.725062491891203E-5 Hits=8
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + chordLength)) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=8905.890060498117 Adjusted=1.1227263311972159E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=17138.259908358796 Adjusted=5.834557649203401E-5 Hits=6
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=8875.844545435213 Adjusted=1.1265264305143603E-4 Hits=3
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (velocity - thickness)) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt((sqrt(chordLength) + thickness) - velocity) * (sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=16619.761227172923 Adjusted=6.016571601817621E-5 Hits=8
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(thickness + velocity)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((((((sqrt(velocity) + velocity) + (velocity + (chordLength * chordLength))) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - (velocity + sqrt(frequency / frequency))))) * ((velocity * velocity) / chordLength))
+=======
+Fitness: Standardized=8791.130177850242 Adjusted=1.1373807937003378E-4 Hits=1
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - ((((sqrt((angle + (((velocity - thickness) / sqrt(frequency / chordLength)) * (((sqrt(chordLength) + thickness) - velocity) - (frequency + chordLength)))) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((sqrt((frequency * thickness) - frequency) + thickness) / (angle - velocity)) - sqrt((frequency * thickness) - velocity))) + thickness) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(((velocity - thickness) / sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) + thickness) / (angle - velocity))) * ((velocity - thickness) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=15573.63030360927 Adjusted=6.420698151456343E-5 Hits=13
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8753.447438506239 Adjusted=1.1422765480337716E-4 Hits=3
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt(sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - thickness) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * ((frequency * chordLength) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=15410.879774870775 Adjusted=6.488501173169739E-5 Hits=10
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * chordLength)) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8456.634039034687 Adjusted=1.1823637619985448E-4 Hits=4
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=15396.106602731912 Adjusted=6.494726741857913E-5 Hits=10
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(frequency / frequency)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt(((angle + sqrt(thickness + velocity)) + thickness) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8456.634039034687 Adjusted=1.1823637619985448E-4 Hits=4
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=15151.448766890377 Adjusted=6.599593342200242E-5 Hits=6
 Tree 0:
 ((sqrt(velocity) - (chordLength * chordLength)) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(frequency / frequency)))) * sqrt((velocity + angle) * sqrt(((((chordLength * chordLength) + (velocity - velocity)) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + (((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - (velocity + chordLength)))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8433.973905375278 Adjusted=1.1855401228482037E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - (frequency * thickness)) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - (sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=13522.152092296214 Adjusted=7.394725676195522E-5 Hits=14
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(velocity * velocity) + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(angle + velocity) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8347.307855547544 Adjusted=1.1978475366543758E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((frequency * chordLength) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - (frequency * thickness)) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - (sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=12704.232880462758 Adjusted=7.87077269191761E-5 Hits=7
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(velocity * velocity) + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(angle + velocity) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8347.307855547544 Adjusted=1.1978475366543758E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((frequency * chordLength) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - (frequency * thickness)) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - (sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=12703.441613780386 Adjusted=7.871262904741202E-5 Hits=8
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(velocity * velocity) + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(angle + velocity) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(frequency)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8168.508958209693 Adjusted=1.224063778025583E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt(((frequency * chordLength) - (frequency + chordLength)) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - ((frequency * thickness) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / sqrt(frequency / chordLength)) * ((frequency * chordLength) - (frequency + chordLength))) * ((frequency * thickness) - sqrt(sqrt(sqrt(chordLength) * ((frequency * chordLength) - (frequency + chordLength))))))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=12702.420585736665 Adjusted=7.871895551681528E-5 Hits=8
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(velocity * velocity) + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((sqrt(angle + velocity) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + (sqrt(frequency) - sqrt(frequency / frequency))) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt((((thickness + velocity) + (velocity + chordLength)) + (sqrt(frequency) + ((thickness + velocity) + (thickness + velocity)))) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8011.881872411099 Adjusted=1.2479904432924046E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((frequency * chordLength) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - (frequency * thickness)) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - (sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / ((velocity - (frequency * thickness)) / velocity)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
+<<<<<<< HEAD
 Fitness: Standardized=12586.501820167345 Adjusted=7.944388126306586E-5 Hits=11
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (sqrt(velocity * velocity) + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))) + sqrt((thickness + ((((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - velocity))) * sqrt((velocity + angle) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt(((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) + (thickness + velocity)) * sqrt(((velocity + chordLength) + (velocity + chordLength)) * (((thickness + velocity) + (thickness + velocity)) - sqrt(chordLength / thickness)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt((((angle + sqrt(thickness + velocity)) + thickness) + (((velocity + angle) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (velocity - chordLength)))) * (frequency / chordLength))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((velocity + (thickness + velocity)) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * (((sqrt(velocity) - (chordLength * chordLength)) + sqrt((chordLength + (velocity + sqrt(frequency))) + (sqrt(frequency) - ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
@@ -614,3 +831,8 @@ Evaluated: true
 Fitness: Standardized=9328.078621541938 Adjusted=1.0719172177313231E-4 Hits=14
 Tree 0:
 (sqrt(((sqrt(((thickness + velocity) + (velocity + chordLength)) + (velocity + (velocity + chordLength))) - (chordLength * chordLength)) + sqrt(velocity - frequency)) * sqrt(((velocity + chordLength) + sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))) * ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt((chordLength + ((thickness + velocity) + (velocity + angle))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((angle + velocity) * sqrt(velocity + chordLength))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(velocity * velocity) - velocity)))) + sqrt((thickness + ((sqrt(velocity * velocity) * sqrt(((sqrt(velocity + (sqrt(velocity * velocity) + (chordLength / thickness))) - (chordLength * chordLength)) + (chordLength / thickness)) * angle)) + sqrt(((sqrt(angle + velocity) - (chordLength * chordLength)) + (chordLength / thickness)) * ((angle + velocity) * sqrt((((angle + velocity) + thickness) + (chordLength * chordLength)) * (frequency / chordLength)))))) + (chordLength / thickness))) * sqrt(((((sqrt(velocity) - (chordLength * chordLength)) + (frequency / frequency)) * sqrt(((((velocity + (velocity + chordLength)) + ((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + (velocity - frequency)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity))))) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))) + ((((thickness + velocity) + velocity) + (velocity + velocity)) + ((sqrt(velocity) + velocity) + (sqrt(frequency) - sqrt(velocity * velocity))))) * sqrt((((sqrt(velocity * velocity) + (chordLength * chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(velocity - frequency)) * sqrt(((velocity + (velocity + chordLength)) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - (sqrt(velocity) + velocity)))))) + ((((((sqrt(velocity) - (chordLength * chordLength)) - (chordLength * chordLength)) + sqrt(((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + (sqrt(frequency) - sqrt(velocity * velocity)))) * sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity + (velocity + chordLength)) + (velocity + chordLength))) + sqrt(velocity - frequency)) * sqrt((((angle + velocity) + thickness) + (chordLength * chordLength)) * (frequency / chordLength)))) + sqrt((((sqrt(velocity * velocity) + (velocity + chordLength)) + ((velocity * velocity) + ((thickness + velocity) + (thickness + velocity)))) + sqrt(thickness + velocity)) * sqrt(((velocity + frequency) + (velocity + chordLength)) * ((velocity + (velocity + (velocity + chordLength))) - sqrt(chordLength / thickness))))) + (sqrt(frequency) - sqrt(chordLength / ((velocity + sqrt(frequency / frequency)) + ((angle + velocity) + chordLength)))))) * ((velocity * ((sqrt(velocity * velocity) + sqrt((chordLength + (velocity + ((velocity + chordLength) + (chordLength / thickness)))) + (sqrt(frequency) - sqrt(velocity + chordLength)))) * sqrt((angle + velocity) * sqrt((((angle + velocity) + thickness) + (velocity - velocity)) * (frequency / chordLength))))) / chordLength))
+=======
+Fitness: Standardized=8011.881872411099 Adjusted=1.2479904432924046E-4 Hits=2
+Tree 0:
+sqrt((sqrt((sqrt(chordLength) + thickness) - velocity) - (((sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - thickness) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - (frequency / chordLength))) - (((frequency * thickness) - sqrt((frequency * thickness) - frequency)) - sqrt((frequency * thickness) - frequency))) / (angle - velocity)) - sqrt((sqrt((frequency * chordLength) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + (((velocity - (frequency * thickness)) / velocity) * ((frequency * chordLength) - (frequency + chordLength)))) - chordLength)) - (sqrt((angle + velocity) - sqrt((((sqrt(chordLength) + thickness) * chordLength) + sqrt((frequency * thickness) - frequency)) - (frequency / chordLength))) - sqrt((frequency * thickness) - frequency))) / chordLength))) - ((frequency * chordLength) - (sqrt(sqrt(sqrt(((velocity - chordLength) / ((velocity - (frequency * thickness)) / velocity)) * ((frequency * chordLength) - (frequency + chordLength))) * (sqrt((frequency * thickness) - frequency) - (frequency + chordLength)))) * velocity)))
+>>>>>>> 5c3c2b98606cf7e2c491e4e019dc582006d8d53c
