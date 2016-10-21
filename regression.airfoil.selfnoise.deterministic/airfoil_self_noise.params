@@ -15,7 +15,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 10
+gp.fs.0.size = 12
 gp.fs.0.func.0 = regression.airfoil.selfnoise.deterministic.terminals.Angle
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = regression.airfoil.selfnoise.deterministic.terminals.CordLength
@@ -40,6 +40,11 @@ gp.fs.0.func.8.nc = nc1
 gp.fs.0.func.9 = regression.airfoil.selfnoise.deterministic.functionset.Sqrt
 gp.fs.0.func.9.nc = nc2
 
+gp.fs.0.func.10 = regression.airfoil.selfnoise.deterministic.functionset.Log
+gp.fs.0.func.10.nc = nc2
+
+gp.fs.0.func.11 = regression.airfoil.selfnoise.deterministic.functionset.Log10
+gp.fs.0.func.11.nc = nc2
 
 eval.problem = regression.airfoil.selfnoise.deterministic.problem.AirfoilSelfNoiseRegression
 eval.problem.data = regression.airfoil.selfnoise.deterministic.util.DoubleData

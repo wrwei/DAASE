@@ -8,10 +8,10 @@ import ec.gp.GPIndividual;
 import ec.gp.GPNode;
 import regression.airfoil.selfnoise.deterministic.util.DoubleData;
 
-public class Sqrt extends GPNode {
+public class Log extends GPNode {
 	
 	public String toString() {
-		return "sqrt";
+		return "log";
 	}
 
 	public int expectedChildren() {
@@ -27,7 +27,7 @@ public class Sqrt extends GPNode {
 		result = rd.x;
 		
 		if (result > 0) {
-			rd.x = Math.sqrt(result);
+			rd.x = Math.log(result);
 		}
 		else
 		{
