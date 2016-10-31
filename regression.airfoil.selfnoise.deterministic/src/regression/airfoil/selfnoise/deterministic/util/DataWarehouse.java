@@ -28,7 +28,7 @@ public class DataWarehouse {
 		CSVUtil csvUtil = CSVUtil.getInstance();
 		ArrayList<String[]> read = csvUtil.readFile(s);
 		if (read != null) {
-			for(int i = 1; i < read.size(); i++)
+			for(int i = 0; i < read.size(); i++)
 			{
 				data.add(new DayDataEntity(read.get(i)));
 			}

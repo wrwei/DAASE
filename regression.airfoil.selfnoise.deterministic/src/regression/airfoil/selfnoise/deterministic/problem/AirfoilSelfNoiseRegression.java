@@ -82,7 +82,7 @@ public class AirfoilSelfNoiseRegression extends GPProblem implements SimpleProbl
 					
 					result = functional_cost;
 					
-					if (result <= 0.1)
+					if (result <= 0.001)
 					{
 						hits++;
 					}

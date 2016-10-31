@@ -79,7 +79,7 @@ public class DayDataEntity {
 		CSVUtil csvUtil = CSVUtil.getInstance();
 		ArrayList<String[]> result = csvUtil.readFile("data/airfoil_self_noise.dat");
 
-		DayDataEntity dataEntity = new DayDataEntity(result.get(1));
+		DayDataEntity dataEntity = new DayDataEntity(result.get(0));
 		System.out.println(dataEntity);
 
 	}
