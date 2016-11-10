@@ -1,0 +1,79 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=56.629072612854515 Adjusted=0.017352352808414687 Hits=0
+Tree 0:
+(((temp / psi) + sqrt(temp)) * (sqrt(psi) - (no_td / temp))) + (((psi * temp) + (temporalOrder - temp)) / ((temp * temporalOrder) + (temporalOrder * temp)))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=38.96 Adjusted=0.025025025025025023 Hits=1
+Tree 0:
+temporalOrder * (temp / psi)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=43.77696985155803 Adjusted=0.02233290915654054 Hits=0
+Tree 0:
+(psi / temp) + (psi / temp)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=26.260182992785616 Adjusted=0.03668353951492729 Hits=0
+Tree 0:
+((psi / psi) + (psi / temp)) + ((temp / psi) + sqrt(sqrt(psi)))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=11.83683358539912 Adjusted=0.07790083071088658 Hits=0
+Tree 0:
+(psi / temp) + ((temp / psi) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + sqrt(sqrt(psi)))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.3845364386337708 Adjusted=0.41936872248970697 Hits=4
+Tree 0:
+(sqrt(sqrt(no_td - psi)) + (no_td / temporalOrder)) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + sqrt(sqrt(psi))))))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.3845364386337708 Adjusted=0.41936872248970697 Hits=4
+Tree 0:
+(sqrt(sqrt((temp + temporalOrder) * sqrt(psi))) + (no_td / temporalOrder)) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + sqrt(sqrt(psi))))))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1.3845364386337708 Adjusted=0.41936872248970697 Hits=4
+Tree 0:
+(sqrt(sqrt((temp + temporalOrder) * sqrt(psi))) + (no_td / temporalOrder)) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + (((psi / psi) + (temporalOrder / psi)) + ((psi / psi) + sqrt(sqrt(psi))))))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=23
+Tree 0:
+((psi / psi) + (((psi / psi) + (psi / psi)) + ((psi / psi) + (temp / temp)))) + (psi / psi)
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.0 Adjusted=1.0 Hits=23
+Tree 0:
+((psi / psi) + (((psi / psi) + (psi / psi)) + ((psi / psi) + (temp / temp)))) + (psi / psi)

@@ -1,0 +1,46 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 10
+gp.fs.0.func.0 = regression.challenger.shuttle.stochastic.terminals.No_TD
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = regression.challenger.shuttle.stochastic.terminals.PSI
+gp.fs.0.func.1.nc = nc0
+gp.fs.0.func.2 = regression.challenger.shuttle.stochastic.terminals.Temperature
+gp.fs.0.func.2.nc = nc0
+gp.fs.0.func.3 = regression.challenger.shuttle.stochastic.terminals.TemporalOrder
+gp.fs.0.func.3.nc = nc0
+
+gp.fs.0.func.4 = regression.challenger.shuttle.stochastic.terminals.One
+gp.fs.0.func.4.nc = nc3
+
+gp.fs.0.func.5 = regression.challenger.shuttle.stochastic.terminals.Two
+gp.fs.0.func.5.nc = nc3
+
+gp.fs.0.func.6 = regression.challenger.shuttle.stochastic.terminals.Four
+gp.fs.0.func.6.nc = nc3
+
+gp.fs.0.func.7 = regression.challenger.shuttle.stochastic.terminals.Eight
+gp.fs.0.func.7.nc = nc3
+
+gp.fs.0.func.8 = regression.challenger.shuttle.stochastic.functionset.OPNode
+gp.fs.0.func.8.nc = nc1
+
+gp.fs.0.func.9 = regression.challenger.shuttle.stochastic.functionset.Sqrt
+gp.fs.0.func.9.nc = nc2
+eval.problem = regression.challenger.shuttle.stochastic.problem.ChallengerShuttleORingRegression
+eval.problem.data = regression.challenger.shuttle.stochastic.util.DoubleData

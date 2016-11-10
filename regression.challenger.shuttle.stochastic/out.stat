@@ -1,0 +1,32 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2300.0 Adjusted=4.34593654932638E-4 Hits=0
+Tree 0:
+(sqrt(temporalOrder) + (temp - temp)(0.2, 0.4, 0.2, 0.2 |0.6))(0.6, 0.2, 0, 0.2 |1) + (sqrt(temp) / sqrt(psi))(0.3, 0.2, 0.2, 0.3 |0.7)(0.5, 0.1, 0.1, 0.3 |2.2)
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2300.0 Adjusted=4.34593654932638E-4 Hits=0
+Tree 0:
+((((sqrt(psi) * sqrt(psi))(0.5, 0.1, 0.1, 0.3 |0.5) / (sqrt(temp) / (temp - temporalOrder)(0.5, 0.2, 0.2, 0.1 |0.5))(0.4, 0.2, 0.2, 0.2 |1.1))(0.2, 0.2, 0.2, 0.4 |2.2) * (sqrt(temp + temp(0.3, 0.2, 0.1, 0.4 |0)) + sqrt(no_td + temporalOrder(0.2, 0.3, 0.2, 0.3 |0)))(0.3, 0.1, 0.2, 0.4 |0.6))(0.2, 0.3, 0.2, 0.3 |3.5) * ((temp + no_td)(0.2, 0.1, 0.1, 0.6 |0.4) - sqrt(no_td))(0.3, 0.2, 0.4, 0.1 |1))(0.2, 0.6, 0.1, 0.1 |4.9) + sqrt(sqrt(no_td * no_td(0.1, 0.3, 0.5, 0.1 |0)))(0.3, 0.2, 0.4, 0.1 |5.5)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2300.0 Adjusted=4.34593654932638E-4 Hits=0
+Tree 0:
+sqrt(sqrt(sqrt(temp)) - sqrt(psi + psi(0.3, 0.2, 0.4, 0.1 |0))(0.1, 0.2, 0.2, 0.5 |0)) + (no_td - no_td)(0.3, 0.3, 0.2, 0.2 |0.7)(0.3, 0.2, 0.1, 0.4 |1.3)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2300.0 Adjusted=4.34593654932638E-4 Hits=0
+Tree 0:
+sqrt(sqrt((temporalOrder - no_td)(0.4, 0.2, 0.3, 0.1 |0) - (no_td / no_td)(0.2, 0.4, 0.2, 0.2 |0)(0.3, 0.3, 0.3, 0.1 |0))) / sqrt(sqrt(sqrt(temporalOrder) / sqrt(no_td)(0.2, 0.2, 0.3, 0.3 |0)))(0.3, 0, 0.3, 0.4 |0.6)
