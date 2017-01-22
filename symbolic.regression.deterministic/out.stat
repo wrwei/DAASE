@@ -3,33 +3,33 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.4587979881507116 Adjusted=0.289117781213543 Hits=0
+Fitness: Standardized=2.486549423039064 Adjusted=0.2868165279379135 Hits=0
 Tree 0:
-(((x - x) * (y + y)) + (x + (x + y))) * y
+(x * y) + (y + y)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5464671628884294 Adjusted=0.3927009209361691 Hits=6
+Fitness: Standardized=1.948556422237511 Adjusted=0.33914901287225513 Hits=4
 Tree 0:
-(((x - x) * (y + y)) + (x + (y / y))) * y
+(y * x) + y
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5464671628884294 Adjusted=0.3927009209361691 Hits=6
+Fitness: Standardized=1.3867260823232084 Adjusted=0.41898398287356586 Hits=5
 Tree 0:
-(((x - x) * (y + y)) + (x + (y / y))) * y
+y + (y * (x * (x + y)))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1455419899880488 Adjusted=0.46608269829553434 Hits=6
+Fitness: Standardized=2.7755575615628914E-16 Adjusted=0.9999999999999998 Hits=20
 Tree 0:
-(x * y) + y
+y + (((y * x) + y) * x)
 
 Generation: 4
 Best Individual:
@@ -37,75 +37,43 @@ Subpopulation 0:
 Evaluated: true
 Fitness: Standardized=1.1102230246251565E-16 Adjusted=1.0 Hits=20
 Tree 0:
-(y * (x / x)) - ((y - y) - ((y + (x * y)) * x))
+y + (((y * x) + y) * x)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1102230246251565E-16 Adjusted=1.0 Hits=20
+Fitness: Standardized=1.6653345369377348E-16 Adjusted=0.9999999999999998 Hits=20
 Tree 0:
-(y * (x / x)) - ((y - y) - ((y + (x * y)) * x))
+(((y * x) + y) * x) + y
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3357370765021415E-15 Adjusted=0.9999999999999987 Hits=20
+Fitness: Standardized=8.326672684688674E-17 Adjusted=1.0 Hits=20
 Tree 0:
-(((x * y) * x) - ((x / y) - (x / y))) + ((y * x) + y)
+(((y * x) + y) * x) + y
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.498001805406602E-16 Adjusted=0.9999999999999998 Hits=20
+Fitness: Standardized=8.326672684688674E-17 Adjusted=1.0 Hits=20
 Tree 0:
-y + ((y + (x * y)) * x)
+(((y * x) + y) * x) + y
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.3592239273284576E-16 Adjusted=0.9999999999999998 Hits=20
-Tree 0:
-y + ((y + (x * y)) * x)
-
-Generation: 9
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=5.551115123125783E-17 Adjusted=1.0 Hits=20
-Tree 0:
-y + ((y + (x * y)) * x)
-
-Generation: 10
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=5.551115123125783E-17 Adjusted=1.0 Hits=20
-Tree 0:
-((x + (y / y)) * (x * y)) + y
-
-Generation: 11
-Best Individual:
-Subpopulation 0:
-Evaluated: true
-Fitness: Standardized=5.551115123125783E-17 Adjusted=1.0 Hits=20
-Tree 0:
-((y * (x + (y / y))) * x) + y
-
-Generation: 12
-Best Individual:
-Subpopulation 0:
-Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=20
 Tree 0:
-((x + (y / y)) * (x * y)) + y
+y + (((y + (x * y)) / (x / x)) * x)
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
 Fitness: Standardized=0.0 Adjusted=1.0 Hits=20
 Tree 0:
-((x + (y / y)) * (x * y)) + y
+y + (((y + (x * y)) / (x / x)) * x)
