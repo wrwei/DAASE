@@ -26,25 +26,25 @@ public class ParamCounter {
 	public synchronized void addCount(String param)
 	{
 		if (param.equals("temperature")) {
-			a[0] = 1;
+			a[0] += 1;
 		}
 		else if (param.equals("humidity")) {
-			a[1] = 1;
+			a[1] += 1;
 		}
 		else if (param.equals("light")) {
-			a[2] = 1;
+			a[2] += 1;
 		}
 		else if (param.equals("co2")) {
-			a[3] = 1;
+			a[3] += 1;
 		}
 		else if (param.equals("hr")) {
-			a[4] = 1;
+			a[4] += 1;
 		}
 		else if (param.equals("nsm")) {
-			a[5] = 1;
+			a[5] += 1;
 		}
 		else if (param.equals("ws")) {
-			a[6] = 1;
+			a[6] += 1;
 		}
 		else {
 			System.err.println(param);
@@ -68,7 +68,7 @@ public class ParamCounter {
 			}
 		}
 		
-		if (total == 5) {
+		if (total == 7) {
 			return 0;
 		}
 		else if (total == 0) {

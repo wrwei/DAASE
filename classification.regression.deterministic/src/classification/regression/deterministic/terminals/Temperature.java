@@ -2,6 +2,7 @@ package classification.regression.deterministic.terminals;
 
 import classification.regression.deterministic.problem.OccupancyClassification;
 import classification.regression.deterministic.utils.DoubleData;
+import classification.regression.deterministic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Problem;
 import ec.gp.ADFStack;
@@ -16,9 +17,10 @@ public class Temperature extends AbstractTemperatureNode {
 
 	public void eval(final EvolutionState state, final int thread, final GPData input, final ADFStack stack,
 			final GPIndividual individual, final Problem problem) {
-		double temperature_mean = ((OccupancyClassification) problem).temperature_mean;
+		double temperature = ((OccupancyClassification) problem).temperature;
 
 		DoubleData rd = ((DoubleData) (input));
-		rd.x = temperature_mean;
+		rd.x = temperature;
+		ParamCounter.getInstance().addCount("temperature");
 	}
 }

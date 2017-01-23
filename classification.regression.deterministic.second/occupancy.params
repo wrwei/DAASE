@@ -1,0 +1,115 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# functions in the function set
+gp.fs.0.size = 31
+
+gp.fs.0.func.0 = classification.regression.deterministic.terminals.Temperature
+gp.fs.0.func.0.nc = nc0
+
+gp.fs.0.func.1 = classification.regression.deterministic.terminals.Humidity
+gp.fs.0.func.1.nc = nc0
+
+gp.fs.0.func.2 = classification.regression.deterministic.terminals.Light
+gp.fs.0.func.2.nc = nc0
+
+gp.fs.0.func.3 = classification.regression.deterministic.terminals.CO2
+gp.fs.0.func.3.nc = nc0
+
+gp.fs.0.func.4 = classification.regression.deterministic.terminals.HumidityRatio
+gp.fs.0.func.4.nc = nc0
+
+gp.fs.0.func.5 = classification.regression.deterministic.terminals.NSM
+gp.fs.0.func.5.nc = nc0
+
+gp.fs.0.func.6 = classification.regression.deterministic.terminals.WS
+gp.fs.0.func.6.nc = nc0
+
+gp.fs.0.func.7 = classification.regression.deterministic.terminals.Temperature_mean
+gp.fs.0.func.7.nc = nc1
+
+gp.fs.0.func.8 = classification.regression.deterministic.terminals.Temperature_std
+gp.fs.0.func.8.nc = nc2
+
+gp.fs.0.func.9 = classification.regression.deterministic.terminals.Humidity_mean
+gp.fs.0.func.9.nc = nc1
+
+gp.fs.0.func.10 = classification.regression.deterministic.terminals.Humidity_std
+gp.fs.0.func.10.nc = nc2
+
+gp.fs.0.func.11 = classification.regression.deterministic.terminals.Light_mean
+gp.fs.0.func.11.nc = nc1
+
+gp.fs.0.func.12 = classification.regression.deterministic.terminals.Light_std
+gp.fs.0.func.12.nc = nc2
+
+gp.fs.0.func.13 = classification.regression.deterministic.terminals.CO2_mean
+gp.fs.0.func.13.nc = nc1
+
+gp.fs.0.func.14 = classification.regression.deterministic.terminals.CO2_std
+gp.fs.0.func.14.nc = nc2
+
+gp.fs.0.func.15 = classification.regression.deterministic.terminals.HumidityRatio_mean
+gp.fs.0.func.15.nc = nc1
+
+gp.fs.0.func.16 = classification.regression.deterministic.terminals.HumidityRatio_std
+gp.fs.0.func.16.nc = nc2
+
+gp.fs.0.func.17 = classification.regression.deterministic.terminals.NSM_mean
+gp.fs.0.func.17.nc = nc1
+
+gp.fs.0.func.18 = classification.regression.deterministic.terminals.NSM_std
+gp.fs.0.func.18.nc = nc2
+
+gp.fs.0.func.19 = classification.regression.deterministic.terminals.WS_mean
+gp.fs.0.func.19.nc = nc1
+
+gp.fs.0.func.20 = classification.regression.deterministic.terminals.WS_std
+gp.fs.0.func.20.nc = nc2
+
+gp.fs.0.func.21 = classification.regression.deterministic.terminals.Zero
+gp.fs.0.func.21.nc = nc8
+
+gp.fs.0.func.22 = classification.regression.deterministic.terminals.One
+gp.fs.0.func.22.nc = nc8
+
+gp.fs.0.func.23 = classification.regression.deterministic.functionset.FactorNode
+gp.fs.0.func.23.nc = nc3
+
+gp.fs.0.func.24 = classification.regression.deterministic.functionset.FactorNode_Mul
+gp.fs.0.func.24.nc = nc4
+
+gp.fs.0.func.25 = classification.regression.deterministic.functionset.FactorNode_Div
+gp.fs.0.func.25.nc = nc4
+
+gp.fs.0.func.26 = classification.regression.deterministic.functionset.Add
+gp.fs.0.func.26.nc = nc5
+
+gp.fs.0.func.27 = classification.regression.deterministic.functionset.Sub
+gp.fs.0.func.27.nc = nc5
+
+gp.fs.0.func.28 = classification.regression.deterministic.functionset.LessThan
+gp.fs.0.func.28.nc = nc6
+
+gp.fs.0.func.29 = classification.regression.deterministic.functionset.GreaterThan
+gp.fs.0.func.29.nc = nc6
+
+gp.fs.0.func.30 = classification.regression.deterministic.functionset.And
+gp.fs.0.func.30.nc = nc7
+
+eval.problem = classification.regression.deterministic.problem.OccupancyClassification
+eval.problem.data = classification.regression.deterministic.utils.DoubleData
+

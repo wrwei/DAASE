@@ -3,7 +3,7 @@ package classification.regression.deterministic.problem;
 import classification.regression.deterministic.utils.DataEntity;
 import classification.regression.deterministic.utils.DataWarehouse;
 import classification.regression.deterministic.utils.DoubleData;
-import classification.regression.deterministic.utils.IllegalActivity;
+import classification.regression.deterministic.utils.IllegalDivision;
 import classification.regression.deterministic.utils.ParamCounter;
 import ec.EvolutionState;
 import ec.Individual;
@@ -17,32 +17,12 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 	private static final long serialVersionUID = 1;
 
 	public double temperature;
-	public double temperature_mean;
-	public double temperature_std;
-	
 	public double humidity;
-	public double humidity_mean;
-	public double humidity_std;
-	
 	public double light;
-	public double light_mean;
-	public double light_std;
-	
 	public double co2;
-	public double co2_mean;
-	public double co2_std;
-	
 	public double hr;
-	public double hr_mean;
-	public double hr_std;
-	
 	public double nsm;
-	public double nsm_mean;
-	public double nsm_std;
-	
 	public int ws;
-	public double ws_mean;
-	public double ws_std;
 	
 	public void setup(final EvolutionState state, final Parameter base) {
 		super.setup(state, base);
@@ -58,36 +38,18 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 
 			int hits = 0;
 			double sum = 0.0;
+			double result;
 			double expectedResult = 0.0;
+			double sum_mean = 0.0;
 			
 			DataWarehouse dw = DataWarehouse.getInstance();
 			
 			if (!dw.initialised()) {
 				dw.initialise("data/datatraining.txt");
-				
-				temperature_mean = dw.getMean("temperature");
-				temperature_std = dw.getStDeviation("temperature");
-				
-				humidity_mean = dw.getMean("humidity");
-				humidity_std = dw.getStDeviation("humidity");
-				
-				light_mean = dw.getMean("light");
-				light_std = dw.getStDeviation("light");
-				
-				co2_mean = dw.getMean("co2");
-				co2_std = dw.getStDeviation("co2");
-				
-				hr_mean = dw.getMean("hr");
-				hr_std = dw.getStDeviation("hr");
-				
-				nsm_mean = dw.getMean("nsm");
-				nsm_std = dw.getStDeviation("nsm");
-				
-				ws_mean = dw.getMean("ws");
-				ws_std = dw.getStDeviation("ws");
-				
+				sum_mean = dw.getMeanSum();
 				System.out.println(dw.getStatistics());
 				System.out.println("Expected hits: " + dw.size());
+				System.out.println("Mean Sum: " + sum_mean);
 			}
 
 			for(int i=0; i < dw.size(); i++)
@@ -107,48 +69,39 @@ public class OccupancyClassification extends GPProblem implements SimpleProblemF
 				ParamCounter paramCounter = ParamCounter.getInstance();
 				paramCounter.clear();
 
-				// reset flag for illegal activity
-				IllegalActivity.getInstance().reset();
+				// reset flag for illegal division
+				IllegalDivision.getInstance().reset();
 				
 				((GPIndividual) ind).trees[0].child.eval(state, threadnum, input, stack, ((GPIndividual) ind), this);
 
 				double functional_cost = 0.0;
 				double fitness_cost;
 				
-				// check for existence of illegal activity
-				if (!IllegalActivity.getInstance().illegalActivity()) {
+				// check for existence of illegal divisions
+				if (!IllegalDivision.getInstance().illegalDivision()) {
+					//since we are looking for the smallest fitness and not summing up all the fitness, only calculating the abs value of the deviation
+					double threshold = sum_mean;
 					
-					double actual= input.x;
-					functional_cost = Math.abs(actual - expectedResult);
+					double actual=(input.x<threshold)?0:1;
 					
-//					if (expectedResult == 0) {
-//						functional_cost = actual;
-//					}
-//					else
-//					{
-//						functional_cost = 7 - actual;
-//					}
+					functional_cost = Math.abs(actual-expectedResult);
 					
-//					functional_cost = Math.abs(actual-expectedResult);
-
-//					if ((expectedResult == 0 && actual == 0) || (expectedResult == 1 && actual > 0)) {
-//						hits++;
-//					}
+					result = Math.abs(actual - expectedResult);
+					//System.out.println("result is   "+result);
 					
-					if (functional_cost == 0) {
+					if (result == 0)
+					{
 						hits++;
 					}
-					
-					fitness_cost = functional_cost + paramCounter.getScore();	
+					fitness_cost = functional_cost + 0.01 * paramCounter.getScore();	
 				} else {
-					sum = Double.MAX_VALUE - 100;
-					break;
-					
-					//fitness_cost = 1000.0 * IllegalActivity.getInstance().getCount();
-					//System.out.println(IllegalActivity.getInstance().getCount());
+					fitness_cost = 100.0;
 				}
+				
 				sum += fitness_cost;
 			}
+			
+			//System.out.println(ParamCounter.getInstance().getScore());
 			
 			// the fitness better be KozaFitness!
 			KozaFitness f = ((KozaFitness) ind.fitness);
