@@ -70,15 +70,3 @@ gp.fs.0.func.16.nc = nc1
 
 eval.problem = classification.regression.deterministic.problem.OccupancyClassification
 eval.problem.data = classification.regression.deterministic.utils.DoubleData
-
-#gp.fs.0.func.7 = classification.regression.deterministic.functionset.Add
-#gp.fs.0.func.7.nc = nc2
-
-#gp.fs.0.func.8 = classification.regression.deterministic.functionset.Sub
-#gp.fs.0.func.8.nc = nc2
-
-#gp.fs.0.func.9 = classification.regression.deterministic.functionset.Mul
-#gp.fs.0.func.9.nc = nc2
-
-#gp.fs.0.func.10 = classification.regression.deterministic.functionset.Div
-#gp.fs.0.func.10.nc = nc2
