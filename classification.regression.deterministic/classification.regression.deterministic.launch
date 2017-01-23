@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/classification.regression.deterministic"/>
+<listEntry value="/classification.regression.deterministic.second"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
@@ -12,6 +12,6 @@
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ec.Evolve"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-file occupancy.params -p gp.tree.print-style=c"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="classification.regression.deterministic"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="classification.regression.deterministic.second"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx6g"/>
 </launchConfiguration>
