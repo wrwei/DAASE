@@ -15,7 +15,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # functions in the function set
-gp.fs.0.size = 9
+gp.fs.0.size = 10
 gp.fs.0.func.0 = regression.challenger.shuttle.deterministic.terminals.No_TD
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = regression.challenger.shuttle.deterministic.terminals.PSI
